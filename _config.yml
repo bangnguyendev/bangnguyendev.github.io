@@ -1,6 +1,6 @@
 # --- General options --- #
 # Name of website
-title: Bang Nguyen Duy
+title: ✨Bằng Nguyễn✨
 
 #For my changes
 # use meta-title: for the center heading of the page.
@@ -36,14 +36,14 @@ navbar-links:
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-avatar: "img/My_Picture/avatar_github.jpg"
+avatar: "img/My_Picture/avatar_github1.jpg"
 
 # --- Footer options --- #
 
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Bằng Nguyễn Duy
+  name: 🔥Bằng Nguyễn Duy🔥
   rss: true
   email: "duybang140494@gmail.com"
   facebook: drake.bangnguyen

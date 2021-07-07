@@ -112,18 +112,19 @@ p {
 }
 p a {
   /* text-decoration: underline */
-  color: #008AFF;
+  color: #ff9966;
 }
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 800;
 }
 a {
-  color: #008AFF;
+  color: #ff9966;
 }
 a:hover,
 a:focus {
-  color: #890000;
+  color: #920e6a;
+  text-decoration: none;
 }
 blockquote {
   color: #808080;
@@ -526,6 +527,37 @@ footer .theme-by {
   transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   transition: transform 330ms ease-in; /* Tạo hiệu ứng chuyển động zoom */
 }
+
+
+/* Bang Nguyen them */
+.contact_NFC {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  /* padding-right: 65px; */
+  padding-top: 10px;
+  padding-bottom: 20px;
+  background-color: #f087d01f;
+  border-radius: 25px;
+}
+
+.typed_caption {
+  width: auto;
+  height: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+
+.row {
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+
 /* --- Tags --- */
 
 .blog-tags {

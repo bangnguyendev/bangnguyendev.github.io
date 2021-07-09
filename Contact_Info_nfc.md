@@ -10,12 +10,21 @@ bigimg:
 
 <div class="contact_NFC">
   <h3>
+  <a href="/img/My_Picture/danh_thiep_NDB.vcf" target="_blank" rel="noopener" title="Phone">
+    <span class="fa-stack fa-lg" aria-hidden="true">
+      <i class="fa fa-circle fa-stack-2x"></i>
+      <i class="fa fa-id-card fa-stack-1x fa-inverse"></i>
+    </span>
+    <span class="sr-only">Phone</span> Add Contact
+  </a>
+  <br>
+
   <a href="tel:{{ site.author.telephone }}" target="_blank" rel="noopener" title="Phone">
     <span class="fa-stack fa-lg" aria-hidden="true">
       <i class="fa fa-circle fa-stack-2x"></i>
-      <i class="fa fa-user-plus fa-stack-1x fa-inverse"></i>
+      <i class="fa fa-phone-square fa-stack-1x fa-inverse"></i>
     </span>
-    <span class="sr-only">Phone</span> Phone Number
+    <span class="sr-only">Phone</span> Call Me
   </a>
   <br>
   <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener" title="GitHub">

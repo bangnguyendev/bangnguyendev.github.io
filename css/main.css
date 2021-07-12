@@ -754,6 +754,15 @@ footer .theme-by {
   }
 }
 
+/* Sửa giao diện sub-title, tạo phông nền mờ phía dễ đọc chữ. */
+.intro-header .page-heading .page-subheading{
+  background-color: #c5c4c3a1;
+  border-radius: 8px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
 /* --- Pager --- */
 
 .pager li a {

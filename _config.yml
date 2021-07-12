@@ -13,26 +13,20 @@ description: Embedded Systems Engineer
 # --- Navigation bar options --- #
 # List of links in the navigation bar
 navbar-links:
-  Books: "books"
-  About Me: 
+  📚Books: "books"
+  👨‍💻About Me: 
+    - 🧧Resume🧧: "resume/NGUYENDUYBANGCV.pdf"
     - About Me: aboutme
-    - Contact Info: Contact_Info_nfc
-    - LinkedIn Profile: "https://www.linkedin.com/in/bangnguyenduy"
-    - Github Profile: "https://github.com/bangnguyendev"
-  Publications:
-    - Auto Login account web: 2021-02-17-auto-login-web
-    - A Button for Multi Mode: 2020-11-12-mot-nut-nhan-nhieu-tinh-nang
-    - Smart Clock - P2: 2020-01-23-smart-clock
-    - Smart Clock - P1: 2020-01-17-smart-clock
-    - Zip multiple folders: 2020-09-10-bash-script-auto-zip
-  Projects:
+    - Contact: Contact_INFO_NFC
+    - LinkedIn: "https://www.linkedin.com/in/bangnguyenduy"
+    - Github: "https://github.com/bangnguyendev"
+  📌Projects:
     - Smart Clock: "https://github.com/bangnguyendev/SmartClock"
     - Sent Data ThingSpeak: "https://github.com/bangnguyendev/SentDataThingSpeak"  
     - Vehicle Speed GPS: "https://github.com/bangnguyendev/VehicleSpeedGPS"    
     - STM32 RTC RFID: "https://github.com/bangnguyendev/STMF1_RTCBackup_RFID"
     - PWM Sine Wave Generator: "https://github.com/bangnguyendev/PWMSineWaveGenerator"
-  Resume: "resume/NGUYENDUYBANGCV.pdf"
-  # Tags: "tags" thay thế bằng nút tìm kiếm.
+  🗝️Tags: tags #thay thế bằng nút tìm kiếm.
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar

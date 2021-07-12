@@ -16,7 +16,7 @@ And I'm currently a <strong>Embedded Systems Engineer</strong> at <a target="_bl
 <br>&nbsp;- 7/2019 > 2/2020  : Onsite at Renesas Design Vietnam Co., Ltd.
 <br>&nbsp;- 2/2020 > 9/2020: Onsite at Robert Bosch Engineering Viet Nam.
 <br>&nbsp;- 9/2020 > 10/2020: Training ISTQB-Overview, Unifi ed Diagnostic Services.
-<br>&nbsp;- Present : Onsite at Renesas Design Vietnam Co., Ltd. (Updated 14/02/2021)
+<br>&nbsp;- Present : Onsite at Renesas Design Vietnam Co., Ltd. (Updated 12/07/2021)
 </p>
 
 <p class="about-text">

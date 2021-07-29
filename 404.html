@@ -1,0 +1,20 @@
+---
+layout: default
+title: 404 - Page not found
+permalink: /404.html
+---
+
+<div class="text-center">
+  <a target="_blank" rel="noopener" href="https://bangnguyendev.github.io" class="project-link" title="Go to Home Page">
+    <img src="{{ site.baseurl }}/img/error-404.png" class="img-rounded" alt="404 - Page not found - NDB" width="80%" />
+  </a>
+</div>
+
+<script>
+  // on 2016-02-01 GitHub Pages upgraded to Jekyll3, which broke all blog posts with trailing slashes
+  // and there are tons of links out there on the web to posts with a trailing slash, so can't ignore it
+  var url = location.href;
+  if (url.substr(url.length - 1) === '/') {
+    window.location = url.substr(0, url.length - 1);
+  }
+</script>

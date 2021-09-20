@@ -28,5 +28,5 @@ Mỗi loại cấu trúc dữ liệu phù hợp với một vài loại ứng d�
 *to be continued....*
 
 ### *Link tham khảo:*
-*	*https://www.youtube.com/watch?v=7Wni7o3ojd8*
-*	*https://vi.wikipedia.org/wiki/C%E1%BA%A5u_tr%C3%BAc_d%E1%BB%AF_li%E1%BB%87u*
+*	[Youtube](https://www.youtube.com/watch?v=7Wni7o3ojd8 "Khoa học máy tính - Cấu trúc dữ liệu")
+*	[Wikipedia](https://vi.wikipedia.org/wiki/C%E1%BA%A5u_tr%C3%BAc_d%E1%BB%AF_li%E1%BB%87u "Khoa học máy tính - Cấu trúc dữ liệu")

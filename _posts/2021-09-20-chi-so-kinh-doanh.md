@@ -14,9 +14,15 @@ tags: [BREAK-EVEN POINT, INVENTORY TURNOVER RATIO, FOOD COST, PRIME COST, LABOR 
 ### 13 chỉ số cần biết khi kinh doanh quán cafe, quán ăn, nhà hàng? 
 **`1. GIÁ VỐN HÀNG BÁN (COST OF GOOD SOLD)`**
 
-Giá vốn hàng bán là chi phí cần thiết để xây dựng nên mỗi món ăn có trong menu của bạn. Giá vốn hàng bán cũng đại diện cho tổng số lượng bạn cần phải chi cho hàng tồn kho để có được nguyên liệu thô cần thiết cho việc chế biến trong một khoảng thời gian nhất định.
+Giá vốn hàng bán là `chi phí cần thiết` để xây dựng nên mỗi món ăn có trong menu của bạn. `Giá vốn hàng bán` cũng `đại diện cho tổng` số lượng bạn cần phải chi cho hàng tồn kho để có được `nguyên liệu thô` cần thiết cho việc chế biến trong một khoảng thời gian nhất định.
 
-Ngoài ra, giá vốn hàng bán còn giúp bạn xác định liệu giá của món ăn trên menu có chính xác hay chi phí thực phẩm quá cao. Đây là một trong những chỉ số tài chính quan trọng nhất đối với việc kinh doanh nhà hàng mà bạn cần phải theo dõi thường xuyên. 
+<div class="post-img-post">
+    <img src="/img\\2021-09-20-chi-so-kinh-doanh\\What-is-Cost-Of-Goods-Sold.png">
+</div>
+
+Ngoài ra, giá vốn hàng bán còn giúp bạn `xác định` liệu `giá của món ăn trên menu` có chính xác hay chi phí thực phẩm quá cao. 
+
+**Đây là một trong những chỉ số tài chính quan trọng nhất đối với việc kinh doanh nhà hàng mà bạn cần phải theo dõi thường xuyên.**
 
 {: .box-note}
 Việc tính toán chỉ số này giúp bạn xác định và có thể so sánh với giá vốn hàng bán trung bình của thị trường kinh doanh nhà hàng.
@@ -34,7 +40,8 @@ Ví dụ: 320 triệu tiền hàng tồn kho đầu kỳ + 280 triệu chi phí 
 **`2. TỶ LỆ CHI PHÍ LAO ĐỘNG (LABOR COST PERCENTAGE)`**
 
 Tỷ lệ chi phí lao động là tỷ lệ của nguồn doanh thu được chi trả cho nhân viên của nhà hàng. 
-Đây là khoản chi phí lớn thứ hai trong kinh doanh nhà hàng, chỉ đứng sau chi phí dành cho nguyên liệu. Để mang lại nhiều lợi nhuận nhất có thể, tỷ lệ chi phí lao động cần tối ưu nhất có thể.
+
+**Đây là khoản chi phí lớn thứ hai trong kinh doanh nhà hàng, chỉ đứng sau chi phí dành cho nguyên liệu. Để mang lại nhiều lợi nhuận nhất có thể, tỷ lệ chi phí lao động cần tối ưu nhất có thể.**
 
 <div class="post-img-post">
     <img src="/img\\2021-09-20-chi-so-kinh-doanh\\ti-le-chi-phi-laodong.jpg">
@@ -65,7 +72,7 @@ Chi phí gốc = Giá vốn hàng bán + Tổng chi phí lao động
     <img src="/img\\2021-09-20-chi-so-kinh-doanh\\bep-break-even-point-concept.jpg">
 </div>
 
-Nếu nhà hàng của bạn đang tìm kiếm những nhà đầu tư, thì đây sẽ là chỉ số vô cùng quan trọng, quyết định liệu việc kinh doanh nhà hàng của bạn có đủ thu hút các nhà đầu tư hay không.
+**Nếu nhà hàng của bạn đang `tìm kiếm` những `nhà đầu tư`, thì `đây sẽ là chỉ số` vô cùng quan trọng, `quyết định` liệu việc kinh doanh nhà hàng của bạn `có đủ thu hút các nhà đầu tư hay không.`**
 
 #### Cách tính điểm hòa vốn:
 
@@ -106,6 +113,10 @@ Lợi nhuận gộp = Tổng doanh thu – Giá vốn hàng bán
 
 Hệ số vòng quay hàng tồn kho là một chỉ số kinh doanh nhà hàng quan trọng khi mà chỉ số này đề cập đến số lần nhà hàng của bạn sử dụng được hết lượng hàng tồn kho trong một khoảng thời gian nhất định.
 
+<div class="post-img-post">
+    <img src="/img\\2021-09-20-chi-so-kinh-doanh\\INVENTORY-TURNOVER-RATIO.png">
+</div>
+
 Theo dõi được chỉ số này giúp bạn ngăn chặn tình trạng tồn kho quá mức hoặc thiếu hàng. Bên cạnh đó, hệ số vòng quay hàng tồn kho chỉ ra được rằng mất bao lâu thì bạn sẽ sử dụng hết lượng hàng tồn kho của mình.
 
 #### Cách tính hệ số quay vòng hàng tồn kho:
@@ -142,6 +153,10 @@ Ví dụ: Tổng doanh thu 1 buổi tối là 50 triệu ÷ 100 khách dùng b�
 Đây là số lần bàn được dọn để phục vụ cho một khách hàng mới trong một khoảng thời gian nhất định. Nếu nhà hàng của bạn có một hệ số quay vòng bàn càng nhanh, tức là nhà hàng của bạn phục vụ được một lượng khách hàng nhiều hơn trong một khoảng thời gian, từ đó doanh thu của nhà hàng được tăng lên.
 Khi tính toán được chỉ số này, bạn có thể chuẩn bị tốt hơn cho bếp của mình để phục vụ thực khách, cũng như có được thông tin tạo điều kiện đặt bàn cho khách hàng.
 
+<div class="post-img-post">
+    <img src="/img\\2021-09-20-chi-so-kinh-doanh\\Increase_Table_Turnover.png">
+</div>
+
 #### Cách tính hệ số quay vòng bàn:
 
 {: .box-note}
@@ -153,6 +168,10 @@ Ví dụ: Tổng lượng khách dùng bữa trong 1 buổi tối là 120 ngư�
 **`11. TỶ LỆ NHÂN VIÊN NGHỈ VIỆC (EMPLOYEE TURNOVER RATIO)`**
 
 Tỷ lệ nhân viên nghỉ việc có nghĩa là số tần suất mà nhân viên của nhà hàng của bạn nghỉ việc trong một khoảng thời gian nhất định bao gồm việc tự ý nghỉ việc, bị sa thải hay nghỉ hưu. Tỷ lệ này không bao gồm việc luân chuyển trong nội bộ.
+
+<div class="post-img-post">
+    <img src="/img\\2021-09-20-chi-so-kinh-doanh\\EMPLOYEE-TURNOVER.jpg">
+</div>
 
 {: .box-error}
 Chỉ số này cho bạn biết rằng liệu môi trường làm việc của nhân viên có vấn đề nào không nếu như hệ số đổi nhân viên của bạn cao.
@@ -166,8 +185,16 @@ Tỷ lệ nhân viên nghỉ việc = (Số nhân viên rời đi ÷ Tổng số
 
 Đây là chỉ số marketing cho bạn biết rằng bạn mất bao nhiêu chi phí để có được một khách hàng mới cho nhà hàng của bạn. 
 
+<div class="post-img-post">
+    <img src="/img\\2021-09-20-chi-so-kinh-doanh\\CAC.jpg">
+</div>
+
 {: .box-warning}
 Đây là một chỉ số quan trọng khi nó có thể giúp bạn xác định được liệu [chiến lược] / [hoạt động marketing] của bạn có hiệu quả hay không.
+
+<div class="post-img-post">
+    <img src="/img\\2021-09-20-chi-so-kinh-doanh\\dichvuquangcaogoogle.png">
+</div>
 
 Bằng cách so sánh sự `chênh lệch về chi phí của mỗi chiến lược marketing`, bạn có thể ưu tiên những chiến lược marketing đem lại doanh thu lớn nhất so với chi phí bạn bỏ ra.
 
@@ -180,12 +207,14 @@ Chi phí thu về khách hàng mới = Chi phí marketing ÷ Tổng số khách 
 
 Chỉ số này cho bạn biết số lượng khách hàng mà nhà hàng của bạn “giữ chân” được. Bên cạnh đó, chi phí bỏ ra để thu về khách hàng mới luôn lớn hơn chi phí “giữ chân” khách hàng cũ; mặt khác, việc liên tục đo lường chỉ số thực khách nhà hàng và xác định những vấn đề còn đang gặp phải là vô cùng quan trọng trong hoạt động kinh doanh nhà hàng.
 
+<div class="post-img-post">
+    <img src="/img\\2021-09-20-chi-so-kinh-doanh\\CUSTOMER-RETENTION-RATIO.jpg">
+</div>
+
 #### Cách tính tỷ lệ giữ chân khách hàng:
 
 {: .box-note}
 Tỷ lệ giữ chân khách hàng = [(Tổng số khách hàng – Tổng số khách hàng mới) ÷ Tổng số khách hàng] x 100
-
-*to be continued....*
 
 
 ### *Link tham khảo:*

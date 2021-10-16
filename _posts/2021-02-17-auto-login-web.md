@@ -166,7 +166,6 @@ finally:
 ***Lưu ý:** ở mỗi web khác nhau, mỗi trường hợp khác nhau đều có ID khác nhau và chúng ta nên `lựa` những `ID có tính chất đặc biệt` để làm dấu hiệu nhận biết **Fail** hay **Pass**.*
 
 ### *Link tham khảo:*
-*	*https://www.networld.co.jp/product/secure_matrix/overview/feature/*
-*	*https://selenium-python.readthedocs.io/locating-elements.html*
-*	*https://phoenixnap.com/kb/how-to-install-python-3-windows*
+*	*Refer from [networld.co.jp](https://www.networld.co.jp/product/secure_matrix/overview/feature/)*
+*	*Refer from [selenium-python](https://selenium-python.readthedocs.io/locating-elements.html)*
 *	*Refer from [Anh Kiệt Trần](https://kietanhtran.github.io/)*

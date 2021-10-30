@@ -202,9 +202,9 @@ Tương tự như vậy các bạn có thể triển khai thêm cho từng Mode.
 
 ## *Chúc mọi người thành công!*
 
-*Bài viết có sử dụng một số bài link đính kèm từ diễn đàn* [*Arduino Việt Nam*](http://arduino.vn/)
-*    *http://arduino.vn/reference/micros*
-*    *http://arduino.vn/bai-viet/161-bai-11-xac-dinh-trang-thai-cua-mot-nut-nhan-button-inputpullup*
+*Bài viết có sử dụng tư liệu từ diễn đàn* [*Arduino Việt Nam*](http://arduino.vn/)
+*	[Micros - arduino.vn](http://arduino.vn/reference/micros "Micros")
+*	[Button-inputpullup - arduino.vn](http://arduino.vn/bai-viet/161-bai-11-xac-dinh-trang-thai-cua-mot-nut-nhan-button-inputpullup "Button-inputpullup")
 
 --------------------------
 

@@ -38,19 +38,18 @@ Giống:
 | Có chứa constructor | Không có |
 | Các phương thức có từ khóa access modifier | Không có |
 
+--------------------------------------------
 
-**`3. ABSTRACT CLASS VÀ LIÊN QUAN`**
-
-#### Abstract class chính quy
-
+### Abstract class chính quy và ví dụ mô phỏng
+ 
 `Abstract class` là một class chứa các phương thức ảo, nó được `sinh ra để các class khác kế thừa`.
-
+ 
 **Ví dụ:**
-
-Ta cần lập trinh thu thâp dữ liệu của các loại động vật nói chung ( chó, mèo, cá, gà, vit ...).
-
-Thì thuộc tính chung của chúng nó là động vật tên loại (chó, mèo,..), có chân, tiếng kêu...
-
+ 
+Ta cần lập trình tạo dữ liệu của các loại động vật nói chung (chó, mèo, cá, gà, ...).
+ 
+Thì **thuộc tính chung** của chúng nó là **tên loại động vật** (chó, mèo,..), **thuộc tính có chân**, **tiếng kêu** ...
+ 
 Thay vì mỗi con vật ta phải khởi tạo mỗi class riêng thì ta sẽ tạo một class có thuộc tính loài chung có tên Animal.
 
 <div class="post-img-post">
@@ -65,12 +64,12 @@ abstract class Animal
 
     public void TiengKeu()
     {
-        Console.WriteLine("Con nào củng kêu.");
+        Console.WriteLine("Con nào cũng kêu.");
     }
 }
 {% endhighlight %}
 
-Ta tạo ra một class dành riêng cho `loại chó` (miễn là chó và có rất nhiều loại chó sẽ sử dụng class này).
+Ta tạo ra một class dành riêng cho `loại chó` (miễn là chó và có rất nhiều loại chó sẽ khởi tạo từ class này).
 
 Nó là loại chó và được kế thừa từ class Animal, vì nó có thuộc tính của class Animal.
 
@@ -90,7 +89,7 @@ class ConCho : Animal
 }
 {% endhighlight %}
 
-Tương tự `loại chó` thì ta củng tạo ra một class dành cho loại gà ( và củng có rất nhiều loại gà) và dĩ nhiên nó sẽ kế thừa thuộc tính của Animal.
+Tương tự `loại chó` thì ta cũng tạo ra một class dành cho loại gà ( và cũng có rất nhiều loại gà) và dĩ nhiên nó sẽ kế thừa thuộc tính của Animal.
 
 {% highlight c# linenos %}
 class ConGa: Animal
@@ -113,19 +112,19 @@ Và mỗi khi sử dụng thì ta lại khởi tạo đối tượng thôi.
 Ah, tới đây thì các bạn sẽ nói: 
 
 {: .box-warning}
-"ủa đơn giản thôi thì chỉ cần tạo riêng mỗi loại một class là xong mà?"
+"Ủa đơn giản thôi! Thì chỉ cần tạo riêng mỗi loại một class là xong mà?"
 
 Ối bạn ới.....
 
-Đúng là nếu đơn giản vậy thì chỉ cần tạo class con chó, class con gà mỗi thứ một class là xong. 
+Đúng là nếu đơn giản vậy thì chỉ cần tạo class con chó, class con gà mỗi thứ một class là xong.
 
-Nhưng thứ chúng ta cần ứng dụng là một cái gì đó to lớn hơn, vào các Project lớn.
+Những thứ chúng ta cần ứng dụng là một cái gì đó to lớn hơn, vào các Project lớn.
 
 Và khi một Project lớn, cái chúng ta cần khi lập trình, cũng như người khác kế thừa lại code của chúng ta là cái nhìn `trực quan và dễ hiểu hơn.`
 
-Bạn tưởng tượng bạn tạo hằng trăm, hàng ngàn đối tượng, mỗi đối tượng một tên, khi nhìn lại chúng ta khó có thể hình dung đối tượng này có kiểu dữ liệu như thế nào?
+Bạn tưởng tượng bạn tạo hàng trăm, hàng ngàn đối tượng, mỗi đối tượng một tên, khi nhìn lại chúng ta khó có thể hình dung đối tượng này có kiểu dữ liệu như thế nào?
 
-Nhưng khi áp dụng `Abstract class` nó sẽ có thêm phần gọi phía trước khởi tạo (ví dụ vậy đó) giúp ta dễ hình dung hơn. 
+Nhưng khi áp dụng `Abstract class` nó sẽ có thêm phần gọi phía trước khởi tạo (ví dụ vậy đó) giúp ta dễ hình dung hơn.
 
 Bây giờ chúng ta nhìn vào chương trình chính nhé.
 
@@ -171,40 +170,40 @@ Nhìn rất trực quan, dễ hiểu code.
 ```
 Đây là con chó đen nhé.
 Số chân của nó là 4
-Con nào củng kêu.
+Con nào cũng kêu.
 
 Đây là con chó trắng nhé.
 Số chân của nó là 4
-Con nào củng kêu.
+Con nào cũng kêu.
 
 Đây là con gà đen nhé.
 Số chân của nó là 2
-Con nào củng kêu.
+Con nào cũng kêu.
 
 Đây là con gà trắng nhé.
 Số chân của nó là 2
-Con nào củng kêu.
+Con nào cũng kêu.
 Press any key to continue . . .
 ```
 
 Tuy nhiên, ở method tiếng kêu thì cả 4 lần gọi nó hiện ra chung chung.
-
+ 
 {: .box-warning}
-Con nào củng kêu.
-
+Con nào cũng kêu.
+ 
 Giải pháp ở đây là `Virtual method` bên trong `Abstract class`. Chúng ta sẽ chỉnh lại code của Class Animal như sau:
-
+ 
 Thêm từ khóa `virtual` vào *method TiengKeu()*.
-
+ 
 {% highlight c# linenos %}
 abstract class Animal
 {
     abstract public void NameAnimal(string name);
     abstract public void SoChan(int sochan);
-
+ 
     public virtual void TiengKeu()
     {
-        Console.WriteLine("Con nào củng kêu.");
+        Console.WriteLine("Con nào cũng kêu.");
     }
 }
 {% endhighlight %}
@@ -245,11 +244,11 @@ Con chó kêu: Woof..Woof..
 
 Đây là con gà đen nhé.
 Số chân của nó là 2
-Con nào củng kêu.
+Con nào cũng kêu.
 
 Đây là con gà trắng nhé.
 Số chân của nó là 2
-Con nào củng kêu.
+Con nào cũng kêu.
 Press any key to continue . . .
 ```
 
@@ -259,11 +258,11 @@ Vậy là *method TiengKeu()* của *class ConCho* sau khi được `override` l
 Con chó kêu: Woof..Woof..
 
 Bây giờ chúng ta qua *Class ConGa*, như đã nói ở trên khi *method TiengKeu()* của *class Animal* là thuộc tính `virtual`, thì các lớp kế thừa nó `có thể sử dụng lại` hoặc `có thể ghi đè mới`.
-Ở kết quả trên, do chúng ta không tiến hành `override` cho *method TiengKeu()* của *class ConGa* nên nó vẫn sử dụng phương thức gọi của lớp cha "Con nào củng kêu."
+Ở kết quả trên, do chúng ta không tiến hành `override` cho *method TiengKeu()* của *class ConGa* nên nó vẫn sử dụng phương thức gọi của lớp cha "Con nào cũng kêu."
 
 Bây giờ, chúng ta chỉnh code một tí. 
 
-Vừa sử dụng lại *method TiengKeu()* của class cha Animal và thêm `overide` (ghi đè) thêm thuộc tính mới cho *method TiengKeu()* ở class con kế thừa là *class ConGa*.
+Vừa sử dụng lại *method TiengKeu()* của class cha Animal và thêm `override` (ghi đè) thêm thuộc tính mới cho *method TiengKeu()* ở class con kế thừa là *class ConGa*.
 
 {% highlight c# linenos %}
 class ConGa: Animal
@@ -297,12 +296,12 @@ Con chó kêu: Woof..Woof..
 
 Đây là con gà đen nhé.
 Số chân của nó là 2
-Con nào củng kêu.
+Con nào cũng kêu.
 Con gà kêu: ò ó o...
 
 Đây là con gà trắng nhé.
 Số chân của nó là 2
-Con nào củng kêu.
+Con nào cũng kêu.
 Con gà kêu: ò ó o...
 Press any key to continue . . .
 ```
@@ -312,8 +311,10 @@ Chúng ta thấy từ khóa `base`, nó là từ khóa để cho phép gọi l�
 Và kết quả là vừa in ra thuộc tính của class cha và in ra thuộc tính của lớp kế thừa.
 
 {: .box-warning}
-Con nào củng kêu.
+Con nào cũng kêu.
 Con gà kêu: ò ó o...
+
+--------------------------------------------------
 
 ### Một số lưu ý với Abstract class:
 
@@ -338,6 +339,4 @@ Một Abstract method chỉ tồn tại bên trong Abstract class.
 {: .box-warning}
 Một Virtual method tồn tại trong class thường hoặc Abstract class.
 
-
-### *Link tham khảo:*
-  - N/A
+*	[Phần 2: Tìm hiểu về Interface.](/2021-10-30-so-sanh-abstract-va-interface-p2 "Phần 2: Tìm hiểu về Interface")

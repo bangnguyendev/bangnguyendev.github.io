@@ -14,7 +14,7 @@ tags: [Abstract, Interface, override, Abstract method, virtual method]
 ### Abstract Class và Interface C#? Đâu là sự lựa chọn? 
 **`1. ĐIỂM GIỐNG NHAU GIỮA ABSTRACT CLASS VÀ INTERFACE C#`**
 
-Nói về phương thức ảo thì chúng ta đều biết Abstract class, Virtual method và Interface.
+Nói về abstract (trừu tượng) ảo thì chúng ta đều biết Abstract class, Virtual method và Interface.
 
 Ở mục so sánh này chúng ta sẽ so sánh ngang cấp class: 
 
@@ -22,7 +22,6 @@ Nói về phương thức ảo thì chúng ta đều biết Abstract class, Virt
 Abstract class và Interface.
 
 Giống: 
--   Đều là phương thức ảo.
 -   Abstract class và interface đều không thể khởi tạo đối tượng bên trong được.
 -   Abstract class và interface đều có thể khai báo các phương thức nhưng không thực hiện chúng.
 -   Abstract class và interface đều bao gồm các phương thức abstract.
@@ -117,15 +116,16 @@ Ah, tới đây thì các bạn sẽ nói:
 "ủa đơn giản thôi thì chỉ cần tạo riêng mỗi loại một class là xong mà?"
 
 Ối bạn ới.....
+
 Đúng là nếu đơn giản vậy thì chỉ cần tạo class con chó, class con gà mỗi thứ một class là xong. 
 
 Nhưng thứ chúng ta cần ứng dụng là một cái gì đó to lớn hơn, vào các Project lớn.
 
-Và khi một Project lớn, cái chúng ta cần khi lập trình, cũng như người khác kế thừa lại code của chúng ta là cái nhìn trực quan và dễ hiểu hơn.
+Và khi một Project lớn, cái chúng ta cần khi lập trình, cũng như người khác kế thừa lại code của chúng ta là cái nhìn `trực quan và dễ hiểu hơn.`
 
 Bạn tưởng tượng bạn tạo hằng trăm, hàng ngàn đối tượng, mỗi đối tượng một tên, khi nhìn lại chúng ta khó có thể hình dung đối tượng này có kiểu dữ liệu như thế nào?
 
-Nhưng khi áp dụng Abstract class nó sẽ có thêm phần gọi phía trước khởi tạo (ví dụ vậy đó) giúp ta dễ hình dung hơn. 
+Nhưng khi áp dụng `Abstract class` nó sẽ có thêm phần gọi phía trước khởi tạo (ví dụ vậy đó) giúp ta dễ hình dung hơn. 
 
 Bây giờ chúng ta nhìn vào chương trình chính nhé.
 
@@ -191,9 +191,9 @@ Tuy nhiên, ở method tiếng kêu thì cả 4 lần gọi nó hiện ra chung 
 {: .box-warning}
 Con nào củng kêu.
 
-Giải pháp ở đây là `Virtual mathod` bên trong `Abstract class`. Chúng ta sẽ chỉnh lại code của Class Animal như sau:
+Giải pháp ở đây là `Virtual method` bên trong `Abstract class`. Chúng ta sẽ chỉnh lại code của Class Animal như sau:
 
-Thêm từ khóa `virtual` vào method TiengKeu().
+Thêm từ khóa `virtual` vào *method TiengKeu()*.
 
 ```c#
 abstract class Animal

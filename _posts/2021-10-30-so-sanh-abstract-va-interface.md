@@ -57,7 +57,7 @@ Thay vì mỗi con vật ta phải khởi tạo mỗi class riêng thì ta sẽ 
     <img src="/img/2021-10-30-so-sanh-abstract-va-interface/mindmap_Animal.png">
 </div>
 
-```c#
+{% highlight c# linenos %}
 abstract class Animal
 {
     abstract public void NameAnimal(string name);
@@ -68,13 +68,13 @@ abstract class Animal
         Console.WriteLine("Con nào củng kêu.");
     }
 }
-```
+{% endhighlight %}
 
 Ta tạo ra một class dành riêng cho `loại chó` (miễn là chó và có rất nhiều loại chó sẽ sử dụng class này).
 
 Nó là loại chó và được kế thừa từ class Animal, vì nó có thuộc tính của class Animal.
 
-```c#
+{% highlight c# linenos %}
 class ConCho : Animal
 {
     public override void NameAnimal(string name)
@@ -88,11 +88,11 @@ class ConCho : Animal
     }
 
 }
-```
+{% endhighlight %}
 
-Tương tự `loại chó` thì ta củng tạo ra một class dành cho loại gà ( và cung có rất nhiều loại gà) và dĩ nhiên nó sẽ kế thừa thuộc tính của Animal.
+Tương tự `loại chó` thì ta củng tạo ra một class dành cho loại gà ( và củng có rất nhiều loại gà) và dĩ nhiên nó sẽ kế thừa thuộc tính của Animal.
 
-```c#
+{% highlight c# linenos %}
 class ConGa: Animal
 {
     public override void NameAnimal(string name)
@@ -106,7 +106,7 @@ class ConGa: Animal
     }
 
 }
-```
+{% endhighlight %}
 
 Và mỗi khi sử dụng thì ta lại khởi tạo đối tượng thôi. 
 
@@ -129,7 +129,7 @@ Nhưng khi áp dụng `Abstract class` nó sẽ có thêm phần gọi phía tr�
 
 Bây giờ chúng ta nhìn vào chương trình chính nhé.
 
-```c#
+{% highlight c# linenos %}
 class Program
 {
     static void Main(string[] args)
@@ -161,7 +161,8 @@ class Program
         gatrang.TiengKeu();
     }
 }
-```
+{% endhighlight %}
+
 Ta thấy, trước khi khởi tạo đối tượng thì sẽ thấy đối tượng có kiểu Animal (động vật), được khởi tạo cho loài chó ( loài gà).
 
 Nhìn rất trực quan, dễ hiểu code.
@@ -195,7 +196,7 @@ Giải pháp ở đây là `Virtual method` bên trong `Abstract class`. Chúng 
 
 Thêm từ khóa `virtual` vào *method TiengKeu()*.
 
-```c#
+{% highlight c# linenos %}
 abstract class Animal
 {
     abstract public void NameAnimal(string name);
@@ -206,11 +207,13 @@ abstract class Animal
         Console.WriteLine("Con nào củng kêu.");
     }
 }
-```
+{% endhighlight %}
+
 Từ khóa `virtual` cho phép chúng ta `sử dụng lại` method của lớp cha (Animal), hoặc là `override` (ghi đè) lại method mới ở class con (con chó, con gà).
 
 Như *class ConCho* chúng ta đã `override` method **TiengKeu()** của lớp Animal bằng tiếng kêu riêng của loài chó.
-```c#
+
+{% highlight c# linenos %}
 class ConCho : Animal
 {
     public override void NameAnimal(string name)
@@ -227,7 +230,9 @@ class ConCho : Animal
         Console.WriteLine("Con chó kêu: Woof..Woof.. ");
     }
 }
-```
+{% endhighlight %}
+
+
 *Kết quả chương trình:*
 ```
 Đây là con chó đen nhé.
@@ -260,7 +265,7 @@ Bây giờ, chúng ta chỉnh code một tí.
 
 Vừa sử dụng lại *method TiengKeu()* của class cha Animal và thêm `overide` (ghi đè) thêm thuộc tính mới cho *method TiengKeu()* ở class con kế thừa là *class ConGa*.
 
-```c#
+{% highlight c# linenos %}
 class ConGa: Animal
 {
     public override void NameAnimal(string name)
@@ -278,7 +283,7 @@ class ConGa: Animal
         Console.WriteLine("Con gà kêu: ò ó o... ");
     }
 }
-```
+{% endhighlight %}
 
 *Và kết quả chương trình:*
 ```
@@ -313,7 +318,7 @@ Con gà kêu: ò ó o...
 ### Một số lưu ý với Abstract class:
 
 {: .box-error}
-Không thể tạo đối tượng cho Abstract class (nó sinh ra là đẻ class khác kế thừa).
+Không thể tạo đối tượng cho Abstract class (nó sinh ra là để class khác kế thừa).
 
 {: .box-error}
 Một Abstract class phải có tối thiểu một Abstract method.

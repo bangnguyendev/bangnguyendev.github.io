@@ -12,6 +12,8 @@ tags: [BREAK-EVEN POINT, INVENTORY TURNOVER RATIO, FOOD COST, PRIME COST, LABOR 
 # comments: true
 ---
 ### 13 chỉ số cần biết khi kinh doanh quán cafe, quán ăn, nhà hàng? 
+Bạn đang có dự định bắt đầu kinh doanh một ngành nghề nào đó? Trước khi kinh doanh bạn cần tìm hiểu về kiến thức ngành nghề mà mình chọn? Mở quán café/ nhà hàng ăn uống là hình thức kinh doanh mà nhiều người lựa chọn khởi nghiệp hiện nay. Kiến thức kinh doanh về quán café/ nhà hàng bạn cần biết là gì? Bài viết dưới đây chia sẻ đến bạn: 13 chỉ số kinh doanh khi quán cafe. Hãy cùng nhau tìm hiểu nhé!
+
 **`1. GIÁ VỐN HÀNG BÁN (COST OF GOOD SOLD)`**
 
 Giá vốn hàng bán là `chi phí cần thiết` để xây dựng nên mỗi món ăn có trong menu của bạn. `Giá vốn hàng bán` cũng `đại diện cho tổng` số lượng bạn cần phải chi cho hàng tồn kho để có được `nguyên liệu thô` cần thiết cho việc chế biến trong một khoảng thời gian nhất định.

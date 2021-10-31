@@ -12,6 +12,8 @@ tags: [Abstract, Interface, override, Abstract method, virtual method]
 # comments: true
 ---
 ### Interface la gì? Cách sử dụng
+**Interface** trong **C# là** một bản "hợp đồng" mô tả những gì cần phải làm mà các class hiện thực **interface** đó phải tuân thủ theo. 
+
 **`1. KHÁI NIỆM CĂN BẢN VỀ INTERFACE`**
 
 **Interface** trong **C# là** một bản "hợp đồng" mô tả những gì cần phải làm mà các class hiện thực **interface** đó phải tuân thủ theo. 

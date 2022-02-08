@@ -7,8 +7,7 @@
 
 ----------------------
 
-<p  align="center">
-  <img src="https://codepen.io/cesar2535/pen/ByYXpN">
+<p align="center">
   <img src="https://raw.githubusercontent.com/bangnguyendev/bangnguyendev/master/profile-summary-card-output/vue/0-profile-details.svg">
    </br>
   <img src="https://raw.githubusercontent.com/bangnguyendev/bangnguyendev/master/profile-summary-card-output/vue/1-repos-per-language.svg">

@@ -15,6 +15,8 @@ Nếu bạn là một người yêu thích đầu tư và tìm kiếm lợi nhu�
 
 Vậy Binance là gì? Cách để [đăng ký tài khoản Binance](https://accounts.binance.com/vi/register?ref=147338022 "đăng ký tài khoản Binance") và cách thức bảo mật tài khoản Binance để có thể giao dịch an toàn. 
 
+![Crepe](/img/2022-02-06-Tao-tai-khoan-Binance/buoc-3-hoa-hong.jpg)
+
 ### Giới thiệu
 
 Nhằm mục đich bảo vệ nhà đầu tư trong thị trường tiền mã hóa và nâng cao tính bảo mật cho các tài khoản khi giao dịch trên sàn Binance. Ngày 20/8/2021, Binance thông báo đến người dùng như sau:
@@ -94,22 +96,15 @@ Trong vòng 10 phút, bạn phải nhập mã xác minh mà hệ thống gửi v
 </div>
 
 {: .box-warning}
-Khi nhập mã xác nhận sau có nghĩa bạn đã tạo thành công tài khoản giao dịch trên Binance.
+Nhập mã xác nhận và tiếp tục có nghĩa bạn đã tạo thành công tài khoản giao dịch trên Binance.
 
-{: .box-note}
-Nếu có thông tin nào khó hiểu hoặc muốn biết cách giao dịch có thể kết bạn Zalo.
-
-<div class="contact_NFC">
-    <a href="https://zalo.me/{{ site.author.telephone }}" target="_blank" rel="noopener" title="Zalo">
-    <span class="fa-stack fa-lg" aria-hidden="true">
-      <i class="fa fa-circle fa-stack-2x"></i>
-      <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
-    </span>
-    <span class="sr-only">Zalo</span> Zalo Bằng Nguyễn 0784140494
-  </a>
-</div>
+Việc tiếp theo QUAN TRỌNG là bạn phải xác thực danh tính cá nhân.
 
 ### Cách xác minh danh tính cá nhân (KYC) cho tài khoản Binance
+
+<div class="post-img-post">
+    <img src="/img/2022-02-06-Tao-tai-khoan-Binance/buoc-xac-minh-tk.jpg">
+</div>
 
 Khi đã sở hữu tài khoản giao dịch trên sàn Binance, trader nên thực hiện xác minh danh tính để mở khóa các chức năng nâng cao. 
 
@@ -141,3 +136,15 @@ Khi đã sở hữu tài khoản giao dịch trên sàn Binance, trader nên th�
 
 - *Tên người nhận (bên bán hoặc mua) phải `chính chủ` thì các bạn mới chuyển tiền nhé!*
 
+{: .box-note}
+Nếu có thông tin nào khó hiểu hoặc muốn biết cách giao dịch có thể kết bạn Zalo.
+
+<div class="contact_NFC">
+    <a href="https://zalo.me/{{ site.author.telephone }}" target="_blank" rel="noopener" title="Zalo">
+    <span class="fa-stack fa-lg" aria-hidden="true">
+      <i class="fa fa-circle fa-stack-2x"></i>
+      <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+    </span>
+    <span class="sr-only">Zalo</span> Zalo Bằng Nguyễn 0784140494
+  </a>
+</div>

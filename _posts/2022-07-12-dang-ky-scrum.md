@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Giới Thiệu Scrum: 10 Bước Để Có Scrum Thành Công"
-meta-title: "Giới Thiệu Scrum"
+title: "Giới Thiệu & Đăng Ký Thi Scrum"
+meta-title: "Giới Thiệu & Đăng Ký Thi Scrum"
 subtitle: "... 10 Bước Để Có Scrum Thành Công"
 bigimg:
-  - "/img/2021-09-20-chi-so-kinh-doanh/COGS-cover.jpg"
-image: /img/2021-09-20-chi-so-kinh-doanh/COGS-avatar.jpg
+  - "/img/2022-07-12-dang-ky-scrum/images-cover.png"
+image: /img/2022-07-12-dang-ky-scrum/avatar.jpg
 tags: [scrum, PSM, agile, PROFESSIONAL SCRUM MASTER™ CERTIFICATIONS, PROFESSIONAL SCRUM MASTER, CERTIFICATIONS]
 # gh-repo: bangnguyendev/Documents
 # gh-badge: [star, watch, fork, follow]
@@ -14,7 +14,7 @@ tags: [scrum, PSM, agile, PROFESSIONAL SCRUM MASTER™ CERTIFICATIONS, PROFESSIO
 
 <div class="post-img-post">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/p9TjaORt4_Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    Hướng dẫn đăng ký lấy thi lấy chứng chỉ SCRUM
+    Video: Hướng dẫn đăng ký thi lấy chứng chỉ SCRUM.
 </div>
 
 ### Tài liệu thi và đề mẫu
@@ -33,7 +33,6 @@ Các bạn tải về và đọc, học **theo thứ tự** nhé!
 [Scrum Open](https://www.scrum.org/open-assessments/scrum-open)
 
 <div class="post-img-post">
-    <img src="/img/2022-07-12-dang-ky-scrum/practice-assessment-professional-scrum-master-II.png">
     <img src="/img/2022-07-12-dang-ky-scrum/psm1-cerfiticate.jpg">
 </div>
 

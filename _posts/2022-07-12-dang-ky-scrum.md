@@ -26,7 +26,7 @@ Các bạn tải về và đọc, học **theo thứ tự** nhé!
 3. [Bo 120 cau hoi dap an](/documents/2022-07-12-dang-ky-scrum/Bo 120 cau hoi dap an.pdf) *cái này mình ghi chú vài câu hỏi thôi.*
 4. [Scrum Open](/documents/2022-07-12-dang-ky-scrum/Scrum Open.pdf) *cái này có hẳn giải thích cho mỗi đáp án.*
 5. [Scrum Open2](/documents/2022-07-12-dang-ky-scrum/Scrum Open2.pdf) *cái này có hẳn giải thích cho mỗi đáp án.*
-6. [Session 12_ 13. Agile in a Nutshell](/documents/2022-07-12-dang-ky-scrum/Session 12_ 13. Agile in a Nutshell 12.30. 24.07.pdf)
+
 
 #### Đây là link thi thử chính chủ SCRUM PSM 30 câu hỏi trong 30 phút: 
 

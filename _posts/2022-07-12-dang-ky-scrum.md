@@ -21,16 +21,24 @@ tags: [scrum, PSM, agile, PROFESSIONAL SCRUM MASTER™ CERTIFICATIONS, PROFESSIO
 
 Các bạn tải về và đọc, học **theo thứ tự** nhé!
 
-1. [SCRUM-GUIDE-2020-VIE-THI](/documents/2022-07-12-dang-ky-scrum/SCRUM-GUIDE-2020-VIE-THI.pdf)
-2. [Scrum-training-manual](/documents/2022-07-12-dang-ky-scrum/Scrum-training-manual.pdf)
-3. [Bo 120 cau hoi dap an](/documents/2022-07-12-dang-ky-scrum/Bo 120 cau hoi dap an.pdf) *cái này mình ghi chú vài câu hỏi thôi.*
-4. [Scrum Open](/documents/2022-07-12-dang-ky-scrum/Scrum Open.pdf) *cái này có hẳn giải thích cho mỗi đáp án.*
-5. [Scrum Open2](/documents/2022-07-12-dang-ky-scrum/Scrum Open2.pdf) *cái này có hẳn giải thích cho mỗi đáp án.*
+`(1)` là bản dịch của `(2)`.
 
+`(3)` là đúc kết, làm hiểu rõ vấn đề của `(2)`.
 
-#### Đây là link thi thử chính chủ SCRUM PSM 30 câu hỏi trong 30 phút: 
+`(4, 5, 6)` câu hỏi & đáp án
 
-[Scrum Open](https://www.scrum.org/open-assessments/scrum-open)
+1. [🙋‍♂️ SCRUM-GUIDE-2020-VIE-THI](/documents/2022-07-12-dang-ky-scrum/SCRUM-GUIDE-2020-VIE-THI.pdf)
+2. [🙋‍♂️ 2020-Scrum-Guide-US Ken Schwaber & Jeff Sutherland](/documents/2022-07-12-dang-ky-scrum/2020-Scrum-Guide-US.pdf)
+3. [🌟 The Scrum Master Training Manual - Management Plaza](/documents/2022-07-12-dang-ky-scrum/Scrum-training-manual.pdf)
+4. [🗝️ ✅ Bo 120 cau hoi dap an](/documents/2022-07-12-dang-ky-scrum/Bo 120 cau hoi dap an.pdf) *cái này mình ghi chú vài câu hỏi thôi.*
+5. [🗝️ ✅ Scrum Open](/documents/2022-07-12-dang-ky-scrum/Scrum Open.pdf) *cái này có hẳn giải thích cho mỗi đáp án.*
+6. [🗝️ ✅ Scrum Open2](/documents/2022-07-12-dang-ky-scrum/Scrum Open2.pdf) *cái này có hẳn giải thích cho mỗi đáp án.*
+
+#### Đây là link thi thử chính chủ SCRUM PSM 30 câu hỏi trong 30 phút
+
+<a href="https://www.scrum.org/open-assessments/scrum-open" target="_blank">👉👉👉 Scrum Open 👨‍🏫👨‍🏫👨‍🏫</a>
+
+<a href="https://mlapshin.com/index.php/scrum-quizzes/" target="_blank">👉👉👉 Scrum Quizzes - Mikhail Lapshin 👨‍🏫👨‍🏫👨‍🏫</a>
 
 <div class="post-img-post">
     <img src="/img/2022-07-12-dang-ky-scrum/psm1-cerfiticate.jpg">
@@ -58,6 +66,7 @@ Hãy sử dụng phép tương tự công thức ăn kiêng. Hãy nghĩ về m�
 Ở đây bạn có thể thấy mối quan hệ giữa Agile (chế độ ăn kiêng) và Scrum (công thức món bánh).
 
 ### Ai có thể hưởng lợi từ Scrum?
+
 Bạn không đơn độc nếu bạn nghĩ rằng Scrum là thứ gì đó giới hạn đối với các kỹ sư hoặc nhà phát triển.
 
 Tuy nhiên, khung quy trình này có thể có lợi trên nhiều dự án.
@@ -68,8 +77,8 @@ Ví dụ, nếu bạn làm việc trong lĩnh vực tiếp thị và cần viế
 
 Bất cứ khi nào bạn sản xuất một sản phẩm, dù là phần mềm hay chiến dịch email, Scrum đều có thể giúp bạn tổ chức nhóm của mình và hoàn thành nhiều công việc hơn trong thời gian ngắn hơn.
 
-
 ### Tại sao sử dụng phương pháp Agile Scrum?
+
 Vì bạn đã được giới thiệu về Scrum, bây giờ là lúc để suy nghĩ về vấn đề này một cách nghiêm túc hơn trong công ty của bạn. Bạn có cần phương pháp luận này không? Nó sẽ làm cho sản phẩm của bạn tốt hơn? Nó sẽ phù hợp với tổ chức của bạn?
 
 Đây là những gì chúng tôi nghĩ bạn nên biết.

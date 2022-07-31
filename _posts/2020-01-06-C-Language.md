@@ -23,7 +23,7 @@ int main() {
 }
 {% endhighlight %}
 
-Many later languages have borrowed syntax/features directly or indirectly from C language. Like syntax of Java, PHP, JavaScript, and many other languages are mainly based on C language. C++ is nearly a superset of C language (There are few programs that may compile in C, but not in C++).
+Many later languages have borrowed syntax/features directly or indirectly from C language. Like syntax of Java, PHP, JavaScript, and many other languages are mainly based on C language. [C++](https://www.scaler.com/topics/cpp/) is nearly a superset of C language (There are few programs that may compile in C, but not in C++).
 
 -   Structured language
     -   It has the ability to divide and hide all the information and instruction.

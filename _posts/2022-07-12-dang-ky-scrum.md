@@ -42,6 +42,7 @@ Các bạn tải về và đọc, học **theo thứ tự** nhé!
 
 <div class="post-img-post">
     <img src="/img/2022-07-12-dang-ky-scrum/psm1-cerfiticate.jpg">
+    <img src="/img/2022-07-12-dang-ky-scrum/PSM1_NguyenDuyBang.png">
 </div>
 
 {: .box-note}

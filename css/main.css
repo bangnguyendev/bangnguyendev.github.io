@@ -530,6 +530,14 @@ footer .theme-by {
   transition: transform 330ms ease-in; /* Tạo hiệu ứng chuyển động zoom */
 }
 
+.ndb-transbox {
+  height: max-content;
+  width: fit-content;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
 
 /* Bang Nguyen thêm */
 .contact_NFC {
@@ -758,7 +766,7 @@ footer .theme-by {
 
 /* Sửa giao diện sub-title, tạo phông nền mờ phía dễ đọc chữ. */
 .intro-header .page-heading .page-subheading{
-  background-color: #c5c4c3a1;
+  padding-bottom: 10px;
   border-radius: 8px;
   margin-left: 10px;
   margin-right: 10px;

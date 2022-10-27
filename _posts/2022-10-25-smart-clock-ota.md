@@ -12,8 +12,6 @@ tags: [OTA, OTA firmware, firmware, esp8266, adruino ]
 # comments: true
 ---
 
-## Giới thiệu OTA
-
 Cập nhật firmware OTA (`Over the Air`) là tiến trình tải firmware mới vào ESP module thay vì sử dụng cổng Serial. 
 
 Tính năng này thực sự rất hữu dụng trong nhiều trường hợp giới hạn về kết nối vật lý đến ESP Module.
@@ -31,62 +29,33 @@ Trong tất cả các trường hợp, thì `Firmware hỗ trợ OTA phải đư
 </div>
 
 
-## Bắt đầu
+## 🏎️Bắt đầu
 
 Ở trong ví dụ này, chúng ta sử dụng ví dụ Repo [SmartClock](https://github.com/bangnguyendev/SmartClock "SmartClock") nhé!
 
-Với thiết bị là một cái đồng hồ sử dụng internet tôi sẽ chọn 2 phương án để lập trình viên tiện update OTA cho nó:
+Với thiết bị là một cái đồng hồ sử dụng internet tôi sẽ chọn 3 phương án để lập trình viên tiện update OTA cho nó:
   - **Ngay khi cấp nguồn** hoặc **khởi động lại** nó sẽ tìm tới một function có nhiệm vụ kiểm tra phiên bản phần mềm hiện tại ở thiết bị và ở trên Sever có giống nhau hay không?
     - Nếu `có` thì bỏ qua và tiếp tục khởi động các ứng dụng của thiết bị.
     - Nếu `không` thì tiến hành tải về và cập nhật nó vào bộ nhớ.
   - **Cập nhật thủ công** thông qua `Mode` lựa chọn do mình lập trình ra.
+  - **Cập nhật tự động định kỳ** hàng tuần/tháng/năm ...
 
 
-Ở cách 1 ngay khi khởi động thiết bị hoặc cấp nguồn:
-
-
-{% highlight c linenos %}
-	WiFi.mode(WIFI_STA);
-	Serial.println("");
-	WiFi.printDiag(Serial);
-	// In địa chỉ IP
-	Serial.println("");
-	Serial.println("WiFi connected");
-	Serial.println("IP address: ");
-	Serial.println(WiFi.localIP());
-
-	/* Check firmware coi có cập nhật không?  */
-	update_FOTA();
-
-	/* Cập nhật thời gian từ sever vn.pool.ntp.org */
-	Reload_Localtime_NTP();
-
-	/* Màn hình khởi tạo chào mừng */
-	Serial.println("Chạy màn hình LCD khởi tạo chào mừng");
-	Welcome_Smartclock();
-
-	/* truy cap den thoi tiet dia phuong da luu o eeprom */
-	Serial.println("Truy cập đến thời tiết địa phương");
-	time_dem_thoitiet = millis();
-	Weather_Online_sever();
-{% endhighlight %}
-
-{: .box-note}
-**Note:** Chúng ta thấy ở dòng 10-11 sẽ có function thực hiện các nhiệm vụ của update OTA.
-
-### Tại sao chúng ta cần FOTA Inernet
+### 🙄Tại sao chúng ta cần FOTA Inernet
 
 Các phương pháp cập nhật firmware thông qua wifi mà không có internet rất hạn chế về khoảng cách và bảo mật.
 
-Ví dụ, các bạn thấy Windown, smartphone,.. thường xuyên có các bản cập nhật, bản vá lỗi là nó sử dụng OTA qua internet.
+Ví dụ, các bạn thấy windows, smartphone,... thường xuyên có các bản cập nhật, bản vá lỗi là nó sử dụng OTA qua internet.
 
-Khi sản phẩm của các bạn mang tính thương mại, các thiết bị có thể lỗi thời về mặt công nghệ mềm nhưng phần cứng vẫn cho phép thì chúng ta nên sử dụng OTA thông qua internet để thêm hoặc bớt tính năng, sửa lỗi...
+Khi sản phẩm của các bạn mang tính thương mại, các thiết bị có thể lỗi thời về mặt `công nghệ mềm` nhưng `phần cứng vẫn cho phép` thì chúng ta nên sử dụng OTA thông qua internet để thêm hoặc bớt tính năng, sửa lỗi...
 
 Vậy nên, chúng ta cần nạp FOTA thông qua Internet. Có một `máy chủ lưu trữ `và `quản lý version` của sản phẩm của bạn
 
-### Nguyên lý FOTA Internet
+### ⚙️Nguyên lý FOTA Internet
 
-Để có thể nạp firmware từ xa cho ESP32/8266 qua Internet. Chúng ta cần 1 máy chủ lưu giữ. 
+Để có thể nạp firmware từ xa cho ESP32/8266 qua Internet. 
+
+Chúng ta cần 1 máy chủ lưu giữ. 
 
 Khi cập nhật hệ thống sẽ tuân theo các bước sau:
   - Nhà phát triển Upload firmware lên máy chủ
@@ -95,11 +64,11 @@ Khi cập nhật hệ thống sẽ tuân theo các bước sau:
   - Khởi động lại với firmware mới
 
 
-### Setup trên OTA Drive
+### ⚙️Setup trên OTA Drive
 
-Có rất nhiều sever-broker để các bạn có thể lựa chọn để lưu trữ file firmware, nhưng ở bài viết này mình sử dụng `https://www.otadrive.com`
+Có rất nhiều sever-broker để các bạn có thể lựa chọn để lưu trữ file firmware, nhưng ở bài viết này mình sử dụng 👉[`https://www.otadrive.com`](https://www.otadrive.com "otadrive.com")
 
-Đầu tiên các bạn truy cập vào website: `https://www.otadrive.com/`
+Đầu tiên các bạn truy cập vào website: 👉[`https://www.otadrive.com`](https://www.otadrive.com "otadrive.com")
 
 Đăng kí một account và đăng nhập vào
 
@@ -125,12 +94,59 @@ Chuyển qua Tab Product và làm các bước sau:
 	Copy API key
 </div>
 
-Ok. Vậy là các bạn đã có API key để truy cập vào Product này. Việc tiếp theo chúng ta cần làm là lập trình cho ESP32/8266
+Ok. Vậy là các bạn đã có `API key` để truy cập vào Product này. Việc tiếp theo chúng ta cần làm là lập trình cho ESP32/8266
 
-### void update_FOTA()
+{: .box-warning}
+**API KEY:** 🛡️🛡️🛡️Hãy bảo mật mã API KEY này nhé!!!!
 
-Ở hàm `void update_FOTA()` tôi sử dụng một biến `Check_OTA` làm flag-cờ báo trạng thái 
 
+### ✌️Giới thiệu void update_FOTA()
+
+Ta sử dụng HPPT Request/Respone để gửi yêu cầu sever & chờ kết quả phản hồi: 
+
+{% highlight c linenos %}
+/* Cập nhật OTA */
+#define ProductKey "ee01b*******12df"
+#define Version "2.0.0"
+#define MakeFirmwareInfo(k, v) "&_FirmwareInfo&k=" k "&v=" v "&FirmwareInfo_&"
+****---------****
+  /* sever chưa tệp BIN */
+  String url = "http://otadrive.com/DeviceApi/update?";
+  WiFiClient client;
+  url += "&s=" + String(CHIPID);
+  url += MakeFirmwareInfo(ProductKey, Version);
+
+  t_httpUpdate_return ret = ESPhttpUpdate.update(client, url, Version);
+{% endhighlight %}
+
+Nếu kết quả `ret` trả về:
+
+**HTTP_UPDATE_FAILED**: 
+
+Ở đây tôi sẽ cho `loop` <-> `count_Check_OTA` check `khoảng 100 lần` cho trường hợp Sever OTADrive bị nghẻn, quá tải...
+
+**HTTP_UPDATE_NO_UPDATES**: 
+
+Nếu `version_Firmware_thiết_bị` hiện tại trùng khớp `version_Firmware_sever` thì sẽ bỏ qua quá trình tải Firmware tiến vào hoạt động các tính năng của SmartClock.
+
+_Ví dụ:_
+  - **version_Firmware_thiết_bị** = `"2.0.0"` và **version_Firmware_sever** = `"2.0.0"` thì bỏ qua việc cập nhật.
+  - **version_Firmware_thiết_bị** = `"1.2.0"` và **version_Firmware_sever** = `"2.0.0"` thì tiến hành việc cập nhật.
+
+**HTTP_UPDATE_OK**:
+
+Trường hợp này, sau khi download Firmware mới nhất thì ESP sẽ tự khởi động lại và nạp lại Firmware mới nhất.
+
+Do thiết bị khởi động lại nên chúng ta khó debug nếu vào mode này - `HTTP_UPDATE_OK`. 
+
+{: .box-warning}
+**HTTP_UPDATE_OK:** Các bạn xem phần Lưu ý ở dưới `Update process - memory view` để chắc chắn rằng dung lượng của ESP còn đủ cho việc nạp.
+
+### 👉void update_FOTA()
+
+Ở hàm `void update_FOTA()` tôi sử dụng một biến `Check_OTA` làm flag-cờ báo trạng thái. 
+  - Nếu `Check_OTA = true` thì quá trình kiểm tra bản cập nhật vẫn tiếp tục.
+  - Đến khi `Check_OTA = false` thì quá trình kiểm tra sẽ kết thúc - khi xảy ra lỗi hoặc hoàn thành cập nhật.
 
 {% highlight c linenos %}
 
@@ -227,13 +243,92 @@ void update_FOTA()
 }
 {% endhighlight %}
 
-### Lưu ý 
+<br>
 
-#### Updater class
+### Việc tuỳ chọn cập nhật OTA chúng ta sẽ có 3 cách như đã trình bày ở trên bài viết: 
+
+#### 1️⃣ Ở cách 1 ngay khi khởi động thiết bị hoặc cấp nguồn:
+
+{% highlight c linenos %}
+	WiFi.mode(WIFI_STA);
+	Serial.println("");
+	WiFi.printDiag(Serial);
+	// In địa chỉ IP
+	Serial.println("");
+	Serial.println("WiFi connected");
+	Serial.println("IP address: ");
+	Serial.println(WiFi.localIP());
+
+	/* Check firmware coi có cập nhật không?  */
+	update_FOTA();
+
+	/* Cập nhật thời gian từ sever vn.pool.ntp.org */
+	Reload_Localtime_NTP();
+
+	/* Màn hình khởi tạo chào mừng */
+	Serial.println("Chạy màn hình LCD khởi tạo chào mừng");
+	Welcome_Smartclock();
+
+	/* truy cap den thoi tiet dia phuong da luu o eeprom */
+	Serial.println("Truy cập đến thời tiết địa phương");
+	time_dem_thoitiet = millis();
+	Weather_Online_sever();
+{% endhighlight %}
+
+> Chúng ta thấy ở dòng 10-11 sẽ có function thực hiện các nhiệm vụ của update OTA.
+
+<br>
+
+#### 2️⃣ Ở cách 2 khi lựa chọn Mode cập nhật:
+
+Ở nút nhấn Mode - nhấn giữ 7 giây sẽ vào mode cập nhật OTA
+
+{% highlight c linenos %}
+....
+long startTime = millis(); // giá trị ban đầu được gán bằng giá trị hiện tại của millis
+....
+while (digitalRead(Button_Mode) == PULLUP_PULLDOWN) // đợi cho nút bấm được giữ
+{
+  Serial.printf("Thời gian đè giữ nút nhấn: %d ms\n", (millis() - startTime));
+  couter_Mode = (millis() - startTime) / 1000;
+  couter_Mode = couter_Mode / 1 % 10;
+  if (couter_Mode < 1)
+  {
+    lcd.setCursor(0, 1);
+    lcd.print("Mode Selection      ");
+  }
+  /* vao mode OTA */
+  else if (couter_Mode >= 7)
+  {
+    lcd.print("Mode: >> Update OTA ");
+  }
+  ......
+};
+/* Update FOTA mode*/
+if (couter_Mode >= 7)
+{
+  /* Update FOTA mode*/
+  /* Hien thi message tu Update OTA */
+  update_FOTA();
+}
+......
+{% endhighlight %}
+
+<br>
+
+#### 3️⃣ Ở cách 3 chúng ta sẽ chèn `void update_FOTA();` vào mỗi hàng tuần/tháng/năm định kỳ để kiểm tra bản cập nhật.
+<div class="post-img-post">
+    <img src="/img/2022-10-25-smart-clock-ota/loop.png">
+</div>
+<br>
+
+### ⚠️Lưu ý 
+
+#### 💾Updater class
 
 Updater nằm trong Core và dùng để xử lí việc viết firmware lên flash, kiểm tra tính thống nhất của nó và thông báo bootloader để load firmware trên boot kế tiếp.
 
-#### Update process - memory view
+#### 💾Update process - memory view
 
 - Sketch mới sẽ được chứa trong dung lượng trống gĩưa sketch cũ và spiff will be stored in the space between the old sketch and the spiff.
 

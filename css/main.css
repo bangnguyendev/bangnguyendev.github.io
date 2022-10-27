@@ -96,6 +96,10 @@ body {
   font-size: 18px;
   color: #404040;
   position: relative;
+  /* Flex */
+  display: flex;
+  flex-direction: column;
+  /* */
   background: #FFF;
   {% if site.page-col %}
   background: {{ site.page-col }};
@@ -568,6 +572,24 @@ footer .theme-by {
   padding-top: 20px;
 }
 
+/* Thêm tính năng bookmark*/
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.flex-container > aside {
+  background-color: #58a04f;
+  margin-left: 5%;
+  margin-top: 20px;
+  padding-left: 10px;
+  border-radius: 20px;
+
+}
+
+.flex-container > main {
+  margin-left: auto;
+}
 /* --- Tags --- */
 
 .blog-tags {

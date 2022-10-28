@@ -29,7 +29,7 @@ Trong tất cả các trường hợp, thì `Firmware hỗ trợ OTA phải đư
 </div>
 
 
-## 🏎️Bắt đầu
+### 🏎️ Bắt đầu
 
 Ở trong ví dụ này, chúng ta sử dụng ví dụ Repo [SmartClock](https://github.com/bangnguyendev/SmartClock "SmartClock") nhé!
 
@@ -41,7 +41,7 @@ Với thiết bị là một cái đồng hồ sử dụng internet tôi sẽ ch
   - **Cập nhật tự động định kỳ** hàng tuần/tháng/năm ...
 
 
-### 🙄Tại sao chúng ta cần FOTA Inernet
+### 🙄 Tại sao chúng ta cần FOTA Inernet
 
 Các phương pháp cập nhật firmware thông qua wifi mà không có internet rất hạn chế về khoảng cách và bảo mật.
 
@@ -51,7 +51,7 @@ Khi sản phẩm của các bạn mang tính thương mại, các thiết bị c
 
 Vậy nên, chúng ta cần nạp FOTA thông qua Internet. Có một `máy chủ lưu trữ `và `quản lý version` của sản phẩm của bạn
 
-### ⚙️Nguyên lý FOTA Internet
+### ⚙️ Nguyên lý FOTA Internet
 
 Để có thể nạp firmware từ xa cho ESP32/8266 qua Internet. 
 
@@ -64,7 +64,7 @@ Khi cập nhật hệ thống sẽ tuân theo các bước sau:
   - Khởi động lại với firmware mới
 
 
-### ⚙️Setup trên OTA Drive
+### ⚙️ Setup trên OTA Drive
 
 Có rất nhiều sever-broker để các bạn có thể lựa chọn để lưu trữ file firmware, nhưng ở bài viết này mình sử dụng 👉[`https://www.otadrive.com`](https://www.otadrive.com "otadrive.com")
 
@@ -100,7 +100,7 @@ Ok. Vậy là các bạn đã có `API key` để truy cập vào Product này. 
 **API KEY:** 🛡️🛡️🛡️Hãy bảo mật mã API KEY này nhé!!!!
 
 
-### ✌️Giới thiệu void update_FOTA()
+### ✌️ Giới thiệu void update_FOTA()
 
 Ta sử dụng HPPT Request/Respone để gửi yêu cầu sever & chờ kết quả phản hồi: 
 
@@ -142,7 +142,7 @@ Do thiết bị khởi động lại nên chúng ta khó debug nếu vào mode n
 {: .box-warning}
 **HTTP_UPDATE_OK:** Các bạn xem phần Lưu ý ở dưới `Update process - memory view` để chắc chắn rằng dung lượng của ESP còn đủ cho việc nạp.
 
-**`void update_FOTA()`**
+### 👉void update_FOTA()
 
 Ở hàm `void update_FOTA()` tôi sử dụng một biến `Check_OTA` làm flag-cờ báo trạng thái. 
   - Nếu `Check_OTA = true` thì quá trình kiểm tra bản cập nhật vẫn tiếp tục.
@@ -324,13 +324,13 @@ if (couter_Mode >= 7)
 </div>
 <br>
 
-### ⚠️Lưu ý 
+### ⚠️ Lưu ý 
 
-#### 💾Updater class
+#### 💾 Updater class
 
 Updater nằm trong Core và dùng để xử lí việc viết firmware lên flash, kiểm tra tính thống nhất của nó và thông báo bootloader để load firmware trên boot kế tiếp.
 
-#### 💾Update process - memory view
+#### 💾 Update process - memory view
 
 - Sketch mới sẽ được chứa trong dung lượng trống gĩưa sketch cũ và spiff will be stored in the space between the old sketch and the spiff.
 
@@ -350,12 +350,12 @@ Updater nằm trong Core và dùng để xử lí việc viết firmware lên fl
 *to be continued....*
 
 
-## Kết
+### Kết
 
 ESP32 FOTA Internet là một phần rất quan trọng khi các bạn làm các sản phẩm thương mại, vì các sản phẩm khi release chưa chắc đã hoàn hảo, cần update thêm tính năng hoặc sửa lỗi. 
 
 Vậy nên làm chủ được nó sẽ giúp sản phẩm của bạn sẽ được nâng cấp liên tục, người sử dụng cũng sẽ không cần phải làm gì cả.
 
-### *Link tham khảo:*
+### *Link tham khảo*
 *	[khuenguyencreator - Lập trình ESP32 FOTA nạp firmware qua mạng Internet với OTA Drive](https://khuenguyencreator.com/lap-trinh-esp32-fota-nap-firmware-qua-mang-internet-voi-ota-drive/ "Lập trình ESP32 FOTA nạp firmware qua mạng Internet với OTA Drive")
 *	[arduino.esp8266.vn - Cập nhật firmware](https://arduino.esp8266.vn/network/ota.html "Cập nhật firmware")

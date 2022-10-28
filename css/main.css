@@ -772,6 +772,23 @@ footer .theme-by {
   margin-right: 10px;
 }
 
+/* Tạo nút nhấn về TOP */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border:none;
+  border-radius: 10px;
+  outline: none;
+  background-color: rgb(255, 136, 0);
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
 
 /* --- Pager --- */
 

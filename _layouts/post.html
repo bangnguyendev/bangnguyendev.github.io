@@ -1,6 +1,5 @@
 ---
 layout: base
-css: ['sidebar-post-nav.css']
 ---
 <!-- particles.js exclusion -->
 <!-- Thêm vào chạy lag [enable display: block;] -->
@@ -10,16 +9,12 @@ css: ['sidebar-post-nav.css']
   }
 </style>
 
-
 {% include header.html type="post" %}
-<div class="flex-container">
-  <aside>
-    {% include sidebar-post-nav.html %}
-  </aside>
 
-  <main>
+<div class="container">
   <div class="row">
-    <div class="col-lg-8 col-md-10">
+
+    <div class="col-lg-8">
       {% if page.gh-repo %}
         {% assign gh_split =  page.gh-repo | split:'/'  %}
         {% assign gh_user =  gh_split[0]  %}
@@ -42,11 +37,11 @@ css: ['sidebar-post-nav.css']
           {% endif %}
         </div>
       {% endif %}
-
+  
       <article role="main" class="blog-post">
         {{ content }}
       </article>
-
+  
       {% if page.tags.size > 0 %}
         <div class="blog-tags">
           Tags:
@@ -59,11 +54,11 @@ css: ['sidebar-post-nav.css']
           {% endif %}
         </div>
       {% endif %}
-
+  
       {% if page.social-share %}
         {% include social-share.html %}
       {% endif %}
-
+  
       <ul class="pager blog-pager">
         {% if page.previous.url %}
         <li class="previous">
@@ -76,15 +71,18 @@ css: ['sidebar-post-nav.css']
         </li>
         {% endif %}
       </ul>
-
+  
       {% if page.comments %}
         <div class="disqus-comments">
           {% include disqus.html %}
         </div>
       {% endif %}
     </div>
+  
+    <div class="col-md-4">
+      {% include sidebar-post-nav.html %}
+    </div>
+
   </div>
-  </main>
-
-
+  
 </div>

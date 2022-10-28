@@ -1,0 +1,67 @@
+{% if 0 %}
+<div id="post-directory-module">
+<section class="post-directory">
+    <!-- Links that trigger the jumping -->
+    <!-- Added by javascript below -->
+    <h3>📖 Post Directory </h3>
+    <dl></dl>
+</section>
+</div>
+
+<link rel="stylesheet" href="/css/sidebar-post-nav.css">
+<script language="JavaScript" type="text/javascript" src="/js/jquery-3.5.1.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $( "article h3" ).each(function( index ) {
+            $(".post-directory dl").append("<dt><a class=\"jumper\" hre=#" +
+                    $(this).attr("id")
+                    + ">"
+                    + "🔶 " + $(this).text()
+                    + "</a></dt>");
+
+            var children = $(this).nextUntil("h3", "h4")
+
+            children.each(function( index ) {
+                $(".post-directory dl").append("<dd><a class=\"jumper\" hre=#" +
+                        $(this).attr("id")
+                        + ">"
+                        + "&nbsp;&nbsp;&nbsp;🔹 " + $(this).text()
+                        + "</a></dd>");
+            });
+        });
+
+        var fixmeTop = $('#post-directory-module').offset().top;       // get initial position of the element
+
+        $(window).scroll(function() {                  // assign scroll event listener
+
+            var currentScroll = $(window).scrollTop(); // get current position
+
+            if (currentScroll >= fixmeTop) {           // apply position: fixed if you
+                $('#post-directory-module').css({      // scroll to that element or below it
+                    top: '100px',
+                    position: 'fixed',
+                    width: '400px'
+                });
+            } else {                                   // apply position: static
+                $('#post-directory-module').css({      // if you scroll above it
+                    position: 'inherit',
+                    width: '400px'
+                });
+            }
+
+        });
+
+        $("a.jumper").on("click", function( e ) {
+
+            e.preventDefault();
+
+            $("body, html").animate({
+                scrollTop: ($( $(this).attr('hre') ).offset().top - 100) // Tạo khoảng trống để thấy tiêu đề
+            }, 600);
+
+        });
+    });
+
+</script>
+
+{% endif %}

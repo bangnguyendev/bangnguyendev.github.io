@@ -142,7 +142,7 @@ Do thiết bị khởi động lại nên chúng ta khó debug nếu vào mode n
 {: .box-warning}
 **HTTP_UPDATE_OK:** Các bạn xem phần Lưu ý ở dưới `Update process - memory view` để chắc chắn rằng dung lượng của ESP còn đủ cho việc nạp.
 
-### 👉void update_FOTA()
+**`void update_FOTA()`**
 
 Ở hàm `void update_FOTA()` tôi sử dụng một biến `Check_OTA` làm flag-cờ báo trạng thái. 
   - Nếu `Check_OTA = true` thì quá trình kiểm tra bản cập nhật vẫn tiếp tục.
@@ -245,7 +245,9 @@ void update_FOTA()
 
 <br>
 
-### Việc tuỳ chọn cập nhật OTA chúng ta sẽ có 3 cách như đã trình bày ở trên bài viết: 
+### Tuỳ chọn cập nhật OTA
+
+Tuỳ chọn cập nhật OTA chúng ta sẽ có 3 cách như đã trình bày ở trên bài viết: 
 
 #### 1️⃣ Ở cách 1 ngay khi khởi động thiết bị hoặc cấp nguồn:
 

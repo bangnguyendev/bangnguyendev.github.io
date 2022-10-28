@@ -29,7 +29,7 @@ Trong tất cả các trường hợp, thì `Firmware hỗ trợ OTA phải đư
 </div>
 
 
-### 🏎️ Bắt đầu
+### ⚙️ Bắt đầu
 
 Ở trong ví dụ này, chúng ta sử dụng ví dụ Repo [SmartClock](https://github.com/bangnguyendev/SmartClock "SmartClock") nhé!
 
@@ -41,9 +41,9 @@ Với thiết bị là một cái đồng hồ sử dụng internet tôi sẽ ch
   - **Cập nhật tự động định kỳ** hàng tuần/tháng/năm ...
 
 
-### 🙄 Tại sao chúng ta cần FOTA Inernet
+### ⚙️ Tại sao cần FOTA Inernet
 
-Các phương pháp cập nhật firmware thông qua wifi mà không có internet rất hạn chế về khoảng cách và bảo mật.
+Các phương pháp cập nhật firmware thông qua wifi-local mà không có internet rất hạn chế về khoảng cách và bảo mật.
 
 Ví dụ, các bạn thấy windows, smartphone,... thường xuyên có các bản cập nhật, bản vá lỗi là nó sử dụng OTA qua internet.
 
@@ -100,7 +100,7 @@ Ok. Vậy là các bạn đã có `API key` để truy cập vào Product này. 
 **API KEY:** 🛡️🛡️🛡️Hãy bảo mật mã API KEY này nhé!!!!
 
 
-### ✌️ Giới thiệu void update_FOTA()
+### ⚙️ Giới thiệu void update_FOTA()
 
 Ta sử dụng HPPT Request/Respone để gửi yêu cầu sever & chờ kết quả phản hồi: 
 
@@ -142,7 +142,7 @@ Do thiết bị khởi động lại nên chúng ta khó debug nếu vào mode n
 {: .box-warning}
 **HTTP_UPDATE_OK:** Các bạn xem phần Lưu ý ở dưới `Update process - memory view` để chắc chắn rằng dung lượng của ESP còn đủ cho việc nạp.
 
-### 👉void update_FOTA()
+**`void update_FOTA()`**
 
 Ở hàm `void update_FOTA()` tôi sử dụng một biến `Check_OTA` làm flag-cờ báo trạng thái. 
   - Nếu `Check_OTA = true` thì quá trình kiểm tra bản cập nhật vẫn tiếp tục.
@@ -245,11 +245,13 @@ void update_FOTA()
 
 <br>
 
-### Tuỳ chọn cập nhật OTA
+### ⚙️ Tuỳ chọn cập nhật OTA
 
 Tuỳ chọn cập nhật OTA chúng ta sẽ có 3 cách như đã trình bày ở trên bài viết: 
 
-#### 1️⃣ Ở cách 1 ngay khi khởi động thiết bị hoặc cấp nguồn:
+#### 1️⃣ Cách 1 
+
+Ở cách 1 ngay khi khởi động thiết bị hoặc cấp nguồn:
 
 {% highlight c linenos %}
 	WiFi.mode(WIFI_STA);
@@ -281,7 +283,9 @@ Tuỳ chọn cập nhật OTA chúng ta sẽ có 3 cách như đã trình bày �
 
 <br>
 
-#### 2️⃣ Ở cách 2 khi lựa chọn Mode cập nhật:
+#### 2️⃣ Cách 2
+
+Ở cách 2 khi lựa chọn Mode cập nhật:
 
 Ở nút nhấn Mode - nhấn giữ 7 giây sẽ vào mode cập nhật OTA
 
@@ -318,7 +322,9 @@ if (couter_Mode >= 7)
 
 <br>
 
-#### 3️⃣ Ở cách 3 chúng ta sẽ chèn `void update_FOTA();` vào mỗi hàng tuần/tháng/năm định kỳ để kiểm tra bản cập nhật.
+#### 3️⃣ Cách 3
+
+Ở cách 3 chúng ta sẽ chèn `void update_FOTA();` vào mỗi hàng tuần/tháng/năm định kỳ để kiểm tra bản cập nhật.
 <div class="post-img-post">
     <img src="/img/2022-10-25-smart-clock-ota/loop.png">
 </div>

@@ -76,22 +76,26 @@ Chuyển qua Tab Product và làm các bước sau:
 
 <div class="post-img-post">
   <img src="/img/2022-10-25-smart-clock-ota/product_ota.png">
-  <br>
+    <br>
+	Bước 1: Chọn Tab Product, Click vào [+]
+</div>
+
+<div class="post-img-post">
   <img src="/img/2022-10-25-smart-clock-ota/add_product_ota.png">
   <br>
-	Tạo Product
+	Bước 2: Tạo Product, mô tả Product, Version 
 </div>
 
 <div class="post-img-post">
   <img src="/img/2022-10-25-smart-clock-ota/add1_product_ota.png">
 	<br>
-	Nhấn vào biểu tượng folder bên phải để vào product.
+	Bước 3: Click [folder] bên phải để vào product.
 </div>
 
 <div class="post-img-post">
   <img src="/img/2022-10-25-smart-clock-ota/apikey_product_ota.png">
 	<br>
-	Copy API key
+	Bước 4: Copy API key
 </div>
 
 Ok. Vậy là các bạn đã có `API key` để truy cập vào Product này. Việc tiếp theo chúng ta cần làm là lập trình cho ESP32/8266
@@ -140,7 +144,7 @@ Trường hợp này, sau khi download Firmware mới nhất thì ESP sẽ tự 
 Do thiết bị khởi động lại nên chúng ta khó debug nếu vào mode này - `HTTP_UPDATE_OK`. 
 
 {: .box-warning}
-**HTTP_UPDATE_OK:** Các bạn xem phần Lưu ý ở dưới `Update process - memory view` để chắc chắn rằng dung lượng của ESP còn đủ cho việc nạp.
+**HTTP_UPDATE_OK:** Các bạn xem phần Lưu ý ở dưới <a class="jumper" hre="#-update-process---memory-view">💾 Update process - memory view</a> để chắc chắn rằng dung lượng của ESP còn đủ cho việc nạp.
 
 **`void update_FOTA()`**
 

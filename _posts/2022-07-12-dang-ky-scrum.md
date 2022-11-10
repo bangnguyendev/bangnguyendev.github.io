@@ -33,6 +33,7 @@ Các bạn tải về và đọc, học **theo thứ tự** nhé!
 4. [🗝️ ✅ Bo 120 cau hoi dap an](/documents/2022-07-12-dang-ky-scrum/Bo 120 cau hoi dap an.pdf) *cái này mình ghi chú vài câu hỏi thôi.*
 5. [🗝️ ✅ Scrum Open](/documents/2022-07-12-dang-ky-scrum/Scrum Open.pdf) *cái này có hẳn giải thích cho mỗi đáp án.*
 6. [🗝️ ✅ Scrum Open2](/documents/2022-07-12-dang-ky-scrum/Scrum Open2.pdf) *cái này có hẳn giải thích cho mỗi đáp án.*
+7. [🗝️ ✅ Scrum thực tế 07/2022](#bộ-câu-hỏi-nổi-bật-psm1-072022) *đề thi thực tế 07/2022.*
 
 #### Đây là link thi thử chính chủ SCRUM PSM 30 câu hỏi trong 30 phút
 
@@ -126,3 +127,25 @@ Chỉ vì một mẹo hay/kế hoạch có hiệu quả với người khác kh�
 
 10. Kiểm tra & điều chỉnh
 Việc triển khai Scrum của bạn đi theo hướng khác với dự định ban đầu? Không vấn đề gì! Một thay đổi phức tạp có thể có nghĩa là bạn đã tìm thấy những con đường chưa được phát hiện trước đó và cách xử lý khi bạn tiếp tục. Hãy chắc chắn là bạn kiểm tra và điều chỉnh phù hợp khi bạn tìm thấy điều gì đó mới.
+
+
+### Bộ câu hỏi nổi bật PSM1 07/2022
+
+<img src="/img/2022-07-12-dang-ky-scrum/cauhoi/z3605221865968_a27870661ad6ffb4bc8e077e8659e4b6.jpg" class="w3-round-xxlarge" alt="Norway" style="width:90%">
+<img src="/img/2022-07-12-dang-ky-scrum/cauhoi/z3605226757167_739521f41611d06b415113442dfa4ed9.jpg" class="w3-round-xxlarge" alt="Norway" style="width:90%">
+<img src="/img/2022-07-12-dang-ky-scrum/cauhoi/z3605227663288_5333347861fa9cd39ddc30176f7fd5c2.jpg" class="w3-round-xxlarge" alt="Norway" style="width:90%">
+<img src="/img/2022-07-12-dang-ky-scrum/cauhoi/z3605231757010_cb60c958fd5486066b9facda3092565e.jpg" class="w3-round-xxlarge" alt="Norway" style="width:90%">
+<img src="/img/2022-07-12-dang-ky-scrum/cauhoi/z3605237302532_bd9bd0a6ba41c48d3f460d78a2fbbee3.jpg" class="w3-round-xxlarge" alt="Norway" style="width:90%">
+<img src="/img/2022-07-12-dang-ky-scrum/cauhoi/z3605244755214_9c94a9a796736d77918d1b4a5ff7cff4.jpg" class="w3-round-xxlarge" alt="Norway" style="width:90%">
+<img src="/img/2022-07-12-dang-ky-scrum/cauhoi/z3605255195136_7f7302681eed31da24ab788d5b1d933b.jpg" class="w3-round-xxlarge" alt="Norway" style="width:90%">
+<img src="/img/2022-07-12-dang-ky-scrum/cauhoi/z3605259558679_ee7f23d039c666776c75caa902964225.jpg" class="w3-round-xxlarge" alt="Norway" style="width:90%">
+<img src="/img/2022-07-12-dang-ky-scrum/cauhoi/z3605267227051_7e25d64fabf767a0e25b1a2bdcbef45e.jpg" class="w3-round-xxlarge" alt="Norway" style="width:90%">
+<img src="/img/2022-07-12-dang-ky-scrum/cauhoi/z3605268871540_efcf72e5ebc80de15ce5749850105a80.jpg" class="w3-round-xxlarge" alt="Norway" style="width:90%">
+<img src="/img/2022-07-12-dang-ky-scrum/cauhoi/z3605282006018_aa4b08144f05814378383ceca1a7c58a.jpg" class="w3-round-xxlarge" alt="Norway" style="width:90%">
+<img src="/img/2022-07-12-dang-ky-scrum/cauhoi/z3605289141269_276ca1cc98068f160d37218d2949b314.jpg" class="w3-round-xxlarge" alt="Norway" style="width:90%">
+<img src="/img/2022-07-12-dang-ky-scrum/cauhoi/z3605294058062_7882867d01f3f99eebe713a71bb14107.jpg" class="w3-round-xxlarge" alt="Norway" style="width:90%">
+<img src="/img/2022-07-12-dang-ky-scrum/cauhoi/z3605302002927_31382c3760182a4f617e2a82efa7562e.jpg" class="w3-round-xxlarge" alt="Norway" style="width:90%">
+<img src="/img/2022-07-12-dang-ky-scrum/cauhoi/z3605308956679_e214c5ef41a21ff4a1a614fd0d572ae8.jpg" class="w3-round-xxlarge" alt="Norway" style="width:90%">
+<img src="/img/2022-07-12-dang-ky-scrum/cauhoi/z3605311437628_53d5b8bc39a78a7a1f6fa38d8c92372e.jpg" class="w3-round-xxlarge" alt="Norway" style="width:90%">
+<img src="/img/2022-07-12-dang-ky-scrum/cauhoi/z3605333287197_189d9cd23762ca489d4d169808c54f92.jpg" class="w3-round-xxlarge" alt="Norway" style="width:90%">
+<img src="/img/2022-07-12-dang-ky-scrum/cauhoi/z3605336398295_3cf40b776ba563f9d57d401992497369.jpg" class="w3-round-xxlarge" alt="Norway" style="width:90%">

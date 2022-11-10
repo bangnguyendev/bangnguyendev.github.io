@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Over the Air - OTA cho ESP8266"
-meta-title: "OTA cho ESP8266"
-subtitle: "... nâng cấp phần mềm qua mạng và định kì cho thiết bị."
+title: "P1: Over the Air - OTA cho ESP8266"
+meta-title: "P1: OTA cho ESP8266"
+subtitle: "...sử dụng OTA Drive."
 bigimg:
   - "/img/2022-10-25-smart-clock-ota/update-internet-of-things-iot-cheat-sheet.jpeg"
 image: /img/2022-10-25-smart-clock-ota/logo.png
-tags: [OTA, OTA firmware, firmware, esp8266, adruino ]
+tags: [OTA, OTA firmware, firmware, esp8266, adruino, otadrive, ota drive ]
 # gh-repo: bangnguyendev/Documents
 # gh-badge: [star, watch, fork, follow]
 # comments: true
@@ -106,7 +106,7 @@ Ok. Vậy là các bạn đã có `API key` để truy cập vào Product này. 
 
 ### ⚙️ Giới thiệu void update_FOTA()
 
-Ta sử dụng HPPT Request/Respone để gửi yêu cầu sever & chờ kết quả phản hồi: 
+Ta sử dụng HTTP Request/Respone để gửi yêu cầu sever & chờ kết quả phản hồi: 
 
 {% highlight c linenos %}
 /* Cập nhật OTA */
@@ -362,7 +362,7 @@ Updater nằm trong Core và dùng để xử lí việc viết firmware lên fl
 
 ### Kết
 
-ESP32 FOTA Internet là một phần rất quan trọng khi các bạn làm các sản phẩm thương mại, vì các sản phẩm khi release chưa chắc đã hoàn hảo, cần update thêm tính năng hoặc sửa lỗi. 
+FOTA Internet là một phần rất quan trọng khi các bạn làm các sản phẩm thương mại, vì các sản phẩm khi release chưa chắc đã hoàn hảo, cần update thêm tính năng hoặc sửa lỗi. 
 
 Vậy nên làm chủ được nó sẽ giúp sản phẩm của bạn sẽ được nâng cấp liên tục, người sử dụng cũng sẽ không cần phải làm gì cả.
 

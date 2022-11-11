@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Abstract class và Interface C# - P1"
-meta-title: "Abstract class và Interface C# - P1"
+title: "Abstract class và Interface C#"
+meta-title: "Abstract class và Interface C#"
 subtitle: "... Sự khác nhau và cách sử dụng "
 bigimg:
   - "/img/2021-10-30-so-sanh-abstract-va-interface/cover-csharp.jpg"
@@ -14,7 +14,7 @@ tags: [Abstract, Interface, override, Abstract method, virtual method]
 ### Abstract Class và Interface C#? Đâu là sự lựa chọn? 
 `Abstract class` là một class chứa các phương thức ảo, nó được `sinh ra để các class khác kế thừa`.
 
-**`1. ĐIỂM GIỐNG NHAU GIỮA ABSTRACT CLASS VÀ INTERFACE C#`**
+#### **`1. ĐIỂM GIỐNG NHAU GIỮA ABSTRACT CLASS VÀ INTERFACE C#`**
 
 Nói về abstract (trừu tượng) ảo thì chúng ta đều biết Abstract class, Virtual method và Interface.
 
@@ -30,7 +30,7 @@ Giống:
 -   Abstract class và interface đều được thực thi từ các class con hay còn gọi kế thừa, dẫn xuất.
 -   Abstract class và interface đều có thể kế thừa từ nhiều interface.
 
-**`2. ĐIỂM KHÁC NHAU GIỮA ABSTRACT CLASS VÀ INTERFACE C#`**
+#### **`2. ĐIỂM KHÁC NHAU GIỮA ABSTRACT CLASS VÀ INTERFACE C#`**
 
 | Abstract Class | Interface |
 | :--- |:--- |
@@ -341,4 +341,4 @@ Một Abstract method chỉ tồn tại bên trong Abstract class.
 {: .box-warning}
 Một Virtual method tồn tại trong class thường hoặc Abstract class.
 
-*	[Phần 2: Tìm hiểu về Interface.](/2021-10-30-so-sanh-abstract-va-interface-p2 "Phần 2: Tìm hiểu về Interface")
+

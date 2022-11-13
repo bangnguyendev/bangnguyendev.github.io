@@ -7,7 +7,7 @@ bigimg:
   - "/img/2022-10-25-smart-clock-ota/update-internet-of-things-iot-cheat-sheet.jpeg"
 image: /img/2022-10-25-smart-clock-ota/logo.png
 tags: [OTA, OTA firmware, firmware, esp8266, adruino, https, github ]
-# gh-repo: bangnguyendev/Documents
+# gh-repo: bangnguyendev/SmartClock
 # gh-badge: [star, watch, fork, follow]
 # comments: true
 ---
@@ -31,7 +31,9 @@ Trong tất cả các trường hợp, thì `Firmware hỗ trợ OTA phải đư
 
 ### ⚙️ Bắt đầu
 
-Ở trong ví dụ này, chúng ta sử dụng ví dụ Repo [SmartClock](https://github.com/bangnguyendev/SmartClock "SmartClock") nhé!
+Ở trong bài viết này, chúng ta sử dụng Repo 
+
+- [**`SmartClock Hash commit: c12fbc04e5b3a2b53620f97d68670463b16578e0`**](https://github.com/bangnguyendev/SmartClock/tree/c12fbc04e5b3a2b53620f97d68670463b16578e0 "SmartClock") nhé!
 
 Với thiết bị là một cái đồng hồ sử dụng internet tôi sẽ chọn 3 phương án để lập trình viên tiện update OTA cho nó:
   - **Ngay khi cấp nguồn** hoặc **khởi động lại** nó sẽ tìm tới một function có nhiệm vụ kiểm tra phiên bản phần mềm hiện tại ở thiết bị và ở trên Sever có giống nhau hay không?
@@ -68,13 +70,26 @@ Khi cập nhật hệ thống sẽ tuân theo các bước sau:
 
 Có rất nhiều sever-broker để các bạn có thể lựa chọn để lưu trữ file firmware, nhưng ở bài viết này mình sử dụng 👉[`https://github.com/`](https://github.com/ "https://github.com/")
 
-Ưu điểm của việc sử dụng Github Repo Project là chúng ta làm chủ được data CSDL, không bị phụ thuộc vào bên thứ 3.
+**`Ưu điểm`** của việc sử dụng Github Repo Project là: 
+- Chúng ta làm chủ được data CSDL, không bị phụ thuộc vào bên thứ 3.
+- Quản lý các phiên bản version Project tốt.
 
-Nhược điểm:
+**`Nhược điểm:`**
 - Khó quản lý, thống kê thiết bị đã đang sử dụng so với OTADrive.
 - Cần phải cập nhật mã X509 cho phép truy cập HTTPS (10 - 15 năm, nên củng không hẳn khó khăn)
 
 Đầu tiên các bạn truy cập vào website: 👉[`https://github.com/`](https://github.com/ "https://github.com/")
+
+Hãy tạo một **Repo Public** để quản lý lưu trữ *`file bin & file JOSN`* thông tin Project. 
+
+Nếu Public thì quyền tải file bin qua HTTP của ESP8266 sẽ thuận lợi hơn.
+
+Ngược lại, nếu sử dụng Private thì chúng ta sẽ sử dụng `key secret authentication` của Account Github cho Project đó. 
+
+> Private Project Có thể tham khảo ở đây:
+>> 1. 👉[`Creating a personal access token - GitHub Docs`](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token "Creating a personal access token - GitHub Docs")
+>> 2. 👉[`How I do an ESP8266 HTTPupdate via private Github repository?`](https://stackoverflow.com/questions/62333061/how-i-do-an-esp8266-httpupdate-via-private-github-repository "How I do an ESP8266 HTTPupdate via private Github repository?") 
+
 
 Ở phương pháp OTA thông qua HTTPS này chúng ta cần phải có `DigiCert Global Root CA` để ESP8266 có thể truy cập và tải file bin.
 
@@ -94,28 +109,28 @@ WiFiClientSecure client;
 client.setTrustAnchors(&cert);
 if (!client.connect(host, httpsPort))
 {
-	Serial.println(">>> raw.githubusercontent.com - Connection failed");
-	Serial.println(">>> Sever bị nghẻn, quá tải...");
-	Serial.println(">>> Hoặc thiết bị của bạn chưa được cho phép cập nhật trên hệ thống...");
-	Serial.println(">>> Check cập nhật ở thời điểm khác...");
-	Serial.printf(">>> Phiên bản hiện tại là %s \n", FirmwareVer);
-	return;
+    Serial.println(">>> raw.githubusercontent.com - Connection failed");
+    Serial.println(">>> Sever bị nghẻn, quá tải...");
+    Serial.println(">>> Hoặc thiết bị của bạn chưa được cho phép cập nhật trên hệ thống...");
+    Serial.println(">>> Check cập nhật ở thời điểm khác...");
+    Serial.printf(">>> Phiên bản hiện tại là %s \n", FirmwareVer);
+    return;
 }
 
 client.print(String("GET ") + URL_fw_Version + " HTTP/1.1\r\n" +
-				"Host: " + host + "\r\n" +
-				"User-Agent: BuildFailureDetectorESP8266\r\n" +
-				"Connection: close\r\n\r\n");
+                "Host: " + host + "\r\n" +
+                "User-Agent: BuildFailureDetectorESP8266\r\n" +
+                "Connection: close\r\n\r\n");
 
-// Check nội dung từ file Version 	
+// Check nội dung từ file Version     
 while (client.connected())
 {
-	String line = client.readStringUntil('\n');
-	if (line == "\r")
-	{
-		Serial.println(">>> Headers received");
-		break;
-	}
+    String line = client.readStringUntil('\n');
+    if (line == "\r")
+    {
+        Serial.println(">>> Headers received");
+        break;
+    }
 }
 
 String payload = client.readString(); // Get the request response payload
@@ -124,47 +139,50 @@ DynamicJsonDocument jsonBuffer(1024);
 
 auto error = deserializeJson(jsonBuffer, payload);
 if (error) {
-	Serial.print(F("deserializeJson() failed with code "));
-	Serial.println(error.c_str());
-	return;
+    Serial.print(F("deserializeJson() failed with code "));
+    Serial.println(error.c_str());
+    return;
 }
 
 {% endhighlight %}
 
-Sau khi connect tới host thành công, chúng ta sẽ tiến hành đọc version hiện có trên sever Repo Github để lấy được giá tri `payload`
+Sau khi connect tới host `URL_fw_Version` thành công - nơi lưu trữ thông tin `Plain Text in Project`, chúng ta sẽ tiến hành đọc version hiện có trên sever Repo Github để lấy được giá tri `payload`.
 
 Chuỗi JSON này được chúng ta phân tách để đọc giá trị `version_prod`
 
-Nếu version_prod = FirmwareVer tức là vesion trên sever `khớp` với version hiện tại được sử dụng trong trên ESP8266 thì bỏ qua việc cập nhật OTA và ngược lại thì tiến hành cập nhật OTA.
+Nếu version_prod = FirmwareVer tức là vesion trên sever-URL_fw_Version `khớp` với version hiện tại được sử dụng trong trên ESP8266 thì bỏ qua việc cập nhật OTA và ngược lại thì tiến hành cập nhật OTA.
+
+
+**`Trường hợp 2 version giống nhau`**
 
 {% highlight c linenos %}
 String author_prod = jsonBuffer["author"];
 String version_prod = jsonBuffer["main"]["version"];
 
 // serializeJson(jsonBuffer, Serial);
-
+// Trường hợp 2 version gióng nhau
 if (version_prod.equals(FirmwareVer))
 {
-	Serial.println(">>> Device already on latest firmware version");
-	lcd.setCursor(0, 2);
-	lcd.print("The current version ");
-	lcd.setCursor(0, 2);
-	lcd.print("      is the latest.");
-	lcd.setCursor(0, 3);
-	lcd.print("> > > > > > > > > > ");
-	delay(1500);
+    Serial.println(">>> Device already on latest firmware version");
+    lcd.setCursor(0, 2);
+    lcd.print("The current version ");
+    lcd.setCursor(0, 2);
+    lcd.print("      is the latest.");
+    lcd.setCursor(0, 3);
+    lcd.print("> > > > > > > > > > ");
+    delay(1500);
 }
 else
 {
-	Serial.print(">>> New firmware detected: ");
-
-	....
+    Serial.print(">>> New firmware detected: ");
+    
+    ....
 }
 {% endhighlight %}
 
-Trường hợp 2 version khác nhau
+**`Trường hợp 2 version khác nhau`**
 
-Ta sử dụng HTTP Request/Respone để gửi yêu cầu sever & chờ kết quả phản hồi: 
+Ta sử dụng `HTTPS + X509` -> HTTP Request/Respone để gửi yêu cầu sever & chờ kết quả phản hồi: 
 
 {% highlight c linenos %}
 ESPhttpUpdate.setLedPin(LED_BUILTIN, LOW);
@@ -180,31 +198,31 @@ t_httpUpdate_return ret = ESPhttpUpdate.update(client, URL_fw_Bin);
 switch (ret)
 {
 case HTTP_UPDATE_FAILED:
-	Serial.printf("HTTP_UPDATE_FAILD Error (%d): %s\n", ESPhttpUpdate.getLastError(), ESPhttpUpdate.getLastErrorString().c_str());
-	Serial.println(">>> Sever bị nghẻn, quá tải...");
-	Serial.println(">>> Hoặc thiết bị của bạn chưa được cho phép cập nhật trên hệ thống...");
-	Serial.println(">>> Check cập nhật ở thời điểm khác...");
-	Serial.printf(">>> Phiên bản hiện tại là %s \n", FirmwareVer);
-	lcd.setCursor(0, 3);
-	lcd.print("> Skip updated...ERR");
-	delay(2000);
-	break;
+    Serial.printf("HTTP_UPDATE_FAILD Error (%d): %s\n", ESPhttpUpdate.getLastError(), ESPhttpUpdate.getLastErrorString().c_str());
+    Serial.println(">>> Sever bị nghẻn, quá tải...");
+    Serial.println(">>> Hoặc thiết bị của bạn chưa được cho phép cập nhật trên hệ thống...");
+    Serial.println(">>> Check cập nhật ở thời điểm khác...");
+    Serial.printf(">>> Phiên bản hiện tại là %s \n", FirmwareVer);
+    lcd.setCursor(0, 3);
+    lcd.print("> Skip updated...ERR");
+    delay(2000);
+    break;
 
 case HTTP_UPDATE_NO_UPDATES:
-	Serial.println("HTTP_UPDATE_NO_UPDATES");
-	Serial.println(">>> The current version is the latest.");
-	lcd.setCursor(0, 2);
-	lcd.print("The current version ");
-	lcd.setCursor(0, 2);
-	lcd.print("      is the latest.");
-	lcd.setCursor(0, 3);
-	lcd.print("> > > > > > > > > > ");
-	delay(1500);
-	break;
-
+    Serial.println("HTTP_UPDATE_NO_UPDATES");
+    Serial.println(">>> The current version is the latest.");
+    lcd.setCursor(0, 2);
+    lcd.print("The current version ");
+    lcd.setCursor(0, 2);
+    lcd.print("      is the latest.");
+    lcd.setCursor(0, 3);
+    lcd.print("> > > > > > > > > > ");
+    delay(1500);
+    break;
+    
 case HTTP_UPDATE_OK:
-	Serial.println("HTTP_UPDATE_OK");
-	break;
+    Serial.println("HTTP_UPDATE_OK");
+    break;
 }
 {% endhighlight %}
 
@@ -226,6 +244,7 @@ Trường hợp này, sau khi download Firmware mới nhất thì ESP sẽ tự 
 {: .box-warning}
 **HTTP_UPDATE_OK:** Các bạn xem phần Lưu ý ở dưới <a class="jumper" hre="#-update-process---memory-view">💾 Update process - memory view</a> để chắc chắn rằng dung lượng của ESP còn đủ cho việc nạp.
 
+**`Chương trình`** 
 
 {% highlight c linenos %}
 
@@ -294,145 +313,145 @@ void update_error(int err) {
 
 void update_FOTA()
 {
-	Serial.println("\n>>>>>>>>>>> Update FOTA \n");
-	Serial.println("Check firmware coi có bản cập nhật không? ");
+    Serial.println("\n>>>>>>>>>>> Update FOTA \n");
+    Serial.println("Check firmware coi có bản cập nhật không? ");
 
-	lcd.clear();
-	/* màn hình hiển thị trên LCD 2004 */
-	lcd.setCursor(0, 0);
-	lcd.print("Version Firmware:   ");
+    lcd.clear();
+    /* màn hình hiển thị trên LCD 2004 */
+    lcd.setCursor(0, 0);
+    lcd.print("Version Firmware:   ");
 
-	lcd.setCursor(0, 1);
-	lcd.print(FirmwareVer);
-	lcd.print(" - ");
-	lcd.print(CHIPID);
+    lcd.setCursor(0, 1);
+    lcd.print(FirmwareVer);
+    lcd.print(" - ");
+    lcd.print(CHIPID);
 
-	lcd.setCursor(0, 2);
-	lcd.print("Checking for updates");
+    lcd.setCursor(0, 2);
+    lcd.print("Checking for updates");
 
-	/* hiển thị loading . . . */
-	lcd.setCursor(0, 3);
-	lcd.print("...");
-	Serial.printf(">>> Device: %d MHz \n", ESP.getCpuFreqMHz());
-	Serial.printf(">>> Version Firmware: %s \n", FirmwareVer);
-	Serial.printf(">>> ID ESP: ");
-	Serial.println(CHIPID);
-	Serial.printf(">>> Boot Mode: %d \n", ESP.getBootMode());
-	Serial.printf(">>> Free Sketch Space: %d \n", ESP.getFreeSketchSpace());
+    /* hiển thị loading . . . */
+    lcd.setCursor(0, 3);
+    lcd.print("...");
+    Serial.printf(">>> Device: %d MHz \n", ESP.getCpuFreqMHz());
+    Serial.printf(">>> Version Firmware: %s \n", FirmwareVer);
+    Serial.printf(">>> ID ESP: ");
+    Serial.println(CHIPID);
+    Serial.printf(">>> Boot Mode: %d \n", ESP.getBootMode());
+    Serial.printf(">>> Free Sketch Space: %d \n", ESP.getFreeSketchSpace());
 
-	WiFiClientSecure client;
-	client.setTrustAnchors(&cert);
-	if (!client.connect(host, httpsPort))
-	{
-		Serial.println(">>> raw.githubusercontent.com - Connection failed");
-		Serial.println(">>> Sever bị nghẻn, quá tải...");
-		Serial.println(">>> Hoặc thiết bị của bạn chưa được cho phép cập nhật trên hệ thống...");
-		Serial.println(">>> Check cập nhật ở thời điểm khác...");
-		Serial.printf(">>> Phiên bản hiện tại là %s \n", FirmwareVer);
-		return;
-	}
+    WiFiClientSecure client;
+    client.setTrustAnchors(&cert);
+    if (!client.connect(host, httpsPort))
+    {
+        Serial.println(">>> raw.githubusercontent.com - Connection failed");
+        Serial.println(">>> Sever bị nghẻn, quá tải...");
+        Serial.println(">>> Hoặc thiết bị của bạn chưa được cho phép cập nhật trên hệ thống...");
+        Serial.println(">>> Check cập nhật ở thời điểm khác...");
+        Serial.printf(">>> Phiên bản hiện tại là %s \n", FirmwareVer);
+        return;
+    }
 
-	client.print(String("GET ") + URL_fw_Version + " HTTP/1.1\r\n" +
-				 "Host: " + host + "\r\n" +
-				 "User-Agent: BuildFailureDetectorESP8266\r\n" +
-				 "Connection: close\r\n\r\n");
+    client.print(String("GET ") + URL_fw_Version + " HTTP/1.1\r\n" +
+                 "Host: " + host + "\r\n" +
+                 "User-Agent: BuildFailureDetectorESP8266\r\n" +
+                 "Connection: close\r\n\r\n");
 
-	// Check nội dung từ file Version 	
-	while (client.connected())
-	{
-		String line = client.readStringUntil('\n');
-		if (line == "\r")
-		{
-			Serial.println(">>> Headers received");
-			break;
-		}
-	}
+    // Check nội dung từ file Version     
+    while (client.connected())
+    {
+        String line = client.readStringUntil('\n');
+        if (line == "\r")
+        {
+            Serial.println(">>> Headers received");
+            break;
+        }
+    }
 
-	String payload = client.readString(); // Get the request response payload
-	Serial.println(payload);
-	DynamicJsonDocument jsonBuffer(1024);
+    String payload = client.readString(); // Get the request response payload
+    Serial.println(payload);
+    DynamicJsonDocument jsonBuffer(1024);
 
-	auto error = deserializeJson(jsonBuffer, payload);
-	if (error) {
-		Serial.print(F("deserializeJson() failed with code "));
-		Serial.println(error.c_str());
-		return;
-	}
+    auto error = deserializeJson(jsonBuffer, payload);
+    if (error) {
+        Serial.print(F("deserializeJson() failed with code "));
+        Serial.println(error.c_str());
+        return;
+    }
 
-	String author_prod = jsonBuffer["author"];
-	String version_prod = jsonBuffer["main"]["version"];
+    String author_prod = jsonBuffer["author"];
+    String version_prod = jsonBuffer["main"]["version"];
 
-	// serializeJson(jsonBuffer, Serial);
+    // serializeJson(jsonBuffer, Serial);
 
-	if (version_prod.equals(FirmwareVer))
-	{
-		Serial.println(">>> Device already on latest firmware version");
-		lcd.setCursor(0, 2);
-		lcd.print("The current version ");
-		lcd.setCursor(0, 2);
-		lcd.print("      is the latest.");
-		lcd.setCursor(0, 3);
-		lcd.print("> > > > > > > > > > ");
-		delay(1500);
-	}
-	else
-	{
-		Serial.print(">>> New firmware detected: ");
-		Serial.println(version_prod);
-		lcd.setCursor(0, 2);
-		lcd.print("NewFirmware detected");
-		lcd.setCursor(0, 2);
-		lcd.print(FirmwareVer);
-		lcd.print(" -> ");
-		lcd.print(version_prod);
-		// The line below is optional. It can be used to blink the LED on the board during flashing
-		// The LED will be on during download of one buffer of data from the network. The LED will
-		// be off during writing that buffer to flash
-		// On a good connection the LED should flash regularly. On a bad connection the LED will be
-		// on much longer than it will be off. Other pins than LED_BUILTIN may be used. The second
-		// value is used to put the LED on. If the LED is on with HIGH, that value should be passed
-		ESPhttpUpdate.setLedPin(LED_BUILTIN, LOW);
+    if (version_prod.equals(FirmwareVer))
+    {
+        Serial.println(">>> Device already on latest firmware version");
+        lcd.setCursor(0, 2);
+        lcd.print("The current version ");
+        lcd.setCursor(0, 2);
+        lcd.print("      is the latest.");
+        lcd.setCursor(0, 3);
+        lcd.print("> > > > > > > > > > ");
+        delay(1500);
+    }
+    else
+    {
+        Serial.print(">>> New firmware detected: ");
+        Serial.println(version_prod);
+        lcd.setCursor(0, 2);
+        lcd.print("NewFirmware detected");
+        lcd.setCursor(0, 2);
+        lcd.print(FirmwareVer);
+        lcd.print(" -> ");
+        lcd.print(version_prod);
+        // The line below is optional. It can be used to blink the LED on the board during flashing
+        // The LED will be on during download of one buffer of data from the network. The LED will
+        // be off during writing that buffer to flash
+        // On a good connection the LED should flash regularly. On a bad connection the LED will be
+        // on much longer than it will be off. Other pins than LED_BUILTIN may be used. The second
+        // value is used to put the LED on. If the LED is on with HIGH, that value should be passed
+        ESPhttpUpdate.setLedPin(LED_BUILTIN, LOW);
 
-		// Add optional callback notifiers
-		ESPhttpUpdate.onStart(update_started);
-		ESPhttpUpdate.onEnd(update_finished);
-		ESPhttpUpdate.onProgress(update_progress);
-		ESPhttpUpdate.onError(update_error);
+        // Add optional callback notifiers
+        ESPhttpUpdate.onStart(update_started);
+        ESPhttpUpdate.onEnd(update_finished);
+        ESPhttpUpdate.onProgress(update_progress);
+        ESPhttpUpdate.onError(update_error);
 
-		t_httpUpdate_return ret = ESPhttpUpdate.update(client, URL_fw_Bin);
+        t_httpUpdate_return ret = ESPhttpUpdate.update(client, URL_fw_Bin);
 
-		switch (ret)
-		{
-		case HTTP_UPDATE_FAILED:
-			Serial.printf("HTTP_UPDATE_FAILD Error (%d): %s\n", ESPhttpUpdate.getLastError(), ESPhttpUpdate.getLastErrorString().c_str());
-			Serial.println(">>> Sever bị nghẻn, quá tải...");
-			Serial.println(">>> Hoặc thiết bị của bạn chưa được cho phép cập nhật trên hệ thống...");
-			Serial.println(">>> Check cập nhật ở thời điểm khác...");
-			Serial.printf(">>> Phiên bản hiện tại là %s \n", FirmwareVer);
-			lcd.setCursor(0, 3);
-			lcd.print("> Skip updated...ERR");
-			delay(2000);
-			break;
+        switch (ret)
+        {
+        case HTTP_UPDATE_FAILED:
+            Serial.printf("HTTP_UPDATE_FAILD Error (%d): %s\n", ESPhttpUpdate.getLastError(), ESPhttpUpdate.getLastErrorString().c_str());
+            Serial.println(">>> Sever bị nghẻn, quá tải...");
+            Serial.println(">>> Hoặc thiết bị của bạn chưa được cho phép cập nhật trên hệ thống...");
+            Serial.println(">>> Check cập nhật ở thời điểm khác...");
+            Serial.printf(">>> Phiên bản hiện tại là %s \n", FirmwareVer);
+            lcd.setCursor(0, 3);
+            lcd.print("> Skip updated...ERR");
+            delay(2000);
+            break;
 
-		case HTTP_UPDATE_NO_UPDATES:
-			Serial.println("HTTP_UPDATE_NO_UPDATES");
-			Serial.println(">>> The current version is the latest.");
-			lcd.setCursor(0, 2);
-			lcd.print("The current version ");
-			lcd.setCursor(0, 2);
-			lcd.print("      is the latest.");
-			lcd.setCursor(0, 3);
-			lcd.print("> > > > > > > > > > ");
-			delay(1500);
-			break;
+        case HTTP_UPDATE_NO_UPDATES:
+            Serial.println("HTTP_UPDATE_NO_UPDATES");
+            Serial.println(">>> The current version is the latest.");
+            lcd.setCursor(0, 2);
+            lcd.print("The current version ");
+            lcd.setCursor(0, 2);
+            lcd.print("      is the latest.");
+            lcd.setCursor(0, 3);
+            lcd.print("> > > > > > > > > > ");
+            delay(1500);
+            break;
 
-		case HTTP_UPDATE_OK:
-			Serial.println("HTTP_UPDATE_OK");
-			break;
-		}
-	}
-	lcd.clear();
-	Serial.println("\n<<<<<<<<<< Done Check FOTA \n");
+        case HTTP_UPDATE_OK:
+            Serial.println("HTTP_UPDATE_OK");
+            break;
+        }
+    }
+    lcd.clear();
+    Serial.println("\n<<<<<<<<<< Done Check FOTA \n");
 }
 {% endhighlight %}
 
@@ -447,29 +466,29 @@ Tuỳ chọn cập nhật OTA chúng ta sẽ có 3 cách như đã trình bày �
 Ở cách 1 ngay khi khởi động thiết bị hoặc cấp nguồn:
 
 {% highlight c linenos %}
-	WiFi.mode(WIFI_STA);
-	Serial.println("");
-	WiFi.printDiag(Serial);
-	// In địa chỉ IP
-	Serial.println("");
-	Serial.println("WiFi connected");
-	Serial.println("IP address: ");
-	Serial.println(WiFi.localIP());
+WiFi.mode(WIFI_STA);
+Serial.println("");
+WiFi.printDiag(Serial);
+// In địa chỉ IP
+Serial.println("");
+Serial.println("WiFi connected");
+Serial.println("IP address: ");
+Serial.println(WiFi.localIP());
 
-	/* Check firmware coi có cập nhật không?  */
-	update_FOTA();
+/* Check firmware coi có cập nhật không?  */
+update_FOTA();
 
-	/* Cập nhật thời gian từ sever vn.pool.ntp.org */
-	Reload_Localtime_NTP();
+/* Cập nhật thời gian từ sever vn.pool.ntp.org */
+Reload_Localtime_NTP();
 
-	/* Màn hình khởi tạo chào mừng */
-	Serial.println("Chạy màn hình LCD khởi tạo chào mừng");
-	Welcome_Smartclock();
+/* Màn hình khởi tạo chào mừng */
+Serial.println("Chạy màn hình LCD khởi tạo chào mừng");
+Welcome_Smartclock();
 
-	/* truy cap den thoi tiet dia phuong da luu o eeprom */
-	Serial.println("Truy cập đến thời tiết địa phương");
-	time_dem_thoitiet = millis();
-	Weather_Online_sever();
+/* truy cap den thoi tiet dia phuong da luu o eeprom */
+Serial.println("Truy cập đến thời tiết địa phương");
+time_dem_thoitiet = millis();
+Weather_Online_sever();
 {% endhighlight %}
 
 > Chúng ta thấy ở dòng 10-11 sẽ có function thực hiện các nhiệm vụ của update OTA.
@@ -549,8 +568,11 @@ Updater nằm trong Core và dùng để xử lí việc viết firmware lên fl
 *to be continued....*
 
 
-### Kết
+### Kết - OTA
 
 FOTA Internet là một phần rất quan trọng khi các bạn làm các sản phẩm thương mại, vì các sản phẩm khi release chưa chắc đã hoàn hảo, cần update thêm tính năng hoặc sửa lỗi. 
 
 Vậy nên làm chủ được nó sẽ giúp sản phẩm của bạn sẽ được nâng cấp liên tục, người sử dụng cũng sẽ không cần phải làm gì cả.
+
+### *Link tham khảo*
+*	Repo [SmartClock Hash commit: c12fbc04e5b3a2b53620f97d68670463b16578e0](https://github.com/bangnguyendev/SmartClock/tree/c12fbc04e5b3a2b53620f97d68670463b16578e0 "SmartClock")

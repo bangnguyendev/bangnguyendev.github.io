@@ -87,8 +87,8 @@ Nếu Public thì quyền tải file bin qua HTTP của ESP8266 sẽ thuận l�
 Ngược lại, nếu sử dụng Private thì chúng ta sẽ sử dụng `key secret authentication` của Account Github cho Project đó. 
 
 > Private Project Có thể tham khảo ở đây:
->> 1. 👉[`Creating a personal access token - GitHub Docs`](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token "Creating a personal access token - GitHub Docs")
->> 2. 👉[`How I do an ESP8266 HTTPupdate via private Github repository?`](https://stackoverflow.com/questions/62333061/how-i-do-an-esp8266-httpupdate-via-private-github-repository "How I do an ESP8266 HTTPupdate via private Github repository?") 
+> 1. 👉[`Creating a personal access token - GitHub Docs`](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token "Creating a personal access token - GitHub Docs")
+> 2. 👉[`How I do an ESP8266 HTTPupdate via private Github repository?`](https://stackoverflow.com/questions/62333061/how-i-do-an-esp8266-httpupdate-via-private-github-repository "How I do an ESP8266 HTTPupdate via private Github repository?") 
 
 
 Ở phương pháp OTA thông qua HTTPS này chúng ta cần phải có `DigiCert Global Root CA` để ESP8266 có thể truy cập và tải file bin.

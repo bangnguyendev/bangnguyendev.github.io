@@ -52,3 +52,9 @@
   <a href="https://www.facebook.com/drake.bangnguyen/"><img src="https://img.shields.io/badge/Facebook-drake.bangnguyen-blue?style=social&logo=facebook" /></a><br> 
   <a href="https://www.instagram.com/nguyen.duy.bang/?hl=vi"><img src="https://img.shields.io/badge/Instagram-nguyen.duy.bang-orange?style=social&logo=instagram" /></a>
 </p>
+
+<!-- 
+Ghi Chú:
+bundle exec jekyll build
+bundle exec jekyll serve 
+-->

@@ -150,7 +150,7 @@ Sau khi connect tới host `URL_fw_Version` thành công - nơi lưu trữ thôn
 
 Chuỗi JSON này được chúng ta phân tách để đọc giá trị `version_prod`
 
-Nếu version_prod = FirmwareVer tức là vesion trên sever-URL_fw_Version `khớp` với version hiện tại được sử dụng trong trên ESP8266 thì bỏ qua việc cập nhật OTA và ngược lại thì tiến hành cập nhật OTA.
+Nếu `version_prod = FirmwareVer` tức là vesion trên sever-URL_fw_Version `khớp` với version hiện tại được sử dụng trong trên ESP8266 thì `bỏ qua việc cập nhật OTA` và ngược lại thì tiến hành cập nhật OTA.
 
 
 **`Trường hợp 2 version giống nhau`**

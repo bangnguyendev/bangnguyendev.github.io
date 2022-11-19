@@ -1,0 +1,85 @@
+/* Table of Contents */
+.toc {
+    margin: 0 2px 40px;
+    border: 1px solid var(--border);
+    background: var(--code-bg);
+    border-radius: var(--radius);
+    padding: .4em;
+    background-color: rgba(70, 67, 63, 0.204);
+    border-radius: 20px;
+    transition: width 3s;
+    transition-delay: 1s;
+    color: brown;
+}
+
+.toc details summary {
+    cursor: zoom-in;
+    margin-inline-start: 20px;
+}
+
+.toc details[open] summary {
+    cursor: zoom-out;
+}
+
+.toc .details {
+    display: inline;
+    font-weight: 500
+}
+
+.toc .inner {
+    margin: 0 20px;
+    padding: 10px 20px
+}
+
+.toc summary:focus {
+    outline: 0
+}
+
+.post-directory-mini {
+    font-size: 14px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.post-directory-mini dt,
+.post-directory-mini dd {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 2px 5px 2px 15px;
+    border-left: none;
+}
+
+.post-directory-mini a {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    color: brown;
+}
+
+.post-directory-mini dt:hover,
+.post-directory-mini dd:hover {
+    background: rgba(0, 0, 0, 0.719);
+    border-left: none;
+}
+
+.post-directory-mini dt:hover a,
+.post-directory-mini dd:hover a {
+    border-left: none;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* If the screen size is 1024px wide or less, hide the element */
+
+@media only screen and (min-width: 1024px) {
+    .toc {
+        display: none;
+    }
+
+    .post-directory-mini {
+        display: none;
+    }
+}

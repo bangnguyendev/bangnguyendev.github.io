@@ -1,0 +1,46 @@
+{% if 0 %}
+<div id="post-directory-module-mini">
+<section class="post-directory-mini">
+    <!-- Links that trigger the jumping -->
+    <!-- Added by javascript below -->
+    <h5><center></center></h5>
+    <dl></dl>
+</section>
+</div>
+
+<link rel="stylesheet" href="/css/sidebar-post-nav-mini.css">
+<script language="JavaScript" type="text/javascript" src="/js/jquery-3.5.1.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("article h3").each(function (index) {
+            $(".post-directory-mini dl").append("<dt><a class=\"jumper\" hre=#" +
+                $(this).attr("id")
+                + ">"
+                + "🔶 " + $(this).text()
+                + "</a></dt>");
+
+            var children = $(this).nextUntil("h3", "h4")
+
+            children.each(function (index) {
+                $(".post-directory-mini dl").append("<dd><a class=\"jumper\" hre=#" +
+                    $(this).attr("id")
+                    + ">"
+                    + "&nbsp;&nbsp;&nbsp;&nbsp🔹 " + $(this).text()
+                    + "</a></dd>");
+            });
+        });
+
+        $("a.jumper").on("click", function (e) {
+
+            e.preventDefault();
+
+            $("body, html").animate({
+                scrollTop: ($($(this).attr('hre')).offset().top - 100) // Tạo khoảng trống để thấy tiêu đề
+            }, 600);
+
+        });
+    });
+
+</script>
+
+{% endif %}

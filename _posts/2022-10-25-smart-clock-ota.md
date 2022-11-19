@@ -32,7 +32,7 @@ Trong tất cả các trường hợp, thì `Firmware hỗ trợ OTA phải đư
 ### ⚙️ Bắt đầu
 
 Ở trong bài viết này, chúng ta sử dụng: 
-- Repo [**`SmartClock Hash commit: db96048e90cab33912cbf981a9cf284900852550`**](https://github.com/bangnguyendev/SmartClock/tree/db96048e90cab33912cbf981a9cf284900852550 "SmartClock") nhé!
+- Repo [**`SmartClock Hash commit: db96...2550`**](https://github.com/bangnguyendev/SmartClock/tree/db96048e90cab33912cbf981a9cf284900852550 "SmartClock") nhé!
 
 Với thiết bị là một cái đồng hồ sử dụng internet tôi sẽ chọn 3 phương án để lập trình viên tiện update OTA cho nó:
   - **Ngay khi cấp nguồn** hoặc **khởi động lại** nó sẽ tìm tới một function có nhiệm vụ kiểm tra phiên bản phần mềm hiện tại ở thiết bị và ở trên Sever có giống nhau hay không?
@@ -368,6 +368,6 @@ FOTA Internet là một phần rất quan trọng khi các bạn làm các sản
 Vậy nên làm chủ được nó sẽ giúp sản phẩm của bạn sẽ được nâng cấp liên tục, người sử dụng cũng sẽ không cần phải làm gì cả.
 
 ### *Link tham khảo*
-*	Repo [SmartClock Hash commit: db96048e90cab33912cbf981a9cf284900852550](https://github.com/bangnguyendev/SmartClock/tree/db96048e90cab33912cbf981a9cf284900852550 "SmartClock")
+*	Repo [SmartClock Hash commit: db96...2550](https://github.com/bangnguyendev/SmartClock/tree/db96048e90cab33912cbf981a9cf284900852550 "SmartClock")
 *	[khuenguyencreator - Lập trình ESP32 FOTA nạp firmware qua mạng Internet với OTA Drive](https://khuenguyencreator.com/lap-trinh-esp32-fota-nap-firmware-qua-mang-internet-voi-ota-drive/ "Lập trình ESP32 FOTA nạp firmware qua mạng Internet với OTA Drive")
 *	[arduino.esp8266.vn - Cập nhật firmware](https://arduino.esp8266.vn/network/ota.html "Cập nhật firmware")

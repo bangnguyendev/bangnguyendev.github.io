@@ -33,7 +33,7 @@ Trong tất cả các trường hợp, thì `Firmware hỗ trợ OTA phải đư
 
 Ở trong bài viết này, chúng ta sử dụng Repo 
 
-- [**`SmartClock Hash commit: c12fbc04e5b3a2b53620f97d68670463b16578e0`**](https://github.com/bangnguyendev/SmartClock/tree/c12fbc04e5b3a2b53620f97d68670463b16578e0 "SmartClock") nhé!
+- [**`SmartClock Hash commit: c12fb ... 6578e0`**](https://github.com/bangnguyendev/SmartClock/tree/c12fbc04e5b3a2b53620f97d68670463b16578e0 "SmartClock") nhé!
 
 Với thiết bị là một cái đồng hồ sử dụng internet tôi sẽ chọn 3 phương án để lập trình viên tiện update OTA cho nó:
   - **Ngay khi cấp nguồn** hoặc **khởi động lại** nó sẽ tìm tới một function có nhiệm vụ kiểm tra phiên bản phần mềm hiện tại ở thiết bị và ở trên Sever có giống nhau hay không?
@@ -575,4 +575,4 @@ FOTA Internet là một phần rất quan trọng khi các bạn làm các sản
 Vậy nên làm chủ được nó sẽ giúp sản phẩm của bạn sẽ được nâng cấp liên tục, người sử dụng cũng sẽ không cần phải làm gì cả.
 
 ### *Link tham khảo*
-*	Repo [SmartClock Hash commit: c12fbc04e5b3a2b53620f97d68670463b16578e0](https://github.com/bangnguyendev/SmartClock/tree/c12fbc04e5b3a2b53620f97d68670463b16578e0 "SmartClock")
+*	Repo [SmartClock Hash commit: c12fb ... 578e0](https://github.com/bangnguyendev/SmartClock/tree/c12fbc04e5b3a2b53620f97d68670463b16578e0 "SmartClock")

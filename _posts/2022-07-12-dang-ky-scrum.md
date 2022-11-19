@@ -13,7 +13,7 @@ tags: [scrum, PSM, agile, PROFESSIONAL SCRUM MASTER™ CERTIFICATIONS, PROFESSIO
 ---
 
 <div class="post-img-post">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/p9TjaORt4_Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="auto" height="auto" src="https://www.youtube.com/embed/p9TjaORt4_Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     Video: Hướng dẫn đăng ký thi lấy chứng chỉ SCRUM.
 </div>
 

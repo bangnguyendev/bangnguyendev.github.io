@@ -11,20 +11,20 @@ tags: [python, Selenium, AutomatableTasks]
 # gh-badge: [star, watch, fork, follow]
 # comments: true
 ---
-## Giới thiệu về mẹo
+### Giới thiệu về mẹo
 - Áp dụng với **máy tính cá nhân** vì `scrip có thể làm lộ thông tin cá nhân của bạn`.
 - Tài khoản có tính `Sign Out` hằng ngày và việc chúng ta phải liên tục đăng nhập mỗi ngày (hoặc sau mỗi 4 tiếng với B2b) khiến mọi thứ khó chịu.
 
 Chúng ta có thể áp dụng cho các trường hợp đăng nhập khác.
 
-## Chuẩn bị một vài thứ
+### Chuẩn bị một vài thứ
 - Kiến thức về Python.
 - Máy tính đã cài đặt Python.
 - Dùng Pip tải Selenium.
 - [IEDriverServer.exe](https://github.com/bangnguyendev/Documents/blob/master/Workspace/_FreeCommander/B2B/IEDriverServer.exe) có thể tải ở đây.
 - [Java SE Runtime Environment](https://www.oracle.com/java/technologies/javase-jre8-downloads.html) lựa chọn phiên bản phù hợp với máy tính của bạn.
 
-## Lý thuyết áp dụng
+### Lý thuyết áp dụng
 Ở bài viết này chúng ta thử nghiệm login vào trang B2b.
 
 <div class="post-img-post">
@@ -65,9 +65,9 @@ Chúng ta có thể áp dụng cho các trường hợp đăng nhập khác.
 - Như vậy mật khẩu cố định của chúng ta sẽ là `"SMX_BTN_16", "SMX_BTN_20", "SMX_BTN_24", "SMX_BTN_28", "SMX_BTN_29", "SMX_BTN_30", "SMX_BTN_31", "SMX_BTN_44"`.
 - Ứng với mỗi `SMX_BTN` chúng ta đọc về thuộc tính `atl` kế bên là sẽ được mật khẩu.
 
-## Code thực tế với Python và Selenium
+### Code thực tế với Python và Selenium
 
-### Khai báo thư viện
+#### Khai báo thư viện
 - Cách `cài đặt thư viện` ở [link đây](https://selenium-python.readthedocs.io/installation.html)
 {% highlight python linenos %}
 from selenium import webdriver
@@ -76,7 +76,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 {% endhighlight %}
 
-### Khai báo hằng số cơ bản
+#### Khai báo hằng số cơ bản
 
 {% highlight python linenos %}
  # ID login (mình xin giấu ID login theo Policy)

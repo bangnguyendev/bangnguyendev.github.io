@@ -109,7 +109,7 @@ Ok. Vậy là các bạn đã có `API key` để truy cập vào Product này. 
 
 Ta sử dụng HTTP Request/Respone để gửi yêu cầu sever & chờ kết quả phản hồi: 
 
-{% highlight c linenos %}
+```c
 /* Cập nhật OTA */
 #define ProductKey "ee01b*******12df"
 #define Version "2.0.0"
@@ -122,7 +122,7 @@ Ta sử dụng HTTP Request/Respone để gửi yêu cầu sever & chờ kết q
   url += MakeFirmwareInfo(ProductKey, Version);
 
   t_httpUpdate_return ret = ESPhttpUpdate.update(client, url, Version);
-{% endhighlight %}
+```
 
 Nếu kết quả `ret` trả về:
 
@@ -153,7 +153,7 @@ Do thiết bị khởi động lại nên chúng ta khó debug nếu vào mode n
   - Nếu `Check_OTA = true` thì quá trình kiểm tra bản cập nhật vẫn tiếp tục.
   - Đến khi `Check_OTA = false` thì quá trình kiểm tra sẽ kết thúc - khi xảy ra lỗi hoặc hoàn thành cập nhật.
 
-{% highlight c linenos %}
+```c
 
 /* Cập nhật OTA */
 #define ProductKey "ee01b*******12df"
@@ -246,7 +246,7 @@ void update_FOTA()
 	lcd.clear();
 	Serial.println("\n<<<<<<<<<< Done Check FOTA \n");
 }
-{% endhighlight %}
+```
 
 <br>
 
@@ -258,7 +258,7 @@ Tuỳ chọn cập nhật OTA chúng ta sẽ có 3 cách như đã trình bày �
 
 Ở cách 1 ngay khi khởi động thiết bị hoặc cấp nguồn:
 
-{% highlight c linenos %}
+```c
 	WiFi.mode(WIFI_STA);
 	Serial.println("");
 	WiFi.printDiag(Serial);
@@ -282,7 +282,7 @@ Tuỳ chọn cập nhật OTA chúng ta sẽ có 3 cách như đã trình bày �
 	Serial.println("Truy cập đến thời tiết địa phương");
 	time_dem_thoitiet = millis();
 	Weather_Online_sever();
-{% endhighlight %}
+```
 
 > Chúng ta thấy ở dòng 10-11 sẽ có function thực hiện các nhiệm vụ của update OTA.
 
@@ -294,7 +294,7 @@ Tuỳ chọn cập nhật OTA chúng ta sẽ có 3 cách như đã trình bày �
 
 Ở nút nhấn Mode - nhấn giữ 7 giây sẽ vào mode cập nhật OTA
 
-{% highlight c linenos %}
+```c
 ....
 long startTime = millis(); // giá trị ban đầu được gán bằng giá trị hiện tại của millis
 ....
@@ -323,7 +323,7 @@ if (couter_Mode >= 7)
   update_FOTA();
 }
 ......
-{% endhighlight %}
+```
 
 <br>
 

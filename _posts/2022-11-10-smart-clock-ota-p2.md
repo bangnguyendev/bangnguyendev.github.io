@@ -104,7 +104,7 @@ Ngược lại, nếu sử dụng Private thì chúng ta sẽ sử dụng `key s
 
 ### ⚙️ Giới thiệu void update_FOTA()
 
-{% highlight c linenos %}
+```c
 WiFiClientSecure client;
 client.setTrustAnchors(&cert);
 if (!client.connect(host, httpsPort))
@@ -144,7 +144,7 @@ if (error) {
     return;
 }
 
-{% endhighlight %}
+```
 
 Sau khi connect tới host `URL_fw_Version` thành công - nơi lưu trữ thông tin `Plain Text in Project`, chúng ta sẽ tiến hành đọc version hiện có trên sever Repo Github để lấy được giá tri `payload`.
 
@@ -155,7 +155,7 @@ Nếu `version_prod = FirmwareVer` tức là vesion trên sever-URL_fw_Version `
 
 **`Trường hợp 2 version giống nhau`**
 
-{% highlight c linenos %}
+```c
 String author_prod = jsonBuffer["author"];
 String version_prod = jsonBuffer["main"]["version"];
 
@@ -178,13 +178,13 @@ else
     
     ....
 }
-{% endhighlight %}
-
+```
+ 
 **`Trường hợp 2 version khác nhau`**
 
 Ta sử dụng `HTTPS + X509` -> HTTP Request/Respone để gửi yêu cầu sever & chờ kết quả phản hồi: 
 
-{% highlight c linenos %}
+```c
 ESPhttpUpdate.setLedPin(LED_BUILTIN, LOW);
 
 // Add optional callback notifiers
@@ -224,7 +224,7 @@ case HTTP_UPDATE_OK:
     Serial.println("HTTP_UPDATE_OK");
     break;
 }
-{% endhighlight %}
+```
 
 Nếu kết quả `ret` trả về:
 
@@ -246,7 +246,7 @@ Trường hợp này, sau khi download Firmware mới nhất thì ESP sẽ tự 
 
 **`Chương trình`** 
 
-{% highlight c linenos %}
+```c
 
 /* Cập nhật OTA */
 
@@ -453,7 +453,7 @@ void update_FOTA()
     lcd.clear();
     Serial.println("\n<<<<<<<<<< Done Check FOTA \n");
 }
-{% endhighlight %}
+```
 
 <br>
 
@@ -465,7 +465,7 @@ Tuỳ chọn cập nhật OTA chúng ta sẽ có 3 cách như đã trình bày �
 
 Ở cách 1 ngay khi khởi động thiết bị hoặc cấp nguồn:
 
-{% highlight c linenos %}
+```c
 WiFi.mode(WIFI_STA);
 Serial.println("");
 WiFi.printDiag(Serial);
@@ -489,7 +489,7 @@ Welcome_Smartclock();
 Serial.println("Truy cập đến thời tiết địa phương");
 time_dem_thoitiet = millis();
 Weather_Online_sever();
-{% endhighlight %}
+```
 
 > Chúng ta thấy ở dòng 10-11 sẽ có function thực hiện các nhiệm vụ của update OTA.
 
@@ -501,7 +501,7 @@ Weather_Online_sever();
 
 Ở nút nhấn Mode - nhấn giữ 7 giây sẽ vào mode cập nhật OTA
 
-{% highlight c linenos %}
+```c
 ....
 long startTime = millis(); // giá trị ban đầu được gán bằng giá trị hiện tại của millis
 ....
@@ -530,7 +530,7 @@ if (couter_Mode >= 7)
   update_FOTA();
 }
 ......
-{% endhighlight %}
+```
 
 <br>
 

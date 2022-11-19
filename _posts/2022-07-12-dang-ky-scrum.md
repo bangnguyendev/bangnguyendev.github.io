@@ -13,8 +13,9 @@ tags: [scrum, PSM, agile, PROFESSIONAL SCRUM MASTER™ CERTIFICATIONS, PROFESSIO
 ---
 
 <div class="post-img-post">
-    <iframe width="auto" height="auto" src="https://www.youtube.com/embed/p9TjaORt4_Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    Video: Hướng dẫn đăng ký thi lấy chứng chỉ SCRUM.
+    <iframe width="300pxt" height="200px" src="https://www.youtube.com/embed/p9TjaORt4_Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
+    Video: Hướng dẫn đăng ký thi chứng chỉ PSM 1
 </div>
 
 ### Tài liệu thi và đề mẫu
@@ -27,13 +28,13 @@ Các bạn tải về và đọc, học **theo thứ tự** nhé!
 
 `(4, 5, 6)` câu hỏi & đáp án
 
-1. [🙋‍♂️ SCRUM-GUIDE-2020-VIE-THI](/documents/2022-07-12-dang-ky-scrum/SCRUM-GUIDE-2020-VIE-THI.pdf)
-2. [🙋‍♂️ 2020-Scrum-Guide-US Ken Schwaber & Jeff Sutherland](/documents/2022-07-12-dang-ky-scrum/2020-Scrum-Guide-US.pdf)
+1. [🙋‍♂️ SCRUM GUIDE 2020 VIE THI](/documents/2022-07-12-dang-ky-scrum/SCRUM-GUIDE-2020-VIE-THI.pdf)
+2. [🙋‍♂️ 2020 Scrum Guide US Ken Schwaber & Jeff Sutherland](/documents/2022-07-12-dang-ky-scrum/2020-Scrum-Guide-US.pdf)
 3. [🌟 The Scrum Master Training Manual - Management Plaza](/documents/2022-07-12-dang-ky-scrum/Scrum-training-manual.pdf)
 4. [🗝️ ✅ Bo 120 cau hoi dap an](/documents/2022-07-12-dang-ky-scrum/Bo 120 cau hoi dap an.pdf) *cái này mình ghi chú vài câu hỏi thôi.*
-5. [🗝️ ✅ Scrum Open](/documents/2022-07-12-dang-ky-scrum/Scrum Open.pdf) *cái này có hẳn giải thích cho mỗi đáp án.*
-6. [🗝️ ✅ Scrum Open2](/documents/2022-07-12-dang-ky-scrum/Scrum Open2.pdf) *cái này có hẳn giải thích cho mỗi đáp án.*
-7. [🗝️ ✅ Scrum thực tế 07/2022](#bộ-câu-hỏi-nổi-bật-psm1-072022) *đề thi thực tế 07/2022.*
+5. [🗝️ ✅ PSM 1 Open](/documents/2022-07-12-dang-ky-scrum/Scrum Open.pdf) *cái này có hẳn giải thích cho mỗi đáp án.*
+6. [🗝️ ✅ PSM 1 Open2](/documents/2022-07-12-dang-ky-scrum/Scrum Open2.pdf) *cái này có hẳn giải thích cho mỗi đáp án.*
+7. [🗝️ ✅ PSM 1 thực tế 07/2022](#bộ-câu-hỏi-nổi-bật-psm1-072022) *đề thi thực tế 07/2022.*
 
 #### Đây là link thi thử chính chủ SCRUM PSM 30 câu hỏi trong 30 phút
 

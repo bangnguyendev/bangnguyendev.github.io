@@ -69,16 +69,16 @@ Chúng ta có thể áp dụng cho các trường hợp đăng nhập khác.
 
 #### Khai báo thư viện
 - Cách `cài đặt thư viện` ở [link đây](https://selenium-python.readthedocs.io/installation.html)
-{% highlight python linenos %}
+```python
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-{% endhighlight %}
+```
 
 #### Khai báo hằng số cơ bản
 
-{% highlight python linenos %}
+```python
  # ID login (mình xin giấu ID login theo Policy)
 id_B2B = "a5124XXXX"
  # đường dẫn để file IEDriverServer (đối với trình duyệt IE thôi nha :))
@@ -87,23 +87,23 @@ link_IEDriverServer = "D:\\_FreeCommander\\B2B\\IEDriverServer.exe"
 link_B2B = "https://b2b-gateway.XXXXXXXX.com/login/ssl"
  # một mảng các phần tử cấu thành mật khẩu đẫ lấy ở trên
 arr = ["SMX_BTN_16", "SMX_BTN_20", "SMX_BTN_24", "SMX_BTN_28", "SMX_BTN_29", "SMX_BTN_30", "SMX_BTN_31", "SMX_BTN_44"]
-{% endhighlight %}
+```
 
 ### Khởi chạy trình duyệt
 
-{% highlight python linenos %}
+```python
  # khởi chạy trình duyệt với IEDriverServer
 driver = webdriver.Ie(link_IEDriverServer)
  # truy cập vào link đã khai báo ở trên
 driver.get(link_B2B)
  # chờ hồi đáp và làm tiếp nhiệm vụ tiếp theo
 driver.implicitly_wait(30) # seconds
-{% endhighlight %}
+```
 
 ### Xử lý sự kiện
 - Mình sử dụng `try--except` để sử dụng để phòng các trường hợp không mong muốn xảy ra.
 - Khởi chạy cơ bản với các thông số input đã được cấp ở trên:
-{% highlight python linenos %}
+```python
 # tìm kiếm thuộc tính LOGIN_ID, điền ID login vào đó
 driver.find_element_by_name('LOGIN_ID').send_keys(id_B2B)
 # và Click vào Button 'Login'.
@@ -122,7 +122,7 @@ print("Pass : " + password)
 # Tìm nút nhấn OK thôi.
 driver.find_element_by_class_name("btnCustom").click()
 print("Waiting...")
-{% endhighlight %}
+```
 
 - Hình ảnh minh họa:
 <div class="post-img-post">
@@ -141,7 +141,7 @@ print("Waiting...")
 {: .box-warning}
 *You are not allowed to sign in. Please contact your administrator.*
 
-{% highlight python linenos %}
+```python
 try:
 	element = WebDriverWait(driver, 30).until(EC.presence_of_element_located((By.ID, "table_LoginPage_5")))    
 	print("Please connect VPN.")
@@ -153,7 +153,7 @@ except:
 	driver.quit()
 finally:
 	print("Done.")
-{% endhighlight %}
+```
 
 - Tiếp đó nếu tìm thấy ID `table_welcome_2` có nghĩa là đã kết nối tới B2b thành công.
 - Xác nhận thành công thì chạy lệnh thoát trình duyệt `driver.quit()`.

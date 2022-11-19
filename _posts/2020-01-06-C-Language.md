@@ -14,14 +14,14 @@ tags: [c, Language]
 <h1 class="text-center">Hello world!</h1>
 <div class="spacer"></div>
 
-{% highlight c linenos %}
+```c
 #include <stdio.h>
 int main() {
    // printf() displays the string inside quotation
    printf("Hello, World!");
    return 0;
 }
-{% endhighlight %}
+```
 
 Many later languages have borrowed syntax/features directly or indirectly from C language. Like syntax of Java, PHP, JavaScript, and many other languages are mainly based on C language. [C++](https://www.scaler.com/topics/cpp/) is nearly a superset of C language (There are few programs that may compile in C, but not in C++).
 

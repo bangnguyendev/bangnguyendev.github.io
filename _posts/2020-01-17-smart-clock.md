@@ -109,7 +109,7 @@ Với **`công nghiệp 4.0`** như bây giờ cái việc nhà nhà có interne
 **`Để lấy được giờ từ internet`** thì **MCU** của chúng ta phải **có khả năng `kết nối internet`** (hoặc là kết nối không dây hoặc là có dây). Mình sử dụng **ESP8266 Wemos D1 mini** như đã giới thiệu ở trên.
 Thứ khiến mình `băn khoăn` ở đây chính là **vấn đề kết nối mạng** cho em nó. Đối với một số bạn thì dòng `code` này rất quen thuộc:
 
-{% highlight c linenos %}
+```c
 #include <ESP8266WiFi.h>
 
 const char* ssid = "********";
@@ -133,7 +133,7 @@ void setup(void)
 }
 
 void loop() {}
-{% endhighlight %}
+```
 
 **`Nếu sử dụng kiểu này`**, sản phẩm của chúng ta khi đóng hộp sẽ **sử dụng cố định một tên SSID & PASS** duy nhất rất **`bất tiện` trọng quá trình sử dụng** khi chuyển nhà, đổi tên mạng Wifi, vv... Mỗi lần như vậy **chúng ta phải `nạp lại code` để cập nhật ssid và password mới** cho ESP8266 (hoặc là phải đổi tên của modun Wifi thành ssid và pass như chúng ta đã cấu hình trong code).
 
@@ -152,7 +152,7 @@ Vậy thứ **chúng ta cần** là một cái đồng hồ có **khả năng k�
 
 Với việc sử dụng **`Smartconfig`** thì chúng ta cần một **vùng nhớ lưu ssid và pass** phòng khi **reset** đồng hồ hoặc **mất điện** vì lí do nào đó.
 
-{% highlight c linenos %}
+```c
 #include <ESP8266WiFi.h>
 #include <Wire.h>
 #include <EEPROM.h>
@@ -173,7 +173,7 @@ void setup()
 	Serial.println(EEPROM.read(index_eeprom_location_eeprom));
 }
 ...
-{% endhighlight %}
+```
 
 {: .box-note}
 Như các bạn đã thấy trong trích đoạn code trên mình **sử dụng `EEPROM` để lưu** một số `giá trị` cho chức năng **`báo thức`**, **`vị trí địa lí`**, **`ssid & pass wifi`**.

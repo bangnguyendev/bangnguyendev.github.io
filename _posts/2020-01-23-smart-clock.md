@@ -41,7 +41,7 @@ Không riêng gì dự án này, ở một số dự án IoT nếu muốn thiế
 
   - [`Code giúp ESP8266`](/documents/2020-01-23-smart-clock/Code-Smartconfig/Smartconfig.ino "Source Code") - Wemos D1 mini có khả năng lưu trữ và thay đổi wifi:
 
-{% highlight c linenos %}
+```c
 #include <ESP8266WiFi.h>
 #include <Wire.h>
 #include <EEPROM.h>
@@ -208,7 +208,7 @@ void loop()
 }
 
 ...
-{% endhighlight %}
+```
 
   - <kbd>void smartConfig_ndb()</kbd> trong đoạn code trên mình tạo một hàm riêng , trong quá trình sử dụng thiết bị nếu chúng ta `muốn thay đổi wifi` thì chỉ việc gọi hàm này ra.
   - **Sử dụng ứng dụng Smartconfig**: khi `Wemos D1 mini` vào chế độ `Smartconfig` chúng ta mở điện thoại đã cài đặt thành công ứng dụng, nhập dữ liệu tên wifi và pass và nhấn **`Comfirm`** - hình ảnh minh họa phía dưới. 
@@ -218,7 +218,7 @@ void loop()
 
   ![ntp sever](/img/2020-01-23-smart-clock/ntp_sever.jpg){: .center-block .img-rounded :}
 
-{% highlight c linenos %}
+```c
 #include "time.h"
 
 const char* ntpServer = "pool.ntp.org";
@@ -264,7 +264,7 @@ void printLocalTime()
   }
   Serial.println(&timeinfo, " %d %B %Y %H:%M:%S ");
 }
-{% endhighlight %}
+```
 
   - Tham khảo cách hiển thị thời gian [tại đây](/documents/2020-01-23-smart-clock/ntp-time/Gravity_date_codes.pdf).
   - Sau khi hiểu cách thức hoạt động và lấy thông tin thời gian cần thiết cho dự án của mình, việc tiếp theo chúng ta cần quan tâm là lựa chọn và sắp xếp bố cục thông tin thời gian trên LCD 20x04.
@@ -279,7 +279,7 @@ void printLocalTime()
 
   ![Lưu đồ hiển thị](/img/2020-01-23-smart-clock/hien-thi-thoi-gian-Diagram.png){: .center-block .img-rounded :}
 
-{% highlight c linenos %}
+```c
 ...
 if (giay / 1 % 10 < 5)
 /* Mỗi chế độ hiển thị 5 giây */
@@ -469,7 +469,7 @@ lcd.setCursor(17, 3);
 lcd.print(":");
 lcd.print(buffer_GIAY);
 ...
-{% endhighlight %}
+```
 
 ### Đồng bộ thời tiết từ OpenWeatherMap
 
@@ -477,7 +477,7 @@ lcd.print(buffer_GIAY);
   - Khởi động thiết bị và đọc vị trí lưu ở EEPROM
   - Sử dụng vị trí đã lưu để cập nhập thời tiết
   - Cứ mỗi 10 phút chúng ta sẽ update dữ liệu thời tiết tại vị trí đang set trước đó qua hàm `Call_Weather_Every_10Min()`
-{% highlight c linenos %}
+```c
 /* Hàm gọi thời tiết mỗi 10 phút một lần */
 void Call_Weather_Every_10Min()
 {
@@ -487,9 +487,9 @@ void Call_Weather_Every_10Min()
     Weather_Online_sever();
   }
 }
-{% endhighlight %}
+```
   - Trong quá trình sử dụng nếu chúng ta muốn thay đổi vị trí thì gọi hàm `Choose_location()`
-{% highlight c linenos %}
+```c
 /* Chon vi tri doc gia tri thoi tiet */
 void Choose_location()
 {
@@ -689,10 +689,10 @@ void Choose_location()
   delay(300);
   digitalWrite(signal_Bell, ESP_NB_OFF);
 }
-{% endhighlight %}
+```
   - Trước khi hàm `Choose_location()` kết thúc vị trí sẽ được lưu vào EEPROM và lưu vào biến `Location`
   - Gọi hàm `Weather_Online_sever()` để cập nhật thời tiết 
-{% highlight c linenos %}
+```c
 /* Lay gia tri thoi tiet tai vi tri da chon */
 void Weather_Online_sever()
 {
@@ -752,7 +752,7 @@ void Weather_Online_sever()
     yield();	// disble Soft WDT reset - NodeMCU
   }
 }
-{% endhighlight %}
+```
 
 ------------------------------------------------------------
 

@@ -39,6 +39,7 @@ layout: base
       {% endif %}
   
       <article role="main" class="blog-post">
+        <!-- Table of Contents -->
         <div class=toc>
           <details>
                   <summary accesskey=c title="(Alt + C)">
@@ -49,8 +50,10 @@ layout: base
                   </div>
           </details>
         </div>
-
-        {{ content }}
+        <!-- Contents -->
+        <div class="line-numbers">
+          {{ content }}
+        </div>
       </article>
   
       {% if page.tags.size > 0 %}

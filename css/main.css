@@ -1036,7 +1036,7 @@ table tr td :last-child {
 }
 
 /* --- Code blocks --- */
-
+/* 
 pre {
   font-size: 16px;
   line-height: 1.5em;
@@ -1085,7 +1085,7 @@ td.code pre {
 
 td.gutter {
   padding-top: 3px;
-}
+} */
 
 /* --- Social media sharing section --- */
 

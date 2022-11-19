@@ -65,7 +65,7 @@ Như trong hình thì khoảng thời gian `Fluctuations` chính là lúc xảy 
 Để khắc phục tình trạng trên thì khi coding chúng ta sử dụng phương pháp chống dội bằng `delay()` (có nhiều phương pháp, mỗi phương pháp có ưu điểm, nhược điểm khác nhau. Với **#tag** mình để phía trên các bạn có thể tìm kiếm `google` để tìm hiểu thêm).
 
 **Source code mẫu:**
-{% highlight c linenos %}
+```c
 if (digitalRead(Button_Mode) == HIGH) // nếu nút bấm ở mức cao
 {
     delay(500); //check chac chan la do ng nhan nut
@@ -74,7 +74,7 @@ if (digitalRead(Button_Mode) == HIGH) // nếu nút bấm ở mức cao
         // thực hiện lệnh
     }
 }
-{% endhighlight %}
+```
 *Nhìn vào Source code mẫu:*
 
 Lệnh <kbd>#line1</kbd> sẽ check xem nút nhấn có đang được nhấn hay không - **`HIGH`**? 
@@ -125,7 +125,7 @@ Tại thời điểm <kbd>#line327</kbd>, lệnh `while (digitalRead(Button_Mode
 *Các bạn nhìn hình mô phỏng khoảng thời gian ở trên cho dễ hiểu nhé.*
 
 **Source code:**
-{% highlight c linenos %}
+```c
 long startTime = millis(); // giá trị ban đầu được gán bằng giá trị hiện tại của millis
 // Serial.printf("digitalRead(Button_Mode): ");
 // Serial.println(digitalRead(Button_Mode));
@@ -185,7 +185,7 @@ while (digitalRead(Button_Mode) == HIGH) // đợi cho nút bấm được giữ
 	}
 	yield(); // disble Soft WDT reset - NodeMCU
 };
-{% endhighlight %}
+```
 
 Kết quả trả về của `couter_Mode` vẫn là mili giây nên chúng ta chia cho 1000 để đổi sang giây tiện việc theo dõi số liệu.
 

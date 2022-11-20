@@ -92,7 +92,7 @@ pre[class*=language-plaintext] {
 
 :not(pre)>code[class*=language-plaintext],
 pre[class*=language-plaintext] {
-    background: #6c0606;
+    background: #342d7b;
 }
 
 :not(pre)>code[class*=language-plaintext] {

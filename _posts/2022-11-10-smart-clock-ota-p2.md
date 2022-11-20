@@ -51,7 +51,7 @@ Ví dụ, các bạn thấy windows, smartphone,... thường xuyên có các b�
 
 Khi sản phẩm của các bạn mang tính thương mại, các thiết bị có thể lỗi thời về mặt `công nghệ mềm` nhưng `phần cứng vẫn cho phép` thì chúng ta nên sử dụng OTA thông qua internet để thêm hoặc bớt tính năng, sửa lỗi...
 
-Vậy nên, chúng ta cần nạp FOTA thông qua Internet. Có một `máy chủ lưu trữ `và `quản lý version` của sản phẩm của bạn
+Vậy nên, chúng ta cần nạp FOTA thông qua Internet. Có một `máy chủ lưu trữ` và `quản lý version` của sản phẩm của bạn
 
 ### ⚙️ Nguyên lý FOTA Internet
 

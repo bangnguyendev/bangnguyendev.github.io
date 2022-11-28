@@ -4,7 +4,7 @@ title: Contact Info
 meta-title: Contact Info
 subtitle: "For a start, my favorite quote is, <br> Do what you love, love what you do."
 bigimg:
-  - "/img/My_Picture/DalatView_xedap_ngang.jpg" : "DaLat View"
+  - "/img/My_Picture/DalatView_xedap_ngang.webp" : "DaLat View"
 ---
 
 

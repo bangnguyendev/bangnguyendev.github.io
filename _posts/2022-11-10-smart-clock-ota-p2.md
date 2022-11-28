@@ -4,8 +4,8 @@ title: "P2: Over the Air - OTA cho ESP8266"
 meta-title: "P2: OTA cho ESP8266"
 subtitle: "...sử dụng HTTPS Github Repo."
 bigimg:
-  - "/img/2022-10-25-smart-clock-ota/update-internet-of-things-iot-cheat-sheet.jpeg"
-image: /img/2022-10-25-smart-clock-ota/logo.png
+  - "/img/2022-10-25-smart-clock-ota/update-internet-of-things-iot-cheat-sheet.webp"
+image: /img/2022-10-25-smart-clock-ota/logo.webp
 tags: [OTA, OTA firmware, firmware, esp8266, adruino, https, github ]
 # gh-repo: bangnguyendev/SmartClock
 # gh-badge: [star, watch, fork, follow]
@@ -23,7 +23,7 @@ Trong tất cả các trường hợp, thì `Firmware hỗ trợ OTA phải đư
   - Link tham khảo từ `arduino.esp8266.vn` [Cập nhật firmware](https://arduino.esp8266.vn/network/ota.html "arduino.esp8266.vn - Cập nhật firmware")
 
 <div class="post-img-post">
-    <img src="/img/2022-10-25-smart-clock-ota/updatemodel.png">
+    <img src="/img/2022-10-25-smart-clock-ota/updatemodel.webp">
 	<br>
 	Quy trình hoạt động của OTA
 </div>
@@ -538,7 +538,7 @@ if (couter_Mode >= 7)
 
 Ở cách 3 chúng ta sẽ chèn `void update_FOTA();` vào mỗi hàng tuần/tháng/năm định kỳ để kiểm tra bản cập nhật.
 <div class="post-img-post">
-    <img src="/img/2022-10-25-smart-clock-ota/loop.png">
+    <img src="/img/2022-10-25-smart-clock-ota/loop.webp">
 </div>
 <br>
 
@@ -559,7 +559,7 @@ Updater nằm trong Core và dùng để xử lí việc viết firmware lên fl
 - Sketch mới khởi động.
 
 <div class="post-img-post">
-    <img src="/img/2022-10-25-smart-clock-ota/memory-view.png">
+    <img src="/img/2022-10-25-smart-clock-ota/memory-view.webp">
 	<br>
 	Update process - memory view
 </div>

@@ -3,7 +3,14 @@ layout: null
 ---
 
 @import url("pygment_highlights.css");
-
+@font-face {
+  font-family: f_ndb-transbox;
+  src: url(/font/UTM_Beautiful_Caps.ttf);
+}
+@font-face {
+  font-family: f_typed_caption;
+  src: url(/font/VfBold42.ttf);
+}
 /* CSS cho nút search */
 .search-page {
   position: fixed;
@@ -108,34 +115,20 @@ body {
   font-size: 18px;
   color: #404040;
   position: relative;
-  background: #FFF;
-
+  background: linear-gradient(rgba(255,255,255,.3), rgba(255, 255, 255, 0.3)), url("/img/Wedding/wedding-background.jpg");
+  {    % if site.page-col %  }
+    background: 
+  {
     {
-    % if site.page-col %
-  }
-
-  background: {
-      {
       site.page-col
     }
-  }
+  };
+  {    % endif %  }
 
-  ;
-
-    {
-    % endif %
-  }
-
-    {
-    % if site.page-img %
-  }
-
-  background-image: url({{ site.page-img }});
-  background-attachment: fixed;
-
-    {
-    % endif %
-  }
+  {    % if site.page-img %  }
+    background-image: url({{ site.page-img }});
+    background-attachment: fixed;
+    {    % endif %  }
 }
 
 p {
@@ -154,8 +147,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 800;
+}
+
+h2.post-title{
+  color: rgb(211, 53, 25);
+  text-shadow: 1px 1px 2px rgb(252, 249, 82);
+  font-family: f_typed_caption;
 }
 
 /* === HEADING STYLE #3 === */
@@ -305,6 +303,7 @@ img {
 }
 
 .navbar-custom .navbar-brand {
+  text-align: center;
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 800;
@@ -571,10 +570,11 @@ footer .theme-by {
 
 .post-preview .post-meta,
 .post-heading .post-meta {
-  color: #808080;
+  color: #e7e7e7;
   font-size: 18px;
   font-style: italic;
   margin: 0 0 10px;
+  font-family: f_typed_caption;
 }
 
 .post-preview .post-entry {
@@ -662,12 +662,17 @@ footer .theme-by {
 } */
 
 .ndb-transbox {
+  display: inline-table;
   height: max-content;
   width: fit-content;
   padding-left: 10px;
   padding-right: 10px;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(255, 110, 110, 0.459);
   border-radius: 15px;
+}
+
+.ndb-transbox > h1{
+  font-family: f_ndb-transbox;
 }
 
 /* Bang Nguyen thêm */
@@ -682,6 +687,7 @@ footer .theme-by {
   border-radius: 25px;
 }
 
+
 /* Cập nhật cho chữ chạy thì không bị nhảy lên nhảy xuống. Khóa kích thuocs vùng hiern thị chữ chạy. */
 .typed_caption {
   width: auto;
@@ -690,6 +696,9 @@ footer .theme-by {
   margin-right: auto;
   padding-bottom: 10px;
   padding-top: 5px;
+  font-family: f_typed_caption;
+  color: rgba(238, 255, 89, 0.836);
+  text-shadow: 1px 1px 2px #890000b4;
 }
 
 /* Cập nhật khoảng cách cho bài viết với ảnh bìa.  */
@@ -704,22 +713,23 @@ footer .theme-by {
 /* --- Tags --- */
 
 .blog-tags {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #999;
+  color: rgb(255, 255, 255);
   font-size: 15px;
   margin-bottom: 30px;
+  /* text-shadow: 1px 1px 2px #e6f05eb9; */
+  font-family: f_typed_caption;
 }
 
 .blog-tags a {
-  color: #008AFF;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   padding: 0px 5px;
 }
 
 .blog-tags a:hover {
-  border-radius: 2px;
-  color: #008AFF;
-  background-color: #EEE;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(234, 243, 194, 0.342);
 }
 
 .post-preview .blog-tags {
@@ -778,7 +788,7 @@ footer .theme-by {
 .intro-header.big-img .post-heading {
   padding: 100px 0;
   color: #FFF;
-  text-shadow: 1px 1px 3px #000;
+  text-shadow: 1px 0px 2px rgb(231, 126, 77);
 }
 
 .intro-header .page-heading h1 {
@@ -790,13 +800,16 @@ footer .theme-by {
   margin-top: 0;
   font-size: 35px;
 }
-
+@font-face {
+  font-family: myFirstFont;
+  src: url(/font/ChopinScript.ttf);
+}
 .intro-header .page-heading .page-subheading,
 .intro-header .post-heading .post-subheading {
-  font-size: 27px;
+  font-size: 35px;
   line-height: 1.1;
   display: block;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: myFirstFont;
   font-weight: 300;
   margin: 10px 0 0;
 }

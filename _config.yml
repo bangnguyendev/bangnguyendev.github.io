@@ -1,6 +1,6 @@
 # --- General options --- #
 # Name of website
-title: ✨Bằng Nguyễn✨
+title: Bằng 💞 Hiền
 
 #For my changes
 # use meta-title: for the center heading of the page.
@@ -13,19 +13,8 @@ description: Embedded Systems Engineer
 # --- Navigation bar options --- #
 # List of links in the navigation bar
 navbar-links:
-  📚Books: "books"
-  👨‍💻About Me: 
-    - 🧧Resume🧧: "resume/Nguyen-Duy-Bang-CV.pdf"
-    - About Me: aboutme
-    - Contact: Contact-info-NFC
-    - LinkedIn: "https://www.linkedin.com/in/bangnguyenduy"
-    - Github: "https://github.com/bangnguyendev"
-  📌Projects:
-    - Smart Clock: "https://github.com/bangnguyendev/SmartClock"
-    - Sent Data ThingSpeak: "https://github.com/bangnguyendev/SentDataThingSpeak"  
-    - Vehicle Speed GPS: "https://github.com/bangnguyendev/VehicleSpeedGPS"    
-    - STM32 RTC RFID: "https://github.com/bangnguyendev/STMF1_RTCBackup_RFID"
-    - PWM Sine Wave Generator: "https://github.com/bangnguyendev/PWMSineWaveGenerator"
+  📚Google Map: "books"
+  🧧About Me: "resume/Nguyen-Duy-Bang-CV.pdf"
   🗝️Tags: tags #thay thế bằng nút tìm kiếm.
 
 # Image to show in the navigation bar - image must be a square (width = height)
@@ -51,15 +40,11 @@ author:
 
 # Select which links to show in the footer
 footer-links-active:
-  rss: true
   facebook: true
   email: true
-  twitter: true
   github: true
   linkedin: true
   instagram: true
-  reddit: false
-  stackoverflow: true
   youtube: true
   telephone: true
 

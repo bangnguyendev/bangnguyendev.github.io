@@ -1,4 +1,4 @@
-const words = ["Technology.","Python.", "Photography.", "Open Source.", "Linux."];
+const words = ["Welcome to the Weddings.","Python.", "Photography.", "Open Source.", "Linux."];
 let i = 0;
 let timer;
 
@@ -31,7 +31,7 @@ function deletingEffect() {
 			typingEffect();
 			return false;
 		};
-		timer = setTimeout(loopDeleting, 100);
+		timer = setTimeout(loopDeleting, 10);
 	};
 	loopDeleting();
 };

@@ -4,12 +4,20 @@ layout: null
 
 @import url("pygment_highlights.css");
 @font-face {
+  font-family: myFirstFont;
+  src: url(/font/UTM\ Diana.ttf);
+}
+@font-face {
   font-family: f_ndb-transbox;
   src: url(/font/UTM_Beautiful_Caps.ttf);
 }
 @font-face {
   font-family: f_typed_caption;
   src: url(/font/VfBold42.ttf);
+}
+@font-face {
+  font-family: f_post-entry;
+  src: url(/font/UTM_Spring.ttf);
 }
 /* CSS cho nút search */
 .search-page {
@@ -578,7 +586,10 @@ footer .theme-by {
 }
 
 .post-preview .post-entry {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: f_post-entry;
+  color: rgba(250, 252, 121, 0.752);
+  text-shadow: 1px 2px 3px #ad0a0aab;
+  font-size: 22px;
 }
 
 .post-entry-container {
@@ -595,7 +606,7 @@ footer .theme-by {
   float: right;
   height: 192px;
   width: 192px;
-  filter: grayscale(90%);
+  filter: grayscale(40%);
   margin-top: -50px;
 }
 
@@ -800,10 +811,7 @@ footer .theme-by {
   margin-top: 0;
   font-size: 35px;
 }
-@font-face {
-  font-family: myFirstFont;
-  src: url(/font/ChopinScript.ttf);
-}
+
 .intro-header .page-heading .page-subheading,
 .intro-header .post-heading .post-subheading {
   font-size: 35px;
@@ -838,12 +846,12 @@ footer .theme-by {
 }
 
 .intro-header.big-img .img-desc {
-  background: rgba(30, 30, 30, 0.6);
+  background: rgba(255, 0, 0, 0.4);
   position: absolute;
   padding: 5px 10px;
-  font-size: 11px;
+  font-size: 15px;
   color: #EEE;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: f_typed_caption;
   right: 0;
   bottom: 0;
   display: none;

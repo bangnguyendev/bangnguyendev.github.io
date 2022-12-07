@@ -694,10 +694,14 @@ footer .theme-by {
   /* padding-right: 65px; */
   padding-top: 10px;
   padding-bottom: 20px;
-  background-color: #f087d01f;
+  background-color: #f0cf8785;
   border-radius: 25px;
+  font-family: f_typed_caption;
 }
-
+.contact_NFC a {
+  color: #890000;
+  text-shadow: 1px 1px 2px #c0392b;
+}
 
 /* Cập nhật cho chữ chạy thì không bị nhảy lên nhảy xuống. Khóa kích thuocs vùng hiern thị chữ chạy. */
 .typed_caption {

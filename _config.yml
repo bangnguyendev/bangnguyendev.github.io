@@ -14,7 +14,7 @@ description: Embedded Systems Engineer
 # List of links in the navigation bar
 navbar-links:
   📚Google Map: "books"
-  🧧About Me: "resume/Nguyen-Duy-Bang-CV.pdf"
+  🧧Wedding Gifts: "Wedding-gifts"
   🗝️Tags: tags #thay thế bằng nút tìm kiếm.
 
 # Image to show in the navigation bar - image must be a square (width = height)

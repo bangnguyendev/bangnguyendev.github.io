@@ -19,6 +19,19 @@ layout: null
   font-family: f_post-entry;
   src: url(/font/UTM_Spring.ttf);
 }
+@font-face {
+  font-family: f_thiep_moi;
+  src: url(/font/UTM\ Nokia.ttf);
+}
+
+.thiep_moi {
+  color: rgb(211, 53, 25);
+  text-shadow: 1px 1px 2px rgb(252, 249, 82);
+  font-family: f_thiep_moi;
+  font-size: medium;
+  background-color: #fff17070;
+  border-radius: 15px;
+}
 /* CSS cho nút search */
 .search-page {
   position: fixed;

@@ -13,7 +13,7 @@ description: Embedded Systems Engineer
 # --- Navigation bar options --- #
 # List of links in the navigation bar
 navbar-links:
-  📚Google Map: "books"
+  📚Google Map: "https://goo.gl/maps/MyqF8JMmxgX19Uh66"
   🧧Wedding Gifts: "Wedding-gifts"
   🗝️Tags: tags #thay thế bằng nút tìm kiếm.
 

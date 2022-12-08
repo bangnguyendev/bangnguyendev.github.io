@@ -29,8 +29,10 @@ layout: null
   text-shadow: 1px 1px 2px rgb(252, 249, 82);
   font-family: f_thiep_moi;
   font-size: medium;
-  background-color: #fff17070;
+  background-color: #fff17050;
   border-radius: 15px;
+  box-shadow: 1px 8px 30px #890000;
+  padding: 15px;
 }
 /* CSS cho nút search */
 .search-page {
@@ -689,10 +691,10 @@ footer .theme-by {
   display: inline-table;
   height: max-content;
   width: fit-content;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 15px;
   background: rgba(255, 110, 110, 0.459);
   border-radius: 15px;
+  box-shadow: 1px 8px 30px #890000;
 }
 
 .ndb-transbox > h1{

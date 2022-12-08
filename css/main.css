@@ -13,7 +13,7 @@ layout: null
 }
 @font-face {
   font-family: f_typed_caption;
-  src: url(/font/VfBold42.ttf);
+  src: url(/font/UTM\ Nokia.ttf);
 }
 @font-face {
   font-family: f_post-entry;
@@ -573,7 +573,7 @@ footer .theme-by {
 }
 
 .post-preview .post-title {
-  font-size: 30px;
+  font-size: 22px;
   margin-top: 0;
 }
 
@@ -592,7 +592,7 @@ footer .theme-by {
 .post-preview .post-meta,
 .post-heading .post-meta {
   color: #e7e7e7;
-  font-size: 18px;
+  font-size: 12px;
   font-style: italic;
   margin: 0 0 10px;
   font-family: f_typed_caption;
@@ -742,7 +742,7 @@ footer .theme-by {
 
 .blog-tags {
   color: rgb(255, 255, 255);
-  font-size: 15px;
+  font-size: 10px;
   margin-bottom: 30px;
   /* text-shadow: 1px 1px 2px #e6f05eb9; */
   font-family: f_typed_caption;

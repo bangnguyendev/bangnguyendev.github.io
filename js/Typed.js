@@ -1,4 +1,4 @@
-const words = ["Welcome To Our Wedding", "  ", "Duy Bang & Dieu Hien", "  "];
+const words = ["Welcome To Our Wedding  ", "  ", "Duy Bằng & Diệu Hiền  ", "  "];
 let i = 0;
 let timer;
 

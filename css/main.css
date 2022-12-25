@@ -23,6 +23,10 @@ layout: null
   font-family: f_thiep_moi;
   src: url(/font/UTM\ Nokia.ttf);
 }
+@font-face {
+  font-family: f_audio_mp3;
+  src: url(/font/UTM\ Nokia.ttf);
+}
 
 .thiep_moi {
   color: rgb(211, 53, 25);
@@ -39,7 +43,7 @@ layout: null
   color: rgb(211, 53, 25);
   text-shadow: 1px 1px 2px rgb(252, 249, 82);
   font-family: f_thiep_moi;
-  font-size: 12px;
+  font-size: 10px;
   background-color: #fff17050;
   border-radius: 15px;
   box-shadow: 1px 8px 30px #890000;
@@ -50,7 +54,7 @@ layout: null
   text-align: center;
   color: rgb(211, 53, 25);
   text-shadow: 1px 1px 2px rgb(252, 249, 82);
-  font-family: f_thiep_moi;
+  font-family: f_audio_mp3;
   font-size: 12px;
   background-color: #fff17050;
   border-radius: 15px;

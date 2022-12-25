@@ -19,15 +19,53 @@ bigimg:
 
 <!-- Recent Posts -->
 <div class="thiep_moi">
-  <h2 style="text-align: center;">Trân trọng kính mời!</h2>
-  <p style="text-align: center;">11h30 Chủ Nhật<br />
-    05/02/2023<br />
-    Nhằm ngày 15 tháng 1 năm Quý Mão<br />
+  <h2 style="text-align: center;">Lễ Thành Hôn</h2>
+  <p style="text-align: center;">
+    Được tổ chức vào hồi 11h00 Chủ Nhật<br />
+    12/02/2023<br />
+    Nhằm ngày 22 tháng 1 năm Quý Mão<br />
     <br />
-    Nhà hàng ... ... ...<br />
-    Địa chỉ: ... ..... ... ..</p>
-  <p style="text-align: center;">&nbsp;</p>  
+    Sự hiện diện của quý khách là niềm vinh hạnh của gia đình chúng tôi<br />
+  </p>
+  
+  <table class="thiep_moi_thanh_hon" style="border-collapse: collapse; width: 100%;" border="1">
+    <tbody>
+    <tr>
+    <td style="width: 45%; text-align: center;">Nh&agrave; G&aacute;i</td>
+    <td style="width: 10%; text-align: center;font-size: 40px;">👩‍❤️‍💋‍👨</td>
+    <td style="width: 45%; text-align: center;">Nh&agrave; Trai</td>
+    </tr>
+    <tr>
+    <td style="width: 45%; text-align: center;">Nguyễn Văn A<br />Cao Thị B</td>
+    <td style="width: 10%; text-align: center;font-size: 40px;">💕</td>
+    <td style="width: 45%; text-align: center;">Nguyễn Văn A<br />Cao Thị B</td>
+    </tr>
+    </tbody>
+  </table>
 </div>
+
+<!-- Chèn khoảng trống -->
+<div class="spacer"><br /></div>
+<!-- Chèn khoảng trống -->
+<div class="spacer"><br /></div>
+
+<div class="thiep_moi">
+  <h2 style="text-align: center;">Trân trọng kính mời!</h2>
+  <p style="text-align: center;">
+    TỚI DỰ BỮA TRƯA THÂN MẬT CÙNG GIA ĐÌNH<br />
+    VÀO LÚC 11H30 Chủ Nhật<br />
+    12/02/2023<br />
+    Nhằm ngày 22 tháng 1 năm Quý Mão<br />
+    <br />
+    TẠI Nhà hàng Bá Hùng.<br />
+    Địa chỉ: 126A Nguyễn Tất Thành, Phước Nguyễn, Bà Rịa, Bà Rịa - Vũng Tàu</p>
+</div>
+
+<audio controls autoplay muted loop>
+  <source src="/img/KieuHoa.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
 <!-- Chèn khoảng trống -->
 <div class="spacer"></div>
 <!-- site body (untouched)-->
@@ -38,11 +76,11 @@ bigimg:
     <a href="{{ post.url | prepend: site.baseurl }}">
       <h2 class="post-title">{{ post.title }}</h2>
 
-      {% if post.subtitle %}
+      <!-- {% if post.subtitle %}
       <div class="post-subtitle">
         {{ post.subtitle }}
       </div>
-      {% endif %}
+      {% endif %} -->
     </a>
     <!-- Ngày tháng bài đăng -->
     <p class="post-meta">

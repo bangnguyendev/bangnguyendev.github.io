@@ -8,33 +8,15 @@ bigimg:
 ---
 
 
-<div class="contact_NFC">
-  <h3>
-  <a href="tel:{{ site.author.telephone }}" target="_blank" rel="noopener" title="Phone">
-    <span class="fa-stack fa-lg" aria-hidden="true">
-      <i class="fa fa-circle fa-stack-2x"></i>
-      <i class="fa fa-phone-square fa-stack-1x fa-inverse"></i>
-    </span>
-    <span class="sr-only">Phone</span> Call Me
-  </a>
-  <br>
-  <a href="https://zalo.me/{{ site.author.telephone }}" target="_blank" rel="noopener" title="Zalo">
-    <span class="fa-stack fa-lg" aria-hidden="true">
-      <i class="fa fa-circle fa-stack-2x"></i>
-      <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
-    </span>
-    <span class="sr-only">Zalo</span> Zalo
-  </a>
-  <br>
-  <a href="https://nhantien.momo.vn/{{ site.author.telephone }}" target="_blank" rel="noopener" title="MoMo">
-    <span class="fa-stack fa-lg" aria-hidden="true">
-      <i class="fa fa-circle fa-stack-2x"></i>
-      <i class="fa fa-money fa-stack-1x fa-inverse"></i>
-    </span>
-  <span class="sr-only">MoMo</span> MoMo
-  </a>
-  <br>
+<div class="thiep_moi">
 
-  </h3>
+  <div class="post-img-post">
+   <img src="/img/MOMO.JPG"><br>
+  </div>
+
+  <div class="post-img-post">
+   <img src="/img/VIETQRCODE.png"><br>
+  </div>
+
 </div>
  

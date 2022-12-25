@@ -34,6 +34,17 @@ layout: null
   box-shadow: 1px 8px 30px #890000;
   padding: 15px;
 }
+
+.thiep_moi_thanh_hon {
+  color: rgb(211, 53, 25);
+  text-shadow: 1px 1px 2px rgb(252, 249, 82);
+  font-family: f_thiep_moi;
+  font-size: 12px;
+  background-color: #fff17050;
+  border-radius: 15px;
+  box-shadow: 1px 8px 30px #890000;
+  padding: 15px;
+}
 /* CSS cho nút search */
 .search-page {
   position: fixed;
@@ -177,6 +188,7 @@ h2.post-title{
   color: rgb(211, 53, 25);
   text-shadow: 1px 1px 2px rgb(252, 249, 82);
   font-family: f_typed_caption;
+  line-height: 1.4;
 }
 
 /* === HEADING STYLE #3 === */
@@ -703,19 +715,18 @@ footer .theme-by {
 
 /* Bang Nguyen thêm */
 .contact_NFC {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 40px;
-  /* padding-right: 65px; */
-  padding-top: 10px;
-  padding-bottom: 20px;
-  background-color: #f0cf8785;
-  border-radius: 25px;
-  font-family: f_typed_caption;
+  color: rgb(211, 53, 25);
+  text-shadow: 1px 1px 2px rgb(252, 249, 82);
+  font-family: f_thiep_moi;
+  font-size: medium;
+  background-color: #fff17050;
+  border-radius: 15px;
+  box-shadow: 1px 8px 30px #890000;
+  padding: 15px;
 }
 .contact_NFC a {
   color: #890000;
-  text-shadow: 1px 1px 2px #c0392b;
+  text-shadow: 1px 1px 2px #cea229;
 }
 
 /* Cập nhật cho chữ chạy thì không bị nhảy lên nhảy xuống. Khóa kích thuocs vùng hiern thị chữ chạy. */
@@ -1040,29 +1051,30 @@ table {
 }
 
 table tr {
-  border-top: 1px solid #cccccc;
-  background-color: #ffffff;
+  border-top: 1px solid #cccccc00;
+  background-color: #ffffff00;
   margin: 0;
   padding: 0;
 }
 
 table tr:nth-child(2n) {
-  background-color: #f8f8f8;
+  background-color: #f8f8f800;
 }
 
 table tr th {
   font-weight: bold;
-  border: 1px solid #cccccc;
+  border: 1px solid #cccccc00;
   text-align: left;
   margin: 0;
   padding: 6px 13px;
 }
 
 table tr td {
-  border: 1px solid #cccccc;
+  border: 1px solid #cccccc00;
   text-align: left;
   margin: 0;
   padding: 6px 13px;
+  background-color: rgba(128, 128, 128, 0);
 }
 
 table tr th :first-child,

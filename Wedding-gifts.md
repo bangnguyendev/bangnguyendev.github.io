@@ -7,6 +7,18 @@ bigimg:
 - "/img/Wedding/wedding-background.jpg" : "Save the date"
 ---
 
+<div class="thiep_moi">
+  <h2 style="text-align: center;">Trân trọng kính mời!</h2>
+  <p style="text-align: center;">
+    TỚI DỰ BỮA TRƯA THÂN MẬT CÙNG GIA ĐÌNH<br />
+    VÀO LÚC 11H30 Chủ Nhật<br />
+    12/02/2023<br />
+    Nhằm ngày 22 tháng 1 năm Quý Mão<br />
+    <br />
+    TẠI Nhà hàng Bá Hùng.<br />
+    Địa chỉ: 126A Nguyễn Tất Thành, Phước Nguyễn, Bà Rịa, Bà Rịa - Vũng Tàu</p>
+</div>
+
 
 <div class="thiep_moi">
 

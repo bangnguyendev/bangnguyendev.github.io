@@ -45,6 +45,18 @@ layout: null
   box-shadow: 1px 8px 30px #890000;
   padding: 15px;
 }
+
+.audio_mp3 {
+  text-align: center;
+  color: rgb(211, 53, 25);
+  text-shadow: 1px 1px 2px rgb(252, 249, 82);
+  font-family: f_thiep_moi;
+  font-size: 12px;
+  background-color: #fff17050;
+  border-radius: 15px;
+  box-shadow: 1px 8px 30px #890000;
+  padding: 15px;
+}
 /* CSS cho nút search */
 .search-page {
   position: fixed;

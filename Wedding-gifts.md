@@ -19,11 +19,11 @@ bigimg:
     Địa chỉ: 126A Nguyễn Tất Thành, Phước Nguyễn, Bà Rịa, Bà Rịa - Vũng Tàu</p>
 </div>
 
-
+<br /><br />
 <div class="thiep_moi">
 
   <div class="post-img-post">
-   <img src="/img/MOMO.JPG"><br>
+   <img src="/img/MOMO.jpg"><br>
   </div>
 
   <div class="post-img-post">

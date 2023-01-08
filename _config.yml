@@ -13,7 +13,10 @@ description: Embedded Systems Engineer
 # --- Navigation bar options --- #
 # List of links in the navigation bar
 navbar-links:
-  📚Google Map: "https://goo.gl/maps/MyqF8JMmxgX19Uh66"
+  🗺️Google Map:
+  - 💒Thánh Đường Châu Pha: "https://goo.gl/maps/fMRGNTTvUPWfXKj66"
+  - 🏡Tư Gia Nhà Trai: "https://goo.gl/maps/uFbDShzd3826aTY68"
+  - 🍻Nhà Hàng Bá Hùng: "https://goo.gl/maps/MyqF8JMmxgX19Uh66"
   🧧Wedding Gifts: "Wedding-gifts"
   🗝️Tags: tags #thay thế bằng nút tìm kiếm.
 

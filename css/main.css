@@ -663,6 +663,7 @@ footer .theme-by {
   height: 160px;
   width: 160px;
   margin: 20px;
+  box-shadow: 1px 8px 30px #890000;
 }
 
 .post-preview .post-read-more {

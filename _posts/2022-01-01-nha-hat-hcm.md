@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Chapter 2: Nhà hát Thành Phố"
-meta-title: "Chapter 2: "
-subtitle: "...Nhà hát Thành Phố."
+title: "Nhà hát Thành Phố"
+meta-title: "Nhà hát Thành Phố"
+subtitle: "..."
 bigimg:
 - "/img/Wedding/wedding-background.jpg" : "Save the date"
 image: /img/Wedding/nha_hat_1.jpg

@@ -646,11 +646,11 @@ footer .theme-by {
 
 /* Khung ngoai */
 .post-image {
-  float: right;
-  height: 192px;
-  width: 192px;
-  filter: grayscale(40%);
-  margin-top: -50px;
+  /* text-align: center; */
+  /* height: 192px;
+  width: 192px; */
+  /* filter: grayscale(40%); */
+  float: left;
 }
 
 .post-image:hover {
@@ -659,10 +659,10 @@ footer .theme-by {
 
 /* Hinh anh thuc su hien ra */
 .post-image img {
-  border-radius: 100px;
-  height: 160px;
-  width: 160px;
-  margin: 20px;
+  border-radius: 10px;
+  height: 50%;
+  width: 100%;
+  /* margin: 20px; */
   box-shadow: 1px 8px 30px #890000;
 }
 
@@ -670,7 +670,7 @@ footer .theme-by {
   font-weight: 800;
 }
 
-@media only screen and (max-width: 500px) {
+/* @media only screen and (max-width: 500px) {
 
   .post-image,
   .post-image img {
@@ -685,7 +685,7 @@ footer .theme-by {
     margin-bottom: 20px;
     margin-top: -20px;
   }
-}
+} */
 
 @media only screen and (min-width: 768px) {
   .post-preview .post-title {

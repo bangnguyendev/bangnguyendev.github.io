@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Nhà hát Thành Phố"
-meta-title: "Nhà hát Thành Phố"
+title: "Phố Đi Bộ Thành Phố"
+meta-title: "Phố Đi Bộ Thành Phố"
 subtitle: "..."
 bigimg:
 - "/img/Wedding/wedding-background.jpg" : "Save the date"
-image: /img/Wedding/nha_hat_1.jpg
+image: /img/Bo-4/z3971753005338_76e7c569eeb453dec789ec2bf6201c6c.jpg
 tags: [AWeddingToRemember, NowAndAlways, HappilyEverAfter, SheSaidYes, LoveAlways, BabyJustSayYes]
 ---
 

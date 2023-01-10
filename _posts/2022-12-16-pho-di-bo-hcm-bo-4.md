@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Phố Đi Bộ Thành Phố"
-meta-title: "Phố Đi Bộ Thành Phố"
+title: "Phố Đi Bộ Nguyễn Huệ"
+meta-title: "Phố Đi Bộ Nguyễn Huệ"
 subtitle: "..."
 bigimg:
 - "/img/Wedding/wedding-background.jpg" : "Save the date"

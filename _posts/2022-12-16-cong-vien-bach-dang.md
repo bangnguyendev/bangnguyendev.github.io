@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Bến Bạch Đằng"
-meta-title: "Bến Bạch Đằng"
+title: "Công Viên Bến Bạch Đằng"
+meta-title: "Công Viên Bến Bạch Đằng"
 subtitle: "..."
 bigimg:
 - "/img/Wedding/wedding-background.jpg" : "Save the date"

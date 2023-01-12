@@ -43,6 +43,17 @@ layout: null
   padding: 15px;
 }
 
+.wedding_gift {
+  color: rgb(105, 0, 0);
+  text-shadow: 1px 1px 2px rgb(255, 255, 255);
+  font-family: f_ndb-transbox;
+  font-size: 60px;
+  background-color: #fff17050;
+  border-radius: 15px;
+  box-shadow: 1px 8px 30px #890000;
+  padding: 15px;
+}
+
 .thiep_moi_thanh_hon {
   color: rgb(211, 53, 25);
   text-shadow: 1px 1px 2px rgb(252, 249, 82);

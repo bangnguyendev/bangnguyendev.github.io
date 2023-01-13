@@ -44,11 +44,11 @@ layout: null
 }
 
 .wedding_gift {
-  color: rgb(105, 0, 0);
-  text-shadow: 1px 1px 2px rgb(255, 255, 255);
+  color: rgb(110, 0, 110);
+  /* text-shadow: 1px 1px 2px rgb(138, 0, 108); */
   font-family: f_ndb-transbox;
-  font-size: 60px;
-  background-color: #fff17050;
+  font-size: 40px;
+  background-color: #ff8aebb7;
   border-radius: 15px;
   box-shadow: 1px 8px 30px #890000;
   padding: 15px;

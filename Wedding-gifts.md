@@ -5,6 +5,7 @@ meta-title: Wedding 🧧 Gifts
 subtitle: "Thiệp hồng trao tay, mất ngay tạ gạo 💋"
 bigimg:
 - "/img/Wedding/wedding-background.jpg" : "Save the date"
+comments: true
 ---
 
 <div class="thiep_moi">
@@ -24,11 +25,16 @@ bigimg:
 
 <br />
 <div class="wedding_gift">
-  <p style="text-align: center;font-size: 60px;"> 🎀🎀💍🎀🎀<br />
-  <p >Mọi người đã mang đến những tình cảm to lớn cho ngày vui đặc biệt của chúng tôi, mang sự nhiệt thành đến cuộc đời và những hạnh phúc rót đầy trái tim này. </p>
+<p style="text-align: center;font-size: 60px;"> 🎀🎀💍🎀🎀<br />
+<p>Mọi người đã mang đến những tình cảm to lớn cho ngày vui đặc biệt của chúng tôi, mang sự nhiệt thành đến cuộc đời và những hạnh phúc rót đầy trái tim này. </p>
 
-  <p style="text-align: center;font-size: 60px;"> 🎀🎀👪🎀🎀<br /></p> 
-  <p >Cảm ơn những lời chúc phúc, những món quà chu đáo và sự góp mặt của mọi người trong buổi tiệc này.<br /></p> 
+<p style="text-align: center;font-size: 60px;"> 🎀🎀👪🎀🎀<br /></p> 
+<p>Cảm ơn những lời chúc phúc, những món quà chu đáo và sự góp mặt của mọi người trong buổi tiệc này.<br /></p> 
+
+
+<div class="disqus-comments">
+  {% include disqus.html %}
+</div>
 
 <div class="post-img-post">
   <img src="/img/MOMO.jpg"><br>

@@ -489,6 +489,7 @@ void Call_Weather_Every_10Min()
 }
 ```
   - Trong quá trình sử dụng nếu chúng ta muốn thay đổi vị trí thì gọi hàm `Choose_location()`
+  
 ```c
 /* Chon vi tri doc gia tri thoi tiet */
 void Choose_location()
@@ -692,6 +693,7 @@ void Choose_location()
 ```
   - Trước khi hàm `Choose_location()` kết thúc vị trí sẽ được lưu vào EEPROM và lưu vào biến `Location`
   - Gọi hàm `Weather_Online_sever()` để cập nhật thời tiết 
+
 ```c
 /* Lay gia tri thoi tiet tai vi tri da chon */
 void Weather_Online_sever()

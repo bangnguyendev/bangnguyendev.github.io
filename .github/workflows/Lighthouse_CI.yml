@@ -10,7 +10,7 @@ jobs:
           sudo apt install -y ./google-chrome-stable_current_amd64.deb
       - uses: actions/checkout@v2
       - name: Audit URLs using Lighthouse
-        uses: treosh/lighthouse-ci-action@v7
+        uses: treosh/lighthouse-ci-action@v9
         with:
           urls: |
             https://bangnguyendev.github.io

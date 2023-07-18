@@ -7,7 +7,7 @@ bigimg:
   - "/img/My_Picture/anh_aboutme.webp"
 ---
 
-![🇬🇧 English version](/img/My_Picture/united-kingdom.png) ![🇬🇧 English version](/img/My_Picture/translate.png) [`🇬🇧 English version`](/aboutme)
+![🇬🇧 English version](/img/My_Picture/united-kingdom.png) ![🇬🇧 English version](/img/My_Picture/translate.png) [`🇬🇧 English version`](/resume/aboutme)
 
 ### ⚙️ Hi again, my name is Nguyen Bang
 

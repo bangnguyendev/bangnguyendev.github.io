@@ -424,7 +424,7 @@ img {
 }
 
 .navbar-custom .nav .navlinks-children {
-  width: 100%;
+  width: max-content;
   display: none;
   word-break: break-word;
 }

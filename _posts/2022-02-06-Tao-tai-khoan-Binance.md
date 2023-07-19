@@ -7,6 +7,7 @@ bigimg:
   - "/img/2022-02-06-Tao-tai-khoan-Binance/cover-binance.png"
 image: "/img/2022-02-06-Tao-tai-khoan-Binance/logo_binance1.png"
 tags: [binance, crypto, btc, eth, ada]
+category: ngoai-luong
 # gh-repo: bangnguyendev/Documents
 # gh-badge: [star, watch, fork, follow]
 # comments: true

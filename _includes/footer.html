@@ -168,17 +168,25 @@
             </a>
           </li>
           {% endif %}
-
         </ul>
+        
         <p class="copyright text-muted">
-          ©Copyright - {{ site.author.name }}
+          ©Copyright &nbsp;&bull;&nbsp; {{ site.author.name }}
           &nbsp;&bull;&nbsp;
           {{ site.time | date: '%Y' }}
-
+          
           {% if site.url-pretty %}
           &nbsp;&bull;&nbsp;
           <a href="{{ site.url }}">{{ site.url-pretty }}</a>
           {% endif %}
+            <br>
+          <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/bangnguyendev/bangnguyendev.github.io?color=success&logo=github">
+          <a href="https://github.com/bangnguyendev/bangnguyendev.github.io" target="_blank" rel="noopener"
+          title="Go to Github Poject Page">
+
+        </p>
+
+        <p class="text-muted">
         </p>
       </div>
     </div>

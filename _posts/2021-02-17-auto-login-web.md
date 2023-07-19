@@ -7,6 +7,7 @@ bigimg:
   - "/img/2021-02-17-auto-login-web/AutomatableTasks.jpg"
 image: /img/2021-02-17-auto-login-web/AutomatableTasks.jpg
 tags: [python, Selenium, AutomatableTasks]
+category: ngoai-luong
 # gh-repo: bangnguyendev/Documents
 # gh-badge: [star, watch, fork, follow]
 # comments: true

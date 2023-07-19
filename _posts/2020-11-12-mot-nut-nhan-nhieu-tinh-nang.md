@@ -7,6 +7,7 @@ bigimg:
   - "/img/2020-11-12-mot-nut-nhan-nhieu-tinh-nang/anh-bia.jpg"
 image: /img/2020-11-12-mot-nut-nhan-nhieu-tinh-nang/anh-bia.jpg
 tags: [button, pullup, pull up, nút nhấn, điện trở kéo lên, chống dội nút nhấn, debounce button]
+category: lap-trinh-vi-dieu-khien
 # gh-repo: bangnguyendev/SmartClock
 # gh-badge: [star, watch, fork, follow]
 # comments: true

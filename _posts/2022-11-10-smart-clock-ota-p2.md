@@ -7,6 +7,7 @@ bigimg:
   - "/img/2022-10-25-smart-clock-ota/update-internet-of-things-iot-cheat-sheet.webp"
 image: /img/2022-10-25-smart-clock-ota/logo.webp
 tags: [OTA, OTA firmware, firmware, esp8266, adruino, https, github ]
+category: lap-trinh-vi-dieu-khien
 # gh-repo: bangnguyendev/SmartClock
 # gh-badge: [star, watch, fork, follow]
 # comments: true

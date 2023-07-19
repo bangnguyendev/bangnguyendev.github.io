@@ -7,6 +7,7 @@ bigimg:
   - "/img/2021-09-20-chi-so-kinh-doanh/COGS-cover.jpg"
 image: /img/2021-09-20-chi-so-kinh-doanh/COGS-avatar.jpg
 tags: [BREAK-EVEN POINT, INVENTORY TURNOVER RATIO, FOOD COST, PRIME COST, LABOR COST PERCENTAGE, COST OF GOOD SOLD]
+category: ngoai-luong
 # gh-repo: bangnguyendev/Documents
 # gh-badge: [star, watch, fork, follow]
 # comments: true

@@ -2,11 +2,12 @@
 layout: post
 title: "PWM (Pulse Width Modulation) - STM32F407VET"
 meta-title: "PWM <br> Pulse Width Modulation"
-subtitle: "...STM32F407VET"
+subtitle: "...điều chế xung STM32F407VET"
 bigimg:
   - "/img/2023-07-05-PWM-Pulse-Width-Modulation/COVER-PWM.jpg"
 image: /img/2023-07-05-PWM-Pulse-Width-Modulation/COVER-PWM.jpg
 tags: [STM32F4, STM32, PWM, RCC, TIMER, github ]
+category: lap-trinh-vi-dieu-khien
 # gh-repo: bangnguyendev/SmartClock
 # gh-badge: [star, watch, fork, follow]
 # comments: true

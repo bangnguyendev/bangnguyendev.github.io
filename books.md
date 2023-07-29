@@ -29,6 +29,24 @@ title: Bang Nguyen - My Book Recommendations
 					<button class="action action--button" onclick="window.open('https://www.amazon.com/gp/customer-reviews/R31JH7UREUWULF/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=1449399916')"><i class="fa fa-comments"></i><span class="action__text">Reviews</span></button>
 				</div>
 			</div>	
+		<!-- sách 6 -->
+			<div class="product">
+				<div class="product__info">
+					<img class="product__image" src="images/the art of electronics.png" alt="The Art of Electronics" />
+					<h3 class="product__title">The Art of Electronics</h3>
+					<span class="product__author highlight">PAUL HOROWITZ <br> WINFIELD HILL </span>
+					<button class="action action--button" onclick="window.open('https://www.amazon.com/Art-Electronics-Paul-Horowitz/product-reviews/0521809266')"><i class="fa fa-comments"></i><span class="action__text">Reviews</span></button>
+				</div>
+			</div>	
+		<!-- sách 6 -->
+			<div class="product">
+				<div class="product__info">
+					<img class="product__image" src="images/Make-Electronics.png" alt="Make Electronics" />
+					<h3 class="product__title">Make: Electronics</h3>
+					<span class="product__author highlight">Charles Platt </span>
+					<button class="action action--button" onclick="window.open('https://www.amazon.co.uk/product-reviews/B0B3LS5K2Z/')"><i class="fa fa-comments"></i><span class="action__text">Reviews</span></button>
+				</div>
+			</div>	
 		<!-- sách 4 -->
 			<div class="product">
 				<div class="product__info">

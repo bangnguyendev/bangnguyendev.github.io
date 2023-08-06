@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "Multi Channel ADC without DMA"
-meta-title: "Multi Channel ADC without DMA"
-subtitle: "...STM32F407VET6"
+title: "Đọc nhiều kênh ADC"
+meta-title: "Đọc nhiều kênh ADC"
+subtitle: "... mà không sử dụng DMA trong STM32F4"
 bigimg:
   - "/img/2023-08-04-ADC-Regular-STM32F4/Untitled%206.png"
 image: /img/2023-08-04-ADC-Regular-STM32F4/avatar_ADC.jpg
-tags: [STM32F4, STM32, ADC, LCD2004,12-BIT]
+tags: [STM32F4, STM32, ADC, Regular, LCD2004, 12-BIT]
 category: lap-trinh-vi-dieu-khien
 # gh-repo: bangnguyendev/SmartClock
 # gh-badge: [star, watch, fork, follow]
-# comments: true
+comments: true
 ---
 
 ADC là viết tắt của "**Analog-to-Digital Converter**" trong tiếng Anh, tạm dịch là "**Bộ chuyển đổi từ tín hiệu analog sang số**." Đây là một công nghệ quan trọng trong lĩnh vực điện tử và vi điều khiển.
@@ -45,9 +45,11 @@ An 6-level ADC coding scheme
 </div>
 
 
-#### Ví dụ minh họa:
+#### ⚙️Ví dụ minh họa
 
-Giả sử bạn muốn đo nhiệt độ của môi trường xung quanh và hiển thị giá trị đó trên màn hình LCD. Bộ cảm biến nhiệt độ sẽ cung cấp một tín hiệu analog tương ứng với nhiệt độ. Để hiển thị giá trị đó trên LCD, chúng ta cần chuyển đổi tín hiệu analog này thành dạng số. 
+Giả sử bạn muốn **đo độ sáng** của môi trường xung quanh và **hiển thị giá trị đó trên màn hình LCD**. 
+
+Bộ cảm biến ánh sáng (quang trở) sẽ cung cấp một tín hiệu analog tương ứng với độ sáng. Để hiển thị giá trị đó trên LCD, **chúng ta cần chuyển đổi tín hiệu analog này thành dạng số**. 
 
 <div class="post-img-post">
     <img src="/img/2023-08-04-ADC-Regular-STM32F4/light-sensor.gif">
@@ -56,15 +58,15 @@ Ví dụ ADC chuyển đổi phân giải 8 bit
 </div>
 
 
-#### Cách ADC hoạt động:
+#### ⚙️Cách ADC hoạt động
 
 ADC hoạt động bằng cách lấy mẫu tín hiệu analog vào và đo đạc giá trị của nó tại các thời điểm cố định (tần số lấy mẫu). Sau đó, giá trị này sẽ được biểu diễn thành dạng số bằng cách ánh xạ nó vào các giá trị số tương ứng. 
 
 ![0315AD-1.gif](/img/2023-08-04-ADC-Regular-STM32F4/0315AD-1.gif)
 
-#### Độ phân giải ADC
+#### ⚙️Độ phân giải ADC
 
-ADC có độ phân giải bit càng lớn thì mô phỏng lại tín hiệu Analog càng mịn càng chi tiết, càng giống thật.
+**ADC có độ phân giải bit càng lớn** thì mô phỏng lại **tín hiệu Analog càng mịn càng chi tiết**, càng giống thật.
 
 Độ phân giải của ADC đo lường khả năng của nó để chia nhỏ một phạm vi tín hiệu đầu vào analog thành các giá trị số lượng (bits).
 
@@ -74,15 +76,15 @@ ADC có độ phân giải bit càng lớn thì mô phỏng lại tín hiệu An
 Các ví dụ độ phân giải của ADC
 </div>
 
-Độ phân giải được biểu thị bằng số bit. 
+**Độ phân giải được biểu thị bằng số bit.**
 
-Ví dụ, một `ADC 1-bit` có khả năng chia phạm vi tín hiệu đầu vào thành 2^1 (2) giá trị số khác nhau. Điều này có nghĩa rằng ADC có thể đo và chuyển đổi tín hiệu analog thành 2 mức số khác nhau là `1` và `0`.
+Ví dụ, một `ADC 1-bit` có khả năng chia phạm vi tín hiệu đầu vào thành **2^1 = 2** giá trị số khác nhau. Điều này có nghĩa rằng ADC có thể đo và chuyển đổi tín hiệu analog thành **2** mức số khác nhau là `1` và `0`.
 
-Ví dụ, một `ADC 2-bit` có khả năng chia phạm vi tín hiệu đầu vào thành 2^2 (4) giá trị số khác nhau. Điều này có nghĩa rằng ADC có thể đo và chuyển đổi tín hiệu analog thành 4 mức số khác nhau là `00`, `01`, `10`, `11`.
+Ví dụ, một `ADC 2-bit` có khả năng chia phạm vi tín hiệu đầu vào thành **2^2 = 4** giá trị số khác nhau. Điều này có nghĩa rằng ADC có thể đo và chuyển đổi tín hiệu analog thành **4** mức số khác nhau là `00`, `01`, `10`, `11`.
 
-Ví dụ, một `ADC 4-bit` có khả năng chia phạm vi tín hiệu đầu vào thành 2^4 (16) giá trị số khác nhau. Điều này có nghĩa rằng ADC có thể đo và chuyển đổi tín hiệu analog thành 16 mức số khác nhau là `0000` `0001` `0010` ... `1111`.
+Ví dụ, một `ADC 4-bit` có khả năng chia phạm vi tín hiệu đầu vào thành **2^4 = 16** giá trị số khác nhau. Điều này có nghĩa rằng ADC có thể đo và chuyển đổi tín hiệu analog thành **16** mức số khác nhau là `0000` `0001` `0010` ... `1111`.
 
-Ví dụ, một `ADC 16-bit` có khả năng chia phạm vi tín hiệu đầu vào thành 2^16 (65 536) giá trị số khác nhau. Điều này có nghĩa rằng ADC có thể đo và chuyển đổi tín hiệu analog thành 65 536 mức số khác nhau.
+Ví dụ, một `ADC 16-bit` có khả năng chia phạm vi tín hiệu đầu vào thành **2^16 = 65536** giá trị số khác nhau. Điều này có nghĩa rằng ADC có thể đo và chuyển đổi tín hiệu analog thành **65536** mức số khác nhau.
 
 <div class="post-img-post">
     <img src="/img/2023-08-04-ADC-Regular-STM32F4/ADC_animation_5vol.gif">
@@ -90,7 +92,7 @@ Ví dụ, một `ADC 16-bit` có khả năng chia phạm vi tín hiệu đầu v
 Ví dụ độ phân giải `10-bit` của ADC
 </div>
 
-#### Ứng dụng của ADC:
+#### ⚙️Ứng dụng của ADC
 
 ADC được sử dụng rộng rãi trong các lĩnh vực công nghệ cao như:
 
@@ -112,7 +114,7 @@ Reference manual](https://www.st.com/resource/en/reference_manual/dm00031020-stm
 
 **ADC (Analog-to-Digital Converter) là một chức năng quan trọng trong** vi điều khiển **STM32F407VET6**, cho phép vi điều khiển chuyển đổi tín hiệu analog thành dạng số để xử lý bên trong vi điều khiển. **STM32F407VET6** hỗ trợ nhiều kênh ADC với độ chính xác cao và khả năng đo lường nhanh chóng. Trong bài viết này, chúng ta sẽ tìm hiểu về ADC trên **STM32F407VET6** và cách sử dụng nó để đo lường tín hiệu analog.
 
-#### Cấu trúc ADC trên STM32F407VET6:
+#### ⚙️Cấu trúc ADC trên STM32F407
 
 - STM32F407VET6 có **ADC đa kênh**, hỗ trợ chế độ đơn kênh và chế độ chuyển đổi liên tiếp (continuous conversion mode). 
 - ADC trên **STM32F407VET6** có thể được cấu hình để **hoạt động ở độ phân giải khác nhau (8-bit, 10-bit, 12-bit)** tùy thuộc vào yêu cầu ứng dụng.
@@ -122,7 +124,7 @@ Reference manual](https://www.st.com/resource/en/reference_manual/dm00031020-stm
 - **Analog watchdog**: Cho phép ứng dụng giám sát tín hiệu analog và phát hiện vượt quá ngưỡng được định trước.
 ![Untitled](/img/2023-08-04-ADC-Regular-STM32F4/Untitled.png)
 
-#### Các tính năng chính của ADC STM32F407VET6 :
+#### ⚙️Các tính năng chính của ADC STM32F407
 
 - Độ phân giải có thể cấu hình là 12 bit, 10 bit, 8 bit hoặc 6 bit.
 - Tạo ngắt (interrupt) khi chuyển đổi hoàn tất, chuyển đổi chèn (injected conversion) hoàn tất, và khi có sự kiện giám sát tín hiệu analog (analog watchdog) hoặc lỗi "overrun".
@@ -136,10 +138,10 @@ Reference manual](https://www.st.com/resource/en/reference_manual/dm00031020-stm
 - Tạo yêu cầu DMA trong quá trình chuyển đổi kênh thông thường.
 - ...
 
-#### Các Pin Input Output của ADC
+#### ⚙️Các Pin Input Output của ADC
 ![Untitled](/img/2023-08-04-ADC-Regular-STM32F4/Untitled%201.png)
 
-#### Timing diagram của ADC
+#### ⚙️Timing diagram của ADC
 
 Như thể hiện trong Hình 45, ADC cần một thời gian ổn định là tSTAB trước khi bắt đầu chuyển đổi chính xác. Sau khi bắt đầu chuyển đổi ADC và sau 15 chu kỳ xung đồng hồ, cờ EOC được đặt và thanh ghi dữ liệu ADC 16-bit chứa kết quả của chuyển đổi.
 
@@ -162,43 +164,51 @@ Trong chế độ bình thường (**regular ADC mode**) của STM32F4, **vi x�
 
 Để đọc nhiều kênh ADC1, bạn có thể thực hiện các bước sau:
 
-1. Cấu hình chuỗi chuyển đổi (Conversion Sequence): Đầu tiên, bạn cần cấu hình chuỗi chuyển đổi để xác định thứ tự các kênh ADC1 bạn muốn chuyển đổi. Ví dụ: chuyển đổi kênh 1, sau đó kênh 2, và tiếp tục như vậy. Bạn cũng có thể chọn chế độ scan để chuyển đổi tất cả các kênh trong một lần chuyển đổi.
-2. Kích hoạt ADC và chờ hoàn thành chuyển đổi: Sau khi cấu hình chuỗi chuyển đổi, bạn kích hoạt ADC và chờ cho việc chuyển đổi trên các kênh hoàn thành. Bạn có thể kiểm tra cờ hoàn thành chuyển đổi để biết khi nào các kết quả đọc từ các kênh đã sẵn sàng.
-3. Đọc kết quả: Khi các chuyển đổi trên các kênh hoàn thành, bạn có thể đọc kết quả từ các thanh ghi dữ liệu của ADC1 (`ADC_DR`). Các kết quả của các kênh sẽ được lưu trữ theo thứ tự chuyển đổi được xác định trước đó.
+- **Cấu hình chuỗi chuyển đổi (Conversion Sequence):** Đầu tiên, bạn cần cấu hình chuỗi chuyển đổi để xác định thứ tự các kênh ADC1 bạn muốn chuyển đổi. 
+
+>Ví dụ: chuyển đổi kênh 1, sau đó kênh 2, và tiếp tục như vậy. Bạn cũng có thể chọn chế độ scan để chuyển đổi tất cả các kênh trong một lần chuyển đổi.
+
+- **Kích hoạt ADC và chờ hoàn thành chuyển đổi:** Sau khi cấu hình chuỗi chuyển đổi, bạn kích hoạt ADC và chờ cho việc chuyển đổi trên các kênh hoàn thành. Bạn có thể kiểm tra cờ hoàn thành chuyển đổi để biết khi nào các kết quả đọc từ các kênh đã sẵn sàng.
+
+- **Đọc kết quả:** Khi các chuyển đổi trên các kênh hoàn thành, bạn có thể đọc kết quả từ các thanh ghi dữ liệu của ADC1 (`ADC_DR`). Các kết quả của các kênh sẽ được lưu trữ theo thứ tự chuyển đổi được xác định trước đó.
 
 {: .box-note}
 **Note:** Điểm quan trọng là **đảm bảo thời gian đọc kết quả** và v**iệc chuyển đổi của các kênh đủ nhanh** để không bị mất dữ liệu hoặc tràn dữ liệu. Nếu tần số chuyển đổi của các kênh là quá cao, bạn cần đảm bảo vi xử lý có thể xử lý các kết quả đọc nhanh chóng và hiệu quả.
 
 {: .box-warning}
-**warning:** Mặc dù không cần sử dụng DMA, việc sử dụng DMA có thể cải thiện hiệu suất và giảm tải cho vi xử lý, đặc biệt là khi bạn cần đọc nhiều kênh ADC và xử lý dữ liệu liên tục.
+**Warning:** Mặc dù không cần sử dụng DMA, việc sử dụng DMA có thể cải thiện hiệu suất và giảm tải cho vi xử lý, đặc biệt là khi bạn cần đọc nhiều kênh ADC và xử lý dữ liệu liên tục.
 
 
-Khởi tạo MXCube, sử dụng ADC1
+#### ⚙️Khởi tạo MXCube, sử dụng ADC1
 
-- CH1: sử dụng cho cảm biến ánh sáng
-- CH2: sử dụng cho biến trở
-- Temperature Senror Channel
-- Vrefint Channel
+- **CH1: sử dụng cho cảm biến ánh sáng**
+- **CH2: sử dụng cho biến trở**
+- **Temperature Senror Channel**
+- **Vrefint Channel**
 
 Đọc ADC1 ở chế độ thông thường Regular
 
 ![Untitled](/img/2023-08-04-ADC-Regular-STM32F4/Untitled%203.png)
 
-Ở bước này, nếu chúng ta chạy mode Scan các Channel với nhau thì chúng ta phải tính toán kỹ lương thời gian tiến hành đọc kết quả.
+#### ⚙️Phân tích bài toán
 
-Vì kết quả sau một lần chuyển đổi kết quả (12bit) được lưu vào thanh ghi ADC_DR (16bit data).
+Ở bước này, **NẾU** chúng ta chạy mode **ScanConvMode** lần lượt các Channel thì chúng ta phải **tính toán kỹ lương thời gian tiến hành đọc kết quả**.
 
-Nếu chúng ta tiến hành đọc không đúng thời điểm sẽ dẫn tới đọc nhầm kết quả củ hoặc kết quả của Channel khác.
+Vì **SAU MỘT LẦN CHUYỂN ĐỔI XONG** kết quả (12bit) được lưu vào thanh ghi ADC_DR (16bit data).
 
-Việc đọc ADC nhiều Channel theo cách này rất không khả thi và không mang lại kết quả đảm bảo.
+Nếu chúng ta tiến hành **đọc không đúng thời điểm** sẽ dẫn tới đọc **nhầm kết quả cũ** hoặc **kết quả của Channel khác**.
+
+Việc đọc ADC nhiều Channel theo cách này **CHO KẾT QUẢ** rất **KHÔNG TIN CẬY**.
+
+#### ⚙️Tuỳ biến lại Project
 
 Sau khi tạo project theo hình trên, chúng ta sẽ tuỳ biến Project như sau:
 
 Trong phần code cấu hình ADC1:
 
-Ta tiến hành comment 4 kênh ở dưới do MXCube tạo ra.
+Ta tiến hành **comment 4 kênh** ở dưới do MXCube tạo ra.
 
-Đồng thơi sửa lại **hadc1.Init.NbrOfConversion = 1; //My config - Gen**
+Đồng thơi sửa lại `hadc1.Init.NbrOfConversion = 1;`
 
 ```c
 /* ADC1 init function */
@@ -278,9 +288,10 @@ void MX_ADC1_Init(void)
 }
 ```
 
-Ở file main.c chúng ta tạo 4 hàm con cho 4 kênh ADC như sau:
+Ở file **main.c** chúng ta tạo **4 hàm con cho 4 kênh ADC** như sau:
 
-Với tất cả các **rank=1**
+{: .box-warning}
+**Warning:** Với tất cả các **rank=1**
 
 ```c
 uint32_t ADC_VAL[4];
@@ -334,7 +345,7 @@ void ADC_Select_Vref (void)
 }
 ```
 
-Lúc này, trong hàm main → while(1) chúng ta gọi như sau:
+Lúc này, trong hàm `main → while(1)` chúng ta gọi như sau:
 
 Hàm **HAL_ADC_PollForConversion** có ý nghĩa chờ khi chuyển đổi xong thì chúng ta đọc kết quả liền.
 
@@ -379,13 +390,24 @@ while (1)
 	}
 }
 ```
-
-Việc khởi động và tắt đọc tuần tự từng kênh như vậy thì kết quả sẽ có độ tin cậy cao. Nhưng nhược điểm là tón nhiều thời gian chờ.
-
-![Untitled](/img/2023-08-04-ADC-Regular-STM32F4/Untitled%204.png)
+##### ⚙️Vào mode Debug xem thử nào!
 
 ![Untitled](/img/2023-08-04-ADC-Regular-STM32F4/Untitled%205.png)
 
-Giá trị mỗi kênh sẽ được lưu vào một mãng ADC_VAL.
+Giá trị mỗi kênh sẽ được lưu vào một mảng `ADC_VAL`.
 
-![Untitled](/img/2023-08-04-ADC-Regular-STM32F4/Untitled%206.png)
+<div class="post-img-post">
+    <img src="/img/2023-08-04-ADC-Regular-STM32F4/Untitled%206.png">
+ <br>
+Giá trị ADC được hiển thị theo 3 cách
+</div>
+
+#### ⚙️Kết luận chung
+
+{: .box-note}
+**Note:** Việc khởi động và tắt đọc tuần tự từng kênh như vậy thì **kết quả sẽ có độ tin cậy cao**. 
+
+{: .box-warning}
+**Warning:** Nhưng nhược điểm là **tốn nhiều thời gian chờ**. Phù hợp với những ứng dụng **không khắt khe về thời gian** đáp ứng và cần sử dụng **cấu hình đơn giản**.
+
+*Cám ơn mọi người đã theo dõi bài viết!*

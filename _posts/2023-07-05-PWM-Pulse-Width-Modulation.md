@@ -10,7 +10,7 @@ tags: [STM32F4, STM32, PWM, RCC, TIMER, github ]
 category: lap-trinh-vi-dieu-khien
 # gh-repo: bangnguyendev/SmartClock
 # gh-badge: [star, watch, fork, follow]
-# comments: true
+comments: true
 ---
 
 PWM (**Pulse Width Modulation**) là phương pháp `điều chế độ rộng xung` được hiểu là cách `điều khiển điện áp tải ra`, dựa trên sự thay đổi độ rộng xung vuông, dẫn đến sự thay đổi điện áp. Hiểu theo cách khác, *PWM là tín hiệu được tạo ra* từ *vi mạch kỹ thuật số*, như *vi mạch điều khiển*.

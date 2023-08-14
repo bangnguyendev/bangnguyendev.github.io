@@ -10,7 +10,7 @@ tags: [OTA, OTA firmware, firmware, esp8266, adruino, otadrive, ota drive ]
 category: lap-trinh-vi-dieu-khien
 # gh-repo: bangnguyendev/Documents
 # gh-badge: [star, watch, fork, follow]
-# comments: true
+comments: true
 ---
 
 Cập nhật firmware OTA (`Over the Air`) là tiến trình tải firmware mới vào ESP module thay vì sử dụng cổng Serial. 

@@ -10,7 +10,7 @@ tags: [scrum, PSM, agile, PROFESSIONAL SCRUM MASTER™ CERTIFICATIONS, PROFESSIO
 category: ngoai-luong
 # gh-repo: bangnguyendev/Documents
 # gh-badge: [star, watch, fork, follow]
-# comments: true
+comments: true
 ---
 
 <div class="post-img-post">

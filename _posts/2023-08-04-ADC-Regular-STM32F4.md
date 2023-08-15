@@ -410,4 +410,6 @@ Giá trị ADC được hiển thị theo 3 cách
 {: .box-warning}
 **Warning:** Nhưng nhược điểm là **tốn nhiều thời gian chờ**. Phù hợp với những ứng dụng **không khắt khe về thời gian** đáp ứng và cần sử dụng **cấu hình đơn giản**.
 
+[*Project Github ADC_Regular_STM32F4*](https://github.com/bangnguyendev/KEIL-C-STM32F407/tree/master/ADC_Regular_STM32F4)
+
 *Cám ơn mọi người đã theo dõi bài viết!*

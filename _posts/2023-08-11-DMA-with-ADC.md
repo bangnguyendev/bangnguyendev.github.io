@@ -353,6 +353,6 @@ DMA (Direct Memory Access) là một cơ chế cho phép thiết bị ngoại vi
 {: .box-warning}
 **Note:** Tóm lại, việc sử dụng DMA khi đọc ADC từ nhiều kênh khác nhau mang lại nhiều ưu điểm quan trọng bao gồm tiết kiệm thời gian CPU, giảm tải CPU, tăng hiệu suất hệ thống và phù hợp cho các ứng dụng thời gian thực.
 
-[*Project Github ADC_Regular_STM32F4*](https://github.com/bangnguyendev/KEIL-C-STM32F407/tree/master/ADC_Regular_STM32F4)
+[*Project Github ADC-LCD-STM32F407*](https://github.com/bangnguyendev/KEIL-C-STM32F407/tree/master/ADC-LCD-STM32F407)
 
 *Cám ơn mọi người đã theo dõi bài viết!*

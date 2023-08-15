@@ -383,6 +383,6 @@ while (1)
 Duty 10% → 100% → 10% …
 </div>
 
-[KEIL-C-STM32F407/TIMER1_CN1_PWM · bangnguyendev/KEIL-C-STM32F407](https://github.com/bangnguyendev/KEIL-C-STM32F407/tree/master/TIMER1_CN1_PWM)
+[*KEIL-C-STM32F407/TIMER1_CN1_PWM*](https://github.com/bangnguyendev/KEIL-C-STM32F407/tree/master/TIMER1_CN1_PWM)
 
-Cám ơn mọi người đã xem!
+*Cám ơn mọi người đã theo dõi bài viết!*

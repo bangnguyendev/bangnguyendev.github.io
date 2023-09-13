@@ -69,11 +69,12 @@ Trong mỗi `timer` của `STM32Fxx` các bạn sẽ kiểm tra xem có hỗ tr�
 </div>
 
 Check trong cấu hình Timer bằng **phần mềm CubeMX**
-<div class="post-img-post">
-    <img src="/img/2023-07-05-PWM-Pulse-Width-Modulation/Untitled 2.png">
- <br>
- Kiểm tra tính năng PWM của Timer 1
-</div>
+
+<a href="/img/2023-07-05-PWM-Pulse-Width-Modulation/Untitled 2.png" data-lightbox=" Kiểm tra tính năng PWM của Timer 1" data-title=" Kiểm tra tính năng PWM của Timer 1">
+	<img class="post-img-post" src="/img/2023-07-05-PWM-Pulse-Width-Modulation/Untitled 2.png" alt="image-1"/>
+</a>
+
+
 
 Hoặc trong datasheet nhà sản xuất [**Reference manual**](https://github.com/bangnguyendev/Document-STM32/blob/master/Tai%20lieu%20-%20Documents/STM32F4/rm0090-stm32f405415-stm32f407417-stm32f427437-and-stm32f429439-advanced-armbased-32bit-mcus-stmicroelectronics.pdf)
 
@@ -250,7 +251,10 @@ Trong mục `Parameter Settings` của `TIMER 1`:
 3. **PSC 2799**
 4. **ARR (Counter Period) 999**
 
-![Untitled](/img/2023-07-05-PWM-Pulse-Width-Modulation/Untitled 18.png)
+<a href="/img/2023-07-05-PWM-Pulse-Width-Modulation/Untitled 18.png" data-lightbox="TIMER1 CHANNEL1" data-title="TIMER1 CHANNEL1">
+	<img class="post-img-post" src="/img/2023-07-05-PWM-Pulse-Width-Modulation/Untitled 18.png" alt="image-1"/>
+</a>
+
 
 Phía dưới `Parameter Settings` của `TIMER 1` có mục `PWM Generation Channel 1`:
 1. Sử dụng PWM `Mode 1`
@@ -280,21 +284,28 @@ Sau khi mở lên thì Project của chúng ta như sau:
 
 Các tham số tính toán đã được phần mềm **MXCube** tạo sẳn.
 
-![Untitled](/img/2023-07-05-PWM-Pulse-Width-Modulation/Untitled 25.png)
+<a href="/img/2023-07-05-PWM-Pulse-Width-Modulation/Untitled 25.png" data-lightbox="TIMER1 CHANNEL1" data-title="TIMER1 CHANNEL1">
+	<img class="post-img-post" src="/img/2023-07-05-PWM-Pulse-Width-Modulation/Untitled 25.png" alt="image-1"/>
+</a>
+
 
 Ở file `main.c` ta thêm lệnh khởi động PWM ở `TIMER 1` & `Channel 1` ***(Pin PE9)***
 
-![Untitled](/img/2023-07-05-PWM-Pulse-Width-Modulation/Untitled 26.png)
+<a href="/img/2023-07-05-PWM-Pulse-Width-Modulation/Untitled 26.png" data-lightbox="TIMER1 CHANNEL1" data-title="TIMER1 CHANNEL1">
+	<img class="post-img-post" src="/img/2023-07-05-PWM-Pulse-Width-Modulation/Untitled 26.png" alt="image-1"/>
+</a>
+
 
 Nạp code và thử thôi
 
 Mình sử dụng `Logic port`, Channel 0 sẽ cắm vào `Pin PE9` để đo xung đầu ra thử thì thấy đúng `60Hz và Duty 45%`
 
-<div class="post-img-post">
-    <img src="/img/2023-07-05-PWM-Pulse-Width-Modulation/Untitled 27.png">
- <br>
-F = 60Hz và Duty 45%
-</div>
+<a href="/img/2023-07-05-PWM-Pulse-Width-Modulation/Untitled 27.png" data-lightbox="F = 60Hz và Duty 45%" data-title="F = 60Hz và Duty 45%">
+	<img class="post-img-post" src="/img/2023-07-05-PWM-Pulse-Width-Modulation/Untitled 27.png"  alt="image-1"/>
+     <br>
+</a>
+
+
 
 <div class="post-img-post">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/YrxO8CrMu7A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -307,7 +318,11 @@ Cùng Debug để xem các giá trị ở thanh ghi nhé!
 
 Trước khi chương trình khởi chạy các giá trị đều là `0x00`
 
-![Untitled](/img/2023-07-05-PWM-Pulse-Width-Modulation/Untitled 28.png)
+<a href="/img/2023-07-05-PWM-Pulse-Width-Modulation/Untitled 28.png" data-lightbox="DEBUG" data-title="DEBUG">
+	<img class="post-img-post" src="/img/2023-07-05-PWM-Pulse-Width-Modulation/Untitled 28.png"  alt="image-1"/>
+     <br>
+</a>
+
 
 Sau khi thực thi lệnh khởi tạo ***HAL_TIM1_Init()*** thì các thông số ***PSC, ARR, CCR1*** đã được nạp vào thanh ghi
 
@@ -317,7 +332,10 @@ Sau khi thực thi lệnh khởi tạo ***HAL_TIM1_Init()*** thì các thông s�
 
 Hiện tại, chuẩn bị thực thi hàm Start PWM ***`HAL_TIM_PWM_Start(&htim1,TIM_CHANNEL_1);`***
 
-![Untitled](/img/2023-07-05-PWM-Pulse-Width-Modulation/Untitled 29.png)
+<a href="/img/2023-07-05-PWM-Pulse-Width-Modulation/Untitled 29.png" data-lightbox="DEBUG" data-title="DEBUG">
+	<img class="post-img-post" src="/img/2023-07-05-PWM-Pulse-Width-Modulation/Untitled 29.png"  alt="image-1"/>
+     <br>
+</a>
 
 #### Để thay đổi độ rộng xung
 
@@ -335,11 +353,18 @@ Vậy để thay đổi độ rộng xung thành 70% thì sao?
 
 Lúc này giá trị **CCR1** sẽ được cập nhật thành **0x2BC (700)**
 
-![Untitled](/img/2023-07-05-PWM-Pulse-Width-Modulation/Untitled 31.png)
+<a href="/img/2023-07-05-PWM-Pulse-Width-Modulation/Untitled 31.png" data-lightbox="DEBUG" data-title="DEBUG">
+	<img class="post-img-post" src="/img/2023-07-05-PWM-Pulse-Width-Modulation/Untitled 31.png"  alt="image-1"/>
+     <br>
+</a>
+
 
 Vậy để thay đổi độ rộng xung tăng dần & giảm dần thì sao? Chúng ta sử dụng một biến ***var_CCR1*** để thay đổi.
 
-![Untitled](/img/2023-07-05-PWM-Pulse-Width-Modulation/Untitled 32.png)
+<a href="/img/2023-07-05-PWM-Pulse-Width-Modulation/Untitled 32.png" data-lightbox="DEBUG" data-title="DEBUG">
+	<img class="post-img-post" src="/img/2023-07-05-PWM-Pulse-Width-Modulation/Untitled 32.png"  alt="image-1"/>
+     <br>
+</a>
 
 ```c
 ...
@@ -371,8 +396,10 @@ while (1)
 
 ```
 
-
-![Untitled](/img/2023-07-05-PWM-Pulse-Width-Modulation/Untitled 33.png)
+<a href="/img/2023-07-05-PWM-Pulse-Width-Modulation/Untitled 33.png" data-lightbox="LOGIC PORT " data-title="LOGIC PORT ">
+	<img class="post-img-post" src="/img/2023-07-05-PWM-Pulse-Width-Modulation/Untitled 33.png"  alt="image-1"/>
+     <br>
+</a>
 
 Độ rộng xung đã được thay đổi từ 10% → 100% → 10% …
 

@@ -13,8 +13,7 @@ layout: base
 
 <div class="container">
   <div class="row">
-
-    <div class="col-lg-8">
+    <!-- <div class="col-lg-8"> -->
       {% if page.gh-repo %}
         {% assign gh_split =  page.gh-repo | split:'/'  %}
         {% assign gh_user =  gh_split[0]  %}
@@ -91,11 +90,7 @@ layout: base
           {% include disqus.html %}
         </div>
       {% endif %}
-    </div>
-  
-    <div class="col-md-4">
-      {% include sidebar-post-nav.html %}
-    </div>
+    <!-- </div> -->
 
   </div>
   

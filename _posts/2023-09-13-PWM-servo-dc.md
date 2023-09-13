@@ -99,7 +99,7 @@ Cấu hình RCC TIMER1 có tần số 168MHz.
 - **ARR: chọn 9999 (0 → 9999)**
 
 {: .box-warning}
-**Warning:** **ARR càng lớn** thì cúng ta càng điều khiển chi tiêt góc quay hơn, **độ phân giải góc quay cao hơn**.
+**ARR càng lớn** thì điều khiển góc quay mịn hơn, **độ phân giải góc quay cao hơn**.
 
 Sử dụng **TIMER1 Channel 1 tạo xung PWM** cấp cho chân màu vàng Servo.
 
@@ -121,6 +121,8 @@ Pulse PWM chún ta sẽ thay đổi trong quá trình sử dụng điều khiể
 <a href="/img/2023-09-13-PWM-servo-dc/Untitled%206.png" data-lightbox="TIMER2 CHANNEL1" data-title="TIMER2 CHANNEL1">
 	<img class="post-img-post" src="/img/2023-09-13-PWM-servo-dc/Untitled%206.png" alt="image-1"/>
 </a>
+
+#### ⚙️Kết nối phần cứng
 
 Chân **PE9 của STM32F4 sẽ là chân TIM1_CH1** và là chân kết nối với dây tín hiệu màu vàng của động cơ.
 
@@ -144,7 +146,7 @@ Sau khi MXCube tạo project, ở file main.c
   /* USER CODE END 2 */
 ```
 
-Chúng ta thêm lệnh khởi động PWM và ngắt Output Compare TIMER2 Channel để tạo chu kỳ tăng giảm Duty.
+Chúng ta thêm lệnh **khởi động PWM** và **ngắt Output Compare TIMER2 Channe l**  để tạo chu kỳ tăng giảm Duty.
 
 Chương trình phục vụ ngắt như sau:
 

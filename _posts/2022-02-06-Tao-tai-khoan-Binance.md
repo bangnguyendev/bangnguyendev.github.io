@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Hướng dẫn đăng ký tài khoản Binance 2022"
-meta-title: "Đăng ký tài khoản Binance 2022"
+title: "Đăng ký tài khoản Binance"
+meta-title: "Đăng ký tài khoản Binance"
 subtitle: "... Xác minh danh tính KYC"
 bigimg:
   - "/img/2022-02-06-Tao-tai-khoan-Binance/cover-binance.png"
@@ -10,7 +10,7 @@ tags: [binance, crypto, btc, eth, ada]
 category: ngoai-luong
 # gh-repo: bangnguyendev/Documents
 # gh-badge: [star, watch, fork, follow]
-# comments: true
+comments: true
 ---
 Nếu bạn là một người yêu thích đầu tư và tìm kiếm lợi nhuận dựa trên các đồng tiền mã hoá như Bitcoin. Thì chắc bạn đã từng nghe qua về sàn giao dịch tiền mã hoá Binance. 
 
@@ -121,7 +121,7 @@ Khi đã sở hữu tài khoản giao dịch trên sàn Binance, trader nên th�
   </a>
 </div>
 
-### Những lưu ý khi giao dịch tiền mã hoá:
+### Những lưu ý khi giao dịch tiền mã hoá
 
 - *Phương thức `xác thực KYC` giúp thế giới Binance giao dịch an toàn hơn.*
 

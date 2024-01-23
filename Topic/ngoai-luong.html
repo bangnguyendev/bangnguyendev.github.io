@@ -7,7 +7,10 @@ bigimg:
   - "/Topic/lap-trinh-vi-dieu-khien.jpeg"
 ---
 
-<div class="posts">
+<div class="posts">  
+  <!-- Check hascategoryPosts -->
+  {% assign hascategoryPosts = false %}
+
   {% for post in site.posts %}
 
     {% assign author = site.authors[post.author] %}
@@ -64,6 +67,17 @@ bigimg:
           {% endif %}
       
     </div>
+      <!-- Check hascategoryPosts -->
+      {% assign hascategoryPosts = true %}
     {% endif %}
   {% endfor %}
+
+  <!-- Report hascategoryPosts -->
+  {% unless hascategoryPosts %}
+  <div class="text-center">
+    <a target="_blank" rel="noopener" href="/" class="project-link" title="Go to Home Page">
+      <img src="{{ site.baseurl }}/img/error-404.webp" class="img-rounded" alt="404 - Page not found" width="80%" />
+    </a>
+  </div>
+  {% endunless %}
 </div>

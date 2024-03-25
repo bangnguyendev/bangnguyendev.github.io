@@ -21,10 +21,12 @@ navbar-links:
     - Electronic components: Topic/dien-dien-tu
   👨‍💻About Me: 
     - 🧧Resume🧧: resume/Nguyen-Duy-Bang-CV.pdf
+    - Bio Social: resume/bio-social
     - About Me: resume/aboutme
-    - Contact: resume/Contact_Info_nfc
     - LinkedIn: "https://www.linkedin.com/in/bangnguyenduy"
+    - Contact: resume/Contact_Info_nfc
     - Github: "https://github.com/bangnguyendev"
+
   🗝️Tags: tags #thay thế bằng nút tìm kiếm.
 
 # Image to show in the navigation bar - image must be a square (width = height)

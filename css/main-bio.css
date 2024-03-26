@@ -68,3 +68,21 @@ main{
 .action--button i + span {
   margin-left: 1em;
 }
+
+
+blockquote {
+  margin: 20px 0px !important; 
+}
+blockquote::after {
+  position: absolute;
+  top: -15px;
+  left: 0;
+  z-index: -1;
+  line-height: 50px;
+  font-family: 'FontAwesome';
+  content: "@mittochipzz";
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.274);
+}
+
+

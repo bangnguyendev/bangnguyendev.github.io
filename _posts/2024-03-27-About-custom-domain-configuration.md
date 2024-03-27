@@ -16,16 +16,16 @@ comments: true
 
 ### ⚙️ Giới thiệu DNS
 
-DNS, viết tắt của Domain Name System, là hệ thống quản lý và phân giải tên miền trên Internet. Tưởng tự như một "danh bạ khổng lồ", DNS chuyển đổi các tên miền dễ nhớ như "example.com" thành địa chỉ IP tương ứng như "192.0.2.1" để máy tính có thể hiểu và kết nối với máy chủ web.
+**DNS**, viết tắt của **Domain Name System**, là hệ thống quản lý và phân giải tên miền trên Internet. Tưởng tự như một "danh bạ khổng lồ", DNS chuyển đổi các tên miền dễ nhớ như "example.com" thành địa chỉ IP tương ứng như "192.0.2.1" để máy tính có thể hiểu và kết nối với máy chủ web.
 
-Quá trình hoạt động của DNS bắt đầu khi người dùng nhập tên miền vào trình duyệt. Trình duyệt gửi yêu cầu tới máy chủ DNS gần nhất. Máy chủ DNS này sẽ kiểm tra xem nó có thông tin về tên miền đó không. Nếu có, nó trả về địa chỉ IP tương ứng. Nếu không, máy chủ DNS này sẽ tiếp tục truy vấn các máy chủ DNS khác cho đến khi tìm thấy địa chỉ IP.
+Quá trình hoạt động của DNS bắt đầu khi **người dùng nhập tên miền vào trình duyệt**. **Trình duyệt gửi yêu cầu tới máy chủ DNS gần nhất**. **Máy chủ DNS** này sẽ **kiểm tra** xem nó **có thông tin về tên miền** đó không. Nếu có, **nó trả về địa chỉ IP tương ứng**. Nếu không, máy chủ DNS này sẽ tiếp tục truy vấn các máy chủ DNS khác cho đến khi tìm thấy địa chỉ IP.
 
-Khi trình duyệt nhận được địa chỉ IP từ máy chủ DNS, nó sẽ sử dụng địa chỉ này để thiết lập kết nối đến máy chủ web và tải nội dung trang web tương ứng. Quá trình này diễn ra một cách nhanh chóng và tự động, cho phép người dùng truy cập internet một cách thuận tiện mà không cần nhớ các địa chỉ IP phức tạp.
+Khi **trình duyệt nhận được địa chỉ IP từ máy chủ DNS**, nó sẽ sử dụng **địa chỉ này để thiết lập kết nối đến máy chủ web và tải nội dung** trang web tương ứng. Quá trình này diễn ra một cách **nhanh chóng và tự động**, cho phép **người dùng** truy cập internet một cách thuận tiện mà **không cần nhớ các địa chỉ IP phức tạp**.
 
 ### ⚙️ Root-servers
-Trang web *https://root-servers.org* là một nguồn thông tin quan trọng về các máy chủ gốc (root servers) trên Internet. Nó cung cấp các thông tin liên quan đến cơ sở hạ tầng DNS và các máy chủ gốc, bao gồm danh sách các máy chủ gốc trên toàn cầu, thông tin về quản lý và phân phối của các máy chủ này, cũng như các tài liệu và tài nguyên liên quan đến DNS và hệ thống tên miền. Trang web này là một nguồn tài liệu quan trọng cho những người làm việc trong lĩnh vực quản trị hệ thống mạng và DNS.
+Trang web [*https://root-servers.org*](https://root-servers.org) là một nguồn thông tin quan trọng về các máy chủ gốc (root servers) trên Internet. Nó cung cấp các thông tin liên quan đến cơ sở hạ tầng DNS và các máy chủ gốc, bao gồm danh sách các máy chủ gốc trên toàn cầu, thông tin về quản lý và phân phối của các máy chủ này, cũng như các tài liệu và tài nguyên liên quan đến DNS và hệ thống tên miền.
 
-<div class="post-img-post">
+<div class="post-img-post" style="width: 70%;">
     <a href="https://root-servers.org/">
         <img src="/img/2024-03-27-About-custom-domain-configuration/root-server.png">
     </a>
@@ -34,7 +34,7 @@ Trang web *https://root-servers.org* là một nguồn thông tin quan trọng v
 
 ### ⚙️ Một số Broker Domain
 
-Broker domain là các công ty hoặc dịch vụ cung cấp cho người dùng khả năng đăng ký và quản lý tên miền trên Internet. Các broker domain thường cung cấp một loạt các dịch vụ liên quan đến tên miền, bao gồm:
+**Broker domain** là các công ty hoặc dịch vụ cung cấp cho người dùng khả năng đăng ký và quản lý tên miền trên Internet. Các broker domain thường cung cấp một loạt các dịch vụ liên quan đến tên miền, bao gồm:
 
 - **Đăng ký tên miền**: Cho phép người dùng đăng ký tên miền mới cho trang web của họ.
 
@@ -47,15 +47,12 @@ Broker domain là các công ty hoặc dịch vụ cung cấp cho người dùng
 - **Hỗ trợ kỹ thuật**: Cung cấp hỗ trợ kỹ thuật và tư vấn cho việc cấu hình và quản lý tên miền.
 
 
-
 | Broker Domain Quốc Tế | Broker Domain Việt Nam |
 |-------------------------|-------------------------|
 | GoDaddy                 | Mat Bao                 |
 | Namecheap               | PA Vietnam              |
-| Google Domains / Squarespace | Tenten                  |
+| Squarespace             | Tenten                  |
 | Bluehost                | VinaHost                |
-| Domain.com              | Hostinger Vietnam       |
-| HostGator               | iNET                    |
 | Hover                   | HostingViet             |
 | NameSilo                | Nhân Hòa                |
 | Dynadot                 | Viettel IDC             |
@@ -65,6 +62,8 @@ Broker domain là các công ty hoặc dịch vụ cung cấp cho người dùng
 ### ⚙️ Giới thiệu về Squarespace
 
 **Squarespace** là một nền tảng xây dựng trang web và cửa hàng trực tuyến phổ biến với các ưu điểm và nhược điểm sau:
+
+>**Free WHOIS Privacy, SSL, and Premium DNS included**. Host with us, or any provider of your choice. - *UPDATE 27/3/2024*
 
 #### ⚙️ Ưu điểm Squarespace:
 
@@ -86,16 +85,16 @@ Broker domain là các công ty hoặc dịch vụ cung cấp cho người dùng
 
 Đầu tiên, các bạn truy cập vào trang web [Squarespace](https://domains.squarespace.com) và thực hiện đăng ký hoặc Login bằng tài khoản Google
 
-<div class="post-img-post">
+<div class="post-img-post"  style="width: 70%;">
     <a href="https://domains.squarespace.com/">
         <img src="/img/2024-03-27-About-custom-domain-configuration/Squarespace-index.png">
-    </a>
+    </a><br>
     https://domains.squarespace.com/
 </div>
 
 Tiếp theo, nhập key-word tên domain mà các bạn muốn vào ô tìm kiếm.
 
-*Squarespace sẽ check toàn bộ hiện hành đã được đăng ký và chưa đăng ký kèm giá cho các bạn lựa chọn*
+- ***Squarespace** sẽ check toàn bộ hiện hành đã được đăng ký và chưa đăng ký kèm giá cho các bạn lựa chọn*
 
 <div class="post-img-post">
     <a href="https://domains.squarespace.com/">
@@ -106,36 +105,36 @@ Tiếp theo, nhập key-word tên domain mà các bạn muốn vào ô tìm ki�
 Thực hiện chọn lựa Domain rồi bấm tiếp tục như ảnh bên dưới
 
 <div class="post-img-post">
-    <img src="/img/2024-03-27-About-custom-domain-configuration/dang-ky-domain- 1.png">
+    <img src="/img/2024-03-27-About-custom-domain-configuration/dang-ky-domain- 1.png"><br>
     Thực hiện chọn lựa Domain rồi bấm tiếp tục như ảnh
 </div>
 
 <div class="post-img-post">
-    <img src="/img/2024-03-27-About-custom-domain-configuration/dang-ky-domain- 2.jpg">
+    <img src="/img/2024-03-27-About-custom-domain-configuration/dang-ky-domain- 2.jpg"><br>
     Điền đầy đủ thông tin cá nhân, pháp lý và Bấm tiếp tục
 </div>
 
 <div class="post-img-post">
-    <img src="/img/2024-03-27-About-custom-domain-configuration/dang-ky-domain- 3.jpg">
+    <img src="/img/2024-03-27-About-custom-domain-configuration/dang-ky-domain- 3.jpg"><br>
     Điền thông tin để in hóa đơn (nếu cần)
 </div>
 
 <div class="post-img-post">
-    <img src="/img/2024-03-27-About-custom-domain-configuration/dang-ky-domain- 4.jpg">
+    <img src="/img/2024-03-27-About-custom-domain-configuration/dang-ky-domain- 4.jpg"><br>
     Nhập thông tin thẻ VISA/MASTERCARD để thanh toán
 </div>
 
 <div class="post-img-post">
-    <img src="/img/2024-03-27-About-custom-domain-configuration/dang-ky-domain- 55.png">
+    <img src="/img/2024-03-27-About-custom-domain-configuration/dang-ky-domain- 55.png"><br>
     Giao diện quản lý các Domain bạn sở hữu của hệ thống Squarespace
 </div>
 
 **Squarespace** hỗ trợ cung cấp **SSL/TLS miễn phí** cho các trang web được xây dựng trên nền tảng của họ thông qua **Let's Encrypt**. SSL/TLS (Secure Sockets Layer/Transport Layer Security) là một giao thức bảo mật dùng để bảo vệ dữ liệu truyền qua mạng internet, đảm bảo rằng thông tin nhạy cảm như thông tin cá nhân, mật khẩu, và giao dịch tài chính được mã hóa và an toàn.
 
-Bằng cách tích hợp Let's Encrypt vào hệ thống của họ, Squarespace giúp người dùng dễ dàng kích hoạt chứng chỉ SSL/TLS cho trang web của họ một cách tự động và miễn phí. Điều này giúp tăng cường sự tin cậy và an toàn cho trang web, cũng như **cải thiện vị trí của trang web trên các công cụ tìm kiếm do SSL/TLS** được coi là một yếu tố quan trọng trong việc xếp hạng trang web trên các công cụ tìm kiếm như Google.
+Bằng cách tích hợp **Let's Encrypt** vào hệ thống của họ, **Squarespace** giúp người dùng dễ dàng **kích hoạt chứng chỉ SSL/TLS cho trang web của họ một cách tự động và miễn phí**. Điều này giúp tăng cường sự tin cậy và an toàn cho trang web, cũng như **cải thiện vị trí của trang web trên các công cụ tìm kiếm do SSL/TLS** được coi là một yếu tố quan trọng trong việc xếp hạng trang web trên các công cụ tìm kiếm như Google.
 
 <div class="post-img-post">
-    <img src="/img/2024-03-27-About-custom-domain-configuration/overview-squarespace.png">
+    <img src="/img/2024-03-27-About-custom-domain-configuration/overview-squarespace.png"><br>
     Trang quản lý Domain có giao diện như ảnh
 </div>
 
@@ -148,7 +147,7 @@ Chúng ta sẽ xóa hết các Preset cấu hình mặc định của Squarespac
 Tiếp tục `Add Record` như ảnh dưới:
 
 <div class="post-img-post">
-    <img src="/img/2024-03-27-About-custom-domain-configuration/cau-hinh-dns.png">
+    <img src="/img/2024-03-27-About-custom-domain-configuration/cau-hinh-dns.png"><br>
     Cấu hình DNS
 </div>
 
@@ -165,10 +164,10 @@ Sau khi cấu hình xong, chúng ta sử dụng `dig` trên Linux `terminal` đ�
 
 *Nếu không có Linux hoặc không thể sử dụng lệnh `dig`* chúng ta có thể sử dụng [ToolBox Google](https://toolbox.googleapps.com/apps/dig/?lang=vi#A/) và điền thông tin tên miền của chúng ta
 
-<div class="post-img-post">
+<div class="post-img-post"  style="width: 70%;">
     <a href="https://toolbox.googleapps.com/apps/dig/?lang=vi#A/">
     <img src="/img/2024-03-27-About-custom-domain-configuration/google-admin-dig-1.png">
-    </a>
+    </a><br>
     Google Admin Toolbox - Dig
 </div>
 
@@ -201,29 +200,21 @@ bangnguyendev.github.io. 3523 IN A 185.199.111.153
     <img src="/img/2024-03-27-About-custom-domain-configuration/setup-github-page-CNAME.png">
 </div>
 
-- Bước 3, quá trình check DNS cần một vài một nhé!
+- Bước 3, quá trình check DNS cần một vài phút nhé!
 
 - Bước 4, đợi bước 3 check hoàn tất thì bạn cần phải tick HTTPS.
 
 {: .box-note}
 Note: DNS changes can take up to 24 hours to propagate.
 
-<div class="post-img-post">
-    <a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#about-custom-domain-configuration
-    ">
-    <img src="/img/2024-03-27-About-custom-domain-configuration/note-config-dns.png">
-    </a>
-    Note: DNS changes can take up to 24 hours to propagate.
-</div>
-
 ### ⚙️ Giải thích thông số cấu hình
 
-Lý do mình cấu hình như vậy ở đây hen!!!
+- *Lý do mình cấu hình như vậy ở đây hen!!!*
 
 <div class="post-img-post">
     <a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site">
     <img src="/img/2024-03-27-About-custom-domain-configuration/learn-more-about-config-DNS-githubpage.png">
-    </a>
+    </a><br>
     Configuring a custom domain for your GitHub Pages site
 </div>
 
@@ -264,6 +255,17 @@ Lí do [***Cấu hình DNS Squarespace***](#cấu-hình-dns-squarespace) cho `A 
     </a>
 </div>
 
+### Kết quả config DNS cho Github-Page
+
+Sau hơn 6 tiếng để DNS cấu hình thì trang Web nó đã hoạt động.
+
+Như hình bên dưới thấy khi sử dụng địa chỉ gốc [bangnguyendev.github.io](https://bangnguyendev.github.io/) thì báo về `301 Moved Permanently`.
+
+Trang web đã được chuyển tới [mittochipzz.net](https://mittochipzz.net)
+
+<div class="post-img-post">
+      <img src="/img/2024-03-27-About-custom-domain-configuration/output-config-DNS-done.png">
+</div>
 
 
 <div class="contact_NFC">

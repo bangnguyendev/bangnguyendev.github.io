@@ -247,26 +247,21 @@
 </script>
 
 
-<!-- Tạo nút nhấn lên TOP -->
-<button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">
-  <span class="icon">
-    <i class="fa fa-arrow-up"></i>
-  </span>
-</button>
+<!-- Back to top button / Tạo nút nhấn lên TOP -->
+<a id="button"></a>
 
 <script>
-  window.onscroll = function() {scrollFunction()};
-  
-  function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      document.getElementById("scrollToTopBtn").style.display = "block";
+  var btn = $('#button');
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 300) {
+      btn.addClass('show');
     } else {
-      document.getElementById("scrollToTopBtn").style.display = "none";
+      btn.removeClass('show');
     }
-  }
-  
-  function scrollToTop() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
-  </script>
+  });
+
+  btn.on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop:0}, '300');
+  });
+</script>

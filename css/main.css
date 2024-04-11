@@ -934,34 +934,43 @@ footer .theme-by {
   margin-right: 10px;
 }
 
-#scrollToTopBtn {
-  display: none;
-  position: fixed;
-  bottom: 15px; /* Giảm khoảng cách từ dưới lên */
-  right: 25px; /* Giảm khoảng cách từ phải qua */
-  z-index: 99;
-  border: none;
-  border-radius: 50%;
-  outline: none;
-  background-color: rgb(255, 136, 0);
-  color: #fff;
-  font-size: 18px; /* Giảm kích thước font */
-  width: 40px; /* Giảm chiều rộng */
-  height: 40px; /* Giảm chiều cao */
-  line-height: 40px; /* Giảm chiều cao dòng */
+#button {
+  display: inline-block;
+  background-color: #FF9800;
+  width: 50px;
+  height: 50px;
   text-align: center;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
 }
-
-#scrollToTopBtn:hover {
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
   background-color: #555;
 }
-
-.icon {
-  display: inline-block;
-  font-size: 20px; /* Giảm kích thước icon */
+#button.show {
+  opacity: 1;
+  visibility: visible;
 }
+
 
 
 

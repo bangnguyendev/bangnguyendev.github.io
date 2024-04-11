@@ -4,16 +4,28 @@ jobs:
   lighthouse:
     runs-on: ubuntu-latest
     steps:
-      - run: |
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Cache Chrome
+        uses: actions/cache@v2
+        with:
+          path: ~/.cache
+          key: ${{ runner.os }}-chrome-${{ hashFiles('google-chrome-stable_current_amd64.deb') }}
+          restore-keys: |
+            ${{ runner.os }}-chrome-
+
+      - name: Install Chrome
+        run: |
           wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
           sudo apt-get install -f -y
           sudo apt install -y ./google-chrome-stable_current_amd64.deb
-      - uses: actions/checkout@v2
+
       - name: Audit URLs using Lighthouse
         uses: treosh/lighthouse-ci-action@v9
         with:
           urls: |
-            https://mittochipzz.net
-          budgetPath: ./budget.json # test performance budgets
-          uploadArtifacts: true # save results as an action artifacts
-          temporaryPublicStorage: true # upload lighthouse report to the temporary storage
+            https://bangnguyendev.github.io
+          budgetPath: ./budget.json
+          uploadArtifacts: true
+          temporaryPublicStorage: true

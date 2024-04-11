@@ -934,23 +934,36 @@ footer .theme-by {
   margin-right: 10px;
 }
 
-/* Tạo nút nhấn về TOP */
-#myBtn {
+#scrollToTopBtn {
   display: none;
   position: fixed;
-  bottom: 20px;
-  right: 30px;
+  bottom: 15px; /* Giảm khoảng cách từ dưới lên */
+  right: 25px; /* Giảm khoảng cách từ phải qua */
   z-index: 99;
   border: none;
-  border-radius: 10px;
+  border-radius: 50%;
   outline: none;
   background-color: rgb(255, 136, 0);
+  color: #fff;
+  font-size: 18px; /* Giảm kích thước font */
+  width: 40px; /* Giảm chiều rộng */
+  height: 40px; /* Giảm chiều cao */
+  line-height: 40px; /* Giảm chiều cao dòng */
+  text-align: center;
   cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
-#myBtn:hover {
+#scrollToTopBtn:hover {
   background-color: #555;
 }
+
+.icon {
+  display: inline-block;
+  font-size: 20px; /* Giảm kích thước icon */
+}
+
+
 
 /* --- Pager --- */
 

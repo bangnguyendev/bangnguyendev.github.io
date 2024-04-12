@@ -27,7 +27,7 @@ Trang web [*https://root-servers.org*](https://root-servers.org) là một ngu�
 
 <div class="post-img-post" style="width: 70%;">
     <a href="https://root-servers.org/">
-        <img src="/img/2024-03-27-About-custom-domain-configuration/root-server.png">
+        <img src="/img/2024-03-27-About-custom-domain-configuration/root-server.png" loading="lazy">
     </a>
     https://root-servers.org/
 </div>
@@ -87,7 +87,7 @@ Trang web [*https://root-servers.org*](https://root-servers.org) là một ngu�
 
 <div class="post-img-post"  style="width: 70%;">
     <a href="https://domains.squarespace.com/">
-        <img src="/img/2024-03-27-About-custom-domain-configuration/Squarespace-index.png">
+        <img src="/img/2024-03-27-About-custom-domain-configuration/Squarespace-index.png" loading="lazy">
     </a><br>
     https://domains.squarespace.com/
 </div>
@@ -98,34 +98,34 @@ Tiếp theo, nhập key-word tên domain mà các bạn muốn vào ô tìm ki�
 
 <div class="post-img-post">
     <a href="https://domains.squarespace.com/">
-        <img src="/img/2024-03-27-About-custom-domain-configuration/search-domain.png">
+        <img src="/img/2024-03-27-About-custom-domain-configuration/search-domain.png" loading="lazy">
     </a>
 </div>
 
 Thực hiện chọn lựa Domain rồi bấm tiếp tục như ảnh bên dưới
 
 <div class="post-img-post">
-    <img src="/img/2024-03-27-About-custom-domain-configuration/dang-ky-domain- 1.png"><br>
+    <img src="/img/2024-03-27-About-custom-domain-configuration/dang-ky-domain- 1.png" loading="lazy"><br>
     Thực hiện chọn lựa Domain rồi bấm tiếp tục như ảnh
 </div>
 
 <div class="post-img-post">
-    <img src="/img/2024-03-27-About-custom-domain-configuration/dang-ky-domain- 2.jpg"><br>
+    <img src="/img/2024-03-27-About-custom-domain-configuration/dang-ky-domain- 2.jpg" loading="lazy"><br>
     Điền đầy đủ thông tin cá nhân, pháp lý và Bấm tiếp tục
 </div>
 
 <div class="post-img-post">
-    <img src="/img/2024-03-27-About-custom-domain-configuration/dang-ky-domain- 3.jpg"><br>
+    <img src="/img/2024-03-27-About-custom-domain-configuration/dang-ky-domain- 3.jpg" loading="lazy"><br>
     Điền thông tin để in hóa đơn (nếu cần)
 </div>
 
 <div class="post-img-post">
-    <img src="/img/2024-03-27-About-custom-domain-configuration/dang-ky-domain- 4.jpg"><br>
+    <img src="/img/2024-03-27-About-custom-domain-configuration/dang-ky-domain- 4.jpg" loading="lazy"><br>
     Nhập thông tin thẻ VISA/MASTERCARD để thanh toán
 </div>
 
 <div class="post-img-post">
-    <img src="/img/2024-03-27-About-custom-domain-configuration/dang-ky-domain- 55.png"><br>
+    <img src="/img/2024-03-27-About-custom-domain-configuration/dang-ky-domain- 55.png" loading="lazy"><br>
     Giao diện quản lý các Domain bạn sở hữu của hệ thống Squarespace
 </div>
 
@@ -134,7 +134,7 @@ Thực hiện chọn lựa Domain rồi bấm tiếp tục như ảnh bên dư�
 Bằng cách tích hợp **Let's Encrypt** vào hệ thống của họ, **Squarespace** giúp người dùng dễ dàng **kích hoạt chứng chỉ SSL/TLS cho trang web của họ một cách tự động và miễn phí**. Điều này giúp tăng cường sự tin cậy và an toàn cho trang web, cũng như **cải thiện vị trí của trang web trên các công cụ tìm kiếm do SSL/TLS** được coi là một yếu tố quan trọng trong việc xếp hạng trang web trên các công cụ tìm kiếm như Google.
 
 <div class="post-img-post">
-    <img src="/img/2024-03-27-About-custom-domain-configuration/overview-squarespace.png"><br>
+    <img src="/img/2024-03-27-About-custom-domain-configuration/overview-squarespace.png" loading="lazy"><br>
     Trang quản lý Domain có giao diện như ảnh
 </div>
 
@@ -147,7 +147,7 @@ Chúng ta sẽ xóa hết các Preset cấu hình mặc định của Squarespac
 Tiếp tục `Add Record` như ảnh dưới:
 
 <div class="post-img-post">
-    <img src="/img/2024-03-27-About-custom-domain-configuration/cau-hinh-dns.png"><br>
+    <img src="/img/2024-03-27-About-custom-domain-configuration/cau-hinh-dns.png" loading="lazy"><br>
     Cấu hình DNS
 </div>
 
@@ -159,14 +159,14 @@ Sau khi cấu hình xong, chúng ta sử dụng `dig` trên Linux `terminal` đ�
 **Note:** The dig command, which can be used to verify correct configuration of DNS records, is ***not included in Windows***. Before you can verify that your DNS records are configured correctly, you must install [BIND](https://www.isc.org/bind/).
 
 <div class="post-img-post">
-    <img src="/img/2024-03-27-About-custom-domain-configuration/done-config-dns.png">
+    <img src="/img/2024-03-27-About-custom-domain-configuration/done-config-dns.png" loading="lazy">
 </div>
 
 *Nếu không có Linux hoặc không thể sử dụng lệnh `dig`* chúng ta có thể sử dụng [ToolBox Google](https://toolbox.googleapps.com/apps/dig/?lang=vi#A/) và điền thông tin tên miền của chúng ta
 
 <div class="post-img-post"  style="width: 70%;">
     <a href="https://toolbox.googleapps.com/apps/dig/?lang=vi#A/">
-    <img src="/img/2024-03-27-About-custom-domain-configuration/google-admin-dig-1.png">
+    <img src="/img/2024-03-27-About-custom-domain-configuration/google-admin-dig-1.png" loading="lazy">
     </a><br>
     Google Admin Toolbox - Dig
 </div>
@@ -197,7 +197,7 @@ bangnguyendev.github.io. 3523 IN A 185.199.111.153
 - Truy cập vào repo chứa source code và làm theo các bước như hình
 
 <div class="post-img-post">
-    <img src="/img/2024-03-27-About-custom-domain-configuration/setup-github-page-CNAME.png">
+    <img src="/img/2024-03-27-About-custom-domain-configuration/setup-github-page-CNAME.png" loading="lazy">
 </div>
 
 - Bước 3, quá trình check DNS cần một vài phút nhé!
@@ -213,7 +213,7 @@ Note: DNS changes can take up to 24 hours to propagate.
 
 <div class="post-img-post">
     <a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site">
-    <img src="/img/2024-03-27-About-custom-domain-configuration/learn-more-about-config-DNS-githubpage.png">
+    <img src="/img/2024-03-27-About-custom-domain-configuration/learn-more-about-config-DNS-githubpage.png" loading="lazy">
     </a><br>
     Configuring a custom domain for your GitHub Pages site
 </div>
@@ -238,7 +238,7 @@ Github-page hỗ trợ 3 loại **Domain subdomain, Custom subdomain, Apex domai
 
 <div class="post-img-post">
     <a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages#supported-custom-domains">
-      <img src="/img/2024-03-27-About-custom-domain-configuration/support-domain-githubpage.png">
+      <img src="/img/2024-03-27-About-custom-domain-configuration/support-domain-githubpage.png" loading="lazy">
     </a>
 </div>
 
@@ -251,7 +251,7 @@ Lí do [***Cấu hình DNS Squarespace***](#cấu-hình-dns-squarespace) cho `A 
 <div class="post-img-post">
     <a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain
     ">
-      <img src="/img/2024-03-27-About-custom-domain-configuration/configuring-an-apex-domain.png">
+      <img src="/img/2024-03-27-About-custom-domain-configuration/configuring-an-apex-domain.png" loading="lazy">
     </a>
 </div>
 
@@ -264,7 +264,7 @@ Như hình bên dưới thấy khi sử dụng địa chỉ gốc [bangnguyendev
 Trang web đã được chuyển tới [mittochipzz.net](https://mittochipzz.net)
 
 <div class="post-img-post">
-      <img src="/img/2024-03-27-About-custom-domain-configuration/output-config-DNS-done.png">
+      <img src="/img/2024-03-27-About-custom-domain-configuration/output-config-DNS-done.png" loading="lazy">
 </div>
 
 

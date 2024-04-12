@@ -1,8 +1,7 @@
 ---
 layout: page-bio
 title: Mít tơ Chipzz
-meta-title: Mít tơ Chipzz
-subtitle: "Your Tech Companion for Informed Decisions."
+
 bigimg:
   - "/img/Affiliate/banner.png"
 tags: [affiliate, tiktok, shopee, mit to chip]
@@ -12,10 +11,13 @@ comments: true
 
 *Chào mừng đến với **Mít tơ Chipzz** - nơi 'review' không chỉ là từ ngữ mà còn là cuộc sống! Tại đây, chúng tôi tổng hợp những đánh giá chân thành và thông tin thú vị về các sản phẩm công nghệ, giúp bạn quyết định đúng đắn trước khi mua sắm. Cùng khám phá và tận hưởng niềm vui của công nghệ cùng Mít tơ Chipzz ngay hôm nay!*
 
+*Thank you for following!🩷*
+
 <img src="https://hits.sh/bangnguyendev.github.io.svg?style=for-the-badge&label=%F0%9F%8E%AFL%C6%B0%E1%BB%A3t%20truy%20c%E1%BA%ADp&extraCount=272133&labelColor=646363">
 ### ⚙️ *Mấy cái đồ mà tui review* 👍👌
 
 <main>
+
   <!--  Sản phẩm -->
   <section class="product">
     {%- assign bio-name-product = "Bàn phím cơ Akko 3068 Silent Bluetooth"-%}<!--  Tên sản phẩm -->
@@ -91,7 +93,6 @@ comments: true
 </main>
 
 
-
 {: .box-warning}
 *Nếu bạn có bất kỳ câu hỏi hay góp ý nào, xin vui lòng để lại bình luận phía dưới.*
 *Tôi rất mong được nghe ý kiến của các bạn.👂👂👂*
@@ -100,4 +101,4 @@ comments: true
 *If you have any questions or suggestions, please leave a comment below.*
 *I look forward to hearing from you.👂👂👂*
 
-*Thank you for following!🩷*
+

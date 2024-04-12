@@ -19,7 +19,7 @@ Trong thời đại công nghệ ngày nay, mối lo ngại về bảo mật ng�
 Sandbox là một kỹ thuật cô lập các ứng dụng để bảo vệ máy tính hoặc điện thoại khỏi phần mềm độc hại và ngăn chúng xâm nhập và gây hỏng hóc hệ thống hoặc rò rỉ thông tin cá nhân.
 
 <div class="post-img-post">
-    <img src="/img/2024-04-10-What-Is-a-Sandbox-Environment/Untitled.png">
+    <img src="/img/2024-04-10-What-Is-a-Sandbox-Environment/Untitled.png " loading="lazy">
 </div>
 
 Trong máy tính, mỗi ứng dụng thường chia sẻ một không gian bộ nhớ và CPU chung. Điều này có thể dẫn đến việc một ứng dụng chiếm hết tài nguyên của hệ thống mà không có kiểm soát. Sandbox cô lập các ứng dụng trong một môi trường an toàn, ngăn chúng gây hại cho hệ thống.
@@ -46,7 +46,7 @@ Sandbox đi kèm với các tính năng hữu ích sau:
 Giả sử một tình huống, có một ứng dụng chia sẻ máy tính của bạn với tất cả các ứng dụng đang chạy khác, và một trong số các chương trình đó chứa thông tin nhạy cảm của bạn. Khi các ứng dụng không có sandbox, các ứng dụng độc hại tồn tại trên máy bạn sẽ luôn thăm dò các khu vực lưu thông tin bảo mật trên các ứng dụng đó, tìm ra các lỗ hổng của chương trình và đánh cắp thông tin nhạy cảm của bạn.
 
 <div class="post-img-post">
-    <img src="/img/2024-04-10-What-Is-a-Sandbox-Environment/Untitled%202.png">
+    <img src="/img/2024-04-10-What-Is-a-Sandbox-Environment/Untitled%202.png " loading="lazy">
 </div>
 
 Sandbox sẽ là giải pháp hữu hiệu giải quyết các vấn đề đó. Nó cung cấp khả năng bảo vệ các chương trình và chống lại các chương trình độc hại. Khi một ứng dụng chạy trong sandbox, nó chỉ có thể truy cập vào các khu vực bộ nhớ đã được cấp phép cho nó. Vì vậy, việc mở các tài liệu nhạy cảm sẽ ngăn không cho các malware hay ứng dụng độc hại xâm nhập, vì tài liệu này không nằm cùng khu vực bộ nhớ với các chương trình độc hại đó.
@@ -64,7 +64,7 @@ Sandbox sẽ là giải pháp hữu hiệu giải quyết các vấn đề đó.
 Một trong những Ứng dụng máy ảo nổi tiếng hiện nay **là VirtualBox**, có thể chạy máy ảo trên cả **Windows** lẫn macOS hay kể **cả Linux**. Các chương trình máy ảo sẽ giúp tạo ra một môi trường phần cứng ảo và chạy riêng một hệ điều hành. Hệ điều hành mới này sẽ tách biệt hoàn toàn với máy tính của bạn, tất cả các ứng dụng chạy trong máy ảo sẽ không được phép truy cập vào bất kỳ đâu bên ngoài máy ảo, nhờ vậy sẽ bảo vệ hệ thống thật của bạn trước các phần mềm không đảm bảo.
 
 <div class="post-img-post">
-    <img src="/img/2024-04-10-What-Is-a-Sandbox-Environment/Untitled%203.png">
+    <img src="/img/2024-04-10-What-Is-a-Sandbox-Environment/Untitled%203.png " loading="lazy">
 </div>
 
 
@@ -73,7 +73,7 @@ Một trong những Ứng dụng máy ảo nổi tiếng hiện nay **là Virtu
 Windows Sandbox là một môi trường ảo hoá của Microsoft, ngay bên trong Windows hay gọi vui là chạy máy ảo Windows trong chính Windows. Sandbox là một công cụ để test app, kiểm thử các phần mềm để tránh các rủi ro về malware, virus hay spyware xâm nhập vào máy tính của mình. Sandbox hoạt động như một môi trường riêng biệt so với Windows chính mà người dùng đang sử dụng, sau khi đóng Sandbox thì mọi thứ đã cài đặt, đã kiểm tra cũng sẽ biến mất mà không để lại bất kì dấu vết nào.
 
 <div class="post-img-post">
-    <img src="/img/2024-04-10-What-Is-a-Sandbox-Environment/Untitled%2013.png">
+    <img src="/img/2024-04-10-What-Is-a-Sandbox-Environment/Untitled%2013.png " loading="lazy">
 </div>
 
 ### ⚙️ Cách kích hoạt sandbox trên Windows 10
@@ -96,7 +96,7 @@ Máy tính bạn phải đạt được yêu cầu cấu hình tối thiểu sau
 Tại đây, hãy kiểm tra dòng **Virtualization**, nếu **Enable** tức CPU của bạn có hỗ trợ chức năng ảo hóa.
 
 <div class="post-img-post">
-    <img src="/img/2024-04-10-What-Is-a-Sandbox-Environment/Untitled%204.png">
+    <img src="/img/2024-04-10-What-Is-a-Sandbox-Environment/Untitled%204.png " loading="lazy">
 </div>
 
 #### ⚙️ Cách kích hoạt Sandbox Windows 10
@@ -106,17 +106,17 @@ Tại đây, hãy kiểm tra dòng **Virtualization**, nếu **Enable** tức
 Nhấn **Windows + S** > Gõ vào thanh tìm kiếm **Turn Windows features on or off** và chọn ứng dụng như hình.
 
 <div class="post-img-post">
-    <img src="/img/2024-04-10-What-Is-a-Sandbox-Environment/Untitled%205.png">
+    <img src="/img/2024-04-10-What-Is-a-Sandbox-Environment/Untitled%205.png " loading="lazy">
 </div>
 
 Tìm đến 3 tính năng là **Virtual Machine Platform**, **Windows Hypervisor Platform** và **Windows Sandbox**, (Hyper-V bật được thì tốt) bật cả 3 lên và **restart** máy là xong.
 
 <div class="post-img-post">
-    <img src="/img/2024-04-10-What-Is-a-Sandbox-Environment/Untitled%206.png">
+    <img src="/img/2024-04-10-What-Is-a-Sandbox-Environment/Untitled%206.png " loading="lazy">
 </div>
 
 <div class="post-img-post">
-    <img src="/img/2024-04-10-What-Is-a-Sandbox-Environment/Untitled%207.png">
+    <img src="/img/2024-04-10-What-Is-a-Sandbox-Environment/Untitled%207.png " loading="lazy">
     <br>
     Khởi động lại máy tính
 </div>
@@ -128,7 +128,7 @@ Khởi động lại máy tính
 Nhấn **Windows + S** > Gõ **Windows Sandbox** > Nhấn vào **Windows Sandbox** để mở.
 
 <div class="post-img-post">
-    <img src="/img/2024-04-10-What-Is-a-Sandbox-Environment/Untitled%208.png">
+    <img src="/img/2024-04-10-What-Is-a-Sandbox-Environment/Untitled%208.png " loading="lazy">
 </div>
 
 Sử dụng Sandbox:
@@ -142,33 +142,33 @@ Ví dụ, trường hợp tôi cài đặt một phần mềm Git với một đ
 - Tôi sử dụng Sandbox, mở trình duyệt và truy cập trang web [git-scm.com/downloads](https://git-scm.com/downloads) mà tôi cho là không an toàn (tôi thử nghiệm thôi nhé - chứ trang này an toàn)
 
 <div class="post-img-post">
-    <img src="/img/2024-04-10-What-Is-a-Sandbox-Environment/Untitled%209.png">
+    <img src="/img/2024-04-10-What-Is-a-Sandbox-Environment/Untitled%209.png " loading="lazy">
     <br>
     Trong Sandbox chưa có Git
 </div>
 
 - Tải file *.exe và cài đặt trong môi trường Sandbox
 <div class="post-img-post">
-    <img src="/img/2024-04-10-What-Is-a-Sandbox-Environment/Untitled%2010.png">
+    <img src="/img/2024-04-10-What-Is-a-Sandbox-Environment/Untitled%2010.png " loading="lazy">
     <br>
     Tải và cài đặt trong môi trường Sandbox
 </div>
 
 - Sau khi cài đặt xong, phần mềm đã được cài đặt và chúng ta thấy nó hoạt động bình thường và không phải là một mối đe doạ.
 <div class="post-img-post">
-    <img src="/img/2024-04-10-What-Is-a-Sandbox-Environment/Untitled%2011.png">
+    <img src="/img/2024-04-10-What-Is-a-Sandbox-Environment/Untitled%2011.png " loading="lazy">
     <br>
     Đúng là file cài đặt chuẩn vì không có chuyện gì xảy ra
 </div>
 
 - Khi hoàn tất việc thử nghiệm thì chúng ta tắt Sandbox, sẽ có một thông báo được hiện ra, báo răng mọi thay đổi trong Sandbox từ nãy giờ sẽ bị xóa bỏ hoàn toàn.
 <div class="post-img-post">
-    <img src="/img/2024-04-10-What-Is-a-Sandbox-Environment/Untitled%2012.png">
+    <img src="/img/2024-04-10-What-Is-a-Sandbox-Environment/Untitled%2012.png " loading="lazy">
 </div>
 
 - Sau khi đóng Sandbox thì mọi thứ đã cài đặt, đã kiểm tra cũng sẽ biến mất mà không để lại bất kì dấu vết nào.
 <div class="post-img-post">
-    <img src="/img/2024-04-10-What-Is-a-Sandbox-Environment/Untitled%2013.png">
+    <img src="/img/2024-04-10-What-Is-a-Sandbox-Environment/Untitled%2013.png " loading="lazy">
     <br>
     Xóa sạch mọi cài đặt, mới tinh tươi
 </div>
@@ -284,16 +284,20 @@ done
 
 -  Đặt script **encrypt.sh** và **public.pem** trong thư mục chứa 10 tệp tin *.txt mô phỏng data
 
+- Các tệp chứa nội dung **"test encrypt 2"** và **"test encrypt 8"** ...
+
 <div class="post-img-post">
-    <img src="/img/2024-04-10-What-Is-a-Sandbox-Environment/encrypt_demo_1.png">
+    <img src="/img/2024-04-10-What-Is-a-Sandbox-Environment/encrypt_demo_1.png " loading="lazy">
     <br>
     Cấu trúc thư mục và nội dung tệp dữ liệu
 </div>
 
 -  Thực thi đoạn script mã hóa dữ liệu và xóa các tệp hiện có trong thư mục (ngoại trừ 2 file public.pem và encrypt.sh)
 
+- Nội dung bên trong file *.txt bị mã hóa không thể đọc được nữa
+
 <div class="post-img-post">
-    <img src="/img/2024-04-10-What-Is-a-Sandbox-Environment/encrypt_demo_2.png">
+    <img src="/img/2024-04-10-What-Is-a-Sandbox-Environment/encrypt_demo_2.png " loading="lazy">
     <br>
     Thực thi đoạn script - Thông tin trong tệp tin đã bị mã hóa
 </div>
@@ -315,8 +319,10 @@ done
 
 - Đặt script **decrypt.sh** và **private.pem** trong thư mục chứa 10 tệp tin đã bị mã hóa
 
+- Sau khi chạy lệnh, những file có hậu tố *.enc -> *.enc.txt và đã đọc được nội dung trước đó.
+
 <div class="post-img-post">
-    <img src="/img/2024-04-10-What-Is-a-Sandbox-Environment/decrypt_demo_1.png">
+    <img src="/img/2024-04-10-What-Is-a-Sandbox-Environment/decrypt_demo_1.png" loading="lazy">
     <br>
     Thực thi đoạn script - Thông tin trong tệp tin đã được giải mã
 </div>
@@ -502,7 +508,7 @@ int main() {
 ##### gcc biên dịch main.c thành file encryptencrypt_file
 
 <div class="post-img-post">
-    <img src="/img/2024-04-10-What-Is-a-Sandbox-Environment/Untitled%2014.png">
+    <img src="/img/2024-04-10-What-Is-a-Sandbox-Environment/Untitled%2014.png " loading="lazy">
     <br>
     gcc biên dịch main.c thành file encryptencrypt_file
 </div>
@@ -510,14 +516,14 @@ int main() {
 ##### Đọc dữ liệu bên trong các tệp data mô phỏng
 
 <div class="post-img-post">
-    <img src="/img/2024-04-10-What-Is-a-Sandbox-Environment/Untitled%2015.png">
+    <img src="/img/2024-04-10-What-Is-a-Sandbox-Environment/Untitled%2015.png " loading="lazy">
     Đọc dữ liệu bên trong các tệp data mô phỏng
 </div>
 
 ##### Thực thi script mã hóa dữ liệu
 
 <div class="post-img-post">
-    <img src="/img/2024-04-10-What-Is-a-Sandbox-Environment/Untitled%2016.png">
+    <img src="/img/2024-04-10-What-Is-a-Sandbox-Environment/Untitled%2016.png " loading="lazy">
     <br>
     Thực thi script mã hóa dữ liệu
 </div>
@@ -525,7 +531,7 @@ int main() {
 ##### Kết quả mã hóa dữ liệu
 
 <div class="post-img-post">
-    <img src="/img/2024-04-10-What-Is-a-Sandbox-Environment/Untitled%2017.png">
+    <img src="/img/2024-04-10-What-Is-a-Sandbox-Environment/Untitled%2017.png " loading="lazy">
     <br>
     Kết quả mã hóa dữ liệu
 </div>

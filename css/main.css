@@ -940,7 +940,7 @@ footer .theme-by {
   width: 50px;
   height: 50px;
   text-align: center;
-  border-radius: 4px;
+  border-radius: 10px;
   position: fixed;
   bottom: 30px;
   right: 30px;
@@ -949,6 +949,7 @@ footer .theme-by {
   opacity: 0;
   visibility: hidden;
   z-index: 1000;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 #button::after {
   content: "\f077";

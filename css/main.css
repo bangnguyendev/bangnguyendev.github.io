@@ -104,13 +104,42 @@ body {
   font-size: 18px;
   color: #404040;
   /* position: relative; */
-  background: #FFF;
+  /* background: #FFF; */
   /* Chèn hình nền */
-  background-image: url('/img/My_Picture/Dalat_NguyenTrai.webp'); /* Đường dẫn đến hình nền */
+  background-image: url('/img/My_Picture/body-backgound.png'); /* Đường dẫn đến hình nền */
   background-size: cover; /* Tùy chỉnh kích thước hình nền để phủ toàn bộ phần tử */
   background-position: center; /* Căn chỉnh hình nền theo trung tâm */
   background-repeat: no-repeat; /* Không lặp lại hình nền */
   background-attachment: fixed;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-custom {
+    /* Chèn hình nền */
+    background-image: url('/img/My_Picture/footer-backgound-vertical.png'); /* Đường dẫn đến hình nền */
+    background-size: cover; /* Tùy chỉnh kích thước hình nền để phủ toàn bộ phần tử */
+    background-position: center; /* Căn chỉnh hình nền theo trung tâm */
+    background-repeat: no-repeat; /* Không lặp lại hình nền */
+    background-attachment: fixed;
+  }
+
+  body {
+    /* Chèn hình nền */
+    background-image: url('/img/My_Picture/body-backgound-vertical.png'); /* Đường dẫn đến hình nền */
+    background-size: cover; /* Tùy chỉnh kích thước hình nền để phủ toàn bộ phần tử */
+    background-position: center; /* Căn chỉnh hình nền theo trung tâm */
+    background-repeat: no-repeat; /* Không lặp lại hình nền */
+    background-attachment: fixed;
+  }
+
+  footer {
+    /* Chèn hình nền */
+    background-image: url('/img/My_Picture/footer-backgound-vertical.png'); /* Đường dẫn đến hình nền */
+    background-size: cover; /* Tùy chỉnh kích thước hình nền để phủ toàn bộ phần tử */
+    background-position: center; /* Căn chỉnh hình nền theo trung tâm */
+    background-repeat: no-repeat; /* Không lặp lại hình nền */
+    background-attachment: fixed;
+  }
 }
 
 p {
@@ -271,7 +300,6 @@ img {
   border-bottom: 1px solid #EAEAEA;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   /* Chèn hình nền */
-  background-color: rgba(0, 0, 0, 0.3); /* Màu đen với độ mờ là 30% (0.3) */
   background-image: url('/img/My_Picture/footer-backgound.png'); /* Đường dẫn đến hình nền */
   background-size: cover; /* Tùy chỉnh kích thước hình nền để phủ toàn bộ phần tử */
   background-position: center; /* Căn chỉnh hình nền theo trung tâm */
@@ -462,7 +490,6 @@ footer {
   margin-top: 50px;
   font-size: 14px;
   /* Chèn hình nền */
-  background-color: rgba(0, 0, 0, 0.3); /* Màu đen với độ mờ là 30% (0.3) */
   background-image: url('/img/My_Picture/footer-backgound.png'); /* Đường dẫn đến hình nền */
   background-size: cover; /* Tùy chỉnh kích thước hình nền để phủ toàn bộ phần tử */
   background-position: center; /* Căn chỉnh hình nền theo trung tâm */

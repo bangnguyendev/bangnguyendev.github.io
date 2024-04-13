@@ -931,7 +931,7 @@ footer .theme-by {
   margin-right: 10px;
 }
 
-#button {
+#button_onTop {
   display: inline-block;
   background-color: #FF9800;
   width: 50px;
@@ -948,7 +948,7 @@ footer .theme-by {
   z-index: 1000;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
-#button::after {
+#button_onTop::after {
   content: "\f077";
   font-family: FontAwesome;
   font-weight: normal;
@@ -957,14 +957,14 @@ footer .theme-by {
   line-height: 50px;
   color: #fff;
 }
-#button:hover {
+#button_onTop:hover {
   cursor: pointer;
   background-color: #333;
 }
-#button:active {
+#button_onTop:active {
   background-color: #555;
 }
-#button.show {
+#button_onTop.show {
   opacity: 1;
   visibility: visible;
 }

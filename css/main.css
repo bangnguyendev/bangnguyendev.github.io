@@ -1,7 +1,3 @@
----
-layout: null
----
-
 @import url("pygment_highlights.css");
 
 /* CSS cho nút search */
@@ -107,35 +103,15 @@ body {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 18px;
   color: #404040;
-  position: relative;
+  /* position: relative; */
   background: #FFF;
-
-    {
-    % if site.page-col %
-  }
-
-  background: {
-      {
-      site.page-col
-    }
-  }
-
-  ;
-
-    {
-    % endif %
-  }
-
-    {
-    % if site.page-img %
-  }
-
-  background-image: url({{ site.page-img }});
+  /* Chèn hình nền */
+  background-color: rgba(0, 0, 0, 0.3); /* Màu đen với độ mờ là 30% (0.3) */
+  background-image: url('/img/My_Picture/body-backgound.png'); /* Đường dẫn đến hình nền */
+  background-size: cover; /* Tùy chỉnh kích thước hình nền để phủ toàn bộ phần tử */
+  background-position: center; /* Căn chỉnh hình nền theo trung tâm */
+  background-repeat: no-repeat; /* Không lặp lại hình nền */
   background-attachment: fixed;
-
-    {
-    % endif %
-  }
 }
 
 p {
@@ -295,13 +271,13 @@ img {
   background: #F5F5F5;
   border-bottom: 1px solid #EAEAEA;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  {% if site.navbar-col %}
-  background: {{ site.navbar-col }};
-  {% endif %}
-  {% if site.navbar-img %}
-  background-image: url({{ site.navbar-img }});
+  /* Chèn hình nền */
+  background-color: rgba(0, 0, 0, 0.3); /* Màu đen với độ mờ là 30% (0.3) */
+  background-image: url('/img/My_Picture/footer-backgound.png'); /* Đường dẫn đến hình nền */
+  background-size: cover; /* Tùy chỉnh kích thước hình nền để phủ toàn bộ phần tử */
+  background-position: center; /* Căn chỉnh hình nền theo trung tâm */
+  background-repeat: no-repeat; /* Không lặp lại hình nền */
   background-attachment: fixed;
-  {% endif %}
 }
 
 .navbar-custom .navbar-brand {
@@ -440,8 +416,13 @@ img {
 }
 
 @media only screen and (max-width: 767px) {
+  /* update 13/4/2024 tat cho thiet bi di dong */
   .navbar-custom .nav .navlinks-container.show-children {
-    background: rgba(0, 0, 0, 0.2);
+    background: none;
+  }
+
+  .navbar-custom .nav .navlinks-container .navlinks-children a {
+    background: none;
   }
 
   .navbar-custom .nav .navlinks-container.show-children .navlinks-children {
@@ -481,13 +462,13 @@ footer {
   border-top: 1px #EAEAEA solid;
   margin-top: 50px;
   font-size: 14px;
-  {% if site.footer-col %}
-  background: {{ site.footer-col }};
-  {% endif %}
-  {% if site.footer-img %}
-  background-image: url({{ site.footer-img }});
+  /* Chèn hình nền */
+  background-color: rgba(0, 0, 0, 0.3); /* Màu đen với độ mờ là 30% (0.3) */
+  background-image: url('/img/My_Picture/footer-backgound.png'); /* Đường dẫn đến hình nền */
+  background-size: cover; /* Tùy chỉnh kích thước hình nền để phủ toàn bộ phần tử */
+  background-position: center; /* Căn chỉnh hình nền theo trung tâm */
+  background-repeat: no-repeat; /* Không lặp lại hình nền */
   background-attachment: fixed;
-  {% endif %}
 }
 
 footer a {
@@ -672,14 +653,19 @@ footer .theme-by {
 
 /* Bang Nguyen thêm */
 .contact_NFC {
+  display: flex;
   margin-left: auto;
   margin-right: auto;
   padding-left: 40px;
-  /* padding-right: 65px; */
   padding-top: 10px;
   padding-bottom: 20px;
-  background-color: #f087d01f;
+  background-color: #f0d4871f;
   border-radius: 25px;
+}
+
+.column {
+  flex: 1;
+  padding: 0 10px; /* Thêm padding cho mỗi cột */
 }
 
 /* Cập nhật cho chữ chạy thì không bị nhảy lên nhảy xuống. Khóa kích thuocs vùng hiern thị chữ chạy. */
@@ -845,11 +831,6 @@ footer .theme-by {
     margin-top: 91px;
     /* Full navbar is small navbar + 20px padding on each side when expanded */
     margin-bottom: -10px;
-  }
-
-  .intro-header.big-img .page-heading,
-  .intro-header.big-img .post-heading {
-    padding: 150px 0;
   }
 
   .intro-header .page-heading h1 {

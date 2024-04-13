@@ -52,7 +52,7 @@ author:
 
 # Select which links to show in the footer
 footer-links-active:
-  rss: true
+  # rss: true
   facebook: true
   email: true
   #twitter: true
@@ -61,7 +61,7 @@ footer-links-active:
   #instagram: true
   #reddit: false
   stackoverflow: true
-  youtube: true
+  # youtube: true
   telephone: true
 
 # Select which share links to show in posts

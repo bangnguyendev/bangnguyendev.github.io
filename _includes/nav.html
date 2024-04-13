@@ -27,9 +27,9 @@
           <a class="navlinks-parent" href="javascript:void(0)">{{ link[0] }}</a>
           <div class="navlinks-children">
             {% for childlink in link[1] %}
-            {% for linkparts in childlink %}
-            {% include navbarlink.html link=linkparts %}
-            {% endfor %}
+              {% for linkparts in childlink %}
+                {% include navbarlink.html link=linkparts %}
+              {% endfor %}
             {% endfor %}
           </div>
         </li>

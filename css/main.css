@@ -109,14 +109,14 @@ body {
   background-image: url('/img/My_Picture/body-backgound.png'); /* Đường dẫn đến hình nền */
   background-size: cover; /* Tùy chỉnh kích thước hình nền để phủ toàn bộ phần tử */
   background-position: center; /* Căn chỉnh hình nền theo trung tâm */
-  background-repeat: no-repeat; /* Không lặp lại hình nền */
+  background-repeat: round; 
   background-attachment: fixed;
 }
 
 @media only screen and (max-width: 768px) {
   body {
     /* Chèn hình nền */
-    background-image: url('/img/My_Picture/3.png'); /* Đường dẫn đến hình nền */
+    background-image: url('/img/My_Picture/footer-backgound-vertical.png'); /* Đường dẫn đến hình nền */
   }
 }
 
@@ -281,7 +281,7 @@ img {
   background-image: url('/img/My_Picture/footer-backgound.png'); /* Đường dẫn đến hình nền */
   background-size: cover; /* Tùy chỉnh kích thước hình nền để phủ toàn bộ phần tử */
   background-position: center; /* Căn chỉnh hình nền theo trung tâm */
-  background-repeat: no-repeat; /* Không lặp lại hình nền */
+  background-repeat: round; 
   background-attachment: fixed;
 }
 
@@ -424,7 +424,7 @@ img {
   /* update 13/4/2024 tat cho thiet bi di dong */
   .navbar-custom {
     /* Chèn hình nền */
-    background-image: url('/img/My_Picture/3.png'); /* Đường dẫn đến hình nền */
+    background-image: url('/img/My_Picture/footer-backgound-vertical.png'); /* Đường dẫn đến hình nền */
   }
 
   .navbar-custom .nav .navlinks-container.show-children {
@@ -476,7 +476,7 @@ footer {
   background-image: url('/img/My_Picture/footer-backgound.png'); /* Đường dẫn đến hình nền */
   background-size: cover; /* Tùy chỉnh kích thước hình nền để phủ toàn bộ phần tử */
   background-position: center; /* Căn chỉnh hình nền theo trung tâm */
-  background-repeat: no-repeat; /* Không lặp lại hình nền */
+  background-repeat: round; 
   background-attachment: fixed;
 }
 
@@ -517,7 +517,7 @@ footer .theme-by {
 @media only screen and (max-width: 768px) {
   footer {
     /* Chèn hình nền */
-    background-image: url('/img/My_Picture/3.png'); /* Đường dẫn đến hình nền */
+    background-image: url('/img/My_Picture/footer-backgound-vertical.png'); /* Đường dẫn đến hình nền */
   }
 }
 

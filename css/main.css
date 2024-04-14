@@ -116,7 +116,7 @@ body {
 @media only screen and (max-width: 768px) {
   body {
     /* Chèn hình nền */
-    background-image: url('/img/My_Picture/body-backgound-vertical.png'); /* Đường dẫn đến hình nền */
+    background-image: url('/img/My_Picture/3.png'); /* Đường dẫn đến hình nền */
   }
 }
 
@@ -424,7 +424,7 @@ img {
   /* update 13/4/2024 tat cho thiet bi di dong */
   .navbar-custom {
     /* Chèn hình nền */
-    background-image: url('/img/My_Picture/footer-backgound-vertical.png'); /* Đường dẫn đến hình nền */
+    background-image: url('/img/My_Picture/3.png'); /* Đường dẫn đến hình nền */
   }
 
   .navbar-custom .nav .navlinks-container.show-children {
@@ -517,7 +517,7 @@ footer .theme-by {
 @media only screen and (max-width: 768px) {
   footer {
     /* Chèn hình nền */
-    background-image: url('/img/My_Picture/footer-backgound-vertical.png'); /* Đường dẫn đến hình nền */
+    background-image: url('/img/My_Picture/3.png'); /* Đường dẫn đến hình nền */
   }
 }
 

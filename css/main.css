@@ -104,13 +104,7 @@ body {
   font-size: 18px;
   color: #404040;
   /* position: relative; */
-  /* background: #FFF; */
-  /* Chèn hình nền */
-  background-image: url('/img/My_Picture/body-backgound.png'); /* Đường dẫn đến hình nền */
-  background-size: cover; /* Tùy chỉnh kích thước hình nền để phủ toàn bộ phần tử */
-  background-position: center; /* Căn chỉnh hình nền theo trung tâm */
-  background-repeat: no-repeat; 
-  background-attachment: fixed;
+  background: #F5F5F5;;
 }
 
 p {
@@ -270,12 +264,6 @@ img {
   background: #F5F5F5;
   border-bottom: 1px solid #EAEAEA;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  /* Chèn hình nền */
-  background-image: url('/img/My_Picture/footer-backgound.png'); /* Đường dẫn đến hình nền */
-  background-size: cover; /* Tùy chỉnh kích thước hình nền để phủ toàn bộ phần tử */
-  background-position: center; /* Căn chỉnh hình nền theo trung tâm */
-  background-repeat: no-repeat; 
-  background-attachment: fixed;
 }
 
 .navbar-custom .navbar-brand {
@@ -459,12 +447,6 @@ footer {
   border-top: 1px #EAEAEA solid;
   margin-top: 50px;
   font-size: 14px;
-  /* Chèn hình nền */
-  background-image: url('/img/My_Picture/footer-backgound.png'); /* Đường dẫn đến hình nền */
-  background-size: cover; /* Tùy chỉnh kích thước hình nền để phủ toàn bộ phần tử */
-  background-position: center; /* Căn chỉnh hình nền theo trung tâm */
-  background-repeat: no-repeat; 
-  background-attachment: fixed;
 }
 
 footer a {
@@ -501,21 +483,6 @@ footer .theme-by {
   }
 }
 
-@media only screen and (max-width: 768px) {
-  /* update 13/4/2024 tat cho thiet bi di dong */
-  .navbar-custom {
-    /* Chèn hình nền */
-    background-image: url('/img/My_Picture/footer-backgound-vertical.png'); /* Đường dẫn đến hình nền */
-  }
-  body {
-    /* Chèn hình nền */
-    background-image: url('/img/My_Picture/footer-backgound-vertical.png'); /* Đường dẫn đến hình nền */
-  }
-  footer {
-    /* Chèn hình nền */
-    background-image: url('/img/My_Picture/footer-backgound-vertical.png'); 
-  }
-}
 
 /* --- Post preview --- */
 

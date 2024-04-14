@@ -85,11 +85,11 @@ Trang web [*https://root-servers.org*](https://root-servers.org) là một ngu�
 
 Đầu tiên, các bạn truy cập vào trang web [Squarespace](https://domains.squarespace.com) và thực hiện đăng ký hoặc Login bằng tài khoản Google
 
-<div class="post-img-post"  style="width: 70%;">
+<div class="post-img-post">
     <a href="https://domains.squarespace.com/">
         <img src="/img/2024-03-27-About-custom-domain-configuration/Squarespace-index.png" loading="lazy">
     </a><br>
-    https://domains.squarespace.com/
+    domains.squarespace.com
 </div>
 
 Tiếp theo, nhập key-word tên domain mà các bạn muốn vào ô tìm kiếm.

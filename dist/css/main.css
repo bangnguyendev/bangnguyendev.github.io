@@ -623,7 +623,7 @@ footer .theme-by {
 
 .ndb-transbox {
   height: max-content;
-  width: fit-content;
+  width: auto;
   padding-left: 10px;
   padding-right: 10px;
   background: rgba(0, 0, 0, 0.5);

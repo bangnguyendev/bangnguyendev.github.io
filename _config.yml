@@ -52,7 +52,7 @@ author:
 
 # Select which links to show in the footer
 footer-links-active:
-  # rss: true
+  rss: true
   facebook: true
   email: true
   #twitter: true
@@ -113,6 +113,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      sitemap: true # sitemap lập chỉ mục trang
       comments: true  # add comments to all blog posts
       social-share: true # add social media sharing buttons to all blog posts
   -
@@ -128,8 +129,8 @@ link-tags: true
 # Exclude these files from production site
 exclude:
   - CHANGELOG.md
-  # - CNAME
-  - Dockerfile
+  - CNAME
+  # - Dockerfile
   - Gemfile
   - Gemfile.lock
   - LICENSE

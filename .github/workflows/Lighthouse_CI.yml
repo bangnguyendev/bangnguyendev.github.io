@@ -25,7 +25,7 @@ jobs:
         uses: treosh/lighthouse-ci-action@v9
         with:
           urls: |
-            https://bangnguyendev.github.io
+            https://bangnguyendev.com/
           budgetPath: ./budget.json
           uploadArtifacts: true
           temporaryPublicStorage: true

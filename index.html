@@ -26,7 +26,7 @@ bigimg:
     </a>
     <!-- Ngày tháng bài đăng -->
     <p class="post-meta">
-      Posted on {{ post.date | date: "%B %-d, %Y" }}
+      Posted on {{ post.date | date: "%B %-d, %Y" }}  &middot; {% include read_time.html content=post.content %}
     </p>
     <!-- Tóm tắt bài đăng -->
     <div class="post-entry-container">

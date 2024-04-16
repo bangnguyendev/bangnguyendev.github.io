@@ -5,7 +5,7 @@ meta-title: "Điều khiển Servo DC"
 subtitle: "... sử dụng PWM"
 bigimg:
   - "/img/2023-09-13-PWM-servo-dc/COVER.jpg"
-image: /img/2023-09-13-PWM-servo-dc/IMG-AVATAR.jpg
+image: /img/2023-09-13-PWM-servo-dc/IMG-AVATAR-320.jpg
 tags: [STM32F4, TIMER, PWM, SERVO]
 category: lap-trinh-vi-dieu-khien
 gh-repo: bangnguyendev/KEIL-C-STM32F407

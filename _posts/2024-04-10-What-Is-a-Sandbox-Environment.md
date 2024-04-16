@@ -5,7 +5,7 @@ meta-title: "Sandbox Environment"
 subtitle: "... What Is a Sandbox Environment"
 bigimg:
   - "/img/2024-04-10-What-Is-a-Sandbox-Environment/banner.webp"
-image: "/img/2024-04-10-What-Is-a-Sandbox-Environment/Untitled.png"
+image: "/img/2024-04-10-What-Is-a-Sandbox-Environment/avatar.webp"
 tags: [decrypt, encrypt, Sandbox, VirtualBox]
 category: ngoai-luong
 # gh-repo: bangnguyendev/Documents

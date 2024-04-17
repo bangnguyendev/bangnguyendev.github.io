@@ -42,7 +42,8 @@
               {% endif %}
 
               {% if include.type == "post" %}
-              <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }} &middot; {% include read_time.html content=page.content %}</span>
+              <span class="post-meta">✒️ Posted on {{ page.date | date: "%B %-d, %Y" }}<br>
+                 {% include read_time.html content=page.content %}</span>
               {% endif %}
             </div>
           </div>
@@ -69,7 +70,8 @@
             {% endif %}
 
             {% if include.type == "post" %}
-            <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }} &middot; {% include read_time.html content=page.content %}</span>
+            <span class="post-meta">✒️ Posted on {{ page.date | date: "%B %-d, %Y" }}<br> 
+              {% include read_time.html content=page.content %}</span>
             {% endif %}
           </div>
         </div>

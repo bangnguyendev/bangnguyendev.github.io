@@ -26,7 +26,8 @@ bigimg:
     </a>
     <!-- Ngày tháng bài đăng -->
     <p class="post-meta">
-      Posted on {{ post.date | date: "%B %-d, %Y" }}  &middot; {% include read_time.html content=post.content %}
+      ✒️ Posted on {{ post.date | date: "%B %-d, %Y" }} <br> 
+      {% include read_time.html content=post.content %}
     </p>
     <!-- Tóm tắt bài đăng -->
     <div class="post-entry-container">
@@ -46,7 +47,7 @@ bigimg:
           {% assign excerpt_word_count = post.excerpt | number_of_words %}
           {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}
         </p>
-        <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
+        <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read More]</a>
         {% endif %}
       </div>
     </div>

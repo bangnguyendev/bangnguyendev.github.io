@@ -8,6 +8,29 @@ layout: none
     <description>{{ site.description | xml_escape }}</description>
     <link>{{ site.url }}</link>
     <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
+    {% assign pages = site.html_pages | where_exp:'doc','doc.sitemap != false' | where_exp:'doc','doc.url != "/404.html"' | where_exp:'doc','doc.url != "/"' %}
+    {% for page in pages %}
+    {% assign title_words = page.title | split: " " %}
+      <item>
+        <title>
+        {% if title_words.size < 1 %}
+          {{ site.title }}
+        {% else %}
+          {{ page.title | xml_escape }}
+        {% endif %}
+        </title>
+        <description>
+        {% if title_words.size < 1 %}
+          {{ site.title }}{{ site.description }}
+        {% else %}
+          {{ site.title }}{{ page.title | xml_escape }}
+        {% endif %}
+        </description>
+        <link>{{ site.url }}{{ page.url }}</link>
+        <guid isPermaLink="true">{{ site.url }}{{ page.url }}</guid>
+      </item>
+    {% endfor %}
+    
     {% for post in site.posts %}
       <item>
         <title>{{ post.title | xml_escape }}</title>
@@ -20,16 +43,7 @@ layout: none
         <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
       </item>
     {% endfor %}
-    
-  {% assign pages = site.html_pages | where_exp:'doc','doc.sitemap != false' | where_exp:'doc','doc.url != "/404.html"' %}
-  {% for page in pages %}
-    <item>
-      <loc>{{ page.url | replace:'/index.html','/' | absolute_url | xml_escape }}</loc>
-      {% if page.last_modified_at %}
-        <lastmod>{{ page.last_modified_at | date_to_xmlschema }}</lastmod>
-      {% endif %}
-    </item>
-  {% endfor %}
+
 
   </channel>
 </rss>

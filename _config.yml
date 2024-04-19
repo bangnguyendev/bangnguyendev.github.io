@@ -15,10 +15,10 @@ description: Embedded Systems Engineer
 navbar-links:
   📚Books: "books"
   📌Topic:
-    - Linux: Topic/linux
-    - Social sciences: Topic/ngoai-luong
-    - Programming MCU: Topic/lap-trinh-vi-dieu-khien
-    - Electronic components: Topic/dien-dien-tu
+    - Linux: Topic/Linux
+    - Social sciences: Topic/Social sciences
+    - Programming MCU: Topic/Programming MCU
+    - Electronic components: Topic/Electronic components
   👨‍💻About Me: 
     - 🧧Resume🧧: resume/Nguyen-Duy-Bang-CV.pdf
     - Bio Social: bio-social

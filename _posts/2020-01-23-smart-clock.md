@@ -7,7 +7,7 @@ bigimg:
   - "/img/2020-01-17-smart-clock/anh-bia-baiviet.jpg"
 image: /img/2020-01-17-smart-clock/anh-bia-baiviet.jpg
 tags: [đồng hồ, smart, watch, clock, alarm, thingspeak, esp8266]
-category: lap-trinh-vi-dieu-khien
+category: Programming MCU
 gh-repo: bangnguyendev/SmartClock
 gh-badge: [star, watch, fork, follow]
 # comments: true

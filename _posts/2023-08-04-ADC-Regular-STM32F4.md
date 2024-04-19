@@ -7,7 +7,7 @@ bigimg:
   - "/img/2023-08-04-ADC-Regular-STM32F4/Untitled%206.png"
 image: /img/2023-08-04-ADC-Regular-STM32F4/avatar_ADC.jpg
 tags: [STM32F4, STM32, ADC, Regular, LCD2004, 12-BIT]
-category: lap-trinh-vi-dieu-khien
+category: Programming MCU
 gh-repo: bangnguyendev/KEIL-C-STM32F407
 # gh-badge: [star, watch, fork, follow]
 comments: true

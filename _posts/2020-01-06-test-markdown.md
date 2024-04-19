@@ -8,7 +8,7 @@ bigimg:
 image: /img/2020-01-06-test-markdown/markdown_html.jpg
 tags: [markdown, text, html, yaml]
 # comments: true
-category: ngoai-luong
+category: Social sciences
 ---
 
 You can write regular [markdown](http://markdowntutorial.com/) here and Jekyll will automatically convert it to a nice webpage.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](http://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/ italics/ headings/ tables/ etc.

@@ -7,7 +7,7 @@ bigimg:
   - "/img/2021-10-30-so-sanh-abstract-va-interface/cover-csharp.jpg"
 image: "/img/2021-10-30-so-sanh-abstract-va-interface/avatarr-csharp.png"
 tags: [Abstract, Interface, override, Abstract method, virtual method]
-category: ngoai-luong
+category: Social sciences
 # gh-repo: bangnguyendev/Documents
 # gh-badge: [star, watch, fork, follow]
 # comments: true

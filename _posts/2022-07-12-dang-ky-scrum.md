@@ -7,7 +7,7 @@ bigimg:
   - "/img/2022-07-12-dang-ky-scrum/images-cover.png"
 image: /img/2022-07-12-dang-ky-scrum/avatar.jpg
 tags: [scrum, PSM, agile, PROFESSIONAL SCRUM MASTER™ CERTIFICATIONS, PROFESSIONAL SCRUM MASTER, CERTIFICATIONS]
-category: ngoai-luong
+category: Social sciences
 # gh-repo: bangnguyendev/Documents
 # gh-badge: [star, watch, fork, follow]
 comments: true

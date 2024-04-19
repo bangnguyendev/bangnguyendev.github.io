@@ -1251,3 +1251,17 @@ table tr td :last-child {
       transparent);
   border-radius: 0px 5px 5px 0px;
 }
+
+/* Hiển thị category ở inddex */
+.category-show {
+  background-color: rgba(255, 153, 0, 0.2);
+  border-radius: 5px;
+  width: fit-content;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #000000;
+  font-weight: bold;
+  font-size: smaller;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}

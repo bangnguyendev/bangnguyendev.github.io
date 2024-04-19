@@ -7,7 +7,7 @@ bigimg:
   - "/img/2022-10-25-smart-clock-ota/update-internet-of-things-iot-cheat-sheet.webp"
 image: /img/2022-10-25-smart-clock-ota/logo.webp
 tags: [OTA, OTA firmware, firmware, esp8266, adruino, otadrive, ota drive ]
-category: lap-trinh-vi-dieu-khien
+category: Programming MCU
 # gh-repo: bangnguyendev/Documents
 # gh-badge: [star, watch, fork, follow]
 comments: true

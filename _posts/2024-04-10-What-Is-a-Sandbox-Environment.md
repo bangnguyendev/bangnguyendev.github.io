@@ -7,9 +7,10 @@ bigimg:
   - "/img/2024-04-10-What-Is-a-Sandbox-Environment/banner.webp"
 image: "/img/2024-04-10-What-Is-a-Sandbox-Environment/avatar.webp"
 tags: [decrypt, encrypt, Sandbox, VirtualBox]
-category: ngoai-luong
+category: Social sciences
 # gh-repo: bangnguyendev/Documents
 # gh-badge: [star, watch, fork, follow]
+author: "BangNguyen"
 comments: true
 ---
 Trong thời đại công nghệ ngày nay, mối lo ngại về bảo mật ngày càng trở nên nghiêm trọng. Cả máy tính cá nhân và điện thoại di động đều dễ bị hacker xâm nhập nếu người dùng không cẩn thận khi duyệt web hoặc tải ứng dụng từ các nguồn không đáng tin cậy. Điều này tạo ra nguy cơ tiềm ẩn cho việc mất mát thông tin cá nhân, đặc biệt là thông tin tài khoản ngân hàng.

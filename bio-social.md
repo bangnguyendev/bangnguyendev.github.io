@@ -5,7 +5,7 @@ title: Mít tơ Chipzz
 bigimg:
   - "/img/Affiliate/banner.png"
 tags: [affiliate, tiktok, shopee, mit to chip]
-category: ngoai-luong
+category: Social sciences
 comments: true  
 ---
 

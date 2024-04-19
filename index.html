@@ -24,6 +24,12 @@ bigimg:
       </div>
       {% endif %}
     </a>
+
+    <a href="Topic/{{ post.category }}">
+      <div class="category-show">
+        {{ post.category }}
+      </div>
+    </a>
     <!-- Ngày tháng bài đăng -->
     <p class="post-meta">
       ✒️ Posted on {{ post.date | date: "%B %-d, %Y" }} <br> 

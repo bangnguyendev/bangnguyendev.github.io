@@ -7,7 +7,7 @@ bigimg:
   - "/img/2021-09-20-tu-hoc-lap-trinh-nhung/Embedded_Software_Engineer_2.1-1-scaled.jpg"
 image: /img/2021-09-20-tu-hoc-lap-trinh-nhung/a39il8uU.jpeg
 tags: [embedded programing, embedded, embedded developer]
-category: ngoai-luong
+category: Social sciences
 # gh-repo: bangnguyendev/Documents
 # gh-badge: [star, watch, fork, follow]
 # comments: true

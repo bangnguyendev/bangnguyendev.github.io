@@ -7,7 +7,7 @@ bigimg:
   - "/img/2024-03-27-About-custom-domain-configuration/banner.webp"
 image: "/img/2024-03-27-About-custom-domain-configuration/dns-la-gi.jpg"
 tags: [dns, gtihub-page, domain, Squarespace]
-category: ngoai-luong
+category: Social sciences
 # gh-repo: bangnguyendev/Documents
 # gh-badge: [star, watch, fork, follow]
 comments: true

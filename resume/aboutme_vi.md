@@ -4,7 +4,7 @@ title: About me
 meta-title: About me
 subtitle: "For a start, my favorite quote is, <br> Do what you love, love what you do."
 bigimg:
-  - "/img/My_Picture/anh_aboutme.webp"
+  - "/img/My_Picture/img_aboutme.webp"
 ---
 
 ![🇬🇧 English version](/img/My_Picture/united-kingdom.png) ![🇬🇧 English version](/img/My_Picture/translate.png) [`🇬🇧 English version`](/resume/aboutme)
@@ -30,7 +30,7 @@ Tôi cũng sẽ chia sẻ về **quá trình học tập và làm việc** của
 Theo định nghĩa, Team Leader Project là người lãnh đạo, quản lý trực tiếp một đội nhóm cụ thể trong một dự án. Đây là vị trí quan trọng giúp cả team có thể hoạt động một cách hiệu quả và đạt được mục tiêu đề ra.
 
 <div class="post-img-post">
-    <img src="/resume/avatar_github1.webp">
+    <img src="/resume/avatar_site.webp">
 	<br>
 </div>
 

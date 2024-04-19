@@ -24,15 +24,18 @@ bigimg:
       </div>
       {% endif %}
     </a>
-
+    <!-- Category bài đăng -->
     <a href="Topic/{{ post.category }}">
-      <div class="category-show">
+      <div class="category-show" title="Category">
         {{ post.category }}
       </div>
     </a>
     <!-- Ngày tháng bài đăng -->
     <p class="post-meta">
-      ✒️ Posted on {{ post.date | date: "%B %-d, %Y" }} <br> 
+      {% if post.author %}
+      ✒️ By {{ post.author }} <br> 
+      {% endif %}
+      📅 Posted on {{ post.date | date: "%B %-d, %Y" }} <br> 
       {% include read_time.html content=post.content %}
     </p>
     <!-- Tóm tắt bài đăng -->

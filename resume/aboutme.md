@@ -4,7 +4,7 @@ title: About me
 meta-title: About me
 subtitle: "For a start, my favorite quote is, <br> Do what you love, love what you do."
 bigimg:
-  - "/img/My_Picture/anh_aboutme.webp"
+  - "/img/My_Picture/img_aboutme.webp"
 ---
 
 ![🇻🇳 Phiên bản tiếng Việt](/img/My_Picture/vietnam.png) ![🇬🇧 English version](/img/My_Picture/translate.png) [`🇻🇳 Phiên bản tiếng Việt`](/resume/aboutme_vi)
@@ -30,7 +30,7 @@ I will also share about **my learning and working process** in the field of embe
 By definition, a Project Team Leader is the person who leads and directly manages a specific team within a project. This is an important position that helps the whole team to operate effectively and achieve the set goals.
 
 <div class="post-img-post">
-    <img src="/resume/avatar_github1.webp">
+    <img src="/resume/avatar_site.webp">
 	<br>
 </div>
 

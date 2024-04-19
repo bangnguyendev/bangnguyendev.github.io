@@ -1257,11 +1257,11 @@ table tr td :last-child {
   background-color: rgba(255, 153, 0, 0.2);
   border-radius: 5px;
   width: fit-content;
-  padding-left: 10px;
-  padding-right: 10px;
-  color: #000000;
+  padding: 4px;
+  color: #b66700;
   font-weight: bold;
   font-size: smaller;
   margin-top: 5px;
   margin-bottom: 5px;
+  text-shadow: 2px 2px 5px rgba(184, 98, 18, 0.5); /* Áp dụng bóng */
 }

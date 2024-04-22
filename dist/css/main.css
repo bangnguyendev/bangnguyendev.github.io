@@ -487,15 +487,15 @@ footer .theme-by {
 /* --- Post preview --- */
 
 .post-preview {
-  padding: 20px 0;
-  border-bottom: 1px solid #eee;
+  padding: 35px 5px;
+  border-bottom: 2px solid #202020;
 }
 
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
   .post-preview {
     padding: 35px 0;
   }
-}
+} */
 
 .post-preview:last-child {
   border-bottom: 0;
@@ -557,6 +557,7 @@ footer .theme-by {
   width: 192px;
   filter: grayscale(90%);
   margin-top: -50px;
+  transition: filter 0.3s ease, color 0.3s ease; /* Thêm hiệu ứng chuyển từ từ */
 }
 
 .post-image:hover {
@@ -1264,4 +1265,11 @@ table tr td :last-child {
   margin-top: 5px;
   margin-bottom: 5px;
   text-shadow: 2px 2px 5px rgba(184, 98, 18, 0.5); /* Áp dụng bóng */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Thêm hiệu ứng chuyển từ từ */
+}
+
+/* Hover effect */
+.category-show:hover {
+  background-color: rgba(255, 153, 0, 0.4); /* Thay đổi màu nền khi hover */
+  color: #a50000; /* Thay đổi màu chữ khi hover */
 }

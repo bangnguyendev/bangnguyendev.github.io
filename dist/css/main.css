@@ -1263,21 +1263,21 @@ table tr td :last-child {
 
 /* Hiển thị category ở inddex */
 .category-show {
-  background-color: rgba(255, 153, 0, 0.2);
+  background-color: rgba(193, 193, 193, 0.2);
   border-radius: 5px;
   width: fit-content;
   padding: 4px;
-  color: #b66700;
+  color: rgba(51, 51, 51, 1);
   font-weight: bold;
   font-size: smaller;
   margin-top: 5px;
   margin-bottom: 5px;
-  text-shadow: 2px 2px 5px rgba(184, 98, 18, 0.5); /* Áp dụng bóng */
+  text-shadow: 2px 2px 5px rgba(61, 58, 55, 0.5); /* Áp dụng bóng */
   transition: background-color 0.3s ease, color 0.3s ease; /* Thêm hiệu ứng chuyển từ từ */
 }
 
 /* Hover effect */
 .category-show:hover {
-  background-color: rgba(255, 153, 0, 0.4); /* Thay đổi màu nền khi hover */
-  color: #a50000; /* Thay đổi màu chữ khi hover */
+  background-color: rgba(34, 34, 33, 0.904); /* Thay đổi màu nền khi hover */
+  color: #f8f8f8; /* Thay đổi màu chữ khi hover */
 }

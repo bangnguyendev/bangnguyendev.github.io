@@ -1,0 +1,55 @@
+{
+    "name": "ESP Web Tools - bangnguyendev",
+    "version": "2024.4.2",
+    "home_assistant_domain": "esphome",
+    "funding_url": "/",
+    "new_install_prompt_erase": true,
+    "new_install_improv_wait_time": 2,
+    "builds": [
+        {
+            "chipFamily": "ESP32",
+            "parts": [
+                {
+                    "path": "/img/Load-Firmware/esp-web-tools-example-esp32.bin",
+                    "offset": 0
+                }
+            ]
+        },
+        {
+            "chipFamily": "ESP32-C3",
+            "parts": [
+                {
+                    "path": "/img/Load-Firmware/esp-web-tools-example-esp32c3.bin",
+                    "offset": 0
+                }
+            ]
+        },
+        {
+            "chipFamily": "ESP32-S2",
+            "parts": [
+                {
+                    "path": "/img/Load-Firmware/esp-web-tools-example-esp32s2.bin",
+                    "offset": 0
+                }
+            ]
+        },
+        {
+            "chipFamily": "ESP32-S3",
+            "parts": [
+                {
+                    "path": "/img/Load-Firmware/esp-web-tools-example-esp32s3.bin",
+                    "offset": 0
+                }
+            ]
+        },
+        {
+            "chipFamily": "ESP8266",
+            "parts": [
+                {
+                    "path": "/img/Load-Firmware/esp-web-tools-example-esp8266.bin",
+                    "offset": 0
+                }
+            ]
+        }
+    ]
+}

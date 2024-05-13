@@ -378,7 +378,7 @@ img {
 
 /* Multi-level navigation links */
 .navbar-custom .nav .navlinks-container {
-  position: relative;
+  position: static;
 }
 
 .navbar-custom .nav .navlinks-parent:after {

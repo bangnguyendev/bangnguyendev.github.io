@@ -56,7 +56,7 @@ var main = {
             maxwidth = width;
           }
         });
-        $(menus[i]).css('min-width', maxwidth + 'px')
+        // $(menus[i]).css('min-width', maxwidth + 'px')
       });
 
       fakeMenu.remove();

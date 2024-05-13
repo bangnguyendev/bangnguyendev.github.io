@@ -1120,6 +1120,10 @@ table tr td :last-child {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
+.navbar-toggle {
+  border-radius: 10px;
+}
+
 /* Tags page */
 
 .tag-btn {

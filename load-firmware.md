@@ -28,9 +28,17 @@ User friendly tools to manage **ESP8266** and **ESP32** devices in the browser:
 
 - Add devices to [Home Assistant](https://www.home-assistant.io/)
 
+```
+npm i flash-esp-web-bangnguyendev
+```
+
+```
+https://unpkg.com/browse/flash-esp-web-bangnguyendev@1.0.0/
+```
+
 <script
   type="module"
-  src="https://unpkg.com/esp-web-tools-bangnguyendev@10.0.2/dist/web/install-button.js?module">
+  src="https://unpkg.com/flash-esp-web-bangnguyendev@1.0.0/dist/web/install-button.js?module">
 </script>
 
 <link rel="stylesheet" href="/dist/css/main-bio.css">

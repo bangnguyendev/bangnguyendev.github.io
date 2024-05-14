@@ -13,41 +13,55 @@ category: Programming MCU
 # author: "BangNguyen"
 comments: true
 ---
-
-<script
-  type="module"
-  src="https://unpkg.com/flash-esp-web-bangnguyendev@1.0.1/dist/web/install-button.js?module">
-</script>
-
-<link rel="stylesheet" href="/dist/css/main-bio.css">
+<!-- Sử dụng cho button class="action action--button" -->
+<link rel="stylesheet" href="/dist/css/main-bio.css"> 
 
 <div style="text-align: center;">
   <h4>ESP Web Tools - bangnguyendev</h4>
-  <h2>👇👇👇</h2>
-  <esp-web-install-button  manifest="/dist/json/manifest_ESP8266_ESP32.json">
+  <!-- Lựa chọn các option -->
+  <div>
+    <label for="optiongroup">Choose a firmware:</label>
+    <select id="optiongroup">
+      <optgroup label="Example ESP Web Tools - OTA">
+        <option value="/dist/json/manifest_ESP8266_ESP32.json">ESP Web Tools - OTA - v1.0.0</option>
+      </optgroup>
+      <optgroup label="ARGB Led - WSxxxx">
+        <option value="/dist/json/manifest_ESP8266_ESP32_ARGB.json">ARGB Led - WSxxxx - v1.0.0</option>
+      </optgroup>
+    </select>
+  </div>
+  Plug in your ESP to a USB port. <br>We will install <span style="font-weight: bold;" id="verstr"></span> to it.<br>
+  <!-- Button install ESP -->
+  <esp-web-install-button id="espInstallButton">
   <button class="action action--button" slot="activate"><i class="fa fa-usb"></i><span class="action__text">Connect & Install</span></button>
   </esp-web-install-button>
 </div>
 
-User friendly tools to manage **ESP8266** and **ESP32** devices in the browser:
 
-- Install & update firmware
 
-- Connect device to the Wi-Fi network
 
-- Visit the device's hosted web interface
 
-- Access logs and send terminal commands
-
-- Add devices to [Home Assistant](https://www.home-assistant.io/)
+>User friendly tools to manage **ESP8266** and **ESP32** devices in the browser:
+>
+>- Install & update firmware
+>
+>- Connect device to the Wi-Fi network
+>
+>- Visit the device's hosted web interface
+>
+>- Access logs and send terminal commands
+>
+>- Add devices to [Home Assistant](https://www.home-assistant.io/)
 
 ```
 npm i flash-esp-web-bangnguyendev
 ```
+#### *Link repo:*
 
-```
-https://unpkg.com/browse/flash-esp-web-bangnguyendev@1.0.0/
-```
+- [NPM flash-esp-web-bangnguyendev@1.0.0](https://www.npmjs.com/package/flash-esp-web-bangnguyendev)
+
+- [UNPKG flash-esp-web-bangnguyendev@1.0.0](https://unpkg.com/browse/flash-esp-web-bangnguyendev@1.0.0/)
+
 
 -----------------------------
 
@@ -94,3 +108,39 @@ At any time in the future a user can use ESP Web Tools to find the device link o
 - *Development is funded by [Nabu Casa](https://www.nabucasa.com/).*
 
 - *ESP Web Tools is [open source](https://github.com/esphome/esp-web-tools).*
+
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var optiongroup = document.getElementById("optiongroup");
+  var espButton = document.getElementById("espInstallButton");
+  
+
+  
+  // Thiết lập mặc định cho option đầu tiên
+  espButton.setAttribute("manifest", optiongroup.options[0].value);
+  document.getElementById('verstr').textContent = optiongroup.options[0].text;
+
+  // Lắng nghe sự kiện khi người dùng thay đổi tùy chọn
+  optiongroup.addEventListener("change", function() {
+    var selectedManifest = this.value;
+    
+    if (!selectedManifest) {
+      // Nếu không có tùy chọn nào được chọn, sử dụng tùy chọn đầu tiên
+      espButton.setAttribute("manifest", optiongroup.options[0].value);
+      document.getElementById('verstr').textContent = optiongroup.options[0].text;
+    } else {
+      // Sử dụng tùy chọn được chọn
+      espButton.setAttribute("manifest", selectedManifest);
+      document.getElementById('verstr').textContent = optiongroup.options[optiongroup.selectedIndex].text;
+    }
+  });
+});
+</script>
+
+<script
+  type="module"
+  src="https://unpkg.com/flash-esp-web-bangnguyendev@1.0.1/dist/web/install-button.js?module">
+</script>

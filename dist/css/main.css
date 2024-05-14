@@ -1285,3 +1285,40 @@ table tr td :last-child {
   background-color: rgba(34, 34, 33, 0.904); /* Thay đổi màu nền khi hover */
   color: #f8f8f8; /* Thay đổi màu chữ khi hover */
 }
+
+
+/* Reset some default styles for consistency */
+select {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Styling for the select element */
+#optiongroup {
+  width: 260px;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ffb374;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  outline: none; /* Remove default focus outline */
+}
+
+/* Styling for the optgroup labels */
+optgroup {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Styling for the options */
+option {
+  padding: 4px 8px;
+}
+
+/* Hover effect for options */
+option:hover {
+  background-color: #ddd;
+}

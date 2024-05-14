@@ -16,7 +16,7 @@ comments: true
 
 <script
   type="module"
-  src="https://unpkg.com/flash-esp-web-bangnguyendev@1.0.0/dist/web/install-button.js?module">
+  src="https://unpkg.com/flash-esp-web-bangnguyendev@1.0.1/dist/web/install-button.js?module">
 </script>
 
 <link rel="stylesheet" href="/dist/css/main-bio.css">
@@ -56,7 +56,7 @@ https://unpkg.com/browse/flash-esp-web-bangnguyendev@1.0.0/
 ```html
 <script
   type="module"
-  src="https://unpkg.com/flash-esp-web-bangnguyendev@1.0.0/dist/web/install-button.js?module">
+  src="https://unpkg.com/flash-esp-web-bangnguyendev@1.0.1/dist/web/install-button.js?module">
 </script>
 
 <esp-web-install-button  manifest="/dist/json/manifest_ESP8266_ESP32.json">
@@ -84,10 +84,6 @@ If the firmware supports `Improv`, a user will be asked to connect the device to
 Once connected, the device can send the user to a URL to finish configuration. For example, this can be a link to the device's IP address where it serves a local UI.
 
 At any time in the future a user can use ESP Web Tools to find the device link or to reconfigure the Wi-Fi settings without doing a reinstall.
-
-<div class="post-img-post">
-    <img src="https://esphome.github.io/esp-web-tools/static/screenshots/dashboard.png" loading="lazy">
-</div>
 
 -----------------------------
 

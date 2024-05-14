@@ -1,6 +1,6 @@
 {
     "name": "ESP Web Tools - bangnguyendev",
-    "version": "2024.4.2",
+    "version": "v1.0.0",
     "home_assistant_domain": "esphome",
     "funding_url": "/",
     "new_install_prompt_erase": true,

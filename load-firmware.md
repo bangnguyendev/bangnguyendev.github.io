@@ -14,7 +14,20 @@ category: Programming MCU
 comments: true
 ---
 
-### ESP Web Tools - bangnguyendev
+<script
+  type="module"
+  src="https://unpkg.com/flash-esp-web-bangnguyendev@1.0.0/dist/web/install-button.js?module">
+</script>
+
+<link rel="stylesheet" href="/dist/css/main-bio.css">
+
+<div style="text-align: center;">
+  <h4>ESP Web Tools - bangnguyendev</h4>
+  <h2>👇👇👇</h2>
+  <esp-web-install-button  manifest="/dist/json/manifest_ESP8266_ESP32.json">
+  <button class="action action--button" slot="activate"><i class="fa fa-usb"></i><span class="action__text">Connect & Install</span></button>
+  </esp-web-install-button>
+</div>
 
 User friendly tools to manage **ESP8266** and **ESP32** devices in the browser:
 
@@ -36,21 +49,25 @@ npm i flash-esp-web-bangnguyendev
 https://unpkg.com/browse/flash-esp-web-bangnguyendev@1.0.0/
 ```
 
+-----------------------------
+
+#### Adding ESP Web Tools to your website
+
+```html
 <script
   type="module"
   src="https://unpkg.com/flash-esp-web-bangnguyendev@1.0.0/dist/web/install-button.js?module">
 </script>
 
-<link rel="stylesheet" href="/dist/css/main-bio.css">
+<esp-web-install-button  manifest="/dist/json/manifest_ESP8266_ESP32.json">
+  <button slot="activate"><i class="fa fa-usb"></i><span class="action__text">Connect & Install</span></button>
+</esp-web-install-button>
 
-<div style="text-align: center;">
-  <h2>👇👇👇</h2>
-  <esp-web-install-button  manifest="/dist/json/manifest_ESP8266_ESP32.json">
-  <button class="action action--button" slot="activate"><i class="fa fa-usb"></i><span class="action__text">Connect & Install</span></button>
-  </esp-web-install-button>
-</div>
+```
 
-### How it works
+-----------------------------
+
+#### How it works
 
 **ESP Web Tools** works by combining **Web Serial**, **Improv Wi-Fi** (optional), and a manifest which describes the firmware. 
 
@@ -58,7 +75,7 @@ https://unpkg.com/browse/flash-esp-web-bangnguyendev@1.0.0/
 
 Web Serial is **available** in `Google Chrome` and `Microsoft Edge` browsers. Android support should be possible but has not been implemented yet.
 
-### Configuring Wi-Fi
+#### Configuring Wi-Fi
 
 **ESP Web Tools** supports the `Improv` Wi-Fi serial standard. This is an open standard to allow configuring Wi-Fi via the serial port.
 
@@ -72,8 +89,9 @@ At any time in the future a user can use ESP Web Tools to find the device link o
     <img src="https://esphome.github.io/esp-web-tools/static/screenshots/dashboard.png" loading="lazy">
 </div>
 
+-----------------------------
 
-### Thank you ESP Web Tools team
+#### Thank you ESP Web Tools team
 
 - *ESP Web Tools is a project by [ESPHome](https://esphome.io/).*
 

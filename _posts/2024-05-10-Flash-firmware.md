@@ -2,7 +2,7 @@
 layout: post
 title: "Flash firmware using ESP Web Tools"
 meta-title: "ESP Web Tools"
-subtitle: "... Flash firmware using ESP Web Tools"
+subtitle: "... Connect device to the Wi-Fi network"
 bigimg:
   - "/img/2024-04-10-What-Is-a-Sandbox-Environment/banner.webp"
 image: "/img/2024-04-10-What-Is-a-Sandbox-Environment/avatar.webp"
@@ -59,7 +59,7 @@ Web Serial is available in Google Chrome and Microsoft Edge browsers. Android su
 ```
 npm i flash-esp-web-bangnguyendev
 ```
-#### *Link repo:*
+### Link repo:
 
 - [NPM flash-esp-web-bangnguyendev@1.0.0](https://www.npmjs.com/package/flash-esp-web-bangnguyendev)
 

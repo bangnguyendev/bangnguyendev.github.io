@@ -1,0 +1,17 @@
+{
+    "name": "Yolo:Bit firmware",
+    "version": " v1.12.0",
+    "new_install_prompt_erase": true,
+    "new_install_improv_wait_time": 15,
+    "builds": [
+        {
+            "chipFamily": "ESP32",
+            "parts": [
+                {
+                    "path": "/img/Load-Firmware/yolobit_v4_1.12.bin",
+                    "offset": 0
+                }
+            ]
+        }
+    ]
+}

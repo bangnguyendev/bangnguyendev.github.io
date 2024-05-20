@@ -1,9 +1,9 @@
 {
     "name": "ARGB LED - bangnguyendev",
     "version": "v1.0.0",
-    "home_assistant_domain": "ARGB-LED",
+    "home_assistant_domain": "esphome",
     "new_install_prompt_erase": true,
-    "new_install_improv_wait_time": 15,
+    "new_install_improv_wait_time": 20,
     "builds": [
         {
             "chipFamily": "ESP32",
@@ -13,7 +13,7 @@
                     "offset": 0
                 },
                 {
-                    "path": "/img/Load-Firmware/WLED_0.14.3_ESP32.bin",
+                    "path": "/img/Load-Firmware/ARGB_1.0.0_ESP32.bin",
                     "offset": 65536
                 }
             ]
@@ -22,7 +22,7 @@
             "chipFamily": "ESP8266",
             "parts": [
                 {
-                    "path": "/img/Load-Firmware/WLED_0.14.3_ESP8266.bin",
+                    "path": "/img/Load-Firmware/ARGB_1.0.0_ESP8266.bin",
                     "offset": 0
                 }
             ]

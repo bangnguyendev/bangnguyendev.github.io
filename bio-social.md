@@ -13,7 +13,8 @@ comments: true
 
 *Thank you for following!🩷*
 
-<img src="https://hits.sh/bangnguyendev.github.io.svg?style=for-the-badge&label=%F0%9F%8E%AFL%C6%B0%E1%BB%A3t%20truy%20c%E1%BA%ADp&extraCount=272133&labelColor=646363">
+![](https://komarev.com/ghpvc/?username=bangnguyendev&base=230000&abbreviated=true&color=orange)
+
 ### ⚙️ *Mấy cái đồ mà tui review* 👍👌
 
 <main>

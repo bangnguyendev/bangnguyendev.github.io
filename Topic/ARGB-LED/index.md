@@ -2,7 +2,7 @@
 layout: page
 title: Welcome to ARGB
 meta-title: "Welcome to ARGB"
-subtitle: "... Welcome to ARGB"
+# subtitle: "... Welcome to ARGB"
 bigimg:
   - "image/BANER__ARGB.png"
 image: "image/BANER__ARGB.png"
@@ -24,7 +24,7 @@ category: Programming MCU
 
 #### ⚙️ Tính năng
 
-- Thư viện **WS2812FX** tích hợp cho **hơn 100 hiệu ứng đặc biệt**
+- Thư viện **WS2812FX** tích hợp cho **hơn 180 hiệu ứng đặc biệt**
 - Hiệu ứng **FastLED** và 50 bảng màu
 - Giao diện hiện đại với điều khiển màu sắc, hiệu ứng và **phân đoạn Led**
 - **Phân đoạn** để đặt các hiệu ứng và màu sắc khác nhau **cho các phần của đèn LED**
@@ -64,9 +64,9 @@ category: Programming MCU
 - [Infrared remotes (24-key RGB, receiver required)](interfaces/infrared)
 - Simple timers/schedules (time from NTP, timezones/DST supported)  
 
-#### 📲 Quick start guide and documentation
+#### 📲 Hướng dẫn sử dụng nhanh và tài liệu liên quan
 
-See the [getting started](basics/getting-started) page!
+[Hướng dẫn sử dụng nhanh!](basics/getting-started)
 
 [On this page](basics/tutorials) you can find excellent tutorials made by the community and helpful tools to help you get your new lamp up and running!
 
@@ -74,13 +74,13 @@ See the [getting started](basics/getting-started) page!
 
 <img src="assets/images/ui/headers/macbook-pro-space-gray-on-the-wooden-table.jpg" width="50%"><img src="assets/images/ui/headers/walking-with-iphone-x.jpg" width="50%">
 
-#### 💾 Compatible hardware
+<!-- #### 💾 Compatible hardware
 
-See [here](basics/compatible-hardware)!
+See [here](basics/compatible-hardware)! -->
 
-#### ✌️ Other
+<!-- #### ✌️ Other
 
-Licensed under the MIT license  
+Licensed under the MIT license   -->
 
 #### ✌️ Happy Smart Light - bangnguyendev
 

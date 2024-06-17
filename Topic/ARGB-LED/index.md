@@ -16,7 +16,7 @@ category: Programming MCU
 
 ### Chào mừng đến với bộ điều khiển led ARGB! ✨
 
-- [Basics - Getting Started - Bắt đầu cơ ản](basics/getting-started)
+- [Basics - Getting Started - Bắt đầu cơ bản](basics/getting-started)
 
 - [Features - Effects - Hiệu ứng](features/effects) 
 

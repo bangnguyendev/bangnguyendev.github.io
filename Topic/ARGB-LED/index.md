@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Welcome to ARGB
-meta-title: "Welcome to ARGB"
+title: Bộ điều khiển led ARGB
+meta-title: Bộ điều khiển led ARGB
 # subtitle: "... Welcome to ARGB"
 bigimg:
   - "image/BANER__ARGB.png"
@@ -14,11 +14,11 @@ category: Programming MCU
 # comments: true
 ---
 
-### Welcome to my project ARGB! ✨
+### Chào mừng đến với bộ điều khiển led ARGB! ✨
 
-[Basics - Getting Started - Bắt đầu cơ ản](basics/getting-started)
+- [Basics - Getting Started - Bắt đầu cơ ản](basics/getting-started)
 
-[Features - Effects - Hiệu ứng](features/effects) 
+- [Features - Effects - Hiệu ứng](features/effects) 
 
 **Triển khai nhanh chóng** và nhiều tính năng của máy chủ web để điều khiển đèn **LED NeoPixel** (WS2812B, WS2811, SK6812, ...) hoặc các chipsets dựa trên SPI như WS2801 và APA102!
 
@@ -43,6 +43,12 @@ category: Programming MCU
 
 <!-- - Native [Home-Assistant integration](https://www.home-assistant.io/integrations/wled/): [![Start native Homeassistant integration configuration](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start?domain=wled) -->
 
+#### 💡 Các phần mềm kết nối chuyên nghiệp hơn ARGB có thể sử dụng
+- [Jinx! – LED Matrix Control](https://live-leds.de/) - điều khiển led chuyên cho bảng ma trận LED
+- [LedFx - Make your LEDs dance in sync to the music](https://www.ledfx.app/) - điều khiển led theo nhạc cực cuốn
+- [Lightpack - Prismatik](https://github.com/psieg/Lightpack/releases) - trang trí Ambilight cho màn hình PC/Laptop
+- [Hyperion](https://github.com/hyperion-project/hyperion.ng) - Trang trí TIVI siêu đẹp
+
 #### 💡 Các chuẩn kết nối ARGB có thể sử dụng
 
 <!-- - [ARGB app](https://github.com/Aircoookie/WLED-App) for [Android](https://play.google.com/store/apps/details?id=com.aircoookie.WLED) and [iOS](https://apps.apple.com/us/app/wled/id1475695033)
@@ -55,9 +61,8 @@ category: Programming MCU
 <!-- - [MQTT](interfaces/mqtt)   -->
 <!-- - [Blynk IoT](interfaces/blynk)   -->
 - [E1.31](interfaces/e1.31-dmx), [Art-Net](interfaces/e1.31-dmx), DDP and [TPM2.net](interfaces/udp-realtime)
-- [Hyperion](https://github.com/hyperion-project/hyperion.ng) - Trang trí TIVI siêu đẹp
 - [UDP realtime](interfaces/udp-realtime)
-<!-- - [Alexa voice control (including dimming and color)](/advanced/remote-access-ifttt) -->
+- [Alexa voice control (including dimming and color)](/advanced/remote-access-ifttt)
 - [Sync to Philips Hue lights](interfaces/philips-hue)
 - Adalight (PC ambilight via serial) and TPM2  - Trang trí màn hình PC/Laptop siêu đẹp
 - [Sync color of multiple ARGB devices (UDP notifier)](interfaces/udp-notifier)
@@ -82,5 +87,5 @@ See [here](basics/compatible-hardware)! -->
 
 Licensed under the MIT license   -->
 
-#### ✌️ Happy Smart Light - bangnguyendev
+### ✌️ Happy Smart Light - bangnguyendev
 

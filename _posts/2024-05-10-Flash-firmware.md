@@ -27,8 +27,11 @@ Web Serial is available in Google Chrome and Microsoft Edge browsers. Android su
       <optgroup label="Example ESP Web Tools - OTA">
         <option value="/dist/json/manifest_ESP8266_ESP32.json">ESP Web Tools - OTA - v1.0.0</option>
       </optgroup>
-      <optgroup label="ARGB Led - WSxxxx">
-        <option value="/dist/json/manifest_ESP8266_ESP32_ARGB.json">ARGB Led - WSxxxx - v1.0.0</option>
+      <optgroup label="ARGB Led">
+        <option value="/dist/json/manifest_ESP8266_ESP32_ARGB.json">ARGB Led - v1.0.0</option>
+      </optgroup>
+      <optgroup label="ARGB_VN Led">
+        <option value="/dist/json/manifest_ESP8266_ESP32_ARGB_VN.json">ARGB Led - v1.0.0_VN</option>
       </optgroup>
       <optgroup label="Ươm mầm lập trình nhí">
         <option value="/dist/json/manifest_UOMMAMLAPTRINHNHI.json">UMLTN - Yolo Bit - v1.12.0</option>

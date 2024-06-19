@@ -1,5 +1,5 @@
 {
-    "name": "ARGB LED - bangnguyendev",
+    "name": "ARGB LED - HappySmartLight",
     "version": "v1.0.0",
     "home_assistant_domain": "esphome",
     "new_install_prompt_erase": true,

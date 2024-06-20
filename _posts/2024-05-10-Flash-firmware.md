@@ -13,10 +13,13 @@ category: Programming MCU
 # author: "BangNguyen"
 # comments: true
 ---
-Web Serial is available in Google Chrome and Microsoft Edge browsers. Android support should be possible but has not been implemented yet.
+**Web Serial** có sẵn trong trình duyệt **Google Chrome** và **Microsoft Edge**. Có thể hỗ trợ Android nhưng vẫn chưa được triển khai.
 
 <!-- Sử dụng cho button class="action action--button" -->
 <link rel="stylesheet" href="/dist/css/main-bio.css"> 
+
+{: .box-warning}
+**Warning:** Đối với mạch điều khiển LED **ARGB Happy Smart Light** chỉ có tiếng Việt cho chip **ESP32-S3** (cấu hình **ESP8266** không đủ cấu hình để thêm tính năng mới!).
 
 <div style="text-align: center;">
   <h4>ESP Web Tools - bangnguyendev</h4>
@@ -30,7 +33,7 @@ Web Serial is available in Google Chrome and Microsoft Edge browsers. Android su
       <optgroup label="ARGB Led">
         <option value="/dist/json/manifest_ESP8266_ESP32_ARGB.json">ARGB Led - v1.0.0</option>
       </optgroup>
-      <optgroup label="ARGB_VN Led">
+      <optgroup label="ARGB_VN Led ONLY ESP32 S3">
         <option value="/dist/json/manifest_ESP8266_ESP32_ARGB_VN.json">ARGB Led - v1.0.0_VN</option>
       </optgroup>
       <optgroup label="Ươm mầm lập trình nhí">

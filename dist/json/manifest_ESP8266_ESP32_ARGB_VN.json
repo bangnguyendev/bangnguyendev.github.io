@@ -6,6 +6,15 @@
     "new_install_improv_wait_time": 20,
     "builds": [
         {
+            "chipFamily": "ESP32",
+            "parts": [
+                {
+                    "path": "/img/Load-Firmware/ARGB_1.0.0_ESP32_VN.bin",
+                    "offset": 65536
+                }
+            ]
+        },
+        {
             "chipFamily": "ESP32-S3",
             "parts": [
                 {

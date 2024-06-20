@@ -22,6 +22,36 @@ category: Programming MCU
 
 **Triển khai nhanh chóng** và nhiều tính năng của máy chủ web để điều khiển đèn **LED NeoPixel** (WS2812B, WS2811, SK6812, ...) hoặc các chipsets dựa trên SPI như WS2801 và APA102!
 
+{: .box-warning}
+**Warning:** Đối với mạch điều khiển LED **ARGB Happy Smart Light** chỉ có tiếng Việt cho chip **ESP32** và **ESP32-S3**.
+
+<!-- Sử dụng cho button class="action action--button" -->
+<link rel="stylesheet" href="/dist/css/main-bio.css"> 
+<div style="text-align: center;">
+  <h4>ESP Web Tools - bangnguyendev</h4>
+  <!-- Lựa chọn các option -->
+  <div>
+    <label for="optiongroup">Chọn phiên bản:</label>
+    <select id="optiongroup">
+      <optgroup label="ARGB Led tiếng Việt">
+        <option value="/dist/json/manifest_ESP8266_ESP32_ARGB_VN.json">ARGB Led - v1.0.0_VN</option>
+      </optgroup>
+      <optgroup label="ARGB Led">
+        <option value="/dist/json/manifest_ESP8266_ESP32_ARGB.json">ARGB Led - v1.0.0</option>
+     </optgroup>
+      <optgroup label="Example ESP Web Tools - OTA">
+        <option value="/dist/json/manifest_ESP8266_ESP32.json">ESP Web Tools - OTA - v1.0.0</option>
+      </optgroup>
+    </select>
+  </div>
+
+  Kết nối <a href="https://s.shopee.vn/4Aewn9TB7g"><b>USB-TTL</b></a> với bo mạch <b>ARGB Happy Smart Light</b>.<br> Cắm <b>USB-TTL</b> vào máy tính của bạn. <br>Phiên bản đang chọn: <span style="font-weight: bold;" id="verstr"></span><br>
+  <!-- Button install ESP -->
+  <esp-web-install-button id="espInstallButton">
+  <button class="action action--button" slot="activate"><i class="fa fa-usb"></i><span class="action__text">Kết nối & Cài đặt</span></button>
+  </esp-web-install-button>
+</div>
+
 #### ⚙️ Tính năng
 
 - Thư viện **WS2812FX** tích hợp cho **hơn 180 hiệu ứng đặc biệt**
@@ -73,7 +103,7 @@ category: Programming MCU
 
 [Hướng dẫn sử dụng nhanh!](basics/getting-started)
 
-[On this page](basics/tutorials) you can find excellent tutorials made by the community and helpful tools to help you get your new lamp up and running!
+[Trên trang này](basics/tutorials), bạn có thể tìm thấy các hướng dẫn tuyệt vời do cộng đồng thực hiện và các công cụ hữu ích để giúp bạn thiết lập và vận hành chiếc đèn mới của mình!
 
 #### 🖼️ User interface
 
@@ -87,5 +117,38 @@ See [here](basics/compatible-hardware)! -->
 
 Licensed under the MIT license   -->
 
-### ✌️ Happy Smart Light - bangnguyendev
+## ✌️ Happy Smart Light - bangnguyendev
 
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var optiongroup = document.getElementById("optiongroup");
+  var espButton = document.getElementById("espInstallButton");
+  
+
+  
+  // Thiết lập mặc định cho option đầu tiên
+  espButton.setAttribute("manifest", optiongroup.options[0].value);
+  document.getElementById('verstr').textContent = optiongroup.options[0].text;
+
+  // Lắng nghe sự kiện khi người dùng thay đổi tùy chọn
+  optiongroup.addEventListener("change", function() {
+    var selectedManifest = this.value;
+    
+    if (!selectedManifest) {
+      // Nếu không có tùy chọn nào được chọn, sử dụng tùy chọn đầu tiên
+      espButton.setAttribute("manifest", optiongroup.options[0].value);
+      document.getElementById('verstr').textContent = optiongroup.options[0].text;
+    } else {
+      // Sử dụng tùy chọn được chọn
+      espButton.setAttribute("manifest", selectedManifest);
+      document.getElementById('verstr').textContent = optiongroup.options[optiongroup.selectedIndex].text;
+    }
+  });
+});
+</script>
+
+<script
+  type="module"
+  src="https://unpkg.com/flash-esp-web-bangnguyendev@1.0.1/dist/web/install-button.js?module">
+</script>

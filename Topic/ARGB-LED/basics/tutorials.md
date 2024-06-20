@@ -1,14 +1,30 @@
 ---
 title: Tutorials
-hide:
-  # - navigation
-  # - toc
+layout: page
+title: ARGB Tutorials
+meta-title: ARGB Tutorials
+# subtitle: "... Welcome to ARGB"
+bigimg:
+  - "/Topic/ARGB-LED/image/BANER__ARGB.png"
+image: "/Topic/ARGB-LED/image/BANER__ARGB.png"
+tags: [Tutorialss, ARGBl, bluetooth]
+category: Programming MCU
+# gh-repo: bangnguyendev/flash-esp-web-bangnguyendev
+# gh-badge: [fork]
+# author: "BangNguyen"
+# comments: true
 ---
 
-**Don't know yet how to solder? Unsure how to connect your LEDs safely? How to find the perfect power supply?**  
-No worries, we have collected a few helpful links for you to learn more about these and more topics:
+**Bạn vẫn chưa biết cách hàn? Không chắc chắn làm thế nào để kết nối đèn LED của bạn một cách an toàn? Làm thế nào để tìm được nguồn điện hoàn hảo?**  
 
-### WLED specific tutorials
+Đừng lo lắng, chúng tôi đã thu thập một số liên kết hữu ích để bạn tìm hiểu thêm về những chủ đề này và nhiều chủ đề khác:
+
+### ARGB Happy Smart Light hướng dẫn cụ thể (tiếng Việt)
+
+{: .box-note}
+**Note:**Đang được cập nhật ...
+
+### WLED hướng dẫn cụ thể (English)
 
 | Resource | Maker | Type | Date | Info
 | --- | --- | --- | --- | --- |

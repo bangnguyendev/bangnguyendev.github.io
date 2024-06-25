@@ -94,7 +94,7 @@ category: Programming MCU
 - [UDP realtime](interfaces/udp-realtime)
 - [Alexa voice control (including dimming and color)](/advanced/remote-access-ifttt)
 - [Sync to Philips Hue lights](interfaces/philips-hue)
-- Adalight (PC ambilight via serial) and TPM2  - Trang trí màn hình PC/Laptop siêu đẹp
+- Adalight (PC ambilight via serial) và TPM2 -> Trang trí màn hình PC/Laptop siêu đẹp
 - [Sync color of multiple ARGB devices (UDP notifier)](interfaces/udp-notifier)
 - [Infrared remotes (24-key RGB, receiver required)](interfaces/infrared)
 - Simple timers/schedules (time from NTP, timezones/DST supported)  
@@ -118,6 +118,63 @@ See [here](basics/compatible-hardware)! -->
 Licensed under the MIT license   -->
 
 ## ✌️ Happy Smart Light - bangnguyendev
+
+### 💡 Các loại chip Led được hổ trợ
+
+- WS281x
+- SK6812/WS2814 RGBW
+- TM1814
+- 400kHz
+- TM1829
+- UCS8903
+- UCS8904 RGBW
+- WS2801
+- APA102
+- LPD8806
+- LPD6803
+- P9813
+- WS2811 White
+- On/Off
+- PWM White
+- PWM CCT
+- PWM RGB
+- PWM RGBW
+- PWM RGB+CCT
+- PWM RGB+DCCT
+- DDP RGB (network)
+- E1.31 RGB (network)
+- Art-Net RGB (network)
+- DDP RGBW (network)
+
+
+
+## 💡 Điều Khiển LED Qua DDP, UDP, TMP2
+
+`JINX! `là một phần mềm mạnh mẽ để điều khiển LED thông qua các giao thức như DDP, UDP, và TMP2. Nếu bạn đang tìm kiếm các phần mềm tương tự có khả năng điều khiển LED qua các giao thức này, dưới đây là một số lựa chọn:
+
+### 💡 1. xLights
+- **Mô tả**: xLights là một phần mềm lập trình ánh sáng phổ biến, hỗ trợ nhiều loại LED và có khả năng điều khiển thông qua các giao thức như E1.31 (sACN), DDP, và Art-Net.
+- **Tính năng nổi bật**: Lập trình ánh sáng theo bài hát, mô phỏng 3D, hỗ trợ nhiều bộ điều khiển.
+
+### 💡 2. Madrix
+- **Mô tả**: Madrix là một phần mềm điều khiển ánh sáng LED chuyên nghiệp, hỗ trợ nhiều giao thức điều khiển như Art-Net, sACN, và DDP.
+- **Tính năng nổi bật**: Hiệu ứng ánh sáng mạnh mẽ, giao diện người dùng thân thiện, hỗ trợ điều khiển thời gian thực.
+
+### 💡 3. Glediator
+- **Mô tả**: Glediator là một phần mềm mã nguồn mở để điều khiển ma trận LED. Nó hỗ trợ giao thức điều khiển như UDP.
+- **Tính năng nổi bật**: Đơn giản, dễ sử dụng, có khả năng tạo hiệu ứng ánh sáng đa dạng.
+
+### 💡 4. QLC+ (Q Light Controller Plus)
+- **Mô tả**: QLC+ là một phần mềm điều khiển ánh sáng mã nguồn mở, hỗ trợ nhiều giao thức điều khiển như Art-Net, sACN, và DMX.
+- **Tính năng nổi bật**: Hỗ trợ nhiều loại thiết bị ánh sáng, giao diện dễ sử dụng, nhiều tính năng lập trình ánh sáng.
+
+### 💡 5. Resolume
+- **Mô tả**: Resolume là một phần mềm VJing mạnh mẽ, hỗ trợ điều khiển ánh sáng LED thông qua các giao thức như Art-Net và sACN.
+- **Tính năng nổi bật**: Khả năng tạo hiệu ứng video và ánh sáng kết hợp, hỗ trợ điều khiển thời gian thực.
+
+### 💡 6. LedEdit
+- **Mô tả**: LedEdit là một phần mềm điều khiển LED phổ biến, hỗ trợ nhiều loại điều khiển LED thông qua UDP và các giao thức khác.
+- **Tính năng nổi bật**: Đơn giản, dễ sử dụng, hỗ trợ nhiều bộ điều khiển LED.
 
 
 <script>

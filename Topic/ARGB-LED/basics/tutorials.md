@@ -22,7 +22,7 @@ category: Programming MCU
 ### ARGB Happy Smart Light hướng dẫn cụ thể (tiếng Việt)
 
 {: .box-note}
-**Note:**Đang được cập nhật ...
+**Note:** Đang được cập nhật ...
 
 ### WLED hướng dẫn cụ thể (English)
 

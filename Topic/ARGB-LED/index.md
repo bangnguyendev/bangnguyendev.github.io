@@ -6,7 +6,7 @@ meta-title: Bộ điều khiển led ARGB
 bigimg:
   - "image/BANER__ARGB.png"
 image: "image/BANER__ARGB.png"
-tags: [esp web tools, Web serial, bluetooth]
+tags: [ARGB, ws2811, ws2812b, strip leds]
 category: Programming MCU
 # gh-repo: bangnguyendev/flash-esp-web-bangnguyendev
 # gh-badge: [fork]
@@ -16,11 +16,26 @@ category: Programming MCU
 
 ### Chào mừng đến với bộ điều khiển led ARGB! ✨
 
-- [Basics - Getting Started - Bắt đầu cơ bản](basics/getting-started)
+- [Basics - Bắt đầu cơ bản](basics/getting-started)
 
 - [Features - Effects - Hiệu ứng](features/effects) 
 
-**Triển khai nhanh chóng** và nhiều tính năng của máy chủ web để điều khiển đèn **LED NeoPixel** (WS2812B, WS2811, SK6812, ...) hoặc các chipsets dựa trên SPI như WS2801 và APA102!
+**Triển khai nhanh chóng** và nhiều tính năng để điều khiển đèn **LED NeoPixel** (WS2812B, WS2811, SK6812, ...) hoặc các chipsets dựa trên SPI như WS2801 và APA102!
+
+
+### 💡 Các loại chip Led được hổ trợ
+
+| **SPI 3-wire**        | **SPI 4-wire**          | **PWM**              | **Others**              |
+|-----------------------|-------------------------|----------------------|-------------------------|
+| WS281x                | APA102                  | WS2811 White         | On/Off                  |
+| SK6812/WS2814 RGBW    | LPD8806                 | PWM White            | DDP RGB (network)       |
+| TM1814                | LPD6803                 | PWM CCT              | E1.31 RGB (network)     |
+| 400kHz                | P9813                   | PWM RGB              | Art-Net RGB (network)   |
+| TM1829                |                         | PWM RGBW             | DDP RGBW (network)      |
+| UCS8903               |                         | PWM RGB+CCT          |                         |
+| UCS8904 RGBW          |                         | PWM RGB+DCCT         |                         |
+| WS2801                |                         |                      |                         |
+
 
 {: .box-warning}
 **Warning:** Đối với mạch điều khiển LED **ARGB Happy Smart Light** chỉ có tiếng Việt cho chip **ESP32** và **ESP32-S3**.
@@ -58,8 +73,7 @@ category: Programming MCU
 - Hiệu ứng **FastLED** và 50 bảng màu
 - Giao diện hiện đại với điều khiển màu sắc, hiệu ứng và **phân đoạn Led**
 - **Phân đoạn** để đặt các hiệu ứng và màu sắc khác nhau **cho các phần của đèn LED**
-- Trang cài đặt - cấu hình qua mạng
-- Chế độ Wifi và trạm phát Wifi - tự động chuyển sang Điểm truy cập an toàn
+- Két nối mạng wifi thông minh.
 - Tối đa **10 ngõ đầu ra kết nối đèn LED** cho mỗi instance ARGB v1.0.0 (**mỗi đầu ra 800 leds**)
 - Có thể kết nối không giới hạn các ARGB v1.0.0
 - Hỗ trợ dải đèn **RGBW**
@@ -118,34 +132,6 @@ See [here](basics/compatible-hardware)! -->
 Licensed under the MIT license   -->
 
 ## ✌️ Happy Smart Light - bangnguyendev
-
-### 💡 Các loại chip Led được hổ trợ
-
-- WS281x
-- SK6812/WS2814 RGBW
-- TM1814
-- 400kHz
-- TM1829
-- UCS8903
-- UCS8904 RGBW
-- WS2801
-- APA102
-- LPD8806
-- LPD6803
-- P9813
-- WS2811 White
-- On/Off
-- PWM White
-- PWM CCT
-- PWM RGB
-- PWM RGBW
-- PWM RGB+CCT
-- PWM RGB+DCCT
-- DDP RGB (network)
-- E1.31 RGB (network)
-- Art-Net RGB (network)
-- DDP RGBW (network)
-
 
 
 ## 💡 Điều Khiển LED Qua DDP, UDP, TMP2

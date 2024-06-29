@@ -22,6 +22,15 @@
                     "offset": 0
                 }
             ]
+        },
+        {
+            "chipFamily": "ESP8266",
+            "parts": [
+                {
+                    "path": "/img/Load-Firmware/ARGB_1.0.0_ESP8266.bin",
+                    "offset": 0
+                }
+            ]
         }
     ]
 }

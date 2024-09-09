@@ -37,37 +37,6 @@ category: Programming MCU
 | UCS8904 RGBW          |                         | PWM RGB+DCCT         |                         |
 | WS2801                |                         |                      |                         |
 
-
-{: .box-warning}
-**Warning:** Đối với mạch điều khiển LED **ARGB Happy Smart Light** chỉ có tiếng Việt cho chip **ESP32** và **ESP32-S3**.
-
-<!-- Sử dụng cho button class="action action--button" -->
-<link rel="stylesheet" href="/dist/css/main-bio.css"> 
-<div style="text-align: center;">
-  <h4>ESP Web Tools - bangnguyendev</h4>
-  <!-- Lựa chọn các option -->
-  <div>
-    <label for="optiongroup">Chọn phiên bản:</label>
-    <select id="optiongroup">
-      <optgroup label="ARGB Led tiếng Việt">
-        <option value="/dist/json/manifest_ESP8266_ESP32_ARGB_VN.json">ARGB Led - v1.0.0_VN</option>
-      </optgroup>
-      <optgroup label="ARGB Led">
-        <option value="/dist/json/manifest_ESP8266_ESP32_ARGB.json">ARGB Led - v1.0.0</option>
-     </optgroup>
-      <optgroup label="Example ESP Web Tools - OTA">
-        <option value="/dist/json/manifest_ESP8266_ESP32.json">ESP Web Tools - OTA - v1.0.0</option>
-      </optgroup>
-    </select>
-  </div>
-
-  Kết nối <a href="https://s.shopee.vn/4Aewn9TB7g"><b>USB-TTL</b></a> với bo mạch <b>ARGB Happy Smart Light</b>.<br> Cắm <b>USB-TTL</b> vào máy tính của bạn. <br>Phiên bản đang chọn: <span style="font-weight: bold;" id="verstr"></span><br>
-  <!-- Button install ESP -->
-  <esp-web-install-button id="espInstallButton">
-  <button class="action action--button" slot="activate"><i class="fa fa-usb"></i><span class="action__text">Kết nối & Cài đặt</span></button>
-  </esp-web-install-button>
-</div>
-
 #### ⚙️ Tính năng
 
 - Thư viện **WS2812FX** tích hợp cho **hơn 180 hiệu ứng đặc biệt**
@@ -78,29 +47,29 @@ category: Programming MCU
 - Tối đa **10 ngõ đầu ra kết nối đèn LED** cho mỗi instance ARGB v1.0.0 (**mỗi đầu ra 800 leds**)
 - Có thể kết nối không giới hạn các ARGB v1.0.0
 - Hỗ trợ dải đèn **RGBW**
-- **Tối đa 250 cài đặt trước** của người dùng để dễ dàng lưu và tải màu sắc/hiệu ứng, hỗ trợ chuyển đổi qua lại giữa chúng
-- Cài đặt trước có thể được sử dụng để tự động thực thi các lệnh API
+- **Tối đa 250 Preset** của người dùng để dễ dàng lưu và tải màu sắc/hiệu ứng, hỗ trợ chuyển đổi qua lại giữa chúng
+- **Preset** có thể được sử dụng để tự động thực thi các lệnh API
 - Chức năng đèn ngủ (giảm dần độ sáng)
-- Cập nhật phần mềm OTA đầy đủ (HTTP + ArduinoOTA), có thể bảo vệ bằng mật khẩu
+- Cập nhật phần mềm OTA đầy đủ (HTTP + ArduinoOTA), có thể bảo vệ bằng mật khẩu.
 - Đồng hồ analog có thể cấu hình + **hỗ trợ bộ kit Cronixie của Diamex**
-- Giới hạn độ sáng tự động có thể cấu hình để hoạt động an toàn hơn
-- Cấu hình dựa trên hệ thống tập tin để **dễ dàng sao lưu cài đặt** trước và cài đặt
+- Giới hạn độ sáng tự động có thể cấu hình để hoạt động an toàn hơn.
+- Cấu hình dựa trên hệ thống tập tin để **dễ dàng sao lưu cài đặt** trước và cài đặt.
 
 <!-- - Native [Home-Assistant integration](https://www.home-assistant.io/integrations/wled/): [![Start native Homeassistant integration configuration](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start?domain=wled) -->
 
 #### 💡 Các phần mềm kết nối chuyên nghiệp hơn ARGB có thể sử dụng
-- [Jinx! – LED Matrix Control](https://live-leds.de/) - điều khiển led chuyên cho bảng ma trận LED
+- [Jinx! – LED Matrix Control](https://live-leds.de/) - điều khiển led chuyên nghiệp cho bảng ma trận LED
 - [LedFx - Make your LEDs dance in sync to the music](https://www.ledfx.app/) - điều khiển led theo nhạc cực cuốn
-- [Lightpack - Prismatik](https://github.com/psieg/Lightpack/releases) - trang trí Ambilight cho màn hình PC/Laptop
+- [Lightpack - Prismatik](https://github.com/psieg/Lightpack/releases) - trang trí **Ambilight** cho màn hình PC/Laptop
 - [Hyperion](https://github.com/hyperion-project/hyperion.ng) - Trang trí TIVI siêu đẹp
 
 #### 💡 Các chuẩn kết nối ARGB có thể sử dụng
 
 <!-- - [ARGB app](https://github.com/Aircoookie/WLED-App) for [Android](https://play.google.com/store/apps/details?id=com.aircoookie.WLED) and [iOS](https://apps.apple.com/us/app/wled/id1475695033)
 - Alternatively, ARGB Native app made by community member [Moustachauve](https://github.com/Moustachauve) -->
-- Ứng dụng [Android](https://play.google.com/store/apps/details?id=ca.cgagnier.wlednativeandroid) 
+- Ứng dụng **điện thoại di động** [Android](https://play.google.com/store/apps/details?id=ca.cgagnier.wlednativeandroid) 
 <!-- - [[Source]((https://github.com/Moustachauve/WLED-Native-Android))] -->
-- Ứng dụng [iOS](https://apps.apple.com/us/app/wled-native/id6446207239) 
+- Ứng dụng **điện thoại di động** [iOS](https://apps.apple.com/us/app/wled-native/id6446207239) 
 <!-- - [[Source]((https://github.com/Moustachauve/WLED-Native-iOS/))] -->
 <!-- - [JSON](interfaces/json-api) and [HTTP request](interfaces/http-api) APIs   -->
 <!-- - [MQTT](interfaces/mqtt)   -->
@@ -162,6 +131,37 @@ Licensed under the MIT license   -->
 ### 💡 6. LedEdit
 - **Mô tả**: LedEdit là một phần mềm điều khiển LED phổ biến, hỗ trợ nhiều loại điều khiển LED thông qua UDP và các giao thức khác.
 - **Tính năng nổi bật**: Đơn giản, dễ sử dụng, hỗ trợ nhiều bộ điều khiển LED.
+
+
+{: .box-warning}
+**Mục này dành cho nạp lại bo mạch:** Đối với mạch điều khiển LED **ARGB Happy Smart Light** chỉ có tiếng Việt cho chip **ESP32** và **ESP32-S3**.
+
+<!-- Sử dụng cho button class="action action--button" -->
+<link rel="stylesheet" href="/dist/css/main-bio.css"> 
+<div style="text-align: center;">
+  <h4>ESP Web Tools - bangnguyendev</h4>
+  <!-- Lựa chọn các option -->
+  <div>
+    <label for="optiongroup">Chọn phiên bản:</label>
+    <select id="optiongroup">
+      <optgroup label="ARGB Led tiếng Việt">
+        <option value="/dist/json/manifest_ESP8266_ESP32_ARGB_VN.json">ARGB Led - v1.0.0_VN</option>
+      </optgroup>
+      <optgroup label="ARGB Led">
+        <option value="/dist/json/manifest_ESP8266_ESP32_ARGB.json">ARGB Led - v1.0.0</option>
+     </optgroup>
+      <optgroup label="Example ESP Web Tools - OTA">
+        <option value="/dist/json/manifest_ESP8266_ESP32.json">ESP Web Tools - OTA - v1.0.0</option>
+      </optgroup>
+    </select>
+  </div>
+
+  Kết nối <a href="https://s.shopee.vn/4Aewn9TB7g"><b>USB-TTL</b></a> với bo mạch <b>ARGB Happy Smart Light</b>.<br> Cắm <b>USB-TTL</b> vào máy tính của bạn. <br>Phiên bản đang chọn: <span style="font-weight: bold;" id="verstr"></span><br>
+  <!-- Button install ESP -->
+  <esp-web-install-button id="espInstallButton">
+  <button class="action action--button" slot="activate"><i class="fa fa-usb"></i><span class="action__text">Kết nối & Cài đặt</span></button>
+  </esp-web-install-button>
+</div>
 
 
 <script>

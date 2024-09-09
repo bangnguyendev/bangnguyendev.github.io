@@ -22,7 +22,19 @@ category: Programming MCU
 ### ARGB Happy Smart Light hướng dẫn cụ thể (tiếng Việt)
 
 {: .box-note}
-**Note:** Đang được cập nhật ...
+[Kênh YTB cơ bản](https://www.youtube.com/@HappySmartLight)
+
+#### Đặt tên miền truy cập nhanh cho bộ điều khiển WLED ARGB Happy Light
+<iframe width="560" height="315" src="https://www.youtube.com/embed/f5aDUepY0u8?si=w1by-IHbUuRIrn7E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+---------------------
+
+#### Phân đoạn bảng LED - Segments WLED - HAPPY SMART LIGHT
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vmH4rLlgh6w?si=0-4ns_NzG7bRmpQ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+---------------------
+
+#### Hướng dẫn sử dụng Danh sách phát Playlist WLED ARGB Happy Light
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ey4K1L_EOLY?si=PfogK26B34Eq7RxM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+---------------------
 
 ### WLED hướng dẫn cụ thể (English)
 

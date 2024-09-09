@@ -1,14 +1,23 @@
 ---
-title: Palettes
-hide:
-  # - navigation
-  # - toc
+layout: page
+title: Palettes ARGB
+meta-title: "Effects ARGB"
+subtitle: "Các kiểu bảng màu"
+bigimg:
+  - "/Topic/ARGB-LED/image/BANER__ARGB.png"
+image: "/Topic/ARGB-LED/image/BANER__ARGB.png"
+tags: [esp web tools, LED, ARGB, led strip]
+category: Programming MCU
+# gh-repo: bangnguyendev/flash-esp-web-bangnguyendev
+# gh-badge: [fork]
+# author: "BangNguyen"
+# comments: true
 ---
 
-!!! info "Version Info"
-    Beginning in 0.14 up to 10 [Custom Palletes](#custom-palettes) can be uploaded.
+{: .box-note}
+Hiện tại **hơn 100 kiểu màu** có sẳn ở phiên bản hiện tại **v1.0.0**
 
-
+Ngoài ra, có thể tùy chỉnh nâng cao cho bảng màu tại [Custom Palettes](#custom-palettes)
 
 |  ID | Name           | Description                                                                                                                                                                                           |
 |----:|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -88,7 +97,7 @@ hide:
 
 ### Custom Palettes
 
-As of 0.14, up to 10 custom palettes can be uploaded by the user in JSON files named `palette0.json` through `palette9.json`
+Custom palettes can be uploaded by the user in JSON files named `palette0.json` through `palette9.json`
 The format closely resembles that of the palettes defined in `palettes.h` with a position (0-255), red, green, blue for each color. An example of the content would be:
 ```
 {"palette":[ 

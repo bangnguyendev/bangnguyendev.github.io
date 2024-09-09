@@ -20,6 +20,8 @@ category: Programming MCU
 
 - [Features - Effects - Hiệu ứng](features/effects) 
 
+- [Features - Palettes - Bảng màu](features/palettes) 
+
 **Triển khai nhanh chóng** và nhiều tính năng để điều khiển đèn **LED NeoPixel** (WS2812B, WS2811, SK6812, ...) hoặc các chipsets dựa trên SPI như WS2801 và APA102!
 
 <img src="/Topic/ARGB-LED/image/3D_PCB1_mat-truoc.png" loading="lazy">
@@ -58,10 +60,12 @@ category: Programming MCU
 <!-- - Native [Home-Assistant integration](https://www.home-assistant.io/integrations/wled/): [![Start native Homeassistant integration configuration](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start?domain=wled) -->
 
 #### 💡 Các phần mềm kết nối chuyên nghiệp hơn ARGB có thể sử dụng
-- [Jinx! – LED Matrix Control](https://live-leds.de/) - điều khiển led chuyên nghiệp cho bảng ma trận LED
-- [LedFx - Make your LEDs dance in sync to the music](https://www.ledfx.app/) - điều khiển led theo nhạc cực cuốn
-- [Lightpack - Prismatik](https://github.com/psieg/Lightpack/releases) - trang trí **Ambilight** cho màn hình PC/Laptop
-- [Hyperion](https://github.com/hyperion-project/hyperion.ng) - Trang trí TIVI siêu đẹp
+- 🔥[Jinx! – LED Matrix Control](https://live-leds.de/) - điều khiển led chuyên nghiệp cho bảng ma trận LED
+- 🔥[LedFx - Make your LEDs dance in sync to the music](https://www.ledfx.app/) - điều khiển led theo nhạc cực cuốn
+- 🔥[Lightpack - Prismatik](https://github.com/psieg/Lightpack/releases) - trang trí **Ambilight** cho màn hình PC/Laptop
+- 🔥[Hyperion](https://github.com/hyperion-project/hyperion.ng) - Trang trí TIVI siêu đẹp
+
+👉👉👉[Danh sách các phần mềm khác](basics/compatible-software)
 
 #### 💡 Các chuẩn kết nối ARGB có thể sử dụng
 
@@ -82,26 +86,6 @@ category: Programming MCU
 - [Sync color of multiple ARGB devices (UDP notifier)](interfaces/udp-notifier)
 - [Infrared remotes (24-key RGB, receiver required)](interfaces/infrared)
 - Simple timers/schedules (time from NTP, timezones/DST supported)  
-
-#### 📲 Hướng dẫn sử dụng nhanh và tài liệu liên quan
-
-[Hướng dẫn sử dụng nhanh!](basics/getting-started)
-
-[Trên trang này](basics/tutorials), bạn có thể tìm thấy các hướng dẫn tuyệt vời do cộng đồng thực hiện và các công cụ hữu ích để giúp bạn thiết lập và vận hành chiếc đèn mới của mình!
-
-#### 🖼️ User interface
-
-<img src="assets/images/ui/headers/macbook-pro-space-gray-on-the-wooden-table.jpg" width="50%"><img src="assets/images/ui/headers/walking-with-iphone-x.jpg" width="50%">
-
-<!-- #### 💾 Compatible hardware
-
-See [here](basics/compatible-hardware)! -->
-
-<!-- #### ✌️ Other
-
-Licensed under the MIT license   -->
-
-## ✌️ Happy Smart Light - bangnguyendev
 
 
 ## 💡 Điều Khiển LED Qua DDP, UDP, TMP2
@@ -132,6 +116,26 @@ Licensed under the MIT license   -->
 - **Mô tả**: LedEdit là một phần mềm điều khiển LED phổ biến, hỗ trợ nhiều loại điều khiển LED thông qua UDP và các giao thức khác.
 - **Tính năng nổi bật**: Đơn giản, dễ sử dụng, hỗ trợ nhiều bộ điều khiển LED.
 
+
+#### 📲 Hướng dẫn sử dụng nhanh và tài liệu liên quan
+
+[Hướng dẫn sử dụng nhanh!](basics/getting-started)
+
+[Trên trang này](basics/tutorials), bạn có thể tìm thấy các hướng dẫn tuyệt vời do cộng đồng thực hiện và các công cụ hữu ích để giúp bạn thiết lập và vận hành chiếc đèn mới của mình!
+
+#### 🖼️ User interface
+
+<img src="assets/images/ui/headers/macbook-pro-space-gray-on-the-wooden-table.jpg" width="50%"><img src="assets/images/ui/headers/walking-with-iphone-x.jpg" width="50%">
+
+<!-- #### 💾 Compatible hardware
+
+See [here](basics/compatible-hardware)! -->
+
+<!-- #### ✌️ Other
+
+Licensed under the MIT license   -->
+
+## ✌️ Happy Smart Light - bangnguyendev
 
 {: .box-warning}
 **Mục này dành cho nạp lại bo mạch:** Đối với mạch điều khiển LED **ARGB Happy Smart Light** chỉ có tiếng Việt cho chip **ESP32** và **ESP32-S3**.

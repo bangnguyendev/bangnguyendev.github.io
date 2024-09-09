@@ -22,6 +22,7 @@ category: Programming MCU
 
 **Triển khai nhanh chóng** và nhiều tính năng để điều khiển đèn **LED NeoPixel** (WS2812B, WS2811, SK6812, ...) hoặc các chipsets dựa trên SPI như WS2801 và APA102!
 
+<img src="/Topic/ARGB-LED/image/3D_PCB1_mat-truoc.png" loading="lazy">
 
 ### 💡 Các loại chip Led được hổ trợ
 

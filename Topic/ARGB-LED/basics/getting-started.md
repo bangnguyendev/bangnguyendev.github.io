@@ -11,7 +11,15 @@ hide:
 ![connectionsA](/Topic/ARGB-LED/image/ARGB_1CH_100_TEM_DAN.png)
 
 ### 3D sản phẩm
-![connectionsA](/Topic/ARGB-LED/image/3D_box_PCB1_2024-06-16.png)
+
+<img src="/Topic/ARGB-LED/image/3D_box_PCB1_2024-06-16.png" loading="lazy">
+
+<img src="/Topic/ARGB-LED/image/3D_PCB1_mat-truoc.png" loading="lazy">
+
+<img src="/Topic/ARGB-LED/image/3D_PCB1_mat-sau.png" loading="lazy">
+
+<img src="/Topic/ARGB-LED/image/3D_PCB1.png" loading="lazy">
+
 
 ### Hướng dẫn kết nối cơ bản
 
@@ -44,5 +52,23 @@ Kết nối `DIN` của led strip WS2812 hoặc dây led tương tự chuẩn SP
 
 ![connectionsA](https://github.com/Aircoookie/WLED-Docs/assets/59397047/78cc27f3-f0e4-4c04-bd3f-d35caf143456)
 
+### Reset cứng - SW_BTN:
+
+`SW_BTN` trên bo mạch có 3 tính năng tích hợp:
+
+1. Làm một nút nhấn tích hợp tích năng chuyển hiệu ứng, macro, ...
+2. **Nhấn giữ phím lâu hơn >6 giây** rồi thả ra thì các cài đặt về Wifi sẽ được đưa về mặc định
+  - Lúc này mạch sẽ phát Wifi có tên: `ARGB-AP` với mật khẩu là `argb1234`
+3. **Nhấn giữ phím lâu hơn >12 giây** rồi thả ra thì sẽ xóa toàn bộ bộ nhớ trong mạch.
+
+
+<div class="post-img-post">
+    <img src="/Topic/ARGB-LED/image/SW_BTN.png" loading="lazy">
+</div>
+
+### Reset mềm:
+
+Truy cập vào bo mạch bằng địa chỉ IP hoặc ứng dụng WLED chúng ta có thể reset bo mạch, khởi động lại, và đặt lại wifi!
+
 {: .box-warning}
-**Liên hệ:** 0784140494 (Bằng - Kỹ thuật) - 0936601944 (Hiền - Sale)
+**Liên hệ:** 0784.140494 (Bằng - Kỹ thuật) - 0936.601944 (Hiền - Sale)

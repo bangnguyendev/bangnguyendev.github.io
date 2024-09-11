@@ -68,7 +68,10 @@ Kết nối `DIN` của led strip WS2812 hoặc dây led tương tự chuẩn SP
 
 ### Reset mềm:
 
-Truy cập vào bo mạch bằng địa chỉ IP hoặc ứng dụng WLED chúng ta có thể reset bo mạch, khởi động lại, và đặt lại wifi!
+Truy cập vào bo mạch bằng địa chỉ IP hoặc ứng dụng điều khiển `ARGB v1.0.0` chúng ta có thể reset bo mạch, khởi động lại, và đặt lại wifi!
 
 {: .box-warning}
-**Liên hệ:** 0784.140494 (Bằng - Kỹ thuật) - 0936.601944 (Hiền - Sale)
+**Liên hệ:** 0784.140494 (Bằng - Kỹ thuật)
+
+{: .box-warning}
+**Liên hệ:** 0936.601944 (Hiền - Sale)

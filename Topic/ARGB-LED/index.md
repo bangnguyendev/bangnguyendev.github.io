@@ -28,16 +28,31 @@ category: Programming MCU
 
 ### 💡 Các loại chip Led được hổ trợ
 
-| **SPI 3-wire**        | **SPI 4-wire**          | **PWM**              | **Others**              |
-|-----------------------|-------------------------|----------------------|-------------------------|
-| WS281x                | APA102                  | WS2811 White         | On/Off                  |
-| SK6812/WS2814 RGBW    | LPD8806                 | PWM White            | DDP RGB (network)       |
-| TM1814                | LPD6803                 | PWM CCT              | E1.31 RGB (network)     |
-| 400kHz                | P9813                   | PWM RGB              | Art-Net RGB (network)   |
-| TM1829                |                         | PWM RGBW             | DDP RGBW (network)      |
-| UCS8903               |                         | PWM RGB+CCT          |                         |
-| UCS8904 RGBW          |                         | PWM RGB+DCCT         |                         |
-| WS2801                |                         |                      |                         |
+### Bảng 1: SPI 3-wire và SPI 4-wire
+
+| **SPI 3-wire**        | **SPI 4-wire**          |
+|-----------------------|-------------------------|
+| WS281x                | APA102                  |
+| SK6812/WS2814 RGBW    | LPD8806                 |
+| TM1814                | LPD6803                 |
+| 400kHz                | P9813                   |
+| TM1829                |                         |
+| UCS8903               |                         |
+| UCS8904 RGBW          |                         |
+| WS2801                |                         |
+
+### Bảng 2: PWM và Others
+
+| **PWM**              | **Others**              |
+|----------------------|-------------------------|
+| WS2811 White         | On/Off                  |
+| PWM White            | DDP RGB (network)       |
+| PWM CCT              | E1.31 RGB (network)     |
+| PWM RGB              | Art-Net RGB (network)   |
+| PWM RGBW             | DDP RGBW (network)      |
+| PWM RGB+CCT          |                         |
+| PWM RGB+DCCT         |                         |
+
 
 #### ⚙️ Tính năng
 
@@ -46,8 +61,8 @@ category: Programming MCU
 - Giao diện hiện đại với điều khiển màu sắc, hiệu ứng và **phân đoạn Led**
 - **Phân đoạn** để đặt các hiệu ứng và màu sắc khác nhau **cho các phần của đèn LED**
 - Két nối mạng wifi thông minh.
-- Tối đa **10 ngõ đầu ra kết nối đèn LED** cho mỗi instance ARGB v1.0.0 (**mỗi đầu ra 800 leds**)
-- Có thể kết nối không giới hạn các ARGB v1.0.0
+- Tối đa **2 ngõ đầu ra kết nối đèn LED** cho mỗi instance ARGB v1.0.0 (**mỗi đầu ra 800 leds**)
+- Có thể kết nối không giới hạn các module ARGB v1.0.0
 - Hỗ trợ dải đèn **RGBW**
 - **Tối đa 250 Preset** của người dùng để dễ dàng lưu và tải màu sắc/hiệu ứng, hỗ trợ chuyển đổi qua lại giữa chúng
 - **Preset** có thể được sử dụng để tự động thực thi các lệnh API

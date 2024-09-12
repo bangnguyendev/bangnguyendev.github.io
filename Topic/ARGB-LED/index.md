@@ -28,7 +28,7 @@ category: Programming MCU
 
 ### 💡 Các loại chip Led được hổ trợ
 
-### Bảng 1: SPI 3-wire và SPI 4-wire
+#### Bảng 1: SPI 3-wire và SPI 4-wire
 
 | **SPI 3-wire**        | **SPI 4-wire**          |
 |-----------------------|-------------------------|
@@ -41,7 +41,7 @@ category: Programming MCU
 | UCS8904 RGBW          |                         |
 | WS2801                |                         |
 
-### Bảng 2: PWM và Others
+#### Bảng 2: PWM và Others
 
 | **PWM**              | **Others**              |
 |----------------------|-------------------------|
@@ -75,6 +75,7 @@ category: Programming MCU
 <!-- - Native [Home-Assistant integration](https://www.home-assistant.io/integrations/wled/): [![Start native Homeassistant integration configuration](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start?domain=wled) -->
 
 #### 💡 Các phần mềm kết nối chuyên nghiệp hơn ARGB có thể sử dụng
+- 🔥[xLights – LED Control](https://xlights.org/releases/) - điều khiển lập trình led chuyên nghiệp
 - 🔥[Jinx! – LED Matrix Control](https://live-leds.de/) - điều khiển led chuyên nghiệp cho bảng ma trận LED
 - 🔥[LedFx - Make your LEDs dance in sync to the music](https://www.ledfx.app/) - điều khiển led theo nhạc cực cuốn
 - 🔥[Lightpack - Prismatik](https://github.com/psieg/Lightpack/releases) - trang trí **Ambilight** cho màn hình PC/Laptop

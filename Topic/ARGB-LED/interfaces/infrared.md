@@ -1,33 +1,35 @@
 ---
 title: Infrared
+meta-title: Bộ điều khiển hồng ngoại
+subtitle: Các remote IR được hỗ trợ
+bigimg:
+  - "/Topic/ARGB-LED/image\/BANER__ARGB.png"
+image: "/Topic/ARGB-LED/image\/BANER__ARGB.png"
+tags: [ARGB, hồng ngoại, IR, strip leds]
+category: Programming MCU
 hide:
   # - navigation
   # - toc
 ---
 
+### Các remote IR được hỗ trợ
 
-!!! info "Version Info"
-    Since v0.8.2, infrared control from various IR remotes is supported for ESP8266 and since v0.9.0 for ESP32, too.
+Để sử dụng remote IR, hãy vào `Settings`, `Sync Interfaces` và thay đổi giá trị cho `Infrared receiver type` tương ứng với loại remote IR từ danh sách sau:
 
-A dedicated infrared receiver module is required and must be connected to the WLED Controller. For example, KY-022 or TSOP38238 are confirmed to work and inexpensive. These receivers each have three pins: 3.3V, GND and IR data. IR data pin must be connected to a free GPIO pin. This GPIO must then be set as IR GPIO under "Config->LED Preferences" (The default sensor pin is GPIO4).
-![Infrared shcematics](../assets/images/content/pic13.jpg)
+1. Remote IR 24 phím màu trắng với R, G, B + 12 tông màu  
+2. Remote IR 24 phím màu trắng với nút CT+ / CT-  
+3. Remote IR 40 phím màu xanh với các nút 25%, 50%, 75% và 100%  
+4. Remote IR 44 phím màu trắng với mũi tên lên/xuống cho các màu R, G và B  
+5. Remote IR 21 phím màu trắng với R, G, B + 9 tông màu  
+6. Remote IR 6 phím màu đen với CH lên/xuống + âm lượng lên/xuống  
+7. [JSON IR remote](/Topic/ARGB-LED/interfaces/json-ir/json_infrared.md) - Cấu hình dễ dàng và sử dụng bất kỳ remote IR nào.
 
-!!! warning
-    IR receiving will not work on ESP8266 if you use any LED pin other than GPIO 1, 2, or 3 for _digital_ LED strips.
+## Điều khiển từ xa dựa trên ESP-NOW  
+Từ phiên bản WLED 14.0-beta3: Điều khiển từ xa tương thích ESP-NOW đã được hỗ trợ. Một ví dụ về điều khiển từ xa này là remote „WIZmote“. Điều này dựa trên vi điều khiển ESP. ESP-NOW có thể được kích hoạt trong cài đặt WLED. Bạn cần nhập địa chỉ MAC của phần cứng điều khiển từ xa. Điều này được xác định bằng cách nhấn bất kỳ nút nào trên remote và sao chép địa chỉ MAC cuối cùng nhận được từ trường "Last Seen" vào trường "Hardware MAC" trong cài đặt ESP-NOW của WLED (“Config->WiFi Setup”) và lưu lại bằng cách nhấn "Save". Ưu điểm: không cần gắn thêm bộ thu đặc biệt vào bộ điều khiển WLED và tín hiệu được truyền qua mạng radio. Do đó, không cần đường truyền thẳng giữa điều khiển từ xa và bộ điều khiển WLED như trong trường hợp của remote IR. 
 
-### Supported IR remotes
+![Điều khiển từ xa ESP-NOW](\Topic\ARGB-LED\assets\images\content\pic14.jpg)  
 
-To use IR remote go to `Settings`, `Sync Interfaces` and change the value for `Infrared receiver type` according to the IR remote type of the following list:
+Bốn nút "1"-"4" của remote WIZmote được liên kết với các preset 1 đến 4. Ý nghĩa của các nút khác khá dễ hiểu. Lưu ý: WIZmote cần hai pin AAA chất lượng tốt để hoạt động bình thường. Nếu pin quá yếu, tín hiệu sẽ không được gửi đúng cách, ngay cả khi đèn LED xanh trên remote sáng lên ngắn gọn, vốn báo hiệu tín hiệu đã được gửi đi.
 
-1. white 24-key IR remote with R,G,B + 12 color-tones  
-2. white 24-key IR remote with CT+ / CT- buttons  
-3. blue 40-key IR remote with keys for 25%, 50%, 75% and 100%  
-4. white 44-key IR remote with up/down arrows for the colors R,G and B  
-5. white 21-key IR remote with R,G,B + 9 color-tones  
-6. black 6-key IR remote with CH up/down + Vol up/down  
-7. [JSON IR remote](json-ir/json_infrared.md) - Easily configure and use any IR remote.  
 
-## ESP-NOW based remote control
-Since version WLED 14.0-beta3: An ESP-NOW compatible remote control is supported. An example of this is the „WIZmote“ remote control. This is based on an ESP microcontroller. ESP-NOW can be activated in WLED settings. You have to enter the Hardware MAC address of the remote control. This is determined by clicking on any button on the remote control and copying the last received MAC address from the "Last Seen" field to the "Hardware MAC" field in WLED ESP-NOW settings (“Config->WiFi Setup”) and saving it with "Save". Advantages: no special receiver needs to be attached to the WLED controller and the signals are transmitted via radio network. Therefore there is no line of sight between the remote control and the WLED controller required, as is the case with an IR remote control.
-![ESP-NOW remote control](../assets/images/content/pic14.jpg)
-The 4 buttons "1"-"4" of the WIZmote remote control are linked to presets 1 to 4. The meaning of other keys is self-explanatory. Attention: WIZmote needs two good quality AAA batteries to work properly. If the batteries are too weak, the correct signal will not be sent, even if the blue LED on the remote control lights up briefly, actually indicating signal transmission.
+

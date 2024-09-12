@@ -52,6 +52,25 @@ Kết nối `DIN` của led strip WS2812 hoặc dây led tương tự chuẩn SP
 
 ![connectionsA](https://github.com/Aircoookie/WLED-Docs/assets/59397047/78cc27f3-f0e4-4c04-bd3f-d35caf143456)
 
+
+### Nguồn DC
+
+<div class="post-img-post">
+  <img src="/Topic/ARGB-LED/image/nguon led 5v.webp" loading="lazy">
+</div>
+
+Khi chọn nguồn tổ ong 5V dòng cao, hãy lưu ý những điểm sau:
+
+1. **Chọn thương hiệu uy tín** như Meanwell, LRS để đảm bảo chất lượng.
+2. **Đảm bảo công suất và dòng đủ lớn** cho hệ thống.
+3. **Bảo vệ ngắn mạch, quá tải** để an toàn cho thiết bị.
+4. **Hiệu suất cao** (trên 85%) giúp giảm nhiệt và kéo dài tuổi thọ.
+5. **Tản nhiệt tốt** và có chứng nhận an toàn (CE, UL, RoHS).
+6. **Chọn nguồn dư tải** để tránh quá tải và ổn định hơn.
+7. **Xem đánh giá người dùng** và đảm bảo sản phẩm có bảo hành đầy đủ.
+
+Những yếu tố này giúp hệ thống hoạt động ổn định và an toàn hơn.
+
 ### Reset cứng - SW_BTN:
 
 `SW_BTN` trên bo mạch có 3 tính năng tích hợp:

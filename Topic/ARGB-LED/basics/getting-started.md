@@ -1,14 +1,49 @@
 ---
-title: Getting Started
+title: Bộ điều khiển led ARGB
+meta-title: Bộ điều khiển led ARGB
+# subtitle: "... Welcome to ARGB"
+bigimg:
+  - "/Topic/ARGB-LED/image/3D_PCB1_mat-truoc.png"
+image: "image/BANER__ARGB.png"
+tags: [ARGB, ws2811, ws2812b, strip leds]
 hide:
   # - navigation
   # - toc
 ---
 
-## Welcome to the ARGB Happy Smart Light wiki!
+### Thông tin chi tiết sản phẩm
 
-### Nhãn dán trên sản phẩm
-![connectionsA](/Topic/ARGB-LED/image/ARGB_1CH_100_TEM_DAN.png)
+
+| **Thông tin**                  | **Chi tiết**                                                                 |
+|---------------------------------|------------------------------------------------------------------------------|
+| **Tên sản phẩm**                | Happy Smart Light                                                           |
+| **Model**                       | ARGB_1CH_100                                                                |
+| **Nguồn cấp**                   | VLED (+5V DC)                                                               |
+| **Số kênh**                     | 1 hoặc 2 kênh:                                                              |
+|                                 | - 1 kênh: DATA `IO16` (CLK: `IO43`)                                              |
+|                                 | - 2 kênh: DATA1: `IO16` (DATA), DATA2: `IO43` (CLK)                             |
+| **Tải**                         | 800 Led/kênh                                                                |
+| **Dòng điện tải tối đa**         | **10A Max** (Có thể thay đổi cầu chì nếu cần dòng lớn hơn)                      |
+| **Nhiệt độ hoạt động**          | -20°C đến +60°C                                                             |
+| **Chỉ số bảo vệ IP**            | IP20                                                                        |
+| **Chân kết nối**                | - **GND**: Nối đất                                                         |
+|                                 | - **VLED**: Nguồn cấp cho đèn (5V)                                          |
+|                                 | - **DATA**: Dữ liệu đầu vào                                                  |
+|                                 | - **CLK**: Xung nhịp đầu vào                                                 |
+| **Chân kết nối nguồn**          | VIN (VCC = +5V DC) và GND                                                   |
+
+### Hướng dẫn sử dụng:
+1. **Kết nối nguồn**: Kết nối nguồn **+5V DC** vào chân **VLED** và **GND**.
+2. **Kết nối điều khiển**: 
+   - Đối với **1 kênh**: Kết nối chân **DATA** với IO16 và **CLK** với IO43.
+   - Đối với **2 kênh**: Kết nối **DATA1** với IO16 (DATA) và **DATA2** với IO43 (CLK).
+3. **Kiểm tra tải**: Đảm bảo tổng số LED không vượt quá 800 LED mỗi kênh.
+4. **Kiểm tra nhiệt độ hoạt động**: Thiết bị hoạt động trong khoảng nhiệt độ từ -20°C đến +60°C.
+5. **Chỉ số bảo vệ IP**: Chỉ số IP20 có nghĩa là thiết bị không chống nước, tránh lắp đặt tại nơi ẩm ướt.
+
+### Lưu ý:
+- **Dòng điện tải tối đa 10A**: Để sử dụng dòng điện lớn hơn, vui lòng thay thế cầu chì **FH1** với dòng định mức phù hợp (tối đa 65A).
+- Đảm bảo kết nối nguồn đúng với yêu cầu **+5V DC** để tránh hư hại thiết bị.
 
 ### 3D sản phẩm
 
@@ -21,32 +56,60 @@ hide:
 <img src="/Topic/ARGB-LED/image/3D_PCB1.png" loading="lazy">
 
 
-### Hướng dẫn kết nối cơ bản
+### Hướng dẫn kết nối chi tiết
 
-Mạch có thể điều khiển cho dãy ARGB Led 5v hoặc 12v (ưu tiên 5V dễ dàng kết nối hơn)
+Mạch điều khiển ARGB LED có khả năng hỗ trợ cả dãy đèn LED ARGB **5V** và **12V**. Dưới đây là hướng dẫn chi tiết và hai phương án kết nối khi sử dụng **LED 12V**.
 
+#### Kết nối mạch với dãy LED 5V
 
-#### Mạch dây led 5v
+Khi sử dụng dãy **LED 5V**, quá trình đấu nối rất đơn giản vì **nguồn cung cấp và điều khiển** chỉ cần một loại điện áp. Cụ thể:
 
-Đối với mạch dây LED **điện áp 5V** thì chỉ cần **nguồn 5v (1A-10A)** gắn vào **chân VIN và chân GND**
+1. **Nguồn điện**: Cấp nguồn **5V DC** với dòng từ **1A đến 10A** tùy vào tổng số lượng LED được sử dụng. Đảm bảo kết nối:
+   - **Chân VIN** trên bo mạch nối với cực dương của nguồn 5V (**V+/5V**).
+   - **Chân GND** nối với cực âm của nguồn 5V (**GND**).
 
-**VLED sử dụng chung nguồn 5V** được nên có thể kết nối `V+/5v` vào chân **VLED trên bo mạch.**
+2. **VLED**: Vì bo mạch và dãy LED cùng sử dụng **nguồn 5V**, bạn có thể kết nối trực tiếp chân **VLED** trên bo mạch với chân **V+/5V** của nguồn điện. Điều này giúp nguồn 5V dùng chung cho cả bo mạch điều khiển và dãy LED.
+
+3. **Dữ liệu điều khiển**: Đấu nối dây **DATA** từ bo mạch tới chân **DATA IN** của dãy LED để truyền tín hiệu điều khiển màu sắc.
 
 ![strip_led_5v.png](/Topic/ARGB-LED/image/strip_led_5v.png)
 
-#### Mạch dây led 12v
+#### Kết nối mạch với dãy LED 12V
 
-Đối với mạch dây LED sử dụng **điện áp 12V** thì chỉ cần **nguồn 5v (1A-10A)** gắn vào chân **VIN và chân GND**
+Đối với dãy **LED 12V**, có hai phương án đấu nối tùy thuộc vào việc bạn có sử dụng nguồn 5V riêng cho bo mạch điều khiển hay không. Tuy nhiên, **dù sử dụng phương án nào cũng cần đảm bảo rằng GND của nguồn cấp cho bo mạch điều khiển và GND của dãy LED phải được nối chung** để đảm bảo sự ổn định của hệ thống.
 
-**VLED** sử dụng **nguồn 12V RIÊNG**
+##### Phương án 1: Sử dụng nguồn 5V riêng cho bo mạch
 
-Ngõ vào **VLED** trên bo mạch **BỎ TRỐNG**.
+1. **Nguồn điện cho bo mạch**: Bo mạch yêu cầu **nguồn 5V DC** với dòng từ **1A đến 10A**:
+   - **Chân VIN** trên bo mạch nối với cực dương của nguồn 5V (**V+/5V**).
+   - **Chân GND** của bo mạch nối với cực âm của nguồn 5V (**GND**).
 
-![strip_led_12v.png](/Topic/ARGB-LED/image/strip_led_12v.png)
+2. **Nguồn điện cho LED**: 
+   - Dãy LED **12V** cần nguồn **12V riêng**.
+   - **Chân VLED** trên bo mạch **không cần kết nối** và phải **bỏ trống**.
 
+3. **Kết nối chung GND**: Đảm bảo rằng **GND của nguồn cấp cho bo mạch** và **GND của dãy LED** được nối chung để đảm bảo sự ổn định và chính xác trong việc truyền tín hiệu điều khiển.
 
-{: .box-note}
-Kết nối `DIN` của led strip WS2812 hoặc dây led tương tự chuẩn SPI vào vị trí `DATA` của bo mạch điều khiển. 
+4. **Dữ liệu điều khiển**: Kết nối dây **DATA** từ bo mạch tới chân **DATA IN** của dãy LED để truyền tín hiệu điều khiển chính xác.
+
+##### Phương án 2: Sử dụng mạch giảm áp từ 12V xuống 5V
+
+1. **Mạch giảm áp**: Sử dụng **mạch giảm áp** từ 12V xuống 5V để cấp nguồn cho bo mạch điều khiển.
+   - **Đầu vào** của mạch giảm áp kết nối với nguồn **12V**.
+   - **Đầu ra** của mạch giảm áp cấp nguồn **5V** cho bo mạch điều khiển thông qua chân **VIN** và **GND**.
+
+2. **Nguồn điện cho dãy LED**: 
+   - Dãy LED **12V** được cấp điện trực tiếp từ nguồn **12V**.
+   - **Chân VLED** trên bo mạch vẫn **bỏ trống**.
+
+3. **Kết nối chung GND**: Cần đảm bảo rằng **GND của nguồn 12V**, **GND của mạch giảm áp**, **GND của bo mạch điều khiển**, và **GND của dãy LED** đều được nối chung để tránh gây ra các vấn đề về xung điện và tín hiệu điều khiển.
+
+4. **Dữ liệu điều khiển**: Như thường lệ, kết nối dây **DATA** từ bo mạch tới chân **DATA IN** của dãy LED để truyền tín hiệu điều khiển.
+
+#### Lưu ý kỹ thuật:
+- Với **LED 12V**, **bất kể sử dụng phương án nào**, **GND của nguồn điều khiển bo mạch** và **GND của dãy LED** phải được **nối chung** để hệ thống hoạt động ổn định và chính xác.
+- Nếu sử dụng **mạch giảm áp**, đảm bảo mạch giảm áp có khả năng cung cấp đủ dòng **5V** cho bo mạch điều khiển.
+
 
 **Note:** _Hãy đãm bảo răng tất cả các dây led được nối chung GND nếu sử dụng nhiều dây led_
 

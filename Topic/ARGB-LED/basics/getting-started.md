@@ -141,6 +141,26 @@ Khi sử dụng dãy **LED 5V**, quá trình đấu nối rất đơn giản vì
 ![connectionsA](https://github.com/Aircoookie/WLED-Docs/assets/59397047/78cc27f3-f0e4-4c04-bd3f-d35caf143456)
 
 
+### 💡 Ứng dụng điều khiển mạch
+
+#### ⚡Phần mềm bắt buộc:
+
+- 💻Trên PC/laptop:
+   - 🔥 [WLED PC – LED Control](https://github.com/w00000dy/WLED-GUI/releases/): Công cụ **điều khiển chính**
+
+- 📱Trên Smartphone:
+   - 🔥 Ứng dụng **Android**: [WLED](https://play.google.com/store/apps/details?id=ca.cgagnier.wlednativeandroid)
+   - 🔥 Ứng dụng **iOS**: [WLED](https://apps.apple.com/us/app/wled-native/id6446207239)
+
+#### ⚡Phần mềm tùy chọn trên PC/laptop:
+- 🔥 [xLights – LED Control](https://xlights.org/releases/): Điều khiển và lập trình LED chuyên nghiệp.
+- 🔥 [Jinx! – LED Matrix Control](https://live-leds.de/): Điều khiển LED cho bảng ma trận chuyên dụng.
+- 🔥 [LedFx](https://www.ledfx.app/): Điều khiển LED nhấp nháy theo nhạc sống động.
+- 🔥 [Lightpack - Prismatik](https://github.com/psieg/Lightpack/releases): Hiệu ứng **Ambilight** trang trí màn hình PC/laptop.
+- 🔥 [Hyperion](https://github.com/hyperion-project/hyperion.ng): Trang trí LED cho TV với hiệu ứng đẹp mắt.
+
+#### ⚡👉 [Danh sách các phần mềm khác](basics/compatible-software).
+
 ### Chọn nguồn DC
 
 <div class="post-img-post">

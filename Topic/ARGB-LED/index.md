@@ -61,9 +61,8 @@ category: Programming MCU
 - Giao diện hiện đại với điều khiển màu sắc, hiệu ứng và **phân đoạn Led**
 - **Phân đoạn** để đặt các hiệu ứng và màu sắc khác nhau **cho các phần của đèn LED**
 - Két nối mạng wifi thông minh.
-- Tối đa **2 ngõ đầu ra kết nối đèn LED** cho mỗi instance ARGB v1.0.0 (**mỗi đầu ra 800 leds**)
+- Tối đa **2 ngõ đầu ra kết nối đèn LED** cho mỗi mạch ARGB v1.0.0 (**mỗi đầu ra 800 leds**)
 - Có thể kết nối không giới hạn các module ARGB v1.0.0
-- Hỗ trợ dải đèn **RGBW**
 - **Tối đa 250 Preset** của người dùng để dễ dàng lưu và tải màu sắc/hiệu ứng, hỗ trợ chuyển đổi qua lại giữa chúng
 - **Preset** có thể được sử dụng để tự động thực thi các lệnh API
 - Chức năng đèn ngủ (giảm dần độ sáng)
@@ -87,9 +86,9 @@ category: Programming MCU
 
 <!-- - [ARGB app](https://github.com/Aircoookie/WLED-App) for [Android](https://play.google.com/store/apps/details?id=com.aircoookie.WLED) and [iOS](https://apps.apple.com/us/app/wled/id1475695033)
 - Alternatively, ARGB Native app made by community member [Moustachauve](https://github.com/Moustachauve) -->
-- Ứng dụng **điện thoại di động** [Android](https://play.google.com/store/apps/details?id=ca.cgagnier.wlednativeandroid) 
+- 🔥 Ứng dụng **điện thoại di động** [Android](https://play.google.com/store/apps/details?id=ca.cgagnier.wlednativeandroid) 
 <!-- - [[Source]((https://github.com/Moustachauve/WLED-Native-Android))] -->
-- Ứng dụng **điện thoại di động** [iOS](https://apps.apple.com/us/app/wled-native/id6446207239) 
+- 🔥 Ứng dụng **điện thoại di động** [iOS](https://apps.apple.com/us/app/wled-native/id6446207239) 
 <!-- - [[Source]((https://github.com/Moustachauve/WLED-Native-iOS/))] -->
 <!-- - [JSON](interfaces/json-api) and [HTTP request](interfaces/http-api) APIs   -->
 <!-- - [MQTT](interfaces/mqtt)   -->

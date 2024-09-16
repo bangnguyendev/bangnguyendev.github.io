@@ -11,7 +11,7 @@ hide:
   # - toc
 ---
 
-### Thông tin chi tiết sản phẩm
+### 💡 Thông tin chi tiết sản phẩm
 
 
 | **Thông tin**                  | **Chi tiết**                                                                 |
@@ -27,23 +27,44 @@ hide:
 | **Nhiệt độ hoạt động**          | -20°C đến +60°C                                                             |
 | **Chỉ số bảo vệ IP**            | IP20                                                                        |
 | **Chân kết nối**                | - **GND**: Nối đất                                                         |
-|                                 | - **VLED**: Nguồn cấp cho đèn (5V)                                          |
+|                                 | - **VLED**: Nguồn cấp cho đèn (+5V DC)                                          |
 |                                 | - **DATA**: Dữ liệu đầu vào                                                  |
 |                                 | - **CLK**: Xung nhịp đầu vào                                                 |
 | **Chân kết nối nguồn**          | VIN (VCC = +5V DC) và GND                                                   |
 
-### Hướng dẫn sử dụng:
-1. **Kết nối nguồn**: Kết nối nguồn **+5V DC** vào chân **VLED** và **GND**.
-2. **Kết nối điều khiển**: 
-   - Đối với **1 kênh**: Kết nối chân **DATA** với IO16 và **CLK** với IO43.
-   - Đối với **2 kênh**: Kết nối **DATA1** với IO16 (DATA) và **DATA2** với IO43 (CLK).
-3. **Kiểm tra tải**: Đảm bảo tổng số LED không vượt quá 800 LED mỗi kênh.
-4. **Kiểm tra nhiệt độ hoạt động**: Thiết bị hoạt động trong khoảng nhiệt độ từ -20°C đến +60°C.
-5. **Chỉ số bảo vệ IP**: Chỉ số IP20 có nghĩa là thiết bị không chống nước, tránh lắp đặt tại nơi ẩm ướt.
+### ❓ Hướng Dẫn Sử Dụng
 
-### Lưu ý:
-- **Dòng điện tải tối đa 10A**: Để sử dụng dòng điện lớn hơn, vui lòng thay thế cầu chì **FH1** với dòng định mức phù hợp (tối đa 65A).
-- Đảm bảo kết nối nguồn đúng với yêu cầu **+5V DC** để tránh hư hại thiết bị.
+#### 1. **Kết Nối Nguồn**
+Kết nối nguồn **+5V DC** vào chân **VLED** và **GND**.
+
+Khi nguồn được kết nối chính xác, **LED báo nguồn** màu đỏ sẽ sáng lên. 
+
+Nếu **LED nguồn không sáng**, hãy thực hiện các bước kiểm tra sau:
+   1. Kiểm tra bộ cấp nguồn để đảm bảo vẫn hoạt động bình thường.
+   2. Xác nhận kết nối đúng chân **+** và **-** của nguồn DC với mạch ARGB.
+   3. Kiểm tra **cầu chì FH1** trên mạch có bị đứt không.
+   4. Kiểm tra mạch có phát được **WiFi ARGB-AP** hoặc điều khiển LED bình thường hay không. Nếu mạch vẫn hoạt động, **LED báo nguồn** có thể bị hỏng mà không ảnh hưởng đến hiệu suất mạch.
+
+**Mạch** được bảo vệ bằng **hai cầu chì**:
+   - **FH1**: Bảo vệ quá dòng.
+   - **F1**: Bảo vệ chống đấu ngược cực và chập mạch dây LED.
+
+#### 2. **Kết Nối Điều Khiển**
+   - Đối với **1 kênh**: Kết nối chân **DATA** với **IO16** và **CLK** với **IO43**.
+   - Đối với **2 kênh**: Kết nối **DATA1** với **IO16** và **DATA2** với **IO43**.
+
+#### 3. **Kiểm Tra Tải**
+Đảm bảo tổng số LED không vượt quá **800 LED mỗi kênh**.
+
+#### 4. **Kiểm Tra Nhiệt Độ Hoạt Động**
+Thiết bị hoạt động tốt trong khoảng nhiệt độ từ **-20°C đến +60°C**.
+
+#### 5. **Chỉ Số Bảo Vệ IP**
+Với chỉ số **IP20**, thiết bị **không có khả năng chống nước**, cần tránh lắp đặt tại các khu vực ẩm ướt.
+
+### 🗒️ Lưu Ý
+- **Dòng điện tải tối đa 10A**: Để sử dụng dòng điện lớn hơn, hãy thay thế cầu chì **FH1** với cầu chì có dòng định mức phù hợp, tối đa là **65A**.
+- Đảm bảo kết nối đúng nguồn **+5V DC** để tránh gây hư hại thiết bị.
 
 ### 3D sản phẩm
 
@@ -56,17 +77,17 @@ hide:
 <img src="/Topic/ARGB-LED/image/3D_PCB1.png" loading="lazy">
 
 
-### Hướng dẫn kết nối chi tiết
+### ❓ Hướng dẫn kết nối chi tiết
 
 Mạch điều khiển ARGB LED có khả năng hỗ trợ cả dãy đèn LED ARGB **5V** và **12V**. Dưới đây là hướng dẫn chi tiết và hai phương án kết nối khi sử dụng **LED 12V**.
 
-#### Kết nối mạch với dãy LED 5V
+#### 💡 Kết nối mạch với dãy LED 5V
 
 Khi sử dụng dãy **LED 5V**, quá trình đấu nối rất đơn giản vì **nguồn cung cấp và điều khiển** chỉ cần một loại điện áp. Cụ thể:
 
 1. **Nguồn điện**: Cấp nguồn **5V DC** với dòng từ **1A đến 10A** tùy vào tổng số lượng LED được sử dụng. Đảm bảo kết nối:
-   - **Chân VIN** trên bo mạch nối với cực dương của nguồn 5V (**V+/5V**).
-   - **Chân GND** nối với cực âm của nguồn 5V (**GND**).
+   - **Chân VIN** trên bo mạch nối với **cực dương(+)** của nguồn 5V (**V+/5V**).
+   - **Chân GND** nối với **cực âm(-)** của nguồn 5V (**GND**).
 
 2. **VLED**: Vì bo mạch và dãy LED cùng sử dụng **nguồn 5V**, bạn có thể kết nối trực tiếp chân **VLED** trên bo mạch với chân **V+/5V** của nguồn điện. Điều này giúp nguồn 5V dùng chung cho cả bo mạch điều khiển và dãy LED.
 
@@ -74,7 +95,11 @@ Khi sử dụng dãy **LED 5V**, quá trình đấu nối rất đơn giản vì
 
 ![strip_led_5v.png](/Topic/ARGB-LED/image/strip_led_5v.png)
 
-#### Kết nối mạch với dãy LED 12V
+<div class="post-img-post">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/DeOOavXX0Rc?si=2wvS_iYyyimDP4ao" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+#### 💡 Kết nối mạch với dãy LED 12V
 
 Đối với dãy **LED 12V**, có hai phương án đấu nối tùy thuộc vào việc bạn có sử dụng nguồn 5V riêng cho bo mạch điều khiển hay không. Tuy nhiên, **dù sử dụng phương án nào cũng cần đảm bảo rằng GND của nguồn cấp cho bo mạch điều khiển và GND của dãy LED phải được nối chung** để đảm bảo sự ổn định của hệ thống.
 
@@ -106,7 +131,7 @@ Khi sử dụng dãy **LED 5V**, quá trình đấu nối rất đơn giản vì
 
 4. **Dữ liệu điều khiển**: Như thường lệ, kết nối dây **DATA** từ bo mạch tới chân **DATA IN** của dãy LED để truyền tín hiệu điều khiển.
 
-#### Lưu ý kỹ thuật:
+#### 🗒️ Lưu ý kỹ thuật
 - Với **LED 12V**, **bất kể sử dụng phương án nào**, **GND của nguồn điều khiển bo mạch** và **GND của dãy LED** phải được **nối chung** để hệ thống hoạt động ổn định và chính xác.
 - Nếu sử dụng **mạch giảm áp**, đảm bảo mạch giảm áp có khả năng cung cấp đủ dòng **5V** cho bo mạch điều khiển.
 
@@ -116,7 +141,7 @@ Khi sử dụng dãy **LED 5V**, quá trình đấu nối rất đơn giản vì
 ![connectionsA](https://github.com/Aircoookie/WLED-Docs/assets/59397047/78cc27f3-f0e4-4c04-bd3f-d35caf143456)
 
 
-### Nguồn DC
+### Chọn nguồn DC
 
 <div class="post-img-post">
   <img src="/Topic/ARGB-LED/image/nguon led 5v.webp" loading="lazy">
@@ -134,7 +159,7 @@ Khi chọn nguồn tổ ong 5V dòng cao, hãy lưu ý những điểm sau:
 
 Những yếu tố này giúp hệ thống hoạt động ổn định và an toàn hơn.
 
-### Reset cứng - SW_BTN:
+### Reset cứng - SW_BTN
 
 `SW_BTN` trên bo mạch có 3 tính năng tích hợp:
 
@@ -148,7 +173,7 @@ Những yếu tố này giúp hệ thống hoạt động ổn định và an to
     <img src="/Topic/ARGB-LED/image/SW_BTN.png" loading="lazy">
 </div>
 
-### Reset mềm:
+### Reset mềm
 
 Truy cập vào bo mạch bằng địa chỉ IP hoặc ứng dụng điều khiển `ARGB v1.0.0` chúng ta có thể reset bo mạch, khởi động lại, và đặt lại wifi!
 

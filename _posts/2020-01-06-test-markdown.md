@@ -70,3 +70,38 @@ You can add notification, warning and error boxes like this:
 
 {: .box-error}
 **Error:** This is an error box.
+
+### thumbnail ảnh
+
+<link rel="stylesheet" href="/Topic/ARGB-LED/assets/js/styles.css">
+<div class="image-gallery">
+   <div class="image-item">
+      <img src="/Topic/ARGB-LED/image/3D_box_PCB1_2024-06-16.png" alt="Image 1" onclick="openModal(this.src)">
+   </div>
+   <div class="image-item">
+      <img src="/Topic/ARGB-LED/image/3D_PCB1_mat-truoc.png" alt="Image 2" onclick="openModal(this.src)">
+   </div>
+   <div class="image-item">
+      <img src="/Topic/ARGB-LED/image/3D_PCB1_mat-sau.png" alt="Image 3" onclick="openModal(this.src)">
+   </div>
+   <div class="image-item">
+      <img src="/Topic/ARGB-LED/image/3D_PCB1.png" alt="Image 4" onclick="openModal(this.src)">
+   </div>
+</div>
+
+<!-- Modal to display full-size image -->
+<div id="imageModal" class="modal" onclick="closeModal()">
+   <span class="close">&times;</span>
+   <img class="modal-content" id="modalImage">
+</div>
+
+<script>
+   function openModal(src) {
+      document.getElementById('imageModal').style.display = "block";
+      document.getElementById('modalImage').src = src;
+   }
+
+   function closeModal() {
+      document.getElementById('imageModal').style.display = "none";
+   }
+</script>

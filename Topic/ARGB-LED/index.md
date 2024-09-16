@@ -22,11 +22,47 @@ category: Programming MCU
 
 - [Features - Palettes - Bảng màu](features/palettes) 
 
+- [Một số video hướng dẫn](basics/tutorials)
+
+
 **Triển khai nhanh chóng** và nhiều tính năng để điều khiển đèn **LED NeoPixel** (WS2812B, WS2811, SK6812, ...) hoặc các chipsets dựa trên SPI như WS2801 và APA102!
 
-<img src="/Topic/ARGB-LED/image/3D_PCB1_mat-truoc.png" loading="lazy">
+<link rel="stylesheet" href="/Topic/ARGB-LED/assets/js/styles.css">
+<div class="image-gallery">
+   <div class="image-item">
+      <img src="/Topic/ARGB-LED/image/3D_box_PCB1_2024-06-16.png" alt="Image 1" onclick="openModal(this.src)">
+   </div>
+   <div class="image-item">
+      <img src="/Topic/ARGB-LED/image/3D_PCB1_mat-truoc.png" alt="Image 2" onclick="openModal(this.src)">
+   </div>
+   <div class="image-item">
+      <img src="/Topic/ARGB-LED/image/3D_PCB1_mat-sau.png" alt="Image 3" onclick="openModal(this.src)">
+   </div>
+   <div class="image-item">
+      <img src="/Topic/ARGB-LED/image/3D_PCB1.png" alt="Image 4" onclick="openModal(this.src)">
+   </div>
+</div>
+
+<!-- Modal to display full-size image -->
+<div id="imageModal" class="modal" onclick="closeModal()">
+   <span class="close">&times;</span>
+   <img class="modal-content" id="modalImage">
+</div>
+
+<script>
+   function openModal(src) {
+      document.getElementById('imageModal').style.display = "block";
+      document.getElementById('modalImage').src = src;
+   }
+
+   function closeModal() {
+      document.getElementById('imageModal').style.display = "none";
+   }
+</script>
 
 ### 💡 Các loại chip Led được hổ trợ
+
+- [Các loại chip Led được hổ trợ](basics/compatible-led-strips)
 
 #### Bảng 1: SPI 3-wire và SPI 4-wire
 
@@ -73,25 +109,31 @@ category: Programming MCU
 
 <!-- - Native [Home-Assistant integration](https://www.home-assistant.io/integrations/wled/): [![Start native Homeassistant integration configuration](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start?domain=wled) -->
 
-#### 💡 Các phần mềm kết nối chuyên nghiệp hơn ARGB có thể sử dụng
-- 🔥[xLights – LED Control](https://xlights.org/releases/) - điều khiển lập trình led chuyên nghiệp
-- 🔥[Jinx! – LED Matrix Control](https://live-leds.de/) - điều khiển led chuyên nghiệp cho bảng ma trận LED
-- 🔥[LedFx - Make your LEDs dance in sync to the music](https://www.ledfx.app/) - điều khiển led theo nhạc cực cuốn
-- 🔥[Lightpack - Prismatik](https://github.com/psieg/Lightpack/releases) - trang trí **Ambilight** cho màn hình PC/Laptop
-- 🔥[Hyperion](https://github.com/hyperion-project/hyperion.ng) - Trang trí TIVI siêu đẹp
+### 💡 Ứng dụng điều khiển mạch
 
-👉👉👉[Danh sách các phần mềm khác](basics/compatible-software)
+#### ⚡Phần mềm bắt buộc:
 
-#### 💡 Các chuẩn kết nối ARGB có thể sử dụng
+- 💻Trên PC/laptop:
+   - 🔥 [WLED PC – LED Control](https://github.com/w00000dy/WLED-GUI/releases/): Công cụ **điều khiển chính**
 
-<!-- - [ARGB app](https://github.com/Aircoookie/WLED-App) for [Android](https://play.google.com/store/apps/details?id=com.aircoookie.WLED) and [iOS](https://apps.apple.com/us/app/wled/id1475695033)
-- Alternatively, ARGB Native app made by community member [Moustachauve](https://github.com/Moustachauve) -->
-- 🔥 Ứng dụng **điện thoại di động** [Android](https://play.google.com/store/apps/details?id=ca.cgagnier.wlednativeandroid) 
-<!-- - [[Source]((https://github.com/Moustachauve/WLED-Native-Android))] -->
-- 🔥 Ứng dụng **điện thoại di động** [iOS](https://apps.apple.com/us/app/wled-native/id6446207239) 
-<!-- - [[Source]((https://github.com/Moustachauve/WLED-Native-iOS/))] -->
-<!-- - [JSON](interfaces/json-api) and [HTTP request](interfaces/http-api) APIs   -->
-<!-- - [MQTT](interfaces/mqtt)   -->
+- 📱Trên Smartphone:
+   - 🔥 Ứng dụng **Android**: [WLED](https://play.google.com/store/apps/details?id=ca.cgagnier.wlednativeandroid)
+   - 🔥 Ứng dụng **iOS**: [WLED](https://apps.apple.com/us/app/wled-native/id6446207239)
+
+#### ⚡Phần mềm tùy chọn trên PC/laptop:
+- 🔥 [xLights – LED Control](https://xlights.org/releases/): Điều khiển và lập trình LED chuyên nghiệp.
+- 🔥 [Jinx! – LED Matrix Control](https://live-leds.de/): Điều khiển LED cho bảng ma trận chuyên dụng.
+- 🔥 [LedFx](https://www.ledfx.app/): Điều khiển LED nhấp nháy theo nhạc sống động.
+- 🔥 [Lightpack - Prismatik](https://github.com/psieg/Lightpack/releases): Hiệu ứng **Ambilight** trang trí màn hình PC/laptop.
+- 🔥 [Hyperion](https://github.com/hyperion-project/hyperion.ng): Trang trí LED cho TV với hiệu ứng đẹp mắt.
+
+#### ⚡👉 [Danh sách các phần mềm khác](basics/compatible-software).
+
+
+### 💡 Các chuẩn kết nối ARGB có thể sử dụng
+
+- [JSON](interfaces/json-api) and [HTTP request](interfaces/http-api) APIs  
+- [MQTT](interfaces/mqtt)  
 <!-- - [Blynk IoT](interfaces/blynk)   -->
 - [E1.31](interfaces/e1.31-dmx), [Art-Net](interfaces/e1.31-dmx), DDP and [TPM2.net](interfaces/udp-realtime)
 - [UDP realtime](interfaces/udp-realtime)
@@ -101,54 +143,6 @@ category: Programming MCU
 - [Sync color of multiple ARGB devices (UDP notifier)](interfaces/udp-notifier)
 - [Infrared remotes (24-key RGB, receiver required)](interfaces/infrared)
 - Simple timers/schedules (time from NTP, timezones/DST supported)  
-
-
-## 💡 Điều Khiển LED Qua DDP, UDP, TMP2
-
-`JINX! `là một phần mềm mạnh mẽ để điều khiển LED thông qua các giao thức như DDP, UDP, và TMP2. Nếu bạn đang tìm kiếm các phần mềm tương tự có khả năng điều khiển LED qua các giao thức này, dưới đây là một số lựa chọn:
-
-### 💡 1. xLights
-- **Mô tả**: xLights là một phần mềm lập trình ánh sáng phổ biến, hỗ trợ nhiều loại LED và có khả năng điều khiển thông qua các giao thức như E1.31 (sACN), DDP, và Art-Net.
-- **Tính năng nổi bật**: Lập trình ánh sáng theo bài hát, mô phỏng 3D, hỗ trợ nhiều bộ điều khiển.
-
-### 💡 2. Madrix
-- **Mô tả**: Madrix là một phần mềm điều khiển ánh sáng LED chuyên nghiệp, hỗ trợ nhiều giao thức điều khiển như Art-Net, sACN, và DDP.
-- **Tính năng nổi bật**: Hiệu ứng ánh sáng mạnh mẽ, giao diện người dùng thân thiện, hỗ trợ điều khiển thời gian thực.
-
-### 💡 3. Glediator
-- **Mô tả**: Glediator là một phần mềm mã nguồn mở để điều khiển ma trận LED. Nó hỗ trợ giao thức điều khiển như UDP.
-- **Tính năng nổi bật**: Đơn giản, dễ sử dụng, có khả năng tạo hiệu ứng ánh sáng đa dạng.
-
-### 💡 4. QLC+ (Q Light Controller Plus)
-- **Mô tả**: QLC+ là một phần mềm điều khiển ánh sáng mã nguồn mở, hỗ trợ nhiều giao thức điều khiển như Art-Net, sACN, và DMX.
-- **Tính năng nổi bật**: Hỗ trợ nhiều loại thiết bị ánh sáng, giao diện dễ sử dụng, nhiều tính năng lập trình ánh sáng.
-
-### 💡 5. Resolume
-- **Mô tả**: Resolume là một phần mềm VJing mạnh mẽ, hỗ trợ điều khiển ánh sáng LED thông qua các giao thức như Art-Net và sACN.
-- **Tính năng nổi bật**: Khả năng tạo hiệu ứng video và ánh sáng kết hợp, hỗ trợ điều khiển thời gian thực.
-
-### 💡 6. LedEdit
-- **Mô tả**: LedEdit là một phần mềm điều khiển LED phổ biến, hỗ trợ nhiều loại điều khiển LED thông qua UDP và các giao thức khác.
-- **Tính năng nổi bật**: Đơn giản, dễ sử dụng, hỗ trợ nhiều bộ điều khiển LED.
-
-
-#### 📲 Hướng dẫn sử dụng nhanh và tài liệu liên quan
-
-[Hướng dẫn sử dụng nhanh!](basics/getting-started)
-
-[Trên trang này](basics/tutorials), bạn có thể tìm thấy các hướng dẫn tuyệt vời do cộng đồng thực hiện và các công cụ hữu ích để giúp bạn thiết lập và vận hành chiếc đèn mới của mình!
-
-#### 🖼️ User interface
-
-<img src="assets/images/ui/headers/macbook-pro-space-gray-on-the-wooden-table.jpg" width="50%"><img src="assets/images/ui/headers/walking-with-iphone-x.jpg" width="50%">
-
-<!-- #### 💾 Compatible hardware
-
-See [here](basics/compatible-hardware)! -->
-
-<!-- #### ✌️ Other
-
-Licensed under the MIT license   -->
 
 ## ✌️ Happy Smart Light - bangnguyendev
 

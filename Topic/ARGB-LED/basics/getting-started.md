@@ -13,6 +13,21 @@ hide:
 
 ### 💡 Thông tin chi tiết sản phẩm
 
+<link rel="stylesheet" href="/Topic/ARGB-LED/assets/js/styles.css">
+<div class="image-gallery">
+   <div class="image-item">
+      <img src="/Topic/ARGB-LED/image/3D_box_PCB1_2024-06-16.png" alt="Image 1" onclick="openModal(this.src)">
+   </div>
+   <div class="image-item">
+      <img src="/Topic/ARGB-LED/image/3D_PCB1_mat-truoc.png" alt="Image 2" onclick="openModal(this.src)">
+   </div>
+   <div class="image-item">
+      <img src="/Topic/ARGB-LED/image/3D_PCB1_mat-sau.png" alt="Image 3" onclick="openModal(this.src)">
+   </div>
+   <div class="image-item">
+      <img src="/Topic/ARGB-LED/image/3D_PCB1.png" alt="Image 4" onclick="openModal(this.src)">
+   </div>
+</div>
 
 | **Thông tin**                  | **Chi tiết**                                                                 |
 |---------------------------------|------------------------------------------------------------------------------|
@@ -35,17 +50,17 @@ hide:
 ### ❓ Hướng Dẫn Sử Dụng
 
 #### 1. **Kết Nối Nguồn**
-Kết nối nguồn **+5V DC** vào chân **VLED** và **GND**.
+- Kết nối nguồn **+5V DC** vào chân **VLED** và **GND**.
 
-Khi nguồn được kết nối chính xác, **LED báo nguồn** màu đỏ sẽ sáng lên. 
+- Khi nguồn được kết nối chính xác, **LED báo nguồn** màu đỏ sẽ sáng lên. 
 
-Nếu **LED nguồn không sáng**, hãy thực hiện các bước kiểm tra sau:
+- Nếu **LED nguồn không sáng**, hãy thực hiện các bước kiểm tra sau:
    1. Kiểm tra bộ cấp nguồn để đảm bảo vẫn hoạt động bình thường.
    2. Xác nhận kết nối đúng chân **+** và **-** của nguồn DC với mạch ARGB.
    3. Kiểm tra **cầu chì FH1** trên mạch có bị đứt không.
    4. Kiểm tra mạch có phát được **WiFi ARGB-AP** hoặc điều khiển LED bình thường hay không. Nếu mạch vẫn hoạt động, **LED báo nguồn** có thể bị hỏng mà không ảnh hưởng đến hiệu suất mạch.
 
-**Mạch** được bảo vệ bằng **hai cầu chì**:
+- **Mạch** được bảo vệ bằng **hai cầu chì**:
    - **FH1**: Bảo vệ quá dòng.
    - **F1**: Bảo vệ chống đấu ngược cực và chập mạch dây LED.
 
@@ -62,19 +77,9 @@ Thiết bị hoạt động tốt trong khoảng nhiệt độ từ **-20°C đ�
 #### 5. **Chỉ Số Bảo Vệ IP**
 Với chỉ số **IP20**, thiết bị **không có khả năng chống nước**, cần tránh lắp đặt tại các khu vực ẩm ướt.
 
-### 🗒️ Lưu Ý
+##### 🗒️ Lưu Ý
 - **Dòng điện tải tối đa 10A**: Để sử dụng dòng điện lớn hơn, hãy thay thế cầu chì **FH1** với cầu chì có dòng định mức phù hợp, tối đa là **65A**.
 - Đảm bảo kết nối đúng nguồn **+5V DC** để tránh gây hư hại thiết bị.
-
-### 3D sản phẩm
-
-<img src="/Topic/ARGB-LED/image/3D_box_PCB1_2024-06-16.png" loading="lazy">
-
-<img src="/Topic/ARGB-LED/image/3D_PCB1_mat-truoc.png" loading="lazy">
-
-<img src="/Topic/ARGB-LED/image/3D_PCB1_mat-sau.png" loading="lazy">
-
-<img src="/Topic/ARGB-LED/image/3D_PCB1.png" loading="lazy">
 
 
 ### ❓ Hướng dẫn kết nối chi tiết
@@ -96,7 +101,7 @@ Khi sử dụng dãy **LED 5V**, quá trình đấu nối rất đơn giản vì
 ![strip_led_5v.png](/Topic/ARGB-LED/image/strip_led_5v.png)
 
 <div class="post-img-post">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/DeOOavXX0Rc?si=2wvS_iYyyimDP4ao" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="300px" src="https://www.youtube.com/embed/DeOOavXX0Rc?si=2wvS_iYyyimDP4ao" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 #### 💡 Kết nối mạch với dãy LED 12V
@@ -136,7 +141,7 @@ Khi sử dụng dãy **LED 5V**, quá trình đấu nối rất đơn giản vì
 - Nếu sử dụng **mạch giảm áp**, đảm bảo mạch giảm áp có khả năng cung cấp đủ dòng **5V** cho bo mạch điều khiển.
 
 
-**Note:** _Hãy đãm bảo răng tất cả các dây led được nối chung GND nếu sử dụng nhiều dây led_
+**Note:** _Hãy đãm bảo rằng tất cả các dây led được nối chung GND nếu sử dụng nhiều dây led_
 
 ![connectionsA](https://github.com/Aircoookie/WLED-Docs/assets/59397047/78cc27f3-f0e4-4c04-bd3f-d35caf143456)
 
@@ -161,11 +166,14 @@ Khi sử dụng dãy **LED 5V**, quá trình đấu nối rất đơn giản vì
 
 #### ⚡👉 [Danh sách các phần mềm khác](basics/compatible-software).
 
-### Chọn nguồn DC
+### 🔋Chọn nguồn DC
 
-<div class="post-img-post">
-  <img src="/Topic/ARGB-LED/image/nguon led 5v.webp" loading="lazy">
+<div class="image-gallery">
+   <div class="image-item">
+      <img src="/Topic/ARGB-LED/image/nguon led 5v.webp" alt="Image 1" onclick="openModal(this.src)">
+   </div>
 </div>
+
 
 Khi chọn nguồn tổ ong 5V dòng cao, hãy lưu ý những điểm sau:
 
@@ -202,3 +210,20 @@ Truy cập vào bo mạch bằng địa chỉ IP hoặc ứng dụng điều khi
 
 {: .box-warning}
 **Liên hệ:** 0936.601944 (Hiền - Sale)
+
+<!-- Modal to display full-size image -->
+<div id="imageModal" class="modal" onclick="closeModal()">
+   <span class="close">&times;</span>
+   <img class="modal-content" id="modalImage">
+</div>
+
+<script>
+   function openModal(src) {
+      document.getElementById('imageModal').style.display = "block";
+      document.getElementById('modalImage').src = src;
+   }
+
+   function closeModal() {
+      document.getElementById('imageModal').style.display = "none";
+   }
+</script>

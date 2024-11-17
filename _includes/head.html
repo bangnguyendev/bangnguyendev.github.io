@@ -82,11 +82,11 @@
   <meta property="og:type" content="website" />
 
   {% if page.id %}
-  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-  <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+  <meta property="og:url" content="/{{ page.url }}" />
+  <link rel="canonical" href="/{{ page.url }}" />
   {% else %}
-  <meta property="og:url" content="{{ site.url }}{{ page.url | remove: '/index.html' | remove: '.html' }}" />
-  <link rel="canonical" href="{{ site.url }}{{ page.url | remove: '/index.html' | remove: '.html' }}" />
+  <meta property="og:url" content="/{{ page.url | remove: '/index.html' | remove: '.html' }}" />
+  <link rel="canonical" href="/{{ page.url | remove: '/index.html' | remove: '.html' }}" />
   {% endif %}
 
   {% if page.image %}
@@ -94,7 +94,7 @@
   {% elsif page.share-img %}
   <meta property="og:image" content="{{ page.share-img }}" />
   {% elsif site.avatar %}
-  <meta property="og:image" content="{{ site.url }}/{{ site.avatar }}"  />
+  <meta property="og:image" content="/{{ site.avatar }}"  />
   {% endif %}
 
   <!-- Script ngăn chặn click chuột phải xem thuôc tính của trang -->

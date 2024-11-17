@@ -6,8 +6,8 @@ layout: none
   <channel>
     <title>{{ site.title | xml_escape }}</title>
     <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}</link>
-    <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
     {% assign pages = site.html_pages | where_exp:'doc','doc.sitemap != false' | where_exp:'doc','doc.url != "/404.html"' | where_exp:'doc','doc.url != "/"' %}
     {% for page in pages %}
     {% assign title_words = page.title | split: " " %}

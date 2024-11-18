@@ -35,7 +35,7 @@ RUN gem install bundler jekyll
 WORKDIR /home/app-jekyll
 
 # Copy Gemfile vào container WORKDIR
-COPY Gemfile /home/app-jekyll/
+COPY Gemfile Gemfile.lock /home/app-jekyll/
 
 # Copy all vào container WORKDIR
 # COPY . /home/$USERNAME/app-jekyll

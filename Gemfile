@@ -20,6 +20,10 @@ group :jekyll_plugins do
     gem "jekyll-paginate"
     gem "jekyll-sitemap"
 end
+
+# thêm quyền quản lý admin localhost:4000/admin
+gem "jekyll-admin"
+
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
 platforms :mingw, :x64_mingw, :mswin, :jruby do
@@ -31,3 +35,4 @@ end
 gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 
 gem "webrick"
+gem "rack", "~> 2.2" # version 2.2 để sử dụng jekyll admin

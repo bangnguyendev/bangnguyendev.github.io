@@ -1,0 +1,22 @@
+services:
+  jekyll:
+    image: jekyll-bangnguyendev
+    container_name: bangnguyendev_web
+    ports:
+      - "4000:4000"
+      - "35729:35729"
+    volumes:
+      - "./:/home/app-jekyll"
+#      - web-volume:/home/data_export
+    working_dir: /home/app-jekyll
+    command: jekyll serve -H 0.0.0.0 --livereload --force_polling --incremental
+    stdin_open: true
+    tty: true
+    restart: always # Tự khởi động lại trong mọi trường hợp
+
+#volumes:
+#  web-volume:
+#    external: true
+
+# Định nghĩa tên của Compose
+name: bangnguyendev

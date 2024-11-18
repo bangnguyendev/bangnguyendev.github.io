@@ -35,7 +35,7 @@ RUN gem install bundler jekyll
 WORKDIR /home/app-jekyll
 
 # Copy Gemfile vào container WORKDIR
-COPY Gemfile Gemfile.lock /home/app-jekyll
+COPY Gemfile /home/app-jekyll/
 
 # Copy all vào container WORKDIR
 # COPY . /home/$USERNAME/app-jekyll
@@ -63,3 +63,8 @@ CMD ["/bin/bash"]
 ### 	/bin/bash
 #### Container:
 ### root$: jekyll serve -H 0.0.0.0 --livereload --force_polling --incremental
+
+
+### docker compose
+#### docker-compose up
+#### docker-compose down

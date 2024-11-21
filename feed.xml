@@ -6,8 +6,8 @@ layout: none
   <channel>
     <title>{{ site.title | xml_escape }}</title>
     <description>{{ site.description | xml_escape }}</description>
-    <link>/</link>
-    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+    <link>{{ site.url }}</link>
+    <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
     {% assign pages = site.html_pages | where_exp:'doc','doc.sitemap != false' | where_exp:'doc','doc.url != "/404.html"' | where_exp:'doc','doc.url != "/"' %}
     {% for page in pages %}
     {% assign title_words = page.title | split: " " %}
@@ -26,8 +26,8 @@ layout: none
           {{ site.title }}{{ page.title | xml_escape }}
         {% endif %}
         </description>
-        <link>/{{ page.url }}</link>
-        <guid isPermaLink="true">/{{ page.url }}</guid>
+        <link>{{ site.url }}{{ page.url }}</link>
+        <guid isPermaLink="true">{{ site.url }}{{ page.url }}</guid>
       </item>
     {% endfor %}
     
@@ -39,8 +39,8 @@ layout: none
           {{ post.content | strip_html | xml_escape | truncatewords: 50 }}
         </description>
         <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
-        <link>/{{ post.url }}</link>
-        <guid isPermaLink="true">/{{ post.url }}</guid>
+        <link>{{ site.url }}{{ post.url }}</link>
+        <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
       </item>
     {% endfor %}
 

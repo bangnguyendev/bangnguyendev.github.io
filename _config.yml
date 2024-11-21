@@ -9,7 +9,9 @@ title: ✨Bằng Nguyễn✨
 
 # Short description of your site
 description: Embedded Systems Engineer
-
+site:
+  url: "/"
+  baseurl: "/" # Bỏ trống nếu bạn chạy ở root
 # --- Navigation bar options --- #
 # List of links in the navigation bar
 navbar-links:

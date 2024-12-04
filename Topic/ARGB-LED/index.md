@@ -27,6 +27,12 @@ category: Programming MCU
 
 **Triển khai nhanh chóng** và nhiều tính năng để điều khiển đèn **LED NeoPixel** (WS2812B, WS2811, SK6812, ...) hoặc các chipsets dựa trên SPI như WS2801 và APA102!
 
+#### Bộ điều khiển V1.0.0
+
+- Với nhiều ngoại vi đi kèm **IR hồng ngoại**, cảm biến nhiệt, **cầu chì bảo vệ** dây LED...
+
+- Mạch có 2 ngõ ra led độc lập 3 chân (hoặc 1 ngõ ra led 4 chân)
+
 <link rel="stylesheet" href="/Topic/ARGB-LED/assets/js/styles.css">
 <div class="image-gallery">
    <div class="image-item">
@@ -40,6 +46,24 @@ category: Programming MCU
    </div>
    <div class="image-item">
       <img src="/Topic/ARGB-LED/image/3D_PCB1.png" alt="Image 4" onclick="openModal(this.src)">
+   </div>
+</div>
+
+
+#### Bộ điều khiển V2.0.0
+
+- Với kích thước làm điểm mạnh, siêu nhỏ gọn **22mm x 52mm**
+
+<link rel="stylesheet" href="/Topic/ARGB-LED/assets/js/styles.css">
+<div class="image-gallery">
+   <div class="image-item">
+      <img src="/Topic/ARGB-LED/image/v2.0.0_3D_PCB1_2024-12-04.png" alt="Image 1" onclick="openModal(this.src)">
+   </div>
+   <div class="image-item">
+      <img src="/Topic/ARGB-LED/image/v2.0.0-3D_PCB1_2024-12-04-mat truoc.png" alt="Image 2" onclick="openModal(this.src)">
+   </div>
+   <div class="image-item">
+      <img src="/Topic/ARGB-LED/image/v2.0.0-3D_PCB1_2024-12-04-mat sau.png" alt="Image 3" onclick="openModal(this.src)">
    </div>
 </div>
 

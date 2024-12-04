@@ -19,7 +19,7 @@ category: Programming MCU
 <link rel="stylesheet" href="/dist/css/main-bio.css"> 
 
 {: .box-warning}
-**Warning:** Đối với mạch điều khiển LED **ARGB Happy Smart Light** chỉ có tiếng Việt cho chip **ESP32-S3** (cấu hình **ESP8266** không đủ cấu hình để thêm tính năng mới!).
+**Warning:** Có nạp mạch điều khiển LED **ARGB Happy Smart Light**
 
 <div style="text-align: center;">
   <h4>ESP Web Tools - bangnguyendev</h4>
@@ -30,12 +30,12 @@ category: Programming MCU
       <optgroup label="Example ESP Web Tools - OTA">
         <option value="/dist/json/manifest_ESP8266_ESP32.json">ESP Web Tools - OTA - v1.0.0</option>
       </optgroup>
-      <optgroup label="ARGB Led">
-        <option value="/dist/json/manifest_ESP8266_ESP32_ARGB.json">ARGB Led - v1.0.0</option>
+      <optgroup label="ARGB Board v2.0.0">
+        <option value="/dist/json/manifest_ESP32_ARGB_v2.0.0.json">ARGB Board v2.0.0 - 2412021</option>
       </optgroup>
-      <optgroup label="ARGB_VN Led ONLY ESP32 S3">
-        <option value="/dist/json/manifest_ESP8266_ESP32_ARGB_VN.json">ARGB Led - v1.0.0_VN</option>
-      </optgroup>
+      <optgroup label="ARGB Board v1.0.0">
+        <option value="/dist/json/manifest_ESP32_S3_ARGB_v1.0.0.json">ARGB Board v1.0.0 - 2412021</option>
+     </optgroup>
       <optgroup label="Ươm mầm lập trình nhí">
         <option value="/dist/json/manifest_UOMMAMLAPTRINHNHI.json">UMLTN - Yolo Bit - v1.12.0</option>
       </optgroup>

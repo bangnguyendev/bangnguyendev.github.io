@@ -147,7 +147,7 @@ category: Programming MCU
 ## ✌️ Happy Smart Light - bangnguyendev
 
 {: .box-warning}
-**Mục này dành cho nạp lại bo mạch:** Đối với mạch điều khiển LED **ARGB Happy Smart Light** chỉ có tiếng Việt cho chip **ESP32** và **ESP32-S3**.
+**Mục này dành cho nạp code lại cho bo mạch**
 
 <!-- Sử dụng cho button class="action action--button" -->
 <link rel="stylesheet" href="/dist/css/main-bio.css"> 
@@ -157,11 +157,11 @@ category: Programming MCU
   <div>
     <label for="optiongroup">Chọn phiên bản:</label>
     <select id="optiongroup">
-      <optgroup label="ARGB Led tiếng Việt">
-        <option value="/dist/json/manifest_ESP8266_ESP32_ARGB_VN.json">ARGB Led - v1.0.0_VN</option>
+      <optgroup label="ARGB Board v2.0.0">
+        <option value="/dist/json/manifest_ESP32_ARGB_v2.0.0.json">ARGB Board v2.0.0 - 2412021</option>
       </optgroup>
-      <optgroup label="ARGB Led">
-        <option value="/dist/json/manifest_ESP8266_ESP32_ARGB.json">ARGB Led - v1.0.0</option>
+      <optgroup label="ARGB Board v1.0.0">
+        <option value="/dist/json/manifest_ESP32_S3_ARGB_v1.0.0.json">ARGB Board v1.0.0 - 2412021</option>
      </optgroup>
       <optgroup label="Example ESP Web Tools - OTA">
         <option value="/dist/json/manifest_ESP8266_ESP32.json">ESP Web Tools - OTA - v1.0.0</option>
@@ -183,7 +183,7 @@ document.addEventListener("DOMContentLoaded", function() {
   var espButton = document.getElementById("espInstallButton");
   
 
-  
+
   // Thiết lập mặc định cho option đầu tiên
   espButton.setAttribute("manifest", optiongroup.options[0].value);
   document.getElementById('verstr').textContent = optiongroup.options[0].text;

@@ -1,0 +1,22 @@
+{
+    "name": "ARGB LED - HappySmartLight",
+    "version": "v2.0.0 - 2412021",
+    "home_assistant_domain": "esphome",
+    "new_install_prompt_erase": true,
+    "new_install_improv_wait_time": 20,
+    "builds": [
+        {
+            "chipFamily": "ESP32",
+            "parts": [
+                {
+                    "path": "/img/Load-Firmware/esp32_bootloader_v4.bin",
+                    "offset": 0
+                },
+                {
+                    "path": "/img/Load-Firmware/ARGB_2.0.0_ESP32.bin",
+                    "offset": 65536
+                }
+            ]
+        }
+    ]
+}

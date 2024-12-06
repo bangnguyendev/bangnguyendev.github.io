@@ -170,8 +170,16 @@ category: Programming MCU
 
 ## ✌️ Happy Smart Light - bangnguyendev
 
-{: .box-warning}
-**Mục này dành cho nạp code lại cho bo mạch**
+### 💡 Cập nhật chương trình từ bo mạch
+
+<div style="text-align: center;">
+    <h4>Cập nhật trực tiếp trên board mạch</h4>
+    <p>Tải file cập nhật tại đây:</p>
+    <a href="#" onclick="downloadFile('1.0.0')"><b>[Board v1.0.0]</b></a><br>
+    <a href="#" onclick="downloadFile('2.0.0')"><b>[Board v2.0.0]</b></a>
+</div>
+
+### 💡 Nạp code lại cho bo mạch
 
 <!-- Sử dụng cho button class="action action--button" -->
 <link rel="stylesheet" href="/dist/css/main-bio.css"> 
@@ -193,12 +201,65 @@ category: Programming MCU
     </select>
   </div>
 
-  Kết nối <a href="https://s.shopee.vn/4Aewn9TB7g"><b>USB-TTL</b></a> với bo mạch <b>ARGB Happy Smart Light</b>.<br> Cắm <b>USB-TTL</b> vào máy tính của bạn. <br>Phiên bản đang chọn: <span style="font-weight: bold;" id="verstr"></span><br>
+  <!-- Kết nối <a href="https://s.shopee.vn/4Aewn9TB7g"><b>USB-TTL</b></a> với bo mạch <b>ARGB Happy Smart Light</b>.<br> Cắm <b>USB-TTL</b> vào máy tính của bạn.  -->
+  
+   Phiên bản đang chọn: <span style="font-weight: bold;" id="verstr"></span><br>
   <!-- Button install ESP -->
   <esp-web-install-button id="espInstallButton">
   <button class="action action--button" slot="activate"><i class="fa fa-usb"></i><span class="action__text">Kết nối & Cài đặt</span></button>
   </esp-web-install-button>
+   <br><br>
 </div>
+
+
+
+
+<script>
+
+   const hashedPassword = "00bd9c62b978b0a91653e3150216580c7e22eac193c6be28b7ac400672e168df"; // SHA-256 của "password"
+
+   const encodedLinks = {
+      "1.0.0": "XGltZ1xcTG9hZC1GaXJtd2FyZVxcQVJHQl8xLjAuMF9FU1AzMl9TMy5iaW4=",
+      "2.0.0": "XGltZ1xcTG9hZC1GaXJtd2FyZVxcQVJHQl8yLjAuMF9FU1AzMi5iaW4="
+   };
+
+   // Hàm băm SHA-256
+   async function hashPassword(password) {
+      const encoder = new TextEncoder();
+      const data = encoder.encode(password);
+      const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+      const hashArray = Array.from(new Uint8Array(hashBuffer));
+      return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+   }
+
+
+   function decodeBase64(encoded) {
+      return atob(encoded);
+   }
+
+   // Xử lý tải file
+   async function downloadFile(version) {
+      const password = prompt("Vui lòng nhập mật khẩu để tải file:");
+      if (password) {
+            const hashedInput = await hashPassword(password);
+            if (hashedInput === hashedPassword) {
+               const encodedUrl = encodedLinks[version];
+               if (encodedUrl) {
+                  const decodedUrl = decodeBase64(encodedUrl);
+                  // console.log("Đường dẫn đã giải mã:", decodedUrl); 
+                  window.location.href = decodedUrl; // Chuyển hướng tới file
+               } else {
+                  alert("Phiên bản không tồn tại.");
+               }
+            } else {
+               alert("Sai mật khẩu! Không thể tải file.");
+            }
+      } else {
+            alert("Vui lòng nhập mật khẩu.");
+      }
+   }
+</script>
+
 
 
 <script>

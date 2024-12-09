@@ -190,10 +190,10 @@ category: Programming MCU
     <label for="optiongroup">Chọn phiên bản:</label>
     <select id="optiongroup">
       <optgroup label="ARGB Board v2.0.0">
-        <option value="/dist/json/manifest_ESP32_ARGB_v2.0.0.json">ARGB Board v2.0.0 - 2412021</option>
+        <option value="/dist/json/manifest_ARGB_v2.0.0.json">ARGB Board v2.0.0 - 2412021</option>
       </optgroup>
       <optgroup label="ARGB Board v1.0.0">
-        <option value="/dist/json/manifest_ESP32_S3_ARGB_v1.0.0.json">ARGB Board v1.0.0 - 2412021</option>
+        <option value="/dist/json/manifest_ARGB_v1.0.0.json">ARGB Board v1.0.0 - 2412021</option>
      </optgroup>
       <optgroup label="Example ESP Web Tools - OTA">
         <option value="/dist/json/manifest_ESP8266_ESP32.json">ESP Web Tools - OTA - v1.0.0</option>
@@ -219,8 +219,8 @@ category: Programming MCU
    const hashedPassword = "00bd9c62b978b0a91653e3150216580c7e22eac193c6be28b7ac400672e168df"; // SHA-256 của "password"
 
    const encodedLinks = {
-      "1.0.0": "XGltZ1xcTG9hZC1GaXJtd2FyZVxcQVJHQl8xLjAuMF9FU1AzMl9TMy5iaW4=",
-      "2.0.0": "XGltZ1xcTG9hZC1GaXJtd2FyZVxcQVJHQl8yLjAuMF9FU1AzMi5iaW4="
+      "1.0.0": "L2ltZy9Mb2FkLUZpcm13YXJlL0FSR0JfMS4wLjAuYmlu",
+      "2.0.0": "L2ltZy9Mb2FkLUZpcm13YXJlL0FSR0JfMi4wLjAuYmlu"
    };
 
    // Hàm băm SHA-256
